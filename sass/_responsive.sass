@@ -1,0 +1,122 @@
+@media screen and (max-width: 1200px)
+	.b-logo
+		+retina-bg("logo_small.png", "logo_small@2x.png")
+		background-repeat: no-repeat
+		width: 31px
+		height: 40px
+		margin-right: 10px
+
+	.b-nav--social_item
+		display: block
+		line-height: 30px
+		margin-right: 0
+
+	.b-nav--socialmedia--units
+		position: absolute
+		top: 100%
+		background: #2192fd
+		text-align: center
+		width: 100%
+		display: none
+
+	.b-nav--socialmedia--units--wrapper
+		position: relative
+		// z-index: 5
+		line-height: 60px
+		width: 50px
+		text-align: center
+		margin-right: 20px
+
+		&:hover
+			z-index: 5
+
+		&:before
+			+sprite(share_1024)
+			content: ''
+			display: inline-block
+			vertical-align: middle
+
+		&:hover
+			background: #2192fd
+
+			.b-nav--socialmedia--units
+				display: block
+
+	.b-nav--social_link
+		line-height: 40px
+
+	.b-videos--listing--item
+		&:nth-child(n)
+			width: 31%
+			margin-right: 3.5%
+		&:nth-child(3n)
+			margin-right: 0
+		&:last-child
+			display: none
+
+	.b-analitics-left--content
+		width: 49%
+		&.desctop--1000--full_width
+			width: 100%
+
+	.b-analitics-right--content
+		width: 49%
+
+	.b-analitics--best--traiders-number
+		+retina-bg("banner250k.jpg", "banner250k@2x.jpg", "cover")
+		background-size: cover
+		box-shadow: none
+		border-radius: 10px
+
+	.b-analitics--best-result--numbers
+		float: none
+		clear: both
+
+	.b-analitics--best-result--watch_all
+		position: absolute
+		top: 0
+		right: 10px
+
+	.b-analitics--best--result
+		position: relative
+
+	.b-analitics--news--publication--left--timer
+		float: none
+		width: 100%
+		text-align: center
+
+	.b-analitics--news--publication--left--info
+		float: none
+		clear: both
+		padding-top: 20px
+		width: auto
+
+	.countdown--left--timer
+		float: none
+
+	.b-analitics--paybacks--td
+		line-height: normal
+		vertical-align: middle
+		padding: 15px
+		white-space: nowrap
+
+	.b-traiders--blue--selector--wrapper
+		width: 23%
+
+	.b-traiders--table--selector--item
+		width: 26%
+
+		&.first--item
+			width: 22%
+
+		&:last-child
+			margin-right: 0
+
+	.b-header__search-form
+		margin-right: 15px
+
+	.search-input__wrapper
+		width: 130px
+
+	.b-nav--menu_item
+		margin-right: 10px
