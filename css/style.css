@@ -5423,6 +5423,30 @@ td.b-traiders--dividents {
   display: inline-block;
 }
 
+.blue-link-year {
+  color: #168de2;
+  background: #fff;
+  padding: 2px;
+  margin-right: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+.blue-link-year.active {
+  background: #168de2;
+  color: #fff;
+}
+.blue-link-year:last-child {
+  margin-right: 0;
+}
+
+.c-light-gray {
+  color: #848484;
+}
+
+.b-content-news .blue-link {
+  line-height: 1.57;
+}
+
 .b-content-page-right-side {
   padding-bottom: 25px;
   font-weight: normal;
