@@ -369,19 +369,9 @@
 	text-decoration: none
 	display: inline-block
 	position: relative
-	padding-right: 20px
-	&:before
-		content: ""
-		width: 10px
-		height: 10px
-		background: #168de2
-		position: absolute
-		right: 0
-		top: 50%
-		margin-top: -5px
+
 	&:hover
 		text-decoration: underline
-		
 
 .b-site-promo__refil-account
 	margin-top: 25px
@@ -797,6 +787,15 @@
 		margin-left: 9px
 		display: inline-block !important
 		+sprite(icon-small-link-out-blue)
+
+.has-icon__new-window
+	&:after
+		content: ""
+		width: 9px
+		height: 9px
+		margin-left: 9px
+		display: inline-block !important
+		+sprite(icon-small-link-out-blue)
 		
 .b-content-bottom__inner-text
 	max-width: 955px
@@ -954,11 +953,13 @@
 	+sprite(rss)
 	display: inline-block
 	vertical-align: middle
+	margin-right: 8px
 
 .icon--newspaper
 	+sprite(icon-newspaper)
 	display: inline-block
 	vertical-align: middle
+	margin-right: 8px
 
 .b-data
 	font-size: 14px
