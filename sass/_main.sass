@@ -812,7 +812,7 @@ strong
 		border-color: #fe7d1b
 
 .b-competition
-	+retina-bg("female_money.jpg", "female_money@2x.jpg")
+	+retina-bg("ballet-dancer.jpg", "ballet-dancer@2x.jpg")
 	background-repeat: no-repeat
 	background-position: center center
 	background-attachment: fixed
@@ -1153,6 +1153,7 @@ strong
 	margin-bottom: 10px
 	overflow: hidden
 	height: 160px
+	object-fit: cover
 
 	&:after
 		+sprite(video--logo)
@@ -1163,9 +1164,7 @@ strong
 
 .b-videos--listing--item--video--image
 	display: block
-	min-width: 100%
-	min-height: 100%
-	object-fit: cover
+	height: 100%
 
 .b-videos--listing--item--video--play--icon
 	display: block
