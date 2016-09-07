@@ -136,7 +136,7 @@ input:focus, textarea:focus, a:focus, button:focus {
   margin-bottom: 10px;
 }
 
-.margin-bottom20 {
+.margin-bottom20, .mb20 {
   margin-bottom: 20px;
 }
 
@@ -5481,7 +5481,8 @@ td.b-traiders--dividents {
   -o-transform: translateY(-50%);
 }
 
-.content__label-login {
+.content__label {
+  display: inline-block;
   position: absolute;
   left: 0px;
   top: 50%;
@@ -5490,12 +5491,28 @@ td.b-traiders--dividents {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  max-width: 201px;
+}
+
+.office-open-p {
+  max-width: 500px;
+}
+
+.p-oo-inp {
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .content__login-form-b {
   position: relative;
   margin-bottom: 30px;
   padding-left: 65px;
+}
+
+.p-oo-content__login-form-b {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 130px;
 }
 
 .content__links-item {
@@ -5532,6 +5549,21 @@ td.b-traiders--dividents {
 
 .content__support-text-note a {
   text-decoration: none;
+}
+
+.content__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  color: #4d4d4d;
+}
+
+.b-content__text p {
+  margin-bottom: 20px;
+}
+.b-content__text p:last-child {
+  margin-bottom: 0;
 }
 
 .blue-link-year {
