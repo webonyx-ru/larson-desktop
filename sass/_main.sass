@@ -426,7 +426,6 @@ strong
 	h1
 		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
 		color: #fff
-		font-family: "Open Sans"
 		font-size: 30px
 		font-weight: 500
 		letter-spacing: 1.5px
@@ -439,7 +438,6 @@ strong
 
 .parallax--slider--content--text
 	color: #fff
-	font-family: "Open Sans"
 	font-size: 18px
 	font-weight: 300
 	line-height: 28px
@@ -2878,29 +2876,22 @@ td.b-traiders--dividents
 	+transform(translateY(-50%))
 
 .content__label
-	display: inline-block
-	position: absolute
-	left: 0px
-	top: 50%
-	+transform(translateY(-50%))
+	float: left
 	max-width: 201px
 
 .office-open-p
-	max-width: 500px
+	max-width: 550px
 
-.p-oo-inp
+.content-inp-wrapper
+	width: 335px
 	margin-left: 10px
-	display: inline-block
+	float: right
+	position: relative
+
 
 .content__login-form-b
-	position: relative
+	padding-top: 5px
 	margin-bottom: 30px
-	padding-left: 65px
-
-.p-oo-content__login-form-b
-	position: relative
-	margin-bottom: 30px
-	padding-left: 130px
 
 .content__links-item
 	display: inline-block
@@ -2912,7 +2903,6 @@ td.b-traiders--dividents
 		content: ''
 
 .content__support__links
-	padding-left: 65px
 	font-size: 14px
 	line-height: 1.5em
 	color: #168de2
@@ -2921,14 +2911,6 @@ td.b-traiders--dividents
 .content-link
 	text-decoration: none
 
-.content__sign-up-btn
-	width: 147px
-	height: 40px
-	border-radius: 7px
-	background-color: #2192fd
-	border: solid 1px #168de2
-	color: #ffffff
-	
 .content__support-text-note a
 	text-decoration: none
 
@@ -2939,8 +2921,57 @@ td.b-traiders--dividents
 	letter-spacing: 1px
 	color: #4d4d4d
 
-.b-content__text p
-	margin-bottom: 20px
-	&:last-child
-		margin-bottom: 0
+.content-inp
+	+phc(#808080)
 
+.content__dropdown-list
+	display: none
+	float: right
+	padding-right: 10px
+	padding-top: 10px
+	+trans()
+	&.active
+		display: block
+	+trans()
+
+.dd-arrows:before
+	content: ""
+	top: 15px
+	right: 15px
+	display: block
+	+arr(8, 6, #000000, t)
+	position: absolute
+	+transform(translateY(-50%))
+
+.dd-arrows:after
+	content: ""
+	top: 25px
+	right: 15px
+	display: block
+	+arr(8, 6, #000000, b)
+	position: absolute
+	+transform(translateY(-50%))
+
+
+.spokesman-content__video-wrapper
+	width: 100%
+	margin-bottom: 70px
+
+.spokesman-content__video
+	background-image: url(http://placehold.it/653x396)
+	width: 653px
+	height: 396px
+	margin: 0 auto
+	clear: right
+
+.app-store, .g-play
+	position: absolute
+	top: 50%
+	left: 5px
+	+transform(translateY(-50%))
+
+.app-store
+	+sprite(icon-apple-button, abs_middle)
+
+.g-play
+	+sprite(icon-google-play, abs_middle)

@@ -319,3 +319,13 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+if($('input.data-inputmask, .inputmask').length > 0) {
+	$('input.data-inputmask, .inputmask').mask("+7 (999) 999-99-99");
+}
+
+$(document).on("click", '.dd', function(e) {
+	$('.p-oo-content__dropdown-list').toggleClass('active');
+	e.preventDefault();
+});
+

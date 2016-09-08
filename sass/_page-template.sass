@@ -815,8 +815,8 @@
 	color: #4d4d4d
 	font-weight: 600	    
 	
-
-
+.tcblue
+	color: #168de2
 
 //honors page
 .quote-sub-text
@@ -913,8 +913,6 @@
 		transform: rotate(0deg)
 		+trans
 
-.b-news-arrows
-
 .b-news-arrow
 	width: 250px
 	line-height: 1.57
@@ -1000,3 +998,73 @@
 	+sprite(flag-small-thailand)
 .flag-small-usa
 	+sprite(flag-small-usa)
+
+.content__text
+	font-size: 14px
+	line-height: 1.57
+
+.content__text-b p
+	margin-bottom: 36px
+	&:last-child
+		margin-bottom: 0
+
+.content__title
+	font-size: 22px
+	line-height: 1.82
+	color: #1a1a1a
+
+.btn
+	padding: 12px 15px
+	width: 172px
+	border-radius: 7px
+	background-color: #ff7100
+	font-size: 14px
+	font-weight: 600
+	line-height: 1.57
+	color: #fff
+	cursor: pointer
+	text-decoration: none
+	&.orange-btn
+		background-color: #ff7100
+	&.blue-btn
+		background-color: #2d90fc
+
+.content-table
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 3.71
+	color: #1a1a1a
+	width: 100%
+
+.content-t-row:first-child
+	.content-t-cell
+		background-color: #003e6b
+		font-size: 18px
+		font-weight: 600
+		font-style: normal
+		font-stretch: normal
+		line-height: 1.56
+		color: #ffffff
+		&:first-child
+			border-radius: 10px 0 0 0
+		&:last-child
+			border-radius: 0 10px 0 0
+
+.content-t-row:last-child
+	.content-t-cell
+		background-color: #a1cdfd
+		&:first-child
+			border-radius: 0 0 0 10px
+		&:last-child
+			border-radius: 0 0 10px 0
+
+.content-t-row:nth-of-type(2n)
+	background-color: #f4f4f4
+
+.content-t-row:nth-of-type(2n+1)
+	background-color: #fff
+
+.content-t-cell
+	padding: 10px
