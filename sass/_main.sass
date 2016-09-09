@@ -1,2243 +1,2237 @@
 body, input, textarea, button
-	font-family: open sans, sans-serif, roboto, arial
-	font-weight: 600
-	font-size: 14px
-	border: none
+  font-family: open sans, sans-serif, roboto, arial
+  font-weight: 600
+  font-size: 14px
+  border: none
 
 p
-	max-height: 10000px
+  max-height: 10000px
 
 strong
-	font-weight: 600
+  font-weight: 600
 
 .container
-	margin: 0 auto
-	max-width: 1366px
-	padding: 0 20px
-	box-sizing: border-box
+  margin: 0 auto
+  max-width: 1366px
+  padding: 0 20px
+  box-sizing: border-box
 
 .main--site--wrapper
-	max-width: 100%
-	min-width: 1000px
-	overflow: hidden
+  max-width: 100%
+  min-width: 1000px
+  overflow: hidden
 
 .container--inside
-	@extend .container
-	max-width: 1180px
+  @extend .container
+  max-width: 1180px
 
 .b-header
-	padding: 36px 0
+  padding: 36px 0
 
 .b-header--cabinet--wrapper
-	&:hover
-		.b-cabinet--control
-			display: block
+  &:hover
+    .b-cabinet--control
+      display: block
 
 .b-logo
-	display: block
-	+retina-bg("logo.png", "logo2x.png")
-	width: 249px
-	height: 43px
-	margin-right: 35px
+  display: block
+  +retina-bg("logo.png", "logo2x.png")
+  width: 249px
+  height: 43px
+  margin-right: 35px
 
 .empty--button
-	text-decoration: none
-	color: #1683fb
-	display: inline-block
-	vertical-align: middle
-	line-height: 38px
-	padding: 0 20px
-	border: 1px solid #c8c8c8
-	border-radius: 7px
-	cursor: pointer
-	font-weight: 400
-	+trans
+  text-decoration: none
+  color: #1683fb
+  display: inline-block
+  vertical-align: middle
+  line-height: 38px
+  padding: 0 20px
+  border: 1px solid #c8c8c8
+  border-radius: 7px
+  cursor: pointer
+  font-weight: 400
+  +trans
 
-	&.white
-		color: #fff
-		font-weight: 400
+  &.white
+    color: #fff
+    font-weight: 400
 
-	&:hover
-		background-color: #2086e5
-		color: #fff
-		border-color: #2086e5
+  &:hover
+    background-color: #2086e5
+    color: #fff
+    border-color: #2086e5
 
-	&:active
-		background-color: white
-		border: 1px solid grey
-		color: grey
+  &:active
+    background-color: white
+    border: 1px solid grey
+    color: grey
 
 .b-header-buttons--wrapper
-	margin-right: 25px
+  margin-right: 25px
 
 .b-header--the--phone--link
-	color: #575757
-	font-family: Roboto
-	font-size: 18px
-	font-weight: 400
-	text-decoration: none
+  color: #575757
+  font-family: Roboto
+  font-size: 18px
+  font-weight: 400
+  text-decoration: none
 
 .blue_color
-	color: #1683fb
+  color: #1683fb
 
 .link--feedback, .link--online_chat
-	text-decoration: none
-	font-weight: 500
-	position: relative
+  text-decoration: none
+  font-weight: 500
+  position: relative
 
 .link--online_chat
-	&:after
-		display: block
-		position: absolute
-		top: -3px
-		right: -8px
-		width: 6px
-		height: 6px
-		background: gray
-		border-radius: 100%
-		content: ''
+  &:after
+    display: block
+    position: absolute
+    top: -3px
+    right: -8px
+    width: 6px
+    height: 6px
+    background: gray
+    border-radius: 100%
+    content: ''
 
-	&.active
-		&:after
-			background-color: #33ca19
+  &.active
+    &:after
+      background-color: #33ca19
 
 .icon--online_chat
-	+sprite(conversation)
-	display: inline-block
-	vertical-align: baseline
-	margin-right: 5px
+  +sprite(conversation)
+  display: inline-block
+  vertical-align: baseline
+  margin-right: 5px
 
 .icon--feedback
-	+sprite(open-email)
-	display: inline-block
-	vertical-align: baseline
-	position: relative
-	margin-right: 5px
+  +sprite(open-email)
+  display: inline-block
+  vertical-align: baseline
+  position: relative
+  margin-right: 5px
 
 .b-dropdown--wrapper
-	font-weight: 400
+  font-weight: 400
 
-	&:hover
-		.b-dropdown
-			display: block
+  &:hover
+    .b-dropdown
+      display: block
 
 .dropdown--current
-	padding: 0 10px
-	line-height: 32px
-	background-color: #f7f7f7
-	border-radius: 7px
-	position: relative
-	cursor: pointer
+  padding: 0 10px
+  line-height: 32px
+  background-color: #f7f7f7
+  border-radius: 7px
+  position: relative
+  cursor: pointer
 
-	&.nobg
-		background-color: transparent
+  &.nobg
+    background-color: transparent
 
-	.icon--lang
-		width: 16px
-		height: 16px
+  .icon--lang
+    width: 16px
+    height: 16px
 
-		// &.icon
+  // &.icon
 
 
-	&.active
-		.icon--select--trigger
-			+transform(rotate(180deg))
+  &.active
+    .icon--select--trigger
+      +transform(rotate(180deg))
 
-@each $forex in spread,nondeposit,persentage,multicurrency,mobileforex,sholder,competitions,autopayments,market,fivenumbers,bonuses,muslim,partnership,social,copydeal,enter
-	.icon-forexfamily__#{$forex}
-		position: relative
-		&:after
-			content: ''
-			+sprite(icon-forexfamily__#{$forex}, $pos: "abs_middle")
-			right: 0
-			margin-left: 0
-			left: auto
+@each $forex in spread, nondeposit, persentage, multicurrency, mobileforex, sholder, competitions, autopayments, market, fivenumbers, bonuses, muslim, partnership, social, copydeal, enter
+  .icon-forexfamily__#{$forex}
+    position: relative
+    &:after
+      content: ''
+      +sprite(icon-forexfamily__#{$forex}, $pos: "abs_middle")
+      right: 0
+      margin-left: 0
+      left: auto
 
 .b-forexfamily__hidden--title
-	font-size: 24px
-	color: #4d4d4d
-	line-height: normal
-	margin-bottom: 20px
+  font-size: 24px
+  color: #4d4d4d
+  line-height: normal
+  margin-bottom: 20px
 
 .icon-person_triangle
-	+sprite(icon-person_triangle)
-	display: inline-block
-	vertical-align: middle
-	margin-left: 10px
+  +sprite(icon-person_triangle)
+  display: inline-block
+  vertical-align: middle
+  margin-left: 10px
 
 .b-forexfamily__hidden-listing
-	display: inline-block
-	vertical-align: top
+  display: inline-block
+  vertical-align: top
 
-	&:first-child
-		margin-right: 60px
+  &:first-child
+    margin-right: 60px
 
 .icon-forexfamily
-	width: 50px
-	margin-right: 10px
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	top: -2px
+  width: 50px
+  margin-right: 10px
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -2px
 
 .b-forexfamily__hidden-inner
-	background: #fff
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
-	border-radius: 5px
-	padding: 20px
-	line-height: normal
-	white-space: nowrap
+  background: #fff
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+  border-radius: 5px
+  padding: 20px
+  line-height: normal
+  white-space: nowrap
 
-	&:after
-		display: block
-		content: ''
-		position: absolute
-		top: -10px
-		right: 50px
-		border: 8px solid transparent
-		border-bottom: 11px solid #fff
+  &:after
+    display: block
+    content: ''
+    position: absolute
+    top: -10px
+    right: 50px
+    border: 8px solid transparent
+    border-bottom: 11px solid #fff
 
 .b-forexfamily__hidden-menu
-	position: absolute
-	top: 100%
-	right: 0
-	padding-top: 7px
+  position: absolute
+  top: 100%
+  right: 0
+  padding-top: 7px
 
 .b-forexfamily__hidden-link
-	text-decoration: none
-	color: #1683fb
-	line-height: 50px
-	font-size: 20px
-	font-weight: normal
+  text-decoration: none
+  color: #1683fb
+  line-height: 50px
+  font-size: 20px
+  font-weight: normal
 
-	&:hover
-		color: #fd7f23
+  &:hover
+    color: #fd7f23
 
 .icon--cabinet
-	+sprite(edit-profile)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	top: -1px
-	margin-right: 5px
+  +sprite(edit-profile)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -1px
+  margin-right: 5px
 
 .icon--select--trigger
-	+sprite(arrow_top_small)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	top: -1px
-	+trans
-	margin-left: 8px
+  +sprite(arrow_top_small)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -1px
+  +trans
+  margin-left: 8px
 
 .icon-worldwide
-	+sprite(icon-worldwide)
-	display: inline-block
-	vertical-align: middle
-	margin-left: 5px
-	position: relative
-	top: -2px
+  +sprite(icon-worldwide)
+  display: inline-block
+  vertical-align: middle
+  margin-left: 5px
+  position: relative
+  top: -2px
 
 .b-dropdown__lang-title
-	font-size: 24px
-	line-height: normal
-	color: #4d4d4d
-	font-weight: 600
-	margin-bottom: 20px
+  font-size: 24px
+  line-height: normal
+  color: #4d4d4d
+  font-weight: 600
+  margin-bottom: 20px
 
 .b-dropdown
-	position: absolute
-	top: 0
-	right: 0
-	min-width: 100%
-	z-index: 5
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
-	background: #fff
-	padding: 5px 0
-	border-radius: 3px
+  position: absolute
+  top: 0
+  right: 0
+  min-width: 100%
+  z-index: 5
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+  background: #fff
+  padding: 5px 0
+  border-radius: 3px
 
-	&.lang-bar
-		border-radius: 7px
-		// width: 580px
-		box-sizing: border-box
-		padding: 20px 35px
+  &.lang-bar
+    border-radius: 7px
+    // width: 580px
+    box-sizing: border-box
+    padding: 20px 35px
 
-		&:after
-			display: block
-			content: ''
-			+sprite(arrow_top_small)
-			position: absolute
-			top: 15px
-			right: 20px
-			+transform(rotate(180deg))
+    &:after
+      display: block
+      content: ''
+      +sprite(arrow_top_small)
+      position: absolute
+      top: 15px
+      right: 20px
+      +transform(rotate(180deg))
 
-	&.right--side--dd
-		left: auto
-		right: 0
+  &.right--side--dd
+    left: auto
+    right: 0
 
 .b-dropdown--units
-	&.lang-bar__units
-		margin-right: 40px
+  &.lang-bar__units
+    margin-right: 40px
 
-		&:last-child
-			margin-right: 0
-		.b-dropdown--item
-			font-size: 20px
-			text-transform: uppercase
-			padding: 10px 0
-
+    &:last-child
+      margin-right: 0
+    .b-dropdown--item
+      font-size: 20px
+      text-transform: uppercase
+      padding: 10px 0
 
 .b-dropdown--wrapper
-	position: relative
+  position: relative
 
 .b-dropdown--item
-	white-space: nowrap
+  white-space: nowrap
 
-	&.selector--header
-		color: #030b6d
-		font-size: 14px
-		font-weight: 400
-		line-height: 22px
-		padding: 0 10px 0 10px
-		position: relative
-		cursor: pointer
-		margin-bottom: 10px
+  &.selector--header
+    color: #030b6d
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+    padding: 0 10px 0 10px
+    position: relative
+    cursor: pointer
+    margin-bottom: 10px
 
-		&.lang--item
-			padding-left: 10px
-			padding-right: 10px
+    &.lang--item
+      padding-left: 10px
+      padding-right: 10px
 
-		&:after
-			vertical-align: middle
-			content: ''
-			+sprite(arrow_top_small)
-			display: inline-block
-			position: relative
-			top: -1px
-			margin-left: 8px
-			+transform(rotate(180deg))
+    &:after
+      vertical-align: middle
+      content: ''
+      +sprite(arrow_top_small)
+      display: inline-block
+      position: relative
+      top: -1px
+      margin-left: 8px
+      +transform(rotate(180deg))
 
 .b-dropdown--link
-	display: block
-	padding: 0 15px
-	font-weight: 300
-	line-height: 30px
-	text-decoration: none
-	color: #4d4d4d
+  display: block
+  padding: 0 15px
+  font-weight: 300
+  line-height: 30px
+  text-decoration: none
+  color: #4d4d4d
 
-	&.lang--item
-		color: #168de2
-		font-weight: normal
-		line-height: 1.4
-		padding: 0
+  &.lang--item
+    color: #168de2
+    font-weight: normal
+    line-height: 1.4
+    padding: 0
 
-		&:hover
-			color: #fe7d1b
+    &:hover
+      color: #fe7d1b
 
-			.icon--lang
-				box-shadow: 0 0 6px #fe7d1b
+      .icon--lang
+        box-shadow: 0 0 6px #fe7d1b
 
-	&:hover
-		color: grey
+  &:hover
+    color: grey
 
 .b-main--page--parallax
-	+retina-bg("parallax--top.jpg", "parallax--top@2x.jpg")
-	background-position: center 15%
-	background-repeat: no-repeat
-	background-size: 100% auto
-	background-attachment: fixed
+  +retina-bg("parallax--top.jpg", "parallax--top@2x.jpg")
+  background-position: center 15%
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-attachment: fixed
 
-	&.type2
-		+retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
-		background-position: center 0
+  &.type2
+    +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
+    background-position: center 0
 
 .b-nav--menu
-	background: rgba(0,0,0,0.7)
+  background: rgba(0, 0, 0, 0.7)
 
 .b-nav--menu_item
-	display: inline-block
-	vertical-align: middle
-	margin-right: 20px
-	position: relative
+  display: inline-block
+  vertical-align: middle
+  margin-right: 20px
+  position: relative
 
-	&:hover
-		&:after
-			position: absolute
-			bottom: 0
-			left: 0
-			width: 100%
-			height: 4px
-			background-color: #2192fd
-			display: block
-			content: ''
+  &:hover
+    &:after
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 4px
+      background-color: #2192fd
+      display: block
+      content: ''
 
-		.b-nav--menu--dropdown
-			display: block
+    .b-nav--menu--dropdown
+      display: block
 
 .b-nav--menu--dropdown
-	position: absolute
-	top: 100%
-	left: 0
-	min-width: 100%
-	background: #2192fd
-	padding: 10px 0
-	z-index: 10
-	white-space: nowrap
+  position: absolute
+  top: 100%
+  left: 0
+  min-width: 100%
+  background: #2192fd
+  padding: 10px 0
+  z-index: 10
+  white-space: nowrap
 
 .b-nav--menu--dropdown--item
-	position: relative
+  position: relative
 
-	&:hover
-		.b-nav--menu--dropdown--3rd--listing
-			display: block
+  &:hover
+    .b-nav--menu--dropdown--3rd--listing
+      display: block
 
-		.b-nav--menu--dropdown--item--link
-			background: rgba(0,0,0,0.1)
+    .b-nav--menu--dropdown--item--link
+      background: rgba(0, 0, 0, 0.1)
 
 .b-nav--menu--dropdown--item--link
-	display: block
-	line-height: 37px
-	padding: 0 10px 0 28px
-	text-decoration: none
-	color: #fff
-	position: relative
-	font-weight: 500
-	+trans
+  display: block
+  line-height: 37px
+  padding: 0 10px 0 28px
+  text-decoration: none
+  color: #fff
+  position: relative
+  font-weight: 500
+  +trans
 
-	&:before
-		display: block
-		content: ''
-		position: absolute
-		top: 50%
-		left: 12px
-		+sprite(arrow_small)
-		+transform(translateY(-50%) rotate(-90deg))
+  &:before
+    display: block
+    content: ''
+    position: absolute
+    top: 50%
+    left: 12px
+    +sprite(arrow_small)
+    +transform(translateY(-50%) rotate(-90deg))
 
 .b-nav--menu_link
-	color: #fff
-	text-decoration: none
-	line-height: 60px
-	font-weight: 300
-	font-size: 15px
-	padding: 0 5px
-	display: block
+  color: #fff
+  text-decoration: none
+  line-height: 60px
+  font-weight: 300
+  font-size: 15px
+  padding: 0 5px
+  display: block
 
 .b-main--page--parallax--content
-	h1
-		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
-		color: #fff
-		font-size: 30px
-		font-weight: 500
-		letter-spacing: 1.5px
-		line-height: 45px
-		margin-bottom: 45px
+  h1
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+    color: #fff
+    font-size: 30px
+    font-weight: 500
+    letter-spacing: 1.5px
+    line-height: 45px
+    margin-bottom: 45px
 
 .parallax--inside--container
-	padding: 50px 55px 120px
-	position: relative
+  padding: 50px 55px 120px
+  position: relative
 
 .parallax--slider--content--text
-	color: #fff
-	font-size: 18px
-	font-weight: 300
-	line-height: 28px
-	margin-bottom: 85px
+  color: #fff
+  font-size: 18px
+  font-weight: 300
+  line-height: 28px
+  margin-bottom: 85px
 
 .parallax--slider--content--text--link
-	border-bottom: 1px solid #fff
-	color: #fff
-	text-decoration: none
-	+trans
+  border-bottom: 1px solid #fff
+  color: #fff
+  text-decoration: none
+  +trans
 
-	&:hover
-		border-bottom: 1px solid transparent
+  &:hover
+    border-bottom: 1px solid transparent
 
 .orange_btn
-	@extend .empty--button
-	background-color: #fd7f23
-	border-color: #fd7f23
-	color: #fff
-	border: none
-	line-height: 40px
-	font-weight: 400
+  @extend .empty--button
+  background-color: #fd7f23
+  border-color: #fd7f23
+  color: #fff
+  border: none
+  line-height: 40px
+  font-weight: 400
 
-	&:hover
-		background-color: #ec6600
-		color: #fff
+  &:hover
+    background-color: #ec6600
+    color: #fff
 
-	&:active
-		background-color: #ec5c00
-		border-radius: 7px
-		box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.17)
-		color: #fff
-		border: none
+  &:active
+    background-color: #ec5c00
+    border-radius: 7px
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.17)
+    color: #fff
+    border: none
 
 .watch--video--link
-	color: #fff
-	font-size: 14px
-	font-weight: 300
-	letter-spacing: 0.3px
-	line-height: 22px
-	margin-left: 20px
-	text-decoration: none
+  color: #fff
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: 0.3px
+  line-height: 22px
+  margin-left: 20px
+  text-decoration: none
 
-	&:hover
-		.icon--watch--video
-			&:after
-				+transform(scale(1.1))
+  &:hover
+    .icon--watch--video
+      &:after
+        +transform(scale(1.1))
 
 .icon--watch--video
-	background: rgba(0,0,0,0.5)
-	box-shadow: 0 0 0 2px rgba(255,255,255,0.5)
-	border-radius: 100%
-	display: inline-block
-	vertical-align: middle
-	width: 42px
-	height: 42px
-	margin-right: 5px
-	+trans
-	position: relative
+  background: rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5)
+  border-radius: 100%
+  display: inline-block
+  vertical-align: middle
+  width: 42px
+  height: 42px
+  margin-right: 5px
+  +trans
+  position: relative
 
-	&:after
-		content: ''
-		+sprite(play--small)
-		left: 50%
-		top: 50%
-		position: absolute
-		margin: -9px
-		margin-left: -5px
-		+trans
+  &:after
+    content: ''
+    +sprite(play--small)
+    left: 50%
+    top: 50%
+    position: absolute
+    margin: -9px
+    margin-left: -5px
+    +trans
+
 .b-parallax--we--work--since
-	position: absolute
-	bottom: 65px
-	right: 20px
-	+sprite(buble)
-	vertical-align: middle
-	line-height: 123px
-	font-size: 18px
+  position: absolute
+  bottom: 65px
+  right: 20px
+  +sprite(buble)
+  vertical-align: middle
+  line-height: 123px
+  font-size: 18px
 
 .b-parallax--we--work--since__text
-	line-height: 1
-	font-weight: 300
-	font-style: italic
+  line-height: 1
+  font-weight: 300
+  font-style: italic
 
-	strong
-		font-style: normal
-		font-size: 20px
-		font-weight: 600
-
+  strong
+    font-style: normal
+    font-size: 20px
+    font-weight: 600
 
 .b-nav--forexfamily--wrapper
-	line-height: 60px
-	position: relative
+  line-height: 60px
+  position: relative
 
-	&:hover
-		z-index: 5
+  &:hover
+    z-index: 5
 
-		.b-forexfamily__hidden-menu
-			display: block
+    .b-forexfamily__hidden-menu
+      display: block
 
 .blue_btn
-	@extend .empty--button
-	background-color: #2d90fc
-	border-color: #2d90fc
-	color: #fff
-	font-weight: 400
+  @extend .empty--button
+  background-color: #2d90fc
+  border-color: #2d90fc
+  color: #fff
+  font-weight: 400
 
-	&:hover
-		background-color: #2086e5
+  &:hover
+    background-color: #2086e5
 
-	&:active
-		background-color: #1e79cf
-		border-radius: 7px
-		box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.17)
-		color: #fff
-		border-color: #1e79cf
+  &:active
+    background-color: #1e79cf
+    border-radius: 7px
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.17)
+    color: #fff
+    border-color: #1e79cf
 
 .icon--soc1
-	+sprite(white-yt)
-	display: inline-block
-	vertical-align: middle
+  +sprite(white-yt)
+  display: inline-block
+  vertical-align: middle
 
 .icon--soc2
-	+sprite(white-vk)
-	display: inline-block
-	vertical-align: middle
+  +sprite(white-vk)
+  display: inline-block
+  vertical-align: middle
 
 .icon--soc3
-	+sprite(white-tw)
-	display: inline-block
-	vertical-align: middle
+  +sprite(white-tw)
+  display: inline-block
+  vertical-align: middle
 
 .icon--soc4
-	+sprite(white-fb)
-	display: inline-block
-	vertical-align: middle
+  +sprite(white-fb)
+  display: inline-block
+  vertical-align: middle
 
 .icon--soc5
-	+sprite(white-rss)
-	display: inline-block
-	vertical-align: middle
+  +sprite(white-rss)
+  display: inline-block
+  vertical-align: middle
 
 .b-nav--social_item
-	display: inline-block
-	vertical-align: middle
-	margin-right: 5px
+  display: inline-block
+  vertical-align: middle
+  margin-right: 5px
 
 .b-nav--social_link
-	line-height: 60px
-	display: block
-	+trans
+  line-height: 60px
+  display: block
+  +trans
 
-	&:hover
-		opacity: 0.7
+  &:hover
+    opacity: 0.7
 
 .b-nav--socialmedia--units
-	margin-right: 20px
+  margin-right: 20px
 
 .b-block--title
-	font-size: 30px
-	text-align: center
-	letter-spacing: 1px
-	margin-bottom: 25px
-	line-height: normal
-	color: #4d4d4d
-	font-weight: 600
+  font-size: 30px
+  text-align: center
+  letter-spacing: 1px
+  margin-bottom: 25px
+  line-height: normal
+  color: #4d4d4d
+  font-weight: 600
 
-	&.white
-		color: #fff
+  &.white
+    color: #fff
 
-	&.no-margin
-		margin: 0
+  &.no-margin
+    margin: 0
 
 .b-our--decisions
-	padding: 40px 0
-	text-align: center
+  padding: 40px 0
+  text-align: center
 
 .b-our--decisions--tab--links--wrapper
-	display: inline-block
+  display: inline-block
 
 .b-our--decisions--tab--links--item
-	color: #1683fb
-	font-size: 14px
-	border: 2px solid #1683fb
-	border-right: none
-	float: left
-	line-height: 36px
-	font-weight: 400
-	padding: 0 22px
-	cursor: pointer
-	+trans
+  color: #1683fb
+  font-size: 14px
+  border: 2px solid #1683fb
+  border-right: none
+  float: left
+  line-height: 36px
+  font-weight: 400
+  padding: 0 22px
+  cursor: pointer
+  +trans
 
-	&:last-child
-		border-right: 2px solid #1683fb
-		border-radius: 0 5px 5px 0
+  &:last-child
+    border-right: 2px solid #1683fb
+    border-radius: 0 5px 5px 0
 
-	&:first-child
-		border-radius: 5px 0 0 5px
+  &:first-child
+    border-radius: 5px 0 0 5px
 
-	&.active, &:hover
-		background: #1683fb
-		color: #fff
+  &.active, &:hover
+    background: #1683fb
+    color: #fff
 
 .b-our--decisions--tab--blocks--wrapper
-	position: relative
-	+trans
+  position: relative
+  +trans
 
 .b-our--decisions--tab--block
-	+trans
-	display: block
-	+transform(translateY(30px))
-	opacity: 0
-	position: absolute
-	top: 0
-	left: 0
-	width: 100%
-	z-index: -100
+  +trans
+  display: block
+  +transform(translateY(30px))
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  z-index: -100
 
-
-	&.active
-		+transform(translateY(0))
-		opacity: 1
-		z-index: 1
+  &.active
+    +transform(translateY(0))
+    opacity: 1
+    z-index: 1
 
 .b-our--decisions--tab--title
-	color: #1a1a1a
-	font-family: "Open Sans"
-	font-size: 18px
-	font-weight: 400
-	line-height: 28px
-	margin-bottom: 30px
+  color: #1a1a1a
+  font-family: "Open Sans"
+  font-size: 18px
+  font-weight: 400
+  line-height: 28px
+  margin-bottom: 30px
 
 .b-our--decisions--tab--links--wrapper
-	margin-bottom: 20px
+  margin-bottom: 20px
 
 .b-our--decisions--tab--video--wrapper
-	max-width: 1140px
-	margin: 0 auto
-	padding: 40px 35px
-	box-sizing: border-box
-	+retina-bg("bg_blur_1.jpg", "bg_blur_1@2x.jpg")
-	margin-bottom: 45px
-	-webkit-background-size: cover
-	background-size: cover
-	background-position: center center
+  max-width: 1140px
+  margin: 0 auto
+  padding: 40px 35px
+  box-sizing: border-box
+  +retina-bg("bg_blur_1.jpg", "bg_blur_1@2x.jpg")
+  margin-bottom: 45px
+  -webkit-background-size: cover
+  background-size: cover
+  background-position: center center
 
-	&.bg2
-		+retina-bg("bg_blur_2.jpg", "bg_blur_2@2x.jpg")
+  &.bg2
+    +retina-bg("bg_blur_2.jpg", "bg_blur_2@2x.jpg")
 
-	&.bg3
-		+retina-bg("bg_blur_3.jpg", "bg_blur_3@2x.jpg")
+  &.bg3
+    +retina-bg("bg_blur_3.jpg", "bg_blur_3@2x.jpg")
 
-	&.bg4
-		+retina-bg("bg_blur_4.jpg", "bg_blur_4@2x.jpg")
+  &.bg4
+    +retina-bg("bg_blur_4.jpg", "bg_blur_4@2x.jpg")
 
-	&.bg5
-		+retina-bg("bg_blur_5.jpg", "bg_blur_5@2x.jpg")
+  &.bg5
+    +retina-bg("bg_blur_5.jpg", "bg_blur_5@2x.jpg")
 
 .b-our--decisions--tab--video--content
-	overflow: hidden
+  overflow: hidden
 
 .b-our--decisions--tab--video--title
-	color: #fff
-	font-family: "Open Sans"
-	font-size: 30px
-	font-weight: 500
-	letter-spacing: 1px
-	line-height: 40px
-	margin-bottom: 50px
+  color: #fff
+  font-family: "Open Sans"
+  font-size: 30px
+  font-weight: 500
+  letter-spacing: 1px
+  line-height: 40px
+  margin-bottom: 50px
 
 .b-our--decisions--tab--watch--video--wrapper
-	.empty--button
-		margin-right: 30px
+  .empty--button
+    margin-right: 30px
 
-		&:last-child
-			margin-right: 0
+    &:last-child
+      margin-right: 0
 
 .b-our--decisions--tab--video
-	width: 380px
-	height: 215px
-	margin-right: 40px
-	position: relative
+  width: 380px
+  height: 215px
+  margin-right: 40px
+  position: relative
 
-	&:after
-		display: block
-		content: ''
-		position: absolute
-		width: 68px
-		height: 68px
-		border: 2px solid rgba(255,255,255,0.7)
-		background: rgba(0,0,0,0.7)
-		border-radius: 100%
-		top: 50%
-		left: 50%
-		+transform(translate3d(-50%, -50%, 0))
+  &:after
+    display: block
+    content: ''
+    position: absolute
+    width: 68px
+    height: 68px
+    border: 2px solid rgba(255, 255, 255, 0.7)
+    background: rgba(0, 0, 0, 0.7)
+    border-radius: 100%
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0))
 
-	&:before
-		display: block
-		content: ''
-		position: absolute
-		+sprite(play_big)
-		z-index: 1
-		left: 50%
-		top: 50%
-		margin-left: -8px
-		margin-top: -15px
-		+trans
+  &:before
+    display: block
+    content: ''
+    position: absolute
+    +sprite(play_big)
+    z-index: 1
+    left: 50%
+    top: 50%
+    margin-left: -8px
+    margin-top: -15px
+    +trans
 
-	&:hover
-		&:before
-			+transform(scale(1.1))
+  &:hover
+    &:before
+      +transform(scale(1.1))
 
 .b-our--decisions--tab--listing--title
-	color: #1a1a1a
-	font-size: 22px
-	font-weight: 400
-	line-height: 28px
-	margin-bottom: 10px
+  color: #1a1a1a
+  font-size: 22px
+  font-weight: 400
+  line-height: 28px
+  margin-bottom: 10px
 
 .b-our--decisions--tab--additional--info
-	text-align: left
-	width: 950px
-	margin: 0 auto 45px
+  text-align: left
+  width: 950px
+  margin: 0 auto 45px
 
 .b-our--decisions--tab--listing--item
-	position: relative
+  position: relative
 
 .b-our--decisiton--listing--number
-	position: absolute
-	top: 0
-	left: -20px
+  position: absolute
+  top: 0
+  left: -20px
 
 .b-our--decisions--tab--listing, .b-our--decisions--tab--additional--left, .b-our--decisions--tab--additional--right
-	opacity: 0.9
-	color: #4d4d4d
-	font-size: 14px
-	font-weight: 400
-	line-height: 24px
-	padding-left: 25px
+  opacity: 0.9
+  color: #4d4d4d
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  padding-left: 25px
 
 .b-our--decisions--tab--additional--left, .b-our--decisions--tab--additional--right
-	width: 50%
-	box-sizing: border-box
+  width: 50%
+  box-sizing: border-box
 
 .b-our--decisions--tab--additional--left
-	padding-right: 20px
+  padding-right: 20px
 
 .b-our--decisions--tab--additional--right
-	padding-left: 20px
+  padding-left: 20px
 
 .b-our--decisions--tab--button1
-	margin-bottom: 20px
+  margin-bottom: 20px
 
 .blue_link
-	@extend .blue_color
-	text-decoration: none
-	font-weight: 400
-	+trans("color 0.3s ease 0s")
-	cursor: pointer
+  @extend .blue_color
+  text-decoration: none
+  font-weight: 400
+  +trans("color 0.3s ease 0s")
+  cursor: pointer
 
-	&.time_left
-		font-weight: 600
-		border-bottom: dotted 2px #168de2
+  &.time_left
+    font-weight: 600
+    border-bottom: dotted 2px #168de2
 
-	&:active
-		color: #4d4d4d
-		border-color: #4d4d4d
+  &:active
+    color: #4d4d4d
+    border-color: #4d4d4d
 
-	&:hover
-		color: #fe7d1b
-		border-color: #fe7d1b
+  &:hover
+    color: #fe7d1b
+    border-color: #fe7d1b
 
 .b-competition
-	+retina-bg("ballet-dancer.jpg", "ballet-dancer@2x.jpg")
-	background-repeat: no-repeat
-	background-position: center center
-	background-attachment: fixed
-	padding: 110px 0 60px
+  +retina-bg("ballet-dancer.jpg", "ballet-dancer@2x.jpg")
+  background-repeat: no-repeat
+  background-position: center center
+  background-attachment: fixed
+  padding: 110px 0 60px
 
-	&.type2
-		+retina-bg("competition-2banner.jpg", "competition-2banner@2x.jpg")
+  &.type2
+    +retina-bg("competition-2banner.jpg", "competition-2banner@2x.jpg")
 
 .b-competition--open--account--text
-	color: #fff
-	font-size: 18px
-	line-height: 28px
-	font-weight: 300
-	padding-top: 30px
-	margin-bottom: 65px
+  color: #fff
+  font-size: 18px
+  line-height: 28px
+  font-weight: 300
+  padding-top: 30px
+  margin-bottom: 65px
 
 .b-analitics
-	padding: 30px 0
-	.b-block--title
-		margin-bottom: 35px
+  padding: 30px 0
+  .b-block--title
+    margin-bottom: 35px
 
 .b-analitics--best--traiders-number
-	width: 49%
-	+retina-bg('banner.jpg', 'banner@2x.jpg')
-	border-radius: 5px
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
-	height: 208px
-	background-position: center center
-	background-repeat: no-repeat
-	padding: 30px
-	box-sizing: border-box
+  width: 49%
+  +retina-bg('banner.jpg', 'banner@2x.jpg')
+  border-radius: 5px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
+  height: 208px
+  background-position: center center
+  background-repeat: no-repeat
+  padding: 30px
+  box-sizing: border-box
 
 .b-analitics--best--traiders-number__count
-	color: #FD7F23
-	font-size: 55px
-	margin-bottom: 13px
+  color: #FD7F23
+  font-size: 55px
+  margin-bottom: 13px
 
-	&_descr
-		color: #4d4d4d
-		font-size: 18px
-		line-height: 27px
+  &_descr
+    color: #4d4d4d
+    font-size: 18px
+    line-height: 27px
 
 .b-analitics-left--content
-	width: 66%
+  width: 66%
 
 .b-analitics--live--spread
-	background-color: #1584d4
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
-	width: 49%
-	border-radius: 5px
+  background-color: #1584d4
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
+  width: 49%
+  border-radius: 5px
 
 .b-analitics--live--spread--headline
-	border-radius: 5px 5px 0 0
-	line-height: 45px
-	padding: 0 20px
+  border-radius: 5px 5px 0 0
+  line-height: 45px
+  padding: 0 20px
 
 .b-analitics--live--spread--title
-	font-family: "Open Sans"
-	font-size: 18px
-	font-weight: 500
-	color: #fff
+  font-family: "Open Sans"
+  font-size: 18px
+  font-weight: 500
+  color: #fff
 
 .b-analitics--live--spread--title--link
-	color: #fff
-	text-decoration: none
-	font-weight: 400
+  color: #fff
+  text-decoration: none
+  font-weight: 400
 
 .b-analitics--best--result
-	border: 1px solid #1584d4
-	border-radius: 5px
-	line-height: 43px
-	padding: 0 25px
-	margin-bottom: 20px
+  border: 1px solid #1584d4
+  border-radius: 5px
+  line-height: 43px
+  padding: 0 25px
+  margin-bottom: 20px
 
 .b-analitics--best-result--title
-	color: #4d4d4d
-	font-family: "Open Sans"
-	font-size: 18px
-	font-weight: 600
+  color: #4d4d4d
+  font-family: "Open Sans"
+  font-size: 18px
+  font-weight: 600
 
 .b-analitics-first--block
-	margin-bottom: 15px
+  margin-bottom: 15px
 
 .b-analitics--best-result--numbers
-	font-weight: 300
-	font-size: 0
-	line-height: 0
+  font-weight: 300
+  font-size: 0
+  line-height: 0
 
 .b-analitics--best-result--numbers--item
-	margin-right: 30px
-	font-size: 14px
-	line-height: 45px
+  margin-right: 30px
+  font-size: 14px
+  line-height: 45px
 
-	&:last-child
-		margin-right: 20px
+  &:last-child
+    margin-right: 20px
 
 .b-analitics--news--publication--left
-	background-color: #ededed
-	border-radius: 5px
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
-	margin-bottom: 20px
+  background-color: #ededed
+  border-radius: 5px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
+  margin-bottom: 20px
 
 .b-analitics--news--publication--left--title
-	background: rgba(255,255,255,0.4)
-	line-height: 45px
-	color: #4d4d4d
-	font-size: 18px
-	font-weight: 600
+  background: rgba(255, 255, 255, 0.4)
+  line-height: 45px
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: 600
 
 .b-analitics--news--publication--left--info
-	width: 49%
+  width: 49%
 
 .b-analitics--news--publication--left--timer
-	width: 49%
+  width: 49%
 
 .b-analitics--news--publication--left--content
-	padding: 25px
+  padding: 25px
 
 .b-analitics--news--publication--left--info--title
-	color: #1a1a1a
-	font-size: 14px
-	font-weight: 400
-	line-height: 22px
-	margin-bottom: 10px
+  color: #1a1a1a
+  font-size: 14px
+  font-weight: 400
+  line-height: 22px
+  margin-bottom: 10px
 
 .b-analitics--news--publication--left--info--link
-	color: #1584d4
-	letter-spacing: 0.2px
-	line-height: 24px
-	text-decoration: none
-	font-weight: 600
+  color: #1584d4
+  letter-spacing: 0.2px
+  line-height: 24px
+  text-decoration: none
+  font-weight: 600
 
 .b-analitics--paybacks
-	margin-bottom: 20px
+  margin-bottom: 20px
 
 .b-analitics--paybacks--title
-	line-height: 45px
-	background-color: #003e6b
-	border-radius: 5px 5px 0 0
-	color: #fff
-	font-size: 18px
-	font-weight: 600
-	padding: 0 15px
+  line-height: 45px
+  background-color: #003e6b
+  border-radius: 5px 5px 0 0
+  color: #fff
+  font-size: 18px
+  font-weight: 600
+  padding: 0 15px
 
 .b-analitics--paybacks--title_link
-	color: #fff
-	text-decoration: underline
-	font-size: 14px
+  color: #fff
+  text-decoration: underline
+  font-size: 14px
 
-	&:hover
-		text-decoration: none
+  &:hover
+    text-decoration: none
 
 .b-analitics--paybacks--tr
-	line-height: 45px
+  line-height: 45px
 
-	&.table--header
-		.b-analitics--paybacks--td
-			border-bottom: 1px solid #1584d4
+  &.table--header
+    .b-analitics--paybacks--td
+      border-bottom: 1px solid #1584d4
 
-	&.dark--gray
-		.b-analitics--paybacks--td
-			background-color: rgba(177,177,177,0.3)
+  &.dark--gray
+    .b-analitics--paybacks--td
+      background-color: rgba(177, 177, 177, 0.3)
 
-	&.gray
-		.b-analitics--paybacks--td
-			background-color: rgba(177,177,177,0.2)
+  &.gray
+    .b-analitics--paybacks--td
+      background-color: rgba(177, 177, 177, 0.2)
 
-	&.light--gray
-		.b-analitics--paybacks--td
-			background-color: rgba(177,177,177,0.1)
-			border-radius: 0 0 5px 5px
+  &.light--gray
+    .b-analitics--paybacks--td
+      background-color: rgba(177, 177, 177, 0.1)
+      border-radius: 0 0 5px 5px
 
 .b-analitics--paybacks--td
-	color: #4d4d4d
-	font-family: roboto
-	font-weight: 300
-	letter-spacing: 0.3px
-	height: 22px
-	padding: 0 15px
-	text-align: center
-	background-color: #fff
-	font-weight: 300
+  color: #4d4d4d
+  font-family: roboto
+  font-weight: 300
+  letter-spacing: 0.3px
+  height: 22px
+  padding: 0 15px
+  text-align: center
+  background-color: #fff
+  font-weight: 300
 
-	&:first-child
-		text-align: left
-		text-transform: uppercase
+  &:first-child
+    text-align: left
+    text-transform: uppercase
 
-	&:last-child
-		text-align: right
+  &:last-child
+    text-align: right
 
 .b-analitics-right--content
-	width: 32%
+  width: 32%
 
 .b-analitics-information--tab--item--link
-	display: block
-	line-height: 30px
-	border-radius: 2px
-	color: #168de2
-	padding: 0 10px
-	font-size: 16px
-	font-weight: 300
-	text-decoration: none
-	text-decoration: underline
-	+trans
+  display: block
+  line-height: 30px
+  border-radius: 2px
+  color: #168de2
+  padding: 0 10px
+  font-size: 16px
+  font-weight: 300
+  text-decoration: none
+  text-decoration: underline
+  +trans
 
-	&.active, &:hover
-		background-color: #168de2
-		color: #fff
-		text-decoration: none
+  &.active, &:hover
+    background-color: #168de2
+    color: #fff
+    text-decoration: none
 
 .b-analitics-information--tabs--link--item
-	display: inline-block
-	vertical-align: middle
+  display: inline-block
+  vertical-align: middle
 
 .b-analitics-information--tabs--dropdown--dot
-	display: inline-block
-	vertical-align: middle
-	width: 4px
-	height: 4px
-	border-radius: 100%
-	background-color: #168de2
+  display: inline-block
+  vertical-align: middle
+  width: 4px
+  height: 4px
+  border-radius: 100%
+  background-color: #168de2
 
 .b-analitics-information--tabs--links--wrapper
-	padding-right: 25px
-	position: relative
+  padding-right: 25px
+  position: relative
 
 .b-analitics-information--tabs--dropdown--wrapper
-	position: absolute
-	right: -8px
-	top: 50%
-	+transform(translateY(-50%))
+  position: absolute
+  right: -8px
+  top: 50%
+  +transform(translateY(-50%))
 
-	&:hover
-		.b-analitics-information--tabs--dropdown--icon--wrapper
-			background: rgba(22,141,226,0.85)
+  &:hover
+    .b-analitics-information--tabs--dropdown--icon--wrapper
+      background: rgba(22, 141, 226, 0.85)
 
-		.b-analitics-information--tabs--dropdown--dot
-			background: #fff
+    .b-analitics-information--tabs--dropdown--dot
+      background: #fff
 
-		.b-analitics-information--tabs--dropdown
-			display: block
+    .b-analitics-information--tabs--dropdown
+      display: block
 
 .b-analitics-information--tabs--dropdown--icon--wrapper
-	line-height: 30px
-	cursor: pointer
-	border-radius: 5px 5px 0 0
-	padding: 0 8px
+  line-height: 30px
+  cursor: pointer
+  border-radius: 5px 5px 0 0
+  padding: 0 8px
 
 .b-analitics-information--tabs--dropdown
-	position: absolute
-	top: 100%
-	right: 0
-	background: rgba(22,141,226,0.85)
-	padding: 10px 20px
-	border-radius: 5px 0 5px 5px
-	color: #fff
+  position: absolute
+  top: 100%
+  right: 0
+  background: rgba(22, 141, 226, 0.85)
+  padding: 10px 20px
+  border-radius: 5px 0 5px 5px
+  color: #fff
 
 .b-analitics-information--tabs--dropdown--link
-	color: #fff
-	text-decoration: none
-	display: block
-	padding: 10px 0
-	font-weight: 300
-	font-size: 16px
+  color: #fff
+  text-decoration: none
+  display: block
+  padding: 10px 0
+  font-weight: 300
+  font-size: 16px
 
 .b-analitics-information--tabs--blocks--item--date
-	color: #848484
-	font-size: 12px
-	font-weight: 300
-	line-height: normal
+  color: #848484
+  font-size: 12px
+  font-weight: 300
+  line-height: normal
 
 .b-analitics-information--tabs--blocks--item--title--link
-	line-height: 22px
-	font-weight: 600
+  line-height: 22px
+  font-weight: 600
 
 .b-analitics-information--tabs--blocks--item--content
-	color: #4d4d4d
-	font-weight: 300
-	line-height: 22px
-	font-size: 13px
+  color: #4d4d4d
+  font-weight: 300
+  line-height: 22px
+  font-size: 13px
 
 .b-analitics-information--tabs--blocks--item
-	margin-bottom: 28px
+  margin-bottom: 28px
 
 .b-analitics-information--tabs--links--wrapper
-	margin-bottom: 20px
+  margin-bottom: 20px
 
 .b-honors
-	padding: 30px 0 30px
-	background-color: #fff
-	border-top: solid 2px #e2e2e2
-	// border-bottom: solid 1px #e2e2e2
+  padding: 30px 0 30px
+  background-color: #fff
+  border-top: solid 2px #e2e2e2
+// border-bottom: solid 1px #e2e2e2
 
 .b-honors--listing--item
-	text-align: center
-	background: #fff
+  text-align: center
+  background: #fff
 
 .b-traiders--lock
-	cursor: pointer
+  cursor: pointer
 
 .b-honors--listing--item--image
-	max-width: 90%
-	max-height: 200px
-	vertical-align: middle
-	width: auto
+  max-width: 90%
+  max-height: 200px
+  vertical-align: middle
+  width: auto
 
 .b-videos
-	padding: 50px 0 15px
+  padding: 50px 0 15px
 
 .b-video--listing--block--title
-	color: #1a1a1a
-	font-size: 22px
-	font-weight: 400
-	line-height: 28px
-	margin-bottom: 15px
+  color: #1a1a1a
+  font-size: 22px
+  font-weight: 400
+  line-height: 28px
+  margin-bottom: 15px
 
 .b-videos--listing--item
-	width: 23%
-	margin-right: 2.666666%
-	float: left
+  width: 23%
+  margin-right: 2.666666%
+  float: left
 
-	&:nth-child(4n)
-		margin-right: 0
+  &:nth-child(4n)
+    margin-right: 0
 
 .b-videos--listing--item--link
-	text-decoration: none
+  text-decoration: none
 
-	&:hover
-		.b-videos--listing--item--video--play--icon
-			background-color: #fe7d1b
-			&.orange
-				background-color: #0071bb
+  &:hover
+    .b-videos--listing--item--video--play--icon
+      background-color: #fe7d1b
+      &.orange
+        background-color: #0071bb
 
 .b-videos--listing--item--video--image--wrapper
-	position: relative
-	font-size: 0
-	line-height: 0
-	margin-bottom: 10px
-	overflow: hidden
-	height: 160px
-	object-fit: cover
+  position: relative
+  font-size: 0
+  line-height: 0
+  margin-bottom: 10px
+  overflow: hidden
+  height: 160px
+  object-fit: cover
 
-	&:after
-		+sprite(video--logo)
-		content: ''
-		position: absolute
-		top: 10px
-		left: 10px
+  &:after
+    +sprite(video--logo)
+    content: ''
+    position: absolute
+    top: 10px
+    left: 10px
 
 .b-videos--listing--item--video--image
-	display: block
-	height: 100%
+  display: block
+  height: 100%
 
 .b-videos--listing--item--video--play--icon
-	display: block
-	width: 50px
-	height: 32px
-	position: absolute
-	top: 50%
-	left: 50%
-	border-radius: 25px/5px
-	+transform(translate3d(-50%, -50%, 0))
-	+trans
-	background: #0071bb
+  display: block
+  width: 50px
+  height: 32px
+  position: absolute
+  top: 50%
+  left: 50%
+  border-radius: 25px/5px
+  +transform(translate3d(-50%, -50%, 0))
+  +trans
+  background: #0071bb
 
-	&.orange
-		background: #fe7d1b
+  &.orange
+    background: #fe7d1b
 
-	&:after
-		+sprite(play--small, $pos: "abs_middle")
-		content: ''
+  &:after
+    +sprite(play--small, $pos: "abs_middle")
+    content: ''
 
 .b-videos--listing--item--title
-	color: #2d90fc
-	font-weight: 400
-	line-height: 22px
+  color: #2d90fc
+  font-weight: 400
+  line-height: 22px
 
-	&.black
-		color: #1a1a1a
+  &.black
+    color: #1a1a1a
 
 .b-video--listing--wrapper
-	margin-bottom: 25px
+  margin-bottom: 25px
 
 .b-traiders
-	padding: 15px 0 40px
+  padding: 15px 0 40px
 
 .b-traiders--table
-	width: 100%
+  width: 100%
 
-	&.tac
-		td, th
-			text-align: center
+  &.tac
+    td, th
+      text-align: center
 
-			&.semibold-text
-				color: #000
-				font-weight: 400
-				font-size: 16px
+      &.semibold-text
+        color: #000
+        font-weight: 400
+        font-size: 16px
 
 .b-lh--information
-	background: rgba(232,244,253,0.4)
-	padding: 30px 0 50px
+  background: rgba(232, 244, 253, 0.4)
+  padding: 30px 0 50px
 
 .b-lh--information--leftside--title
-	color: #4d4d4d
-	font-size: 18px
-	font-weight: 400
-	line-height: 28px
-	margin-bottom: 10px
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: 400
+  line-height: 28px
+  margin-bottom: 10px
 
 .b-lh--information--leftside--content
-	color: grey
-	font-weight: 300
-	line-height: 22px
+  color: grey
+  font-weight: 300
+  line-height: 22px
 
-	p
-		margin-bottom: 12px
+  p
+    margin-bottom: 12px
 
-	ul
-		margin-bottom: 12px
+  ul
+    margin-bottom: 12px
 
-	li
-		padding-left: 20px
-		position: relative
-		margin-bottom: 12px
+  li
+    padding-left: 20px
+    position: relative
+    margin-bottom: 12px
 
-		&:last-child
-			margin-bottom: 0
+    &:last-child
+      margin-bottom: 0
 
-		&:after
-			display: block
-			content: ''
-			position: absolute
-			width: 5px
-			height: 5px
-			background-color: #168de2
-			top: 9px
-			left: 0
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      width: 5px
+      height: 5px
+      background-color: #168de2
+      top: 9px
+      left: 0
 
 .b-lh--information--leftside
-	float: left
-	width: 67%
+  float: left
+  width: 67%
 
 .b-lh--information--rightside
-	width: 27%
+  width: 27%
 
 .b-lh--information--nav--item
-	margin-bottom: 20px
-	font-weight: 300
+  margin-bottom: 20px
+  font-weight: 300
 
-	&:last-child
-		margin-bottom: 0
+  &:last-child
+    margin-bottom: 0
 
-	&.active
-		font-weight: 600
-		.b-lh--information--nav--link
-			color: #4d4d4d
-			font-weight: inherit
+  &.active
+    font-weight: 600
+    .b-lh--information--nav--link
+      color: #4d4d4d
+      font-weight: inherit
 
 .b-lh--information--nav--link
-	border-bottom: 1px dashed #979797
-	text-decoration: none
-	line-height: 30px
+  border-bottom: 1px dashed #979797
+  text-decoration: none
+  line-height: 30px
 
 footer
-	background-color: #28323E
-	color: white
-	font-size: 14px
-	font-weight: 300
-	line-height: 22px
+  background-color: #28323E
+  color: white
+  font-size: 14px
+  font-weight: 300
+  line-height: 22px
 
 .b-information--footer
-	padding: 45px 0
+  padding: 45px 0
 
 .b-footer_menu--link
-	display: block
-	line-height: 21px
-	color: #fbfbfb
-	text-decoration: none
-	font-weight: 400
-	+trans
+  display: block
+  line-height: 21px
+  color: #fbfbfb
+  text-decoration: none
+  font-weight: 400
+  +trans
 
-	&:hover
-		color: #d6ebff
+  &:hover
+    color: #d6ebff
 
-	&.gray
-		opacity: 0.7
+  &.gray
+    opacity: 0.7
 
 .b-footer_menu--item
-	margin-bottom: 19px
+  margin-bottom: 19px
 
 .b-footer--information
-	width: 68%
-	opacity: 0.9
+  width: 68%
+  opacity: 0.9
 
-	p
-		margin-bottom: 15px
+  p
+    margin-bottom: 15px
 
-		&:last-child
-			margin-bottom: 0
+    &:last-child
+      margin-bottom: 0
 
 .b-footer--menu--nav
-	width: 28%
+  width: 28%
 
 ul.b-footer--gray--color
-	opacity: 0.6
-	margin-bottom: 15px
+  opacity: 0.6
+  margin-bottom: 15px
 
-	li
-		padding-left: 30px
-		position: relative
+  li
+    padding-left: 30px
+    position: relative
 
-		&:after
-			display: block
-			width: 5px
-			height: 5px
-			background: #fff
-			opacity: 0.6
-			content: ''
-			position: absolute
-			top: 8px
-			left: 0
+    &:after
+      display: block
+      width: 5px
+      height: 5px
+      background: #fff
+      opacity: 0.6
+      content: ''
+      position: absolute
+      top: 8px
+      left: 0
 
 .b-copyright--footer
-	background: #353E49
-	padding: 45px 0
+  background: #353E49
+  padding: 45px 0
 
 .b-footer--payment--item
-	margin: 0 15px
-	vertical-align: middle
+  margin: 0 15px
+  vertical-align: middle
 
-	&.payment1
-		+sprite(visa)
-		display: inline-block
+  &.payment1
+    +sprite(visa)
+    display: inline-block
 
-	&.payment2
-		+sprite(mc)
-		display: inline-block
+  &.payment2
+    +sprite(mc)
+    display: inline-block
 
-	&.payment3
-		+sprite(rapid)
-		display: inline-block
+  &.payment3
+    +sprite(rapid)
+    display: inline-block
 
-	&.payment4
-		+sprite(ev)
-		display: inline-block
+  &.payment4
+    +sprite(ev)
+    display: inline-block
 
-	&.payment5
-		+sprite(secure)
-		display: inline-block
-		
+  &.payment5
+    +sprite(secure)
+    display: inline-block
+
 .b-footer--payment--methods
-	margin-bottom: 50px
-	
+  margin-bottom: 50px
+
 .b-footer--social--icon
-	margin: 0 10px
-	text-decoration: none
-	width: 30px
-	height: 30px
-	vertical-align: middle
-	+trans
-	position: relative
+  margin: 0 10px
+  text-decoration: none
+  width: 30px
+  height: 30px
+  vertical-align: middle
+  +trans
+  position: relative
 
-	&:hover
-		opacity: 0.5
+  &:hover
+    opacity: 0.5
 
-	&.footer-social-vk
-		&:after
-			+sprite(f-vk, $pos: "abs_middle")
-			content: ''
+  &.footer-social-vk
+    &:after
+      +sprite(f-vk, $pos: "abs_middle")
+      content: ''
 
-	&.footer-social-tw
-		&:after
-			+sprite(f-tw, $pos: "abs_middle")
-			content: ''
+  &.footer-social-tw
+    &:after
+      +sprite(f-tw, $pos: "abs_middle")
+      content: ''
 
-	&.footer-social-fb
-		&:after
-			+sprite(f-fb, $pos: "abs_middle")
-			content: ''
+  &.footer-social-fb
+    &:after
+      +sprite(f-fb, $pos: "abs_middle")
+      content: ''
 
-	&.footer-social-rss
-		&:after
-			+sprite(f-rss, $pos: "abs_middle")
-			content: ''
+  &.footer-social-rss
+    &:after
+      +sprite(f-rss, $pos: "abs_middle")
+      content: ''
 
-	&.footer-social-yt
-		&:after
-			+sprite(f-yt, $pos: "abs_middle")
-			content: ''
+  &.footer-social-yt
+    &:after
+      +sprite(f-yt, $pos: "abs_middle")
+      content: ''
 
 .b-footer--social
-	margin-bottom: 45px
+  margin-bottom: 45px
 
 .b-footer--address
-	opacity: 0.7
-	font-weight: 400
+  opacity: 0.7
+  font-weight: 400
 
 .b-our--decisions--video--image
-	max-width: 100%
-	max-height: 100%
+  max-width: 100%
+  max-height: 100%
 
-.b-analitics--best-result--watch_all--link 
-	font-weight: 600
+.b-analitics--best-result--watch_all--link
+  font-weight: 600
 
 .countdown--left--timer
-	display: inline-block
+  display: inline-block
 
 .countdown--number--caption
-	color: #575757
-	font-size: 14px
-	font-weight: 400
-	line-height: 22px
-	text-align: center
+  color: #575757
+  font-size: 14px
+  font-weight: 400
+  line-height: 22px
+  text-align: center
 
 .countdown--number--item
-	width: 95px
-	float: left
-	position: relative
-	text-align: center
-	color: #4d4d4d
-	font-size: 50px
-	font-weight: 600
-	line-height: 53px
+  width: 95px
+  float: left
+  position: relative
+  text-align: center
+  color: #4d4d4d
+  font-size: 50px
+  font-weight: 600
+  line-height: 53px
 
-	&:after
-		content: ':'
-		display: block
-		position: absolute
-		top: -4px
-		right: -8px
-		font-size: 50px
+  &:after
+    content: ':'
+    display: block
+    position: absolute
+    top: -4px
+    right: -8px
+    font-size: 50px
 
 .countdown--number--wrapper
-	&:last-child
-		.countdown--number--item
-			&:after
-				display: none
+  &:last-child
+    .countdown--number--item
+      &:after
+        display: none
 
 .b-traiders--inner--wrapper
-	background-color: white
-	border: 1px solid #dbdbdb
-	border-radius: 5px
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
-	padding: 20px 15px
-	position: relative
+  background-color: white
+  border: 1px solid #dbdbdb
+  border-radius: 5px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
+  padding: 20px 15px
+  position: relative
 
 .b-traiders--table
-	td, th
-		height: 52px
-		opacity: 0.9
-		color: #4d4d4d
-		font-family: "Open Sans"
-		font-size: 14px
-		font-weight: 400
-		line-height: 20px
-		text-align: left
-		padding: 0 5px
-		+trans
+  td, th
+    height: 52px
+    opacity: 0.9
+    color: #4d4d4d
+    font-family: "Open Sans"
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+    text-align: left
+    padding: 0 5px
+    +trans
 
-	&.dark--third-td
+  &.dark--third-td
 
-		td, th
-			&:nth-child(3)
-				text-align: left
-				padding-left: 20px
-				color: #1a1a1a
+    td, th
+      &:nth-child(3)
+        text-align: left
+        padding-left: 20px
+        color: #1a1a1a
 
-		&:last-child, &:first-child
-			text-align: center
+    &:last-child, &:first-child
+      text-align: center
 
-		&:nth-child(11)
-			color: #000
-			letter-spacing: 0.3px
-			font-weight: 600
+    &:nth-child(11)
+      color: #000
+      letter-spacing: 0.3px
+      font-weight: 600
 
-	th
-		border-bottom: 2px solid #fe7d1b
-		color: #000
-		font-weight: 400
+  th
+    border-bottom: 2px solid #fe7d1b
+    color: #000
+    font-weight: 400
 
-	tbody
-		tr
-			&:nth-child(2n)
-				td
-					background-color: #f4f4f4
+  tbody
+    tr
+      &:nth-child(2n)
+        td
+          background-color: #f4f4f4
 
-		tr
-			&:hover
-				z-index: 5
-				position: relative
-				td:not(.blue--table--banner)
-					background: rgba(254,125,27,0.2)
-	tbody, thead
-		&.tac
-			td, th
-				text-align: center
+    tr
+      &:hover
+        z-index: 5
+        position: relative
+        td:not(.blue--table--banner)
+          background: rgba(254, 125, 27, 0.2)
+  tbody, thead
+    &.tac
+      td, th
+        text-align: center
 
+  .blue--table--banner
+    background: #0A3048
+    color: #fff
 
-	.blue--table--banner
-		background: #0A3048
-		color: #fff
-
-		>.dib
-			display: block
-
+    > .dib
+      display: block
 
 .icon--lang
-	display: inline-block !important
-	vertical-align: middle
-	margin-right: 10px
-	width: 36px
-	height: 36px
-	top: -1px
-	position: relative
-	box-shadow: 0 0 2px #ccc
-	border-radius: 50%
+  display: inline-block !important
+  vertical-align: middle
+  margin-right: 10px
+  width: 36px
+  height: 36px
+  top: -1px
+  position: relative
+  box-shadow: 0 0 2px #ccc
+  border-radius: 50%
 
-	@each $flag in arabic,china,usa,france,esp,ger,indonesia,malaysia,polska,portugal,russia,thailand,vietnamese,serbian,croatian
-		&.icon--#{$flag}
-			&:after
-				content: ''
-				+sprite(flag-#{$flag}, $pos: "abs_middle")
+  @each $flag in arabic, china, usa, france, esp, ger, indonesia, malaysia, polska, portugal, russia, thailand, vietnamese, serbian, croatian
+    &.icon--#{$flag}
+      &:after
+        content: ''
+        +sprite(flag-#{$flag}, $pos: "abs_middle")
 
 .icon--lock
-	+sprite(padlock_2)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	z-index: 5
-	margin-right: 10px
+  +sprite(padlock_2)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  z-index: 5
+  margin-right: 10px
 
-	&.orange
-		+sprite(padlock_orange)
-		display: inline-block
+  &.orange
+    +sprite(padlock_orange)
+    display: inline-block
 
-	&.grey
-		+sprite(padlock_1)
-		display: inline-block
+  &.grey
+    +sprite(padlock_1)
+    display: inline-block
 
 .b-traiders--table--lock--number
-	color: #25ba13
-	font-family: "roboto"
-	font-size: 8px
-	font-weight: 300
-	line-height: 10px
-	position: absolute
-	top: -5px
-	right: -15px
-	z-index: 5
+  color: #25ba13
+  font-family: "roboto"
+  font-size: 8px
+  font-weight: 300
+  line-height: 10px
+  position: absolute
+  top: -5px
+  right: -15px
+  z-index: 5
 
-	&.red
-		color: red
+  &.red
+    color: red
 
 .blue--table--banner
-	font-size: 16px
-	.traiders--competition
-		color: white
-		font-family: Roboto
-		font-size: 20px
-		font-weight: 300
-		line-height: 24px
-		letter-spacing: 1px
+  font-size: 16px
+  .traiders--competition
+    color: white
+    font-family: Roboto
+    font-size: 20px
+    font-weight: 300
+    line-height: 24px
+    letter-spacing: 1px
 
 .white_btn
-	@extend .blue_btn
-	background: #fff
-	color: #2192fd
-	font-weight: 600
+  @extend .blue_btn
+  background: #fff
+  color: #2192fd
+  font-weight: 600
 
 .traiders--price--found, .traiders--price--places, .traiders--price--nominants
-	margin: 0 15px
-	line-height: 45px
-	font-size: 16px
-	font-family: roboto
-	font-weight: 300
+  margin: 0 15px
+  line-height: 45px
+  font-size: 16px
+  font-family: roboto
+  font-weight: 300
 
-	.bold
-		font-weight: 500
+  .bold
+    font-weight: 500
 
 .traiders--price--nominants
-	margin-right: 20px
+  margin-right: 20px
 
 .table--banner--buttons--wrapper
-	display: inline-block
-	vertical-align: middle
-	float: right
-	margin: 5px 0
+  display: inline-block
+  vertical-align: middle
+  float: right
+  margin: 5px 0
 
-	.orange_btn, .white_btn
-		line-height: 36px
-		font-size: 13px
-		font-weight: 500
-		font-family: roboto
-		border: none
+  .orange_btn, .white_btn
+    line-height: 36px
+    font-size: 13px
+    font-weight: 500
+    font-family: roboto
+    border: none
 
-	.orange_btn
-		margin-right: 8px
+  .orange_btn
+    margin-right: 8px
 
 .table--icon--chat
-	+sprite(closed-envelope)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	overflow: visible
+  +sprite(closed-envelope)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  overflow: visible
 
 .table--traiders--chat--text
-	position: absolute
-	top: 0
-	left: 100%
-	font-size: 8px
-	text-align: right
-	width: 15px
+  position: absolute
+  top: 0
+  left: 100%
+  font-size: 8px
+  text-align: right
+  width: 15px
 
-	&.bottom
-		bottom: 0
-		top: auto
+  &.bottom
+    bottom: 0
+    top: auto
 
-	&.green
-		color: #4d4d4d
+  &.green
+    color: #4d4d4d
 
-	&.red
-		color: red
+  &.red
+    color: red
 
 .b-traiders--table--selectors--dropdown--current
-	color: #fff
-	background-color: #008ee3
-	border-radius: 2px
-	line-height: 34px
-	padding: 0 30px 0 10px
-	position: relative
-	font-weight: 300
-	font-size: 16px
-	padding-bottom: 2px
+  color: #fff
+  background-color: #008ee3
+  border-radius: 2px
+  line-height: 34px
+  padding: 0 30px 0 10px
+  position: relative
+  font-weight: 300
+  font-size: 16px
+  padding-bottom: 2px
 
-	&:after
-		+sprite(arrow_small)
-		display: block
-		content: ''
-		position: absolute
-		top: 50%
-		right: 10px
-		+transform(translateY(-50%))
-		+origin(center center)
+  &:after
+    +sprite(arrow_small)
+    display: block
+    content: ''
+    position: absolute
+    top: 50%
+    right: 10px
+    +transform(translateY(-50%))
+    +origin(center center)
 
 .b-traiders--blue--selector--wrapper
-	width: 25%
-	float: left
-	cursor: pointer
+  width: 25%
+  float: left
+  cursor: pointer
 
 .b-traiders--table--selectors--dropdown--wrapper
-	position: relative
+  position: relative
 
-	&:hover
-		.hidden
-			display: block
+  &:hover
+    .hidden
+      display: block
 
 .b-traiders--table--selector--item
-	color: #4d4d4d
-	font-size: 16px
-	font-weight: 300
-	line-height: 22px
-	width: 25%
-	text-align: left
-	float: left
-	line-height: 36px
-	box-sizing: border-box
-	cursor: pointer
+  color: #4d4d4d
+  font-size: 16px
+  font-weight: 300
+  line-height: 22px
+  width: 25%
+  text-align: left
+  float: left
+  line-height: 36px
+  box-sizing: border-box
+  cursor: pointer
 
-	&:last-child
-		text-align: left
-		padding-right: 15px
+  &:last-child
+    text-align: left
+    padding-right: 15px
 
 .b-traiders--table--selectors
-	margin-bottom: 35px
+  margin-bottom: 35px
 
 .b-traiders--table--selectors--dropdown--hidden
-	position: absolute
-	top: 0
-	left: 0
-	min-width: 100%
-	background: #fff
-	border-radius: 2px
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
-	z-index: 5
+  position: absolute
+  top: 0
+  left: 0
+  min-width: 100%
+  background: #fff
+  border-radius: 2px
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+  z-index: 5
 
 .b-traiders--table--selectors--dropdown--item
-	padding: 5px 10px
-	font-weight: 300
-	line-height: 22px
-	color: #1a1a1a
-	white-space: nowrap
+  padding: 5px 10px
+  font-weight: 300
+  line-height: 22px
+  color: #1a1a1a
+  white-space: nowrap
 
-	&.selector--header
-		color: #008ee3
-		font-size: 16px
-		
+  &.selector--header
+    color: #008ee3
+    font-size: 16px
+
 .b-traiders--table--selectors--dropdown--link
-	text-decoration: none
-	color: #1a1a1a
-	+trans
+  text-decoration: none
+  color: #1a1a1a
+  +trans
 
-	&:hover
-		color: grey
+  &:hover
+    color: grey
 
 .table--traiders--price--block
-	position: relative
-	padding-right: 20px
+  position: relative
+  padding-right: 20px
 
-	span
-		font-size: 8px
-		color: red
-		font-family: roboto
-		line-height: 10px
-		font-weight: 300
-		position: absolute
-		top: 0
-		right: 0
+  span
+    font-size: 8px
+    color: red
+    font-family: roboto
+    line-height: 10px
+    font-weight: 300
+    position: absolute
+    top: 0
+    right: 0
 
-		&.green
-			color: #4d4d4d
+    &.green
+      color: #4d4d4d
+
 .b-analitics--best-result--watch_all
-	line-height: 45px
-	font-size: 14px
-	font-weight: 600
+  line-height: 45px
+  font-size: 14px
+  font-weight: 600
 
 .b-analitics--live--spread--tab--number
-	font-size: 60px
-	font-weight: 500
-	line-height: 53px
-	position: relative
-	display: inline-block
-	margin-bottom: 30px
-	margin-right: 15px
+  font-size: 60px
+  font-weight: 500
+  line-height: 53px
+  position: relative
+  display: inline-block
+  margin-bottom: 30px
+  margin-right: 15px
 
 .b-analitics--live--spread--selectors--wrapper
-	color: #fff
-	font-weight: 300
-	padding: 20px
+  color: #fff
+  font-weight: 300
+  padding: 20px
 
 .b-analitics--live--spread--tab--sup--element
-	font-size: 20px
-	position: absolute
-	top: -15px
-	right: -15px
+  font-size: 20px
+  position: absolute
+  top: -15px
+  right: -15px
 
 .b-analitics--live--spread--tab_description
-	font-size: 12px
-	line-height: 17px
+  font-size: 12px
+  line-height: 17px
 
 .b-analitics--live--spread--selectors--item
-	margin-bottom: 30px
+  margin-bottom: 30px
 
-	&.active
-		opacity: 0.5
+  &.active
+    opacity: 0.5
 
-	&:first-child
-		padding-top: 10px
+  &:first-child
+    padding-top: 10px
 
-	&:last-child
-		margin-bottom: 10px
+  &:last-child
+    margin-bottom: 10px
 
 .b-analitics--live--spread--selector--link
-	color: #fff
-	border-bottom: 1px dashed #fff
-	padding-bottom: 3px
-	cursor: pointer
+  color: #fff
+  border-bottom: 1px dashed #fff
+  padding-bottom: 3px
+  cursor: pointer
 
 .b-analitics--live--spread--tabs--wrapper
-	width: 60%
+  width: 60%
 
 .b-honors--listing--item--descr
-	color: #4d4d4d
-	margin-top: 20px
-	font-weight: 400
-	letter-spacing: 0.3px
-	line-height: 19px
-	text-transform: uppercase
+  color: #4d4d4d
+  margin-top: 20px
+  font-weight: 400
+  letter-spacing: 0.3px
+  line-height: 19px
+  text-transform: uppercase
 
 .owl-prev, .owl-next
-	display: block
-	position: absolute
-	top: 50%
-	right: 30px
-	+sprite(slider_arrow_right)
-	font-size: 0
-	+transform(translateY(-50%))
-
+  display: block
+  position: absolute
+  top: 50%
+  right: 30px
+  +sprite(slider_arrow_right)
+  font-size: 0
+  +transform(translateY(-50%))
 
 .owl-prev
-	right: auto
-	left: 30px
-	+transform(translateY(-50%) rotate(180deg))
+  right: auto
+  left: 30px
+  +transform(translateY(-50%) rotate(180deg))
 
 .js--traiders--table--selector
-	position: relative
-	white-space: nowrap
+  position: relative
+  white-space: nowrap
 
-	&.active
-		&:after
-			+sprite(icon--check)
-			display: inline-block
-			vertical-align: middle
-			margin-left: 10px
-			content: ''
-			position: relative
-			top: -1px
+  &.active
+    &:after
+      +sprite(icon--check)
+      display: inline-block
+      vertical-align: middle
+      margin-left: 10px
+      content: ''
+      position: relative
+      top: -1px
 
 .overlay
-	position: fixed
-	top: -10px
-	left: -10px
-	background: #000
-	opacity: 0.6
-	width: 120%
-	height: 120%
-	z-index: 100
+  position: fixed
+  top: -10px
+  left: -10px
+  background: #000
+  opacity: 0.6
+  width: 120%
+  height: 120%
+  z-index: 100
 
 .popup
-	top: 50%
-	left: 50%
-	+transform(translate3d(-50%, -50%, 0))
-	background: #fff
-	border-radius: 10px
-	position: fixed
-	z-index: 101
-	width: 500px
-	padding: 25px
+  top: 50%
+  left: 50%
+  +transform(translate3d(-50%, -50%, 0))
+  background: #fff
+  border-radius: 10px
+  position: fixed
+  z-index: 101
+  width: 500px
+  padding: 25px
 
-	&.feedback-form
-		width: 400px
+  &.feedback-form
+    width: 400px
 
 input[type="text"], input[type="email"], input[type="phone"], input[type="password"], textarea
-	height: 40px
-	background-color: #e8e8e8
-	border-radius: 3px
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24)
-	display: block
-	width: 100%
-	border: none
-	box-sizing: border-box
-	padding: 0 15px
-	max-width: 100%
+  height: 40px
+  background-color: #e8e8e8
+  border-radius: 3px
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24)
+  display: block
+  width: 100%
+  border: none
+  box-sizing: border-box
+  padding: 0 15px
+  max-width: 100%
 
-	&:focus
-		border: solid 2px #2192fd
-		padding-left: 13px
-		padding-right: 13px
+  &:focus
+    border: solid 2px #2192fd
+    padding-left: 13px
+    padding-right: 13px
 
-	&.input-error
-		border-radius: 3px
-		background-color: #fff4f5
-		box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.24)
-		border: solid 2px #f33534
-		padding-left: 13px
-		padding-right: 13px
+  &.input-error
+    border-radius: 3px
+    background-color: #fff4f5
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.24)
+    border: solid 2px #f33534
+    padding-left: 13px
+    padding-right: 13px
 
 textarea
-	height: 100px
-	padding-top: 10px
-	padding-bottom: 10px
-	min-width: 100%
+  height: 100px
+  padding-top: 10px
+  padding-bottom: 10px
+  min-width: 100%
 
-	&:not(.resizable)
-		resize: none
+  &:not(.resizable)
+    resize: none
 
-	&:focus, &.input-error
-		padding-top: 8px
-		padding-bottom: 8px
+  &:focus, &.input-error
+    padding-top: 8px
+    padding-bottom: 8px
 
 .popup--title
-	color: #4d4d4d
-	font-size: 18px
-	font-weight: 600
-	line-height: 28px
-	margin-bottom: 20px
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: 600
+  line-height: 28px
+  margin-bottom: 20px
 
 .form-line
-	margin-bottom: 20px
-	position: relative
+  margin-bottom: 20px
+  position: relative
 
-	&:last-child
-		margin-bottom: 0
+  &:last-child
+    margin-bottom: 0
 
 .popup--video--frame
-	max-width: 100%
+  max-width: 100%
 
 .b-our--decisions, .b-competition, .b-analitics
-	h2
-		@extend .b-block--title
+  h2
+    @extend .b-block--title
 
 .b-competition
-	h2
-		color: #fff
-		margin-bottom: 0
-		font-weight: 500
+  h2
+    color: #fff
+    margin-bottom: 0
+    font-weight: 500
 
-	h3
-		@extend .b-block--title
-		color: #fff
-		letter-spacing: 1px
-		font-weight: 500
+  h3
+    @extend .b-block--title
+    color: #fff
+    letter-spacing: 1px
+    font-weight: 500
 
 .b-honors--listing
-	.owl-stage
-		width: 20000px !important
+  .owl-stage
+    width: 20000px !important
 
 .popup--close
-	display: block
-	position: absolute
-	top: -10px
-	right: -10px
-	background: #fff
-	width: 25px
-	height: 25px
-	cursor: pointer
-	border: 3px solid #666
-	border-radius: 100%
+  display: block
+  position: absolute
+  top: -10px
+  right: -10px
+  background: #fff
+  width: 25px
+  height: 25px
+  cursor: pointer
+  border: 3px solid #666
+  border-radius: 100%
 
-	&:after, &:before
-		display: block
-		content: ''
-		width: 50%
-		height: 2px
-		background: #4d4d4d
-		position: absolute
-		top: 50%
-		left: 50%
-		+transform(translate3d(-50%, -50%, 0) rotate(45deg))
+  &:after, &:before
+    display: block
+    content: ''
+    width: 50%
+    height: 2px
+    background: #4d4d4d
+    position: absolute
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0) rotate(45deg))
 
-	&:before
-		+transform(translate3d(-50%, -50%, 0) rotate(-45deg))		
+  &:before
+    +transform(translate3d(-50%, -50%, 0) rotate(-45deg))
 
 .b-nav--menu--dropdown--3rd--listing
-	position: absolute
-	left: 100%
-	top: 0
-	background: #1E83E3
+  position: absolute
+  left: 100%
+  top: 0
+  background: #1E83E3
 
 .b-nav--menu--dropdown--3rd--item--link
-	display: block
-	line-height: 37px
-	padding: 0 20px
-	text-decoration: none
-	color: #fff
-	font-weight: 500
-	+trans
+  display: block
+  line-height: 37px
+  padding: 0 20px
+  text-decoration: none
+  color: #fff
+  font-weight: 500
+  +trans
 
-	&:hover
-		background-color: #2192fd
+  &:hover
+    background-color: #2192fd
 
 .b-cabinet--control
-	position: absolute
-	top: 100%
-	right: 0
-	width: 100%
-	padding-top: 15px
-	z-index: 99
+  position: absolute
+  top: 100%
+  right: 0
+  width: 100%
+  padding-top: 15px
+  z-index: 99
 
 .b-cabinet--control_inner
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.19)
-	border-radius: 5px
-	background: #fff
-	padding: 15px
-	line-height: 40px
-	box-sizing: border-box
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.19)
+  border-radius: 5px
+  background: #fff
+  padding: 15px
+  line-height: 40px
+  box-sizing: border-box
 
 .b-heder--right--side
-	position: relative
+  position: relative
 
 .b-analitics-information--tabs--blocks--item--image
-	max-width: 100%
+  max-width: 100%
 
 .popup__info
-	font-size: 14px
-	color: #808080
-	font-weight: 400
-	line-height: normal
+  font-size: 14px
+  color: #808080
+  font-weight: 400
+  line-height: normal
 
 .popup__title
-	font-size: 18px
-	line-height: 1.6
-	font-weight: 600
-	color: #4d4d4d
+  font-size: 18px
+  line-height: 1.6
+  font-weight: 600
+  color: #4d4d4d
 
 .input-error__text
-	font-weight: 400
-	font-size: 12px
-	color: #e51c23
-	line-height:  normal
-	
+  font-weight: 400
+  font-size: 12px
+  color: #e51c23
+  line-height: normal
+
 .icon-clearinput
-	position: absolute
-	+pos(tm)
-	right: 10px
-	width: 14px
-	height: 14px
-	cursor: pointer
+  position: absolute
+  +pos(tm)
+  right: 10px
+  width: 14px
+  height: 14px
+  cursor: pointer
 
-	&.static
-		position: relative
-		top: -1px
-		right: 0
-		+transform(rotate(0deg))
-		display: inline-block
-		vertical-align: middle
-		margin-left: 5px
+  &.static
+    position: relative
+    top: -1px
+    right: 0
+    +transform(rotate(0deg))
+    display: inline-block
+    vertical-align: middle
+    margin-left: 5px
 
-	&:after, &:before
-		content: ''
-		display: block
-		width: 100%
-		height: 1px
-		background: #858585
-		position: absolute
-		top: 50%
-		left: 50%
-		+transform(translate3d(-50%, -50%, 0) rotate(45deg))
+  &:after, &:before
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    background: #858585
+    position: absolute
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0) rotate(45deg))
 
-	&:before
-		+transform(translate3d(-50%, -50%, 0) rotate(-45deg))
+  &:before
+    +transform(translate3d(-50%, -50%, 0) rotate(-45deg))
 
 .traider--personal_block
-	position: relative
+  position: relative
 
-	&__popup
-		position: absolute
-		top: 100%
-		right: auto
-		width: 350px
-		background: #fff
-		white-space: nowrap
-		padding: 15px
-		border-radius: 8px
-		box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2)
-		margin-right: 15px
-		z-index: 10
+  &__popup
+    position: absolute
+    top: 100%
+    right: auto
+    width: 350px
+    background: #fff
+    white-space: nowrap
+    padding: 15px
+    border-radius: 8px
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2)
+    margin-right: 15px
+    z-index: 10
 
-		&.only--logo
-			width: auto
+    &.only--logo
+      width: auto
 
-			.table-popup__person-ava_wrapper
-				margin-right: 0
+      .table-popup__person-ava_wrapper
+        margin-right: 0
 
 .table-popup__person-ava_wrapper
-	width: 75px
-	margin-right: 20px
-	font-size: 0
-	line-height: 0
-	text-align: center
+  width: 75px
+  margin-right: 20px
+  font-size: 0
+  line-height: 0
+  text-align: center
 
 .table-popup__person-ava
-	max-width: 100%
+  max-width: 100%
 
 .person-field_value
-	font-size: 14px
-	line-height: 1.6
-	color: #4d4d4d
-	font-weight: 400
-	padding: 1px 5px
+  font-size: 14px
+  line-height: 1.6
+  color: #4d4d4d
+  font-weight: 400
+  padding: 1px 5px
 
 .person-filed_caption
-	font-weight: 600
-	font-size: 14px
-	line-height: 1.6
-	letter-spacing: 0.3px
-	color: #000000
-	padding: 1px 5px
+  font-weight: 600
+  font-size: 14px
+  line-height: 1.6
+  letter-spacing: 0.3px
+  color: #000000
+  padding: 1px 5px
 
 .person-filed_line
-	white-space: normal
-	&.with--border
-		border-bottom: 2px solid #f6f6f6
+  white-space: normal
+  &.with--border
+    border-bottom: 2px solid #f6f6f6
 
 .traider--personal_block__name
-	color: #1a1a1a
-	font-weight: 400
-	position: relative
-	padding-right: 15px
-	display: inline-block
+  color: #1a1a1a
+  font-weight: 400
+  position: relative
+  padding-right: 15px
+  display: inline-block
 
 .icon-chain
-	+sprite(icon-chain)
-	position: absolute
-	top: 0px
-	right: 0
-	display: block
+  +sprite(icon-chain)
+  position: absolute
+  top: 0px
+  right: 0
+  display: block
 
 .b-comp-timeleft__title
-	font-size: 18px
-	line-height: 1.6
-	color: #4d4d4d
-	text-align: center
-	margin-bottom: 30px
+  font-size: 18px
+  line-height: 1.6
+  color: #4d4d4d
+  text-align: center
+  margin-bottom: 30px
 
 .competition__counter
-	margin-bottom: 35px
+  margin-bottom: 35px
 
 .b-comp--conditions
-	padding: 0 10px
+  padding: 0 10px
 
 .b-comp--condition__title
-	font-size: 18px
-	line-height: 1.6
-	color: #4d4d4d
-	font-weight: 600
-	margin-bottom: 15px
+  font-size: 18px
+  line-height: 1.6
+  color: #4d4d4d
+  font-weight: 600
+  margin-bottom: 15px
 
 .b-comp--condition__header
-	font-size: 14px
-	line-height: 1.6
-	color: #168de2
-	cursor: pointer
-	
-	&.active
-		.icon-blue_arrow
-			+transform(rotate(0))
+  font-size: 14px
+  line-height: 1.6
+  color: #168de2
+  cursor: pointer
+
+  &.active
+    .icon-blue_arrow
+      +transform(rotate(0))
 
 .b-comp--condition__content
-	font-size: 14px
-	line-height: 1.6
-	color: #4d4d4d
-	font-weight: 400
-	padding: 10px 0 5px
+  font-size: 14px
+  line-height: 1.6
+  color: #4d4d4d
+  font-weight: 400
+  padding: 10px 0 5px
 
 .icon-blue_arrow
-	position: relative
-	vertical-align: middle
-	+sprite(blue_arrow_up)
-	display: inline-block
-	+trans
-	margin-left: 10px
-	top: -1px
-	+transform(rotate(180deg))
+  position: relative
+  vertical-align: middle
+  +sprite(blue_arrow_up)
+  display: inline-block
+  +trans
+  margin-left: 10px
+  top: -1px
+  +transform(rotate(180deg))
 
 .b-comp--condition__item
-	margin-bottom: 15px
+  margin-bottom: 15px
 
-	&:last-child
-		margin-bottom: 0
+  &:last-child
+    margin-bottom: 0
 
 .b-comp--condition__accordion
-	margin-bottom: 40px
+  margin-bottom: 40px
 
 .copy-deals--link
-	font-size: 18px
-	line-height: 1.6
-	margin-bottom: 40px
-	display: block
+  font-size: 18px
+  line-height: 1.6
+  margin-bottom: 40px
+  display: block
 
 .copy-deals__title
-	position: relative
-	padding: 20px
-	border: 1px dashed #ededed
-	margin-bottom: 15px
-	max-width: 940px
-	box-sizing: border-box
-	width: 90%
-	margin: 0 auto
-	border-radius: 5px
-	margin-bottom: 40px
+  position: relative
+  padding: 20px
+  border: 1px dashed #ededed
+  margin-bottom: 15px
+  max-width: 940px
+  box-sizing: border-box
+  width: 90%
+  margin: 0 auto
+  border-radius: 5px
+  margin-bottom: 40px
 
 .copy-deals__popup
-	z-index: 5
-	font-weight: 400
+  z-index: 5
+  font-weight: 400
 
 .copy-deals__popup-navigation
-	margin-bottom: 40px
+  margin-bottom: 40px
 
 .copy-deals__popup-navigation__item
-	width: 12.5%
-	text-align: center
-	float: left
-	box-sizing: border-box
-	cursor: pointer
-	color: rgba(226, 226, 226, 0.6)
-	position: relative
+  width: 12.5%
+  text-align: center
+  float: left
+  box-sizing: border-box
+  cursor: pointer
+  color: rgba(226, 226, 226, 0.6)
+  position: relative
 
-	a
-		text-decoration: none
+  a
+    text-decoration: none
 
-	&:after
-		display: block
-		position: absolute
-		right: -9px
-		top: 50%
-		+transform(translateY(-50%) rotate(45deg))
-		border-right: 2px solid #ededed
-		border-top: 2px solid #ededed
-		width: 10px
-		height: 10px
-		content: ''
+  &:after
+    display: block
+    position: absolute
+    right: -9px
+    top: 50%
+    +transform(translateY(-50%) rotate(45deg))
+    border-right: 2px solid #ededed
+    border-top: 2px solid #ededed
+    width: 10px
+    height: 10px
+    content: ''
 
-	&:before
-		position: absolute
-		width: 18px
-		right: -9px
-		height: 2px
-		background: #ededed
-		content: ''
-		display: block
-		+pos(tm)
+  &:before
+    position: absolute
+    width: 18px
+    right: -9px
+    height: 2px
+    background: #ededed
+    content: ''
+    display: block
+    +pos(tm)
 
+  &:last-child
+    border-right: none
+    border-radius: 0 5px 0 0
 
-	&:last-child
-		border-right: none
-		border-radius: 0 5px 0 0
+    &:after, &:before
+      display: none
 
-		&:after, &:before
-			display: none
+  &:first-child
+    border-radius: 5px 0 0 0
 
-	&:first-child
-		border-radius: 5px 0 0 0
+  .copy-deals__popup-navigation__the-number
+    position: relative
+    z-index: 1
 
-	.copy-deals__popup-navigation__the-number
-		position: relative
-		z-index: 1
+  &.active, &:hover
 
-	&.active, &:hover
+    .copy-deals__popup-navigation__number
+      position: relative
+      color: #fff
 
-		.copy-deals__popup-navigation__number
-			position: relative
-			color: #fff
+      &:after
+        opacity: 1
 
-			&:after
-				opacity: 1
-
-	
 // 		.icon-nav-checked
 // 			+sprite(icon-check-outline)
 // 			display: inline-block
@@ -2319,659 +2313,662 @@ textarea
 // 	vertical-align: middle
 
 .copy-deals__popup-navigation__number
-	display: inline-block
-	line-height: 44px
-	min-width: 44px
-	text-align: center
-	font-size: 28px
-	color: #fe7d1b
-	border-radius: 5px
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
-	background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
-	background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
-	background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
-	background-image: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
-	box-shadow: 0 2px 0 0 #a6a6a6, inset 0 2px 0 0 rgba(255, 255, 255, 0.7)
-	border: solid 1px #cccccc
-	position: relative
-	
-	&:after
-		display: block
-		content: ''
-		height: 100%
-		position: absolute
-		border-radius: 5px
-		left: 0
-		top: 0
-		width: 100%
-		border: 1px solid #fe7d1b
-		box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.9)
-		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
-		background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
-		background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
-		background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
-		background-image: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
-		+trans()
-		opacity: 0
+  display: inline-block
+  line-height: 44px
+  min-width: 44px
+  text-align: center
+  font-size: 28px
+  color: #fe7d1b
+  border-radius: 5px
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
+  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
+  background-image: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), linear-gradient(#fafafa, #fafafa)
+  box-shadow: 0 2px 0 0 #a6a6a6, inset 0 2px 0 0 rgba(255, 255, 255, 0.7)
+  border: solid 1px #cccccc
+  position: relative
 
-	&:hover
-		&:after
-			animation: blink normal 1.5s infinite ease-in-out
+  &:after
+    display: block
+    content: ''
+    height: 100%
+    position: absolute
+    border-radius: 5px
+    left: 0
+    top: 0
+    width: 100%
+    border: 1px solid #fe7d1b
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.9)
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
+    background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
+    background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
+    background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
+    background-image: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(#fe7d1b, #fe7d1b)
+    +trans()
+    opacity: 0
+
+  &:hover
+    &:after
+      animation: blink normal 1.5s infinite ease-in-out
 
 @keyframes blink
-	0%
-		opacity: 0
-	50%
-		opacity: 1
-	100%
-		opacity: 0
+  0%
+    opacity: 0
+  50%
+    opacity: 1
+  100%
+    opacity: 0
 
 .copy-deals__popup-hidden__wrapper
-	border-radius: 0 0 5px 5px
-	padding: 20px 15px 0
+  border-radius: 0 0 5px 5px
+  padding: 20px 15px 0
 
 .copy-deals__popup-hidden__item-title
-	font-size: 18px
-	line-height: 1.6
-	color: #1a1a1a
-	margin-bottom: 10px
-	font-weight: 400
+  font-size: 18px
+  line-height: 1.6
+  color: #1a1a1a
+  margin-bottom: 10px
+  font-weight: 400
 
 .copy-deals__popup-hidden__item-content
-	line-height: 1.6
-	color: #4d4d4d
+  line-height: 1.6
+  color: #4d4d4d
 
 .b-header__search-form
-	line-height: 0
-	color: #fff
-	font-weight: 300
-	margin-right: 45px
-	font-size: 0
+  line-height: 0
+  color: #fff
+  font-weight: 300
+  margin-right: 45px
+  font-size: 0
 
-	.button-search
-		line-height: 60px
+  .button-search
+    line-height: 60px
 
-	&.active
-		.b-header__search-form__inactive
-			display: none
+  &.active
+    .b-header__search-form__inactive
+      display: none
 
-		.search-input__wrapper
-			float: left
-			display: block
-			line-height: 60px
+    .search-input__wrapper
+      float: left
+      display: block
+      line-height: 60px
 
 input.search-input
-	background: none
-	border: none
-	display: inline-block
-	vertical-align: middle
-	width: auto
-	color: #fff
-	box-shadow: none
-	border-left: 1px solid #fff
-	border-radius: 0
-	font-weight: 300
-	height: 35px
-	line-height: 25px
+  background: none
+  border: none
+  display: inline-block
+  vertical-align: middle
+  width: auto
+  color: #fff
+  box-shadow: none
+  border-left: 1px solid #fff
+  border-radius: 0
+  font-weight: 300
+  height: 35px
+  line-height: 25px
 
-	&:focus
-		border: none
-		border-left: 1px solid #fff
-		padding-left: 15px
-		padding-right: 15px
+  &:focus
+    border: none
+    border-left: 1px solid #fff
+    padding-left: 15px
+    padding-right: 15px
 
 .b-header__search-form__inactive
-	opacity: 0.7
-	font-size: 13px
-	line-height: 60px
-	float: left
+  opacity: 0.7
+  font-size: 13px
+  line-height: 60px
+  float: left
 
 .button-search
-	background: none
-	border: none
-	padding: 0
-	margin: 0 0 0 10px
-	cursor: pointer
-	font-size: 0
-	display: inline-block
-	vertical-align: middle
+  background: none
+  border: none
+  padding: 0
+  margin: 0 0 0 10px
+  cursor: pointer
+  font-size: 0
+  display: inline-block
+  vertical-align: middle
 
 .icon-search
-	+sprite(icon-search)
-	display: inline-block
-	vertical-align: middle
+  +sprite(icon-search)
+  display: inline-block
+  vertical-align: middle
 
 .copy-deals__sub-title
-	font-weight: 600
-	font-size: 18px
-	line-height: 1.6
+  font-weight: 600
+  font-size: 18px
+  line-height: 1.6
 
 .b-notification
-	display: inline-block
-	vertical-align: middle
-	border-radius: 4px
-	background-color: #ffe5d2
-	border: solid 1px #ffd6b7
-	padding: 0 10px
-	line-height: 40px
-	font-size: 14px
-	color: #4d4d4d
-	font-weight: 400
+  display: inline-block
+  vertical-align: middle
+  border-radius: 4px
+  background-color: #ffe5d2
+  border: solid 1px #ffd6b7
+  padding: 0 10px
+  line-height: 40px
+  font-size: 14px
+  color: #4d4d4d
+  font-weight: 400
 
-	&.no-bg
-		background: transparent
-		border: none
+  &.no-bg
+    background: transparent
+    border: none
 
-	strong
-		color: #1a1a1a
+  strong
+    color: #1a1a1a
 
 .icon-notification
-	+sprite(icon-notif)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	top: -1px
-	margin-right: 5px
+  +sprite(icon-notif)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -1px
+  margin-right: 5px
 
 .copy-deal__table-header
-	border-bottom: 2px solid #fe7d1b
-	margin-bottom: 20px
+  border-bottom: 2px solid #fe7d1b
+  margin-bottom: 20px
 
 .b-dropdown__current
-	border-bottom: 2px dotted #168de2
-	font-size: 14px
-	line-height: 1.6
-	color: #008ee3
-	font-weight: 400
+  border-bottom: 2px dotted #168de2
+  font-size: 14px
+  line-height: 1.6
+  color: #008ee3
+  font-weight: 400
 
 .b-dropdown-wrapper
-	position: relative
-	margin-bottom: 5px
-	font-weight: 400
+  position: relative
+  margin-bottom: 5px
+  font-weight: 400
 
-	&.sorting
-		.b-dropdown
-			left: auto
-			right: 0
-			top: 100%
-			border-radius: 3px
-			background-color: #ffffff
-			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2)
+  &.sorting
+    .b-dropdown
+      left: auto
+      right: 0
+      top: 100%
+      border-radius: 3px
+      background-color: #ffffff
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2)
 
-		.b-dropdown__listing-item
-			padding: 0 15px
-			color: #808080
-			position: relative
-			line-height: 2.4
-			cursor: pointer
-			white-space: nowrap
-			
-			&:hover, &.active
-				color: #168de2
+    .b-dropdown__listing-item
+      padding: 0 15px
+      color: #808080
+      position: relative
+      line-height: 2.4
+      cursor: pointer
+      white-space: nowrap
 
-			&.active
+      &:hover, &.active
+        color: #168de2
 
-				&:after
-					+sprite(icon--check)
-					display: inline-block
-					vertical-align: middle
-					position: relative
-					top: -1px
-					margin-left: 10px
-					content: ''
+      &.active
+
+        &:after
+          +sprite(icon--check)
+          display: inline-block
+          vertical-align: middle
+          position: relative
+          top: -1px
+          margin-left: 10px
+          content: ''
 
 .icon-filter
-	+sprite(icon-sort)
+  +sprite(icon-sort)
 
 .b-dropdown__filter-icon
-	.icon-filter
-		margin-left: 10px
+  .icon-filter
+    margin-left: 10px
 
 .b-dropdown-wrapper
-	&:hover
-		.b-dropdown
-			display: block
+  &:hover
+    .b-dropdown
+      display: block
 
 .b-pagination__listing-item
-	float: left
-	border-left: 1px solid #e2e2e2
-	border-top: 1px solid #e2e2e2
-	border-bottom: 1px solid #e2e2e2
-	color: #008ee3
+  float: left
+  border-left: 1px solid #e2e2e2
+  border-top: 1px solid #e2e2e2
+  border-bottom: 1px solid #e2e2e2
+  color: #008ee3
 
-	&:first-child
-		border-radius: 5px 0 0 5px
+  &:first-child
+    border-radius: 5px 0 0 5px
 
-	&:last-child
-		border-radius: 0 5px 5px 0
-		border-right: 1px solid #e2e2e2
+  &:last-child
+    border-radius: 0 5px 5px 0
+    border-right: 1px solid #e2e2e2
 
-	&.active, &:hover
-		background-color: #008ee3
-		border-left: solid 1px #008ee3
-		color: #fff
+  &.active, &:hover
+    background-color: #008ee3
+    border-left: solid 1px #008ee3
+    color: #fff
 
-		& + *
-			border-left: solid 1px #008ee3
+    & + *
+      border-left: solid 1px #008ee3
 
 .b-pagination__link
-	text-decoration: none
-	color: inherit
-	font-weight: 400
-	display: block
-	line-height: 33px
-	padding: 0 12px
+  text-decoration: none
+  color: inherit
+  font-weight: 400
+  display: block
+  line-height: 33px
+  padding: 0 12px
 
 .copy-deal__table
-	border-bottom: 1px solid #e2e2e2
-	padding: 0 40px 20px
+  border-bottom: 1px solid #e2e2e2
+  padding: 0 40px 20px
 
-	img
-		max-width: 100%
+  img
+    max-width: 100%
 
 input.b-traiders__search-input
-	width: 280px
-	height: 36px
-	border-radius: 2px
-	background-color: #ffffff
-	border: solid 1px #cccccc
-	font-weight: 300
-	box-shadow: none
-	padding: 0 15px 0 35px
+  width: 280px
+  height: 36px
+  border-radius: 2px
+  background-color: #ffffff
+  border: solid 1px #cccccc
+  font-weight: 300
+  box-shadow: none
+  padding: 0 15px 0 35px
 
-	&:focus
-		padding: 0 15px 0 35px
-		border: solid 1px #cccccc
-		box-shadow: 0 0 2px #ccc
+  &:focus
+    padding: 0 15px 0 35px
+    border: solid 1px #cccccc
+    box-shadow: 0 0 2px #ccc
 
 .icon-search-grey
-	+sprite(icon-search-grey)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	top: -1px
+  +sprite(icon-search-grey)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -1px
 
 .b-traiders__search-form
-	position: relative
-	width: 280px
+  position: relative
+  width: 280px
 
-	.button-search
-		position: absolute
-		top: 0
-		line-height: 36px
-		width: 35px
-		left: 0
-		text-align: center
-		margin-left: 1px
+  .button-search
+    position: absolute
+    top: 0
+    line-height: 36px
+    width: 35px
+    left: 0
+    text-align: center
+    margin-left: 1px
 
 .b-locks__filter-wrapper
-	position: absolute
-	top: 5px
-	left: 5px
-	z-index: 10
-	background-color: #ffffff
-	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2)
-	padding: 10px 18px
+  position: absolute
+  top: 5px
+  left: 5px
+  z-index: 10
+  background-color: #ffffff
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2)
+  padding: 10px 18px
 
 .b-locks
-	&__title
-		font-size: 13px
-		line-height: 1.6
-		color: #4d4d4d
+  &__title
+    font-size: 13px
+    line-height: 1.6
+    color: #4d4d4d
 
-	&__item
-		font-size: 12px
-		font-weight: 400
-		line-height: 24px
-		color: #4d4d4d
+  &__item
+    font-size: 12px
+    font-weight: 400
+    line-height: 24px
+    color: #4d4d4d
 
-		.checkbox-wrap, .icon-lock
-			margin-right: 10px
+    .checkbox-wrap, .icon-lock
+      margin-right: 10px
 
 .icon-checkbox
-	+sprite(icon-checkbox)
+  +sprite(icon-checkbox)
 
 input:checked
-	& + .icon-checkbox
-		+sprite(icon-checkbox-checked)
+  & + .icon-checkbox
+    +sprite(icon-checkbox-checked)
 
 .icon-lock
-	display: inline-block
-	vertical-align: middle
-	
-	&.green
-		+sprite(padlock-green)
-		display: inline-block
-	
-	&.orange-unlocked
-		+sprite(padlock-orange-unlocked)
-		display: inline-block
-	
-	&.orange-locked
-		+sprite(padlock-orange-locked)
-		display: inline-block
-	
-	&.blue-unlocked
-		+sprite(padlock-blue-unlocked)
-		display: inline-block
-	
-	&.blue-locked
-		+sprite(padlock-blue-locked)
-		display: inline-block
-	
-	&.black-unlocked
-		+sprite(padlock-black-unlocked)
-		display: inline-block
-	
-	&.black-locked
-		+sprite(padlock-black-locked)
-		display: inline-block
+  display: inline-block
+  vertical-align: middle
+
+  &.green
+    +sprite(padlock-green)
+    display: inline-block
+
+  &.orange-unlocked
+    +sprite(padlock-orange-unlocked)
+    display: inline-block
+
+  &.orange-locked
+    +sprite(padlock-orange-locked)
+    display: inline-block
+
+  &.blue-unlocked
+    +sprite(padlock-blue-unlocked)
+    display: inline-block
+
+  &.blue-locked
+    +sprite(padlock-blue-locked)
+    display: inline-block
+
+  &.black-unlocked
+    +sprite(padlock-black-unlocked)
+    display: inline-block
+
+  &.black-locked
+    +sprite(padlock-black-locked)
+    display: inline-block
 
 .icon-question
-	+sprite(icon-question)
-	display: inline-block
-	vertical-align: middle
-	position: relative
-	// top: -1px
-	cursor: pointer
+  +sprite(icon-question)
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  // top: -1px
+  cursor: pointer
 
-	&.active
-		+sprite(icon-question-active)
-		display: inline-block
-		vertical-align: middle
+  &.active
+    +sprite(icon-question-active)
+    display: inline-block
+    vertical-align: middle
 
 .b-locks__question-wrapper
-	line-height: 24px
-	margin-left: 10px
-	position: relative
-	top: 2px
+  line-height: 24px
+  margin-left: 10px
+  position: relative
+  top: 2px
 
 .b-locks__hidden-info
-	vertical-align: top
-	max-width: 140px
-	font-size: 12px
-	line-height: 14px
-	color: #808080
-	font-weight: 400
-	margin-left: 20px
-	padding-left: 20px
-	display: none
-	padding-top: 35px
+  vertical-align: top
+  max-width: 140px
+  font-size: 12px
+  line-height: 14px
+  color: #808080
+  font-weight: 400
+  margin-left: 20px
+  padding-left: 20px
+  display: none
+  padding-top: 35px
 
-	.semibold-text
-		color: #4d4d4d
+  .semibold-text
+    color: #4d4d4d
 
-	&.active
-		display: inline-block
-		vertical-align: top
+  &.active
+    display: inline-block
+    vertical-align: top
 
-	&:after
-		display: block
-		content: ''
-		top: 40px
-		right: 178px
-		position: absolute
-		width: 1px
-		bottom: 15px
-		background: #f7f7f7
+  &:after
+    display: block
+    content: ''
+    top: 40px
+    right: 178px
+    position: absolute
+    width: 1px
+    bottom: 15px
+    background: #f7f7f7
 
 .semibold-text
-	font-weight: 600
+  font-weight: 600
 
 td.b-traiders--dividents
-	border-bottom: 1px solid #cccccc
-	color: #000
+  border-bottom: 1px solid #cccccc
+  color: #000
 
 .traiders-table__countdown--counter
-	.countdown--number--item
-		font-size: 16px
-		color: #1a1a1a
-		width: 40px
-		font-weight: 600
-		line-height: 20px
+  .countdown--number--item
+    font-size: 16px
+    color: #1a1a1a
+    width: 40px
+    font-weight: 600
+    line-height: 20px
 
-		&:after
-			font-size: 20px
-			top: -1px
-			right: -3px
+    &:after
+      font-size: 20px
+      top: -1px
+      right: -3px
 
-	.countdown--number--caption
-		font-size: 11px
-		color: #4d4d4d
+  .countdown--number--caption
+    font-size: 11px
+    color: #4d4d4d
 
 .dividends--payment
-	margin: 0 auto 20px
+  margin: 0 auto 20px
 
-	td
-		&:nth-child(2), &:nth-child(3)
-			font-weight: 600
-			color: #1a1a1a
+  td
+    &:nth-child(2), &:nth-child(3)
+      font-weight: 600
+      color: #1a1a1a
 
 .b-company-services
-	padding: 20px
-	margin-top: 40px
-	background: rgba(255,255,255,0.2)
-	border-radius: 5px
-	line-height: 1.8
+  padding: 20px
+  margin-top: 40px
+  background: rgba(255, 255, 255, 0.2)
+  border-radius: 5px
+  line-height: 1.8
 
 .b-company-services__listing
-	float: left
-	width: 24%
-	margin-right: 1.33333%
+  float: left
+  width: 24%
+  margin-right: 1.33333%
 
-	&:last-child
-		margin-right: 0
+  &:last-child
+    margin-right: 0
 
 .b-company-services__link
-	color: #fff
-	text-decoration: none
-	opacity: 0.7
-	+trans
+  color: #fff
+  text-decoration: none
+  opacity: 0.7
+  +trans
 
-	&:hover
-		opacity: 0.3
+  &:hover
+    opacity: 0.3
 
 .responsive--table--wrapper
-	overflow: auto
-	width: 100%
+  overflow: auto
+  width: 100%
 
 .b-loginbar
-	position: fixed
-	min-width: 1000px
-	width: 100%
-	z-index: 15
+  position: fixed
+  min-width: 1000px
+  width: 100%
+  z-index: 15
 
 .b-loginbar-cont
-	max-height: 0
-	background: #fff
-	margin-top: -10px
-	padding-top: 10px
-	transition: max-height 0.15s ease-out
-	height: 100%
-	overflow: hidden
+  max-height: 0
+  background: #fff
+  margin-top: -10px
+  padding-top: 10px
+  transition: max-height 0.15s ease-out
+  height: 100%
+  overflow: hidden
 
-	&.active
-		max-height: 500px
-		transition: max-height 0.25s ease-in
+  &.active
+    max-height: 500px
+    transition: max-height 0.25s ease-in
 
 .b-loginbar--title
-	font-size: 30px
-	font-weight: 600
-	line-height: 1.33
-	letter-spacing: 1px
-	color: #168de2
+  font-size: 30px
+  font-weight: 600
+  line-height: 1.33
+  letter-spacing: 1px
+  color: #168de2
 
 .b-loginbar--info
-	font-size: 18px
-	font-weight: 600
-	line-height: 1.56
-	color: #4d4d4d
+  font-size: 18px
+  font-weight: 600
+  line-height: 1.56
+  color: #4d4d4d
 
 .icon--loginbar
-	+sprite(icon-loginbar)
-	display: inline-block
-	vertical-align: middle
+  +sprite(icon-loginbar)
+  display: inline-block
+  vertical-align: middle
 
 .b-loginbar-buttons
-	margin: 0 30px
-	display: inline-block
-	font-size: 14px
-	width: 140px
+  margin: 0 30px
+  display: inline-block
+  font-size: 14px
+  width: 140px
 
 .b-loginbar-user--ava
-	width: 102px
-	height: 102px
-	border-radius: 8px
-	padding: 4px
-	border: 2px solid #f5f5f5
+  width: 102px
+  height: 102px
+  border-radius: 8px
+  padding: 4px
+  border: 2px solid #f5f5f5
 
 .b-loginbar-user--info
-	line-height: 40px
+  line-height: 40px
 
-	span
-		width: 150px
-		display: inline-block
+  span
+    width: 150px
+    display: inline-block
 
 //______________________________
 
 .content__support-title
-	font-size: 30px
-	margin-bottom: 45px
-	font-weight: 600
-	margin-bottom: 16px
-	line-height: 1.33
-	letter-spacing: 1px
-	color: #4d4d4d
-
-.content__support-text
-	font-size: 14px
-	line-height: 1.57
-	color: #4d4d4d
+  font-size: 30px
+  margin-bottom: 45px
+  font-weight: 600
+  margin-bottom: 16px
+  line-height: 1.33
+  letter-spacing: 1px
+  color: #4d4d4d
 
 .b-site-support-content__inner .note
-	font-size: 14px
-	font-weight: 600
-	color: #fc4f08
+  font-size: 14px
+  font-weight: 600
+  color: #fc4f08
+  max-width: 870px
 
 .content__support-text-note
-	font-size: 14px
-	font-weight: 600
-	color: #4d4d4d
+  font-size: 14px
+  font-weight: 600
+  color: #4d4d4d
 
 .content__support__phone-number
-	height: 28px
-	font-size: 20px
-	line-height: 1.4
-	color: #1a1a1a
+  height: 28px
+  font-size: 20px
+  line-height: 1.4
+  color: #1a1a1a
 
 .content__login-form-wrapper
-	position: relative
-	max-width: 410px
-
+  position: relative
+  max-width: 410px
 
 .content__label-pass
-	position: absolute
-	left: 0px
-	top: 50%
-	+transform(translateY(-50%))
+  position: absolute
+  left: 0px
+  top: 50%
+  +transform(translateY(-50%))
 
 .content__label
-	float: left
-	max-width: 201px
+  float: left
+  max-width: 201px
 
 .office-open-p
-	max-width: 550px
+  max-width: 550px
 
 .content-inp-wrapper
-	width: 335px
-	margin-left: 10px
-	float: right
-	position: relative
-
+  width: 335px
+  margin-left: 10px
+  float: right
+  position: relative
 
 .content__login-form-b
-	padding-top: 5px
-	margin-bottom: 30px
+  padding-top: 5px
+  margin-bottom: 30px
 
 .content__links-item
-	display: inline-block
-	&:after
-		content: "/"
-		margin-left: 15px
-		margin-right: 15px
-	&:last-child:after
-		content: ''
+  display: inline-block
+  &:after
+    content: "/"
+    margin-left: 15px
+    margin-right: 15px
+  &:last-child:after
+    content: ''
 
 .content__support__links
-	font-size: 14px
-	line-height: 1.5em
-	color: #168de2
-
+  font-size: 14px
+  line-height: 1.5em
+  color: #168de2
 
 .content-link
-	text-decoration: none
+  text-decoration: none
 
 .content__support-text-note a
-	text-decoration: none
-
-.content__title
-	font-size: 30px
-	font-weight: 600
-	line-height: 1.33
-	letter-spacing: 1px
-	color: #4d4d4d
+  text-decoration: none
 
 .content-inp
-	+phc(#808080)
+  +phc(#808080)
 
 .content__dropdown-list
-	display: none
-	float: right
-	padding-right: 10px
-	padding-top: 10px
-	+trans()
-	&.active
-		display: block
-	+trans()
+  display: none
+  float: right
+  padding-right: 10px
+  padding-top: 10px
+  +trans()
+  &.active
+    display: block
+  +trans()
 
 .dd-arrows:before
-	content: ""
-	top: 15px
-	right: 15px
-	display: block
-	+arr(8, 6, #000000, t)
-	position: absolute
-	+transform(translateY(-50%))
+  content: ""
+  top: 15px
+  right: 15px
+  display: block
+  +arr(8, 6, #000000, t)
+  position: absolute
+  +transform(translateY(-50%))
 
 .dd-arrows:after
-	content: ""
-	top: 25px
-	right: 15px
-	display: block
-	+arr(8, 6, #000000, b)
-	position: absolute
-	+transform(translateY(-50%))
-
+  content: ""
+  top: 25px
+  right: 15px
+  display: block
+  +arr(8, 6, #000000, b)
+  position: absolute
+  +transform(translateY(-50%))
 
 .spokesman-content__video-wrapper
-	width: 100%
-	margin-bottom: 70px
+  width: 100%
+  margin-bottom: 70px
 
 .spokesman-content__video
-	background-image: url(http://placehold.it/653x396)
-	width: 653px
-	height: 396px
-	margin: 0 auto
-	clear: right
+  background-image: url(http://placehold.it/650x340)
+  width: 653px
+  height: 396px
+  margin: 0 auto
+  clear: right
 
-.app-store, .g-play
-	position: absolute
-	top: 50%
-	left: 5px
-	+transform(translateY(-50%))
+.app-store-icon
+  position: absolute
+  top: 50%
+  left: 15px
+  +transform(translateY(-50%))
+  +sprite(as-btn, abs_middle)
 
-.app-store
-	+sprite(icon-apple-button, abs_middle)
+.g-play-icon
+  left: 11px
+  position: absolute
+  top: 50%
+  +transform(translateY(-50%))
+  +sprite(g-play-btn, abs_middle)
 
-.g-play
-	+sprite(icon-google-play, abs_middle)
+
+.our-cond-page
+  .content-t-row
+    .content-t-cell:first-child
+      text-align: center
+
+.content-t-row:hover
+  background-color: #a1cdfd
+
+.link-out-icon
+  position: absolute
+  top: 50%
+  right: 15px
+  +transform(translateY(-50%))
+  +sprite(link-out-blue)
