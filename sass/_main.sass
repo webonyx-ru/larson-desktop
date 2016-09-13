@@ -2828,7 +2828,7 @@ td.b-traiders--dividents
 
 //_____________________________________________________________________
 
-//_____________________________SUPPORT page____________________________
+//_____________________________SUPPORT page_____________________
 
 .content__login-form-phone
     font-size: 20px
@@ -2839,12 +2839,6 @@ td.b-traiders--dividents
 .content__login-form-wrapper
     position: relative
     max-width: 425px
-
-.sign-up-btn
-    @extend .btn
-    padding: 0 50px
-    height: 40px
-    background-color: #2d90fc
 
 .b-content__login-form
     padding-top: 5px
@@ -2881,20 +2875,16 @@ td.b-traiders--dividents
     &:last-child:after
         content: ''
 
-.content-inp
+.fill-form-inp
     +phc(#808080)
+    background-color: #f8f8f8
 
+.fill-form input
+    background-color: #f8f8f8
 
 //______________________END SUPPORT page_______
 
-//______________________open-office____________
-.btn-send
-    @extend .btn
-    padding: 0 36px
-    height: 40px
-    background-color: #ff7100
-    margin-left: 10px
-
+//______________________open-office______________________
 .b-fill-form__label
     padding-top: 10px
     margin-left: 10px
@@ -2920,23 +2910,45 @@ td.b-traiders--dividents
 .open-office-form
     max-width: 550px
 
-.fill-form__dropdown-list
-    display: none
+.fill-form__select
+    height: 40px
+    background-color: #f8f8f8
+    border-radius: 3px
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24)
+    display: block
     width: 100%
-    padding-right: 10px
-    padding-top: 10px
-    +trans()
+    height: 40px
+    border: none
+    box-sizing: border-box
 
-.fill-form__dropdown-listing
-    +trans()
+.fill-form__select.jq-selectbox
+    width: 100%
+    height: 100%
 
-.fill-form__dropdown-item
-    padding: 10px
-    border: 1px solid red
-    text-align: center
-    cursor: pointer
-    &:hover
-        background-color: green
+.jq-selectbox__trigger
+    border-left: none
+
+
+.jq-selectbox__trigger:before
+    content: ""
+    top: 16px
+    right: 10px
+    display: block
+    +arr(8, 6, #000, t)
+    position: absolute
+    +transform(translateY(-50%))
+
+.jq-selectbox__trigger:after
+    content: ""
+    top: 25px
+    right: 10px
+    display: block
+    +arr(8, 6, #000, b)
+    position: absolute
+    +transform(translateY(-50%))
+
+.jq-selectbox__trigger-arrow
+    display: none
 
 .dd-arrows:before
     content: ""
@@ -2959,12 +2971,6 @@ td.b-traiders--dividents
 
 
 //_____________________our_conditidons__________
-.btn-apply
-    @extend .btn
-    background-color: #ff7100
-    padding: 10px 35px
-    display: inline-block
-
 .content-table-wrapper
     max-width: 870px
 
@@ -2975,11 +2981,22 @@ td.b-traiders--dividents
 //_____________________END_our_conditidons_______
 
 
-//_____________________mobile-trading___________________
+//_____________________mobile-trading___________
 .app-store-btn, .g-play-btn
-    @extend .btn
-    padding: 16px 86px
+    padding: 25px 85px
     background-color: #ff7100
+    border-radius: 7px
+    font-size: 14px
+    font-weight: 600
+    line-height: 1.57
+    color: #fff
+    cursor: pointer
+    text-decoration: none
+    display: inline-block
+    +trans
+    &:hover
+        opacity: 0.8
+        cursor: pointer
 
 .app-store-btn:after
     content: ''
@@ -2987,7 +3004,7 @@ td.b-traiders--dividents
     top: 50%
     left: 15px
     +transform(translateY(-50%))
-    +sprite(as-btn, abs_middle)
+    +sprite(as-btn, 'abs_middle')
 
 .g-play-btn:after
     content: ''
@@ -2995,24 +3012,19 @@ td.b-traiders--dividents
     position: absolute
     top: 50%
     +transform(translateY(-50%))
-    +sprite(g-play-btn, abs_middle)
+    +sprite(g-play-btn, 'abs_middle')
 
-//_____________________END_mobile-trading_____________
-
-//_____________________open-new-bill____________
-.open-new-bill
-    @extend .btn
-    color: #1683fb
-    padding: 12px 45px
-    border: 1px solid #d4cdcd
-    background-color: inherit
+//_____________________END_mobile-trading_________-
+//_____________________open-new-bill_______________
+.open-new-bill__buttons a
     margin-right: 20px
     &:last-child
         margin-right: 0
-    &:hover
-        background-color: #2192fd
-        color: #fff
-//_____________________END_open-new-bill____________
+
+//_____________________END_open-new-bill___________
+
+//_____________________spokesman__________________________
+
 .spokesman-content__video-wrapper
     width: 100%
     margin-bottom: 70px
@@ -3024,9 +3036,6 @@ td.b-traiders--dividents
     margin: 0 auto
     clear: right
 
-.content-t-row:hover
-    background-color: #a1cdfd
-
 .link-out-icon
     position: absolute
     top: 50%
@@ -3036,3 +3045,4 @@ td.b-traiders--dividents
 
 .content__buttons-partnerships
     width: 100px
+//_____________________END_spokesman__________________________

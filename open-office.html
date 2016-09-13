@@ -9,7 +9,8 @@
 	      rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek,greek-ext,cyrillic-ext,cyrillic'
 	      rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -324,58 +325,46 @@
 						<div class="b-fill-form clearfix">
 							<label class="b-fill-form__label">Фамилия</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp" type="text" name="Login" placeholder="">
+								<input class="fill-form-inp" type="text" name="Login" placeholder="">
 							</div>
 						</div>
 						<div class="b-fill-form clearfix">
 							<label class="b-fill-form__label">Имя</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp" type="text" name="Login" placeholder="">
+								<input class="fill-form-inp" type="text" name="Login" placeholder="">
 							</div>
 						</div>
 						<div class="b-fill-form clearfix">
 							<label class="b-fill-form__label">E-mail</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp" type="text" name="Login" placeholder="">
+								<input class="fill-form-inp" type="text" name="Login" placeholder="">
 							</div>
 						</div>
 						<div class="b-fill-form clearfix">
 							<label class="b-fill-form__label">Мобильный телефон</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp inputmask" type="phone" name="Login"
+								<input class="fill-form-inp inputmask" type="phone" name="Login"
 								       placeholder="+7 (___) ___-__-__">
 							</div>
 						</div>
 						<div class="b-fill-form clearfix">
 							<label class="b-fill-form__label">Страна</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp dd cur-p" type="text" name="Login" placeholder="">
+								<input class="fill-form-inp dd cur-p" type="text" name="Login" placeholder="">
 								<span class="dd-arrows"></span>
-								<div class="fill-form__dropdown-list">
-									<ul class="fill-form__dropdown-listing">
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-									</ul>
-								</div>
+
 							</div>
 						</div>
 						<div class="b-fill-form clearfix">
 							<label class="b-fill-form__label">Город</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp dd cur-p" type="text" name="Login" placeholder="">
-								<span class="dd-arrows"></span>
-								<div class="fill-form__dropdown-list">
-									<ul class="fill-form_dropdown-listing">
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Индия</li>
-										<li class="fill-form__dropdown-item">Судан</li>
-										<li class="fill-form__dropdown-item">Россия</li>
-										<li class="fill-form__dropdown-item">США</li>
-									</ul>
-								</div>
+                                <select class="fill-form__select" size="1">
+                                    <option disabled>Выберите героя</option>
+                                    <option value="Чебурашка">Чебурашка</option>
+                                    <option selected value="Крокодил Гена">Крокодил Гена</option>
+                                    <option value="Шапокляк">Шапокляк</option>
+                                    <option value="Крыса Лариса">Крыса Лариса</option>
+                                </select>
 							</div>
 						</div>
 						<div class="b-fill-form clearfix">
@@ -391,18 +380,8 @@
 								на финансовых рынках
 								(необязательное поле)</label>
 							<div class="b-fill-form__inp-wrapper">
-								<input class="content-inp dd cur-p" type="text" name="Login" placeholder="">
-								<span class="content-inp"></span>
+								<input class="fill-form-inp dd cur-p" type="text" name="Login" placeholder="">
 								<span class="dd-arrows"></span>
-								<div class="fill-form__dropdown-list">
-									<ul class="content__dropdown-listing">
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-										<li class="fill-form__dropdown-item">Япония</li>
-									</ul>
-								</div>
 
 							</div>
 						</div>
@@ -410,10 +389,10 @@
 							<label class="b-fill-form__label">Комментарии
 								(необязательное поле)</label>
 							<div class="b-fill-form__inp-wrapper">
-								<textarea class="content-inp" name="" id="" cols="30" rows="10"></textarea>
+								<textarea class="fill-form-inp" name="" id="" cols="30" rows="10"></textarea>
 							</div>
 						</div>
-						<button class="btn-send">Отправить</button>
+						<button class="blue_btn">Отправить</button>
 					</form>
 				</div><!--end form-wrapper-->
 			</div>
@@ -510,11 +489,10 @@
 
 
 <script src="js/jquery.min.js"></script>
-<script src="js/dropdown.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
 <script src="js/input.mask.js"></script>
 <!-- // <script src="js/retina.js"></script> -->
 <script src="js/countdown.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <!-- // <script src="PP/PP.js"></script> -->
 <script src="js/custom.js"></script>
