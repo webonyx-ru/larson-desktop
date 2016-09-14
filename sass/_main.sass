@@ -10,6 +10,9 @@ p
 strong
     font-weight: 600
 
+a
+    color: #1784fc
+
 .container
     margin: 0 auto
     max-width: 1366px
@@ -1840,7 +1843,6 @@ ul.b-footer--gray--color
 
 input[type="text"], input[type="email"], input[type="phone"], input[type="password"], textarea
     height: 40px
-    background-color: #e8e8e8
     border-radius: 3px
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24)
     display: block
@@ -1849,6 +1851,8 @@ input[type="text"], input[type="email"], input[type="phone"], input[type="passwo
     box-sizing: border-box
     padding: 0 15px
     max-width: 100%
+    +phc(#808080)
+    background-color: #f8f8f8
 
     &:focus
         border: solid 2px #2192fd
@@ -2828,7 +2832,7 @@ td.b-traiders--dividents
 
 //_____________________________________________________________________
 
-//_____________________________SUPPORT page_____________________
+//_____________________________SUPPORT page___________
 
 .content__login-form-phone
     font-size: 20px
@@ -2875,19 +2879,11 @@ td.b-traiders--dividents
     &:last-child:after
         content: ''
 
-.fill-form-inp
-    +phc(#808080)
-    background-color: #f8f8f8
-
-.fill-form input
-    background-color: #f8f8f8
-
 //______________________END SUPPORT page_______
 
-//______________________open-office______________________
+//______________________open-office______________
 .b-fill-form__label
     padding-top: 10px
-    margin-left: 10px
     float: left
     max-width: 200px
 
@@ -2899,7 +2895,7 @@ td.b-traiders--dividents
 .fill-form
     max-width: 570px
 
-.b-fill-form
+.fill-form-wrapper .b-fill-form
     margin-bottom: 25px
     &:last-child
         margin-bottom: 0
@@ -2910,25 +2906,13 @@ td.b-traiders--dividents
 .open-office-form
     max-width: 550px
 
-.fill-form__select
-    height: 40px
-    background-color: #f8f8f8
-    border-radius: 3px
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24)
-    display: block
-    width: 100%
-    height: 40px
-    border: none
-    box-sizing: border-box
+.jq-selectbox__select-text
+    line-height: 3em
 
-.fill-form__select.jq-selectbox
-    width: 100%
-    height: 100%
+.jq-selectbox__trigger-arrow
+    display: none
 
-.jq-selectbox__trigger
-    border-left: none
-
-
+.dd-arrows:before,
 .jq-selectbox__trigger:before
     content: ""
     top: 16px
@@ -2938,6 +2922,7 @@ td.b-traiders--dividents
     position: absolute
     +transform(translateY(-50%))
 
+.dd-arrows:after,
 .jq-selectbox__trigger:after
     content: ""
     top: 25px
@@ -2946,42 +2931,18 @@ td.b-traiders--dividents
     +arr(8, 6, #000, b)
     position: absolute
     +transform(translateY(-50%))
-
-.jq-selectbox__trigger-arrow
-    display: none
-
-.dd-arrows:before
-    content: ""
-    top: 16px
-    right: 10px
-    display: block
-    +arr(8, 6, #000, t)
-    position: absolute
-    +transform(translateY(-50%))
-
-.dd-arrows:after
-    content: ""
-    top: 25px
-    right: 10px
-    display: block
-    +arr(8, 6, #000, b)
-    position: absolute
-    +transform(translateY(-50%))
-//_____________________END_open-office__________
+//_____________________END_open-office_____
 
 
-//_____________________our_conditidons__________
+//_____________________our_conditidons______
 .content-table-wrapper
     max-width: 870px
 
-.content-table.p-ourcond
-    .content-t-row
-        .content-t-cell:first-child
-            text-align: center
+
 //_____________________END_our_conditidons_______
 
 
-//_____________________mobile-trading___________
+//_____________________mobile-trading______
 .app-store-btn, .g-play-btn
     padding: 25px 85px
     background-color: #ff7100
@@ -3014,14 +2975,14 @@ td.b-traiders--dividents
     +transform(translateY(-50%))
     +sprite(g-play-btn, 'abs_middle')
 
-//_____________________END_mobile-trading_________-
-//_____________________open-new-bill_______________
+//_____________________END_mobile-trading_________
+//_____________________open-new-bill______________
 .open-new-bill__buttons a
     margin-right: 20px
     &:last-child
         margin-right: 0
 
-//_____________________END_open-new-bill___________
+//_____________________END_open-new-bill__________
 
 //_____________________spokesman__________________________
 
@@ -3045,4 +3006,9 @@ td.b-traiders--dividents
 
 .content__buttons-partnerships
     width: 100px
-//_____________________END_spokesman__________________________
+
+
+.spokesman-page .content-t-row
+    .content-t-cell:first-child
+        text-align: left
+//_____________________END_spokesman__________________

@@ -1829,11 +1829,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .content-text, .b-content__text {
   font-size: 14px;
   line-height: 1.57;
+  color: #4d4d4d;
+  font-weight: 400;
 }
 
 .b-content__text p {
   margin-bottom: 25px;
-  color: #4d4d4d;
 }
 .b-content__text p:last-child {
   margin-bottom: 0;
@@ -1853,11 +1854,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #1a1a1a;
 }
 
+.content-title2 {
+  font-size: 18px;
+  line-height: 1.57;
+  color: #1a1a1a;
+}
+
 .content-table {
   font-size: 14px;
   color: #1a1a1a;
   width: 100%;
   text-align: center;
+}
+
+.content-t-row:last-child {
+  border-bottom: 2px solid #f4f4f4;
 }
 
 .content-t-row:first-child .content-t-cell {
@@ -1876,12 +1887,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .content-t-row .content-t-cell:first-child {
   padding-left: 30px;
-  text-align: left;
-  padding-right: -10px;
 }
 .content-t-row .content-t-cell:last-child {
   padding-right: 30px;
-  text-align: center;
 }
 
 .content-t-row:nth-of-type(2n) {
@@ -1922,6 +1930,10 @@ p {
 
 strong {
   font-weight: 600;
+}
+
+a {
+  color: #1784fc;
 }
 
 .container, .container--inside {
@@ -5705,7 +5717,6 @@ ul.b-footer--gray--color li:after {
 
 input[type="text"], input[type="email"], input[type="phone"], input[type="password"], textarea {
   height: 40px;
-  background-color: #e8e8e8;
   border-radius: 3px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24);
   display: block;
@@ -5714,6 +5725,23 @@ input[type="text"], input[type="email"], input[type="phone"], input[type="passwo
   box-sizing: border-box;
   padding: 0 15px;
   max-width: 100%;
+  background-color: #f8f8f8;
+}
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="phone"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #808080 !important;
+  opacity: 1 !important;
+}
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="phone"]::-moz-placeholder, input[type="password"]::-moz-placeholder, textarea::-moz-placeholder {
+  color: #808080 !important;
+  opacity: 1 !important;
+}
+input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="phone"]:-moz-placeholder, input[type="password"]:-moz-placeholder, textarea:-moz-placeholder {
+  color: #808080 !important;
+  opacity: 1 !important;
+}
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="phone"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #808080 !important;
+  opacity: 1 !important;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="phone"]:focus, input[type="password"]:focus, textarea:focus {
   border: solid 2px #2192fd;
@@ -7078,33 +7106,8 @@ td.b-traiders--dividents {
   content: "";
 }
 
-.fill-form-inp {
-  background-color: #f8f8f8;
-}
-.fill-form-inp::-webkit-input-placeholder {
-  color: #808080 !important;
-  opacity: 1 !important;
-}
-.fill-form-inp::-moz-placeholder {
-  color: #808080 !important;
-  opacity: 1 !important;
-}
-.fill-form-inp:-moz-placeholder {
-  color: #808080 !important;
-  opacity: 1 !important;
-}
-.fill-form-inp:-ms-input-placeholder {
-  color: #808080 !important;
-  opacity: 1 !important;
-}
-
-.fill-form input {
-  background-color: #f8f8f8;
-}
-
 .b-fill-form__label {
   padding-top: 10px;
-  margin-left: 10px;
   float: left;
   max-width: 200px;
 }
@@ -7119,10 +7122,10 @@ td.b-traiders--dividents {
   max-width: 570px;
 }
 
-.b-fill-form {
+.fill-form-wrapper .b-fill-form {
   margin-bottom: 25px;
 }
-.b-fill-form:last-child {
+.fill-form-wrapper .b-fill-form:last-child {
   margin-bottom: 0;
 }
 
@@ -7134,27 +7137,15 @@ td.b-traiders--dividents {
   max-width: 550px;
 }
 
-.fill-form__select {
-  height: 40px;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24);
-  display: block;
-  width: 100%;
-  height: 40px;
-  border: none;
-  box-sizing: border-box;
+.jq-selectbox__select-text {
+  line-height: 3em;
 }
 
-.fill-form__select.jq-selectbox {
-  width: 100%;
-  height: 100%;
+.jq-selectbox__trigger-arrow {
+  display: none;
 }
 
-.jq-selectbox__trigger {
-  border-left: none;
-}
-
+.dd-arrows:before,
 .jq-selectbox__trigger:before {
   content: "";
   top: 16px;
@@ -7173,47 +7164,8 @@ td.b-traiders--dividents {
   -o-transform: translateY(-50%);
 }
 
+.dd-arrows:after,
 .jq-selectbox__trigger:after {
-  content: "";
-  top: 25px;
-  right: 10px;
-  display: block;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 6px 4px 0 4px;
-  border-color: #000 transparent transparent transparent;
-  position: absolute;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-}
-
-.jq-selectbox__trigger-arrow {
-  display: none;
-}
-
-.dd-arrows:before {
-  content: "";
-  top: 16px;
-  right: 10px;
-  display: block;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 4px 6px 4px;
-  border-color: transparent transparent #000 transparent;
-  position: absolute;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-}
-
-.dd-arrows:after {
   content: "";
   top: 25px;
   right: 10px;
@@ -7233,10 +7185,6 @@ td.b-traiders--dividents {
 
 .content-table-wrapper {
   max-width: 870px;
-}
-
-.content-table.p-ourcond .content-t-row .content-t-cell:first-child {
-  text-align: center;
 }
 
 .app-store-btn, .g-play-btn {
@@ -7366,6 +7314,10 @@ td.b-traiders--dividents {
 
 .content__buttons-partnerships {
   width: 100px;
+}
+
+.spokesman-page .content-t-row .content-t-cell:first-child {
+  text-align: left;
 }
 
 @media screen and (max-width: 1200px) {
@@ -7762,6 +7714,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   font-weight: 300;
 }
 
+.mt0 {
+  margin-top: 0;
+}
+
 .fz18 {
   font-size: 18px;
 }
@@ -7780,6 +7736,10 @@ input:focus, textarea:focus, a:focus, button:focus {
 
 .ovh {
   overflow: hidden;
+}
+
+.red {
+  color: #ff0000;
 }
 
 .tcblue {
