@@ -3012,3 +3012,150 @@ td.b-traiders--dividents
     .content-t-cell:first-child
         text-align: left
 //_____________________END_spokesman__________________
+
+.b-input-output-resources > a
+    margin-right: 15px
+    padding: 1px 39px
+    &:last-child
+        margin-left: 0
+
+.white-orange_btn
+    @extend .empty--button
+    border-radius: 7px
+    border: solid 1px rgba(255, 113, 0, 0.5)
+    color: #ff7100
+    font-weight: 600
+    font-size: 14px
+    line-height: 36px
+    background: #fff
+    &:hover
+        opacity: 0.8
+        cursor: pointer
+        background: #f9f5f5
+        border: solid 1px rgba(255, 113, 0, 0.5)
+        color: #ff7100
+
+
+.b-site-content__top
+    padding-bottom: 75px
+    border-bottom: 1px solid #c8c8c8
+    width: 100%
+
+.video-education-wrapper
+    padding-top: 23px
+
+.video-education-menu
+    width: 305px
+
+.withdrawal-title
+    font-size: 24px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.67
+    letter-spacing: 0.8px
+    color: #4d4d4d
+
+.video-education-menu-item
+    display: block
+    font-size: 18px
+    font-weight: 600
+    height: 27px
+    color: #168de2
+    cursor: pointer
+    margin-bottom: 5px
+    //background-color: lightgrey
+    position: relative
+    line-height: 1.55em
+    &:hover
+        .video-education-menu-item-inner
+            background: linear-gradient(to bottom, #fbfbfb, #ededed)
+            border-top: 1px solid #ededed
+            border-left: 1px solid #ededed
+            border-bottom: 1px solid #ededed
+            width: 87%
+            //background: linear-gradient(-45deg, red, yellow)
+
+.video-education-menu-item:hover
+    &:after
+        background: linear-gradient(to bottom, #fbfbfb, #ededed)
+        border: 1px solid #ededed
+        content: ""
+        display: block
+        //background: linear-gradient(-45deg, red, yellow)
+        //+transform(TranslateY(-50%))
+        right: 2%
+        width: 25px
+        margin-top: -15px
+        height: 25px
+        transform: rotate(45deg)
+        position: absolute
+        top: 78%
+
+.video-education-menu-item-inner
+    position: relative
+    z-index: 1
+    display: block
+    width: 90%
+    height: 100%
+    border-top: 1px solid transparent
+    border-left: 1px solid transparent
+    border-bottom: 1px solid transparent
+    padding: 5px 6px 5px 13px
+
+.b-payment-variants
+    border-radius: 5px
+    background-image: linear-gradient(to bottom, #ffffff, #f0f0f0)
+    border: solid 1px #ededed
+    width: 100%
+    padding: 15px 0 15px 0
+    height: 80px
+    & span
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+
+.safebox-icon
+    +sprite(safebox-icon)
+    display: inline-block
+
+.qiwi-wallet-icon
+    +sprite(qiwi-icon)
+    display: inline-block
+
+.web-money-icon
+    +sprite(wm-icon)
+    display: inline-block
+
+.visa-icon
+    +sprite(visa-icon)
+    display: inline-block
+
+.hand-shaking-icon
+    +sprite(hand-shaking-icon)
+    display: inline-block
+
+.dd-table
+    position: absolute
+    display: block
+    right: 0
+    top: 0
+    height: 20px
+    width: 20px
+    background-color: red
+    cursor: pointer
+
+
+.content-t-row:first-child
+    .content-t-cell:last-child
+        position: relative
+
+.t-bl
+    .content-t-row
+        .content-t-cell
+            display: none
+        &.active
+            display: table-cell
+        &:first-child
+            .content-t-cell
+                display: table-cell
