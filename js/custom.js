@@ -324,12 +324,10 @@ $(document).ready(function() {
         $('input.data-inputmask, .inputmask').mask("+7 (999) 999-99-99");
     }
 
-    $(document).on("click", '.dd', function(e) {
-        $('.content-t-cell').toggleClass('active');
+    $(document).on("click", '.dd-table', function(e) {
+		$('.content-t-row').find('.content-t-cell').toggleClass('active');
         e.preventDefault();
     });
-
-    $("select").styler();
 });
 
 

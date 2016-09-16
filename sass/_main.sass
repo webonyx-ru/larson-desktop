@@ -2851,6 +2851,9 @@ td.b-traiders--dividents
     &:last-child
         margin-bottom: 0
 
+.content__login-form > .blue_btn
+    padding: 0 50px
+
 .content__login-form__inp-wrapper
     width: 350px
     margin-left: 10px
@@ -3136,26 +3139,102 @@ td.b-traiders--dividents
     display: inline-block
 
 .dd-table
-    position: absolute
-    display: block
-    right: 0
-    top: 0
-    height: 20px
-    width: 20px
-    background-color: red
+    position: relative
     cursor: pointer
 
+.dd-table
+    .content-t-row
+        .content-t-cell:after
+            position: absolute
+            display: block
+            right: 10px
+            top: 50%
+            +transform(translateY(-50%))
+            content: ''
+            height: 20px
+            width: 20px
+            background-color: lightgrey
+            cursor: pointer
 
-.content-t-row:first-child
-    .content-t-cell:last-child
-        position: relative
-
-.t-bl
+.dd-table
     .content-t-row
         .content-t-cell
             display: none
-        &.active
+
+.dd-table
+    .content-t-row
+        .content-t-cell .active
             display: table-cell
-        &:first-child
-            .content-t-cell
-                display: table-cell
+
+.dd-table
+    .content-t-row:first-child
+        .content-t-cell
+            display: table-cell
+
+.b-questions-col
+    float: left
+    width: 46%
+    margin-right: 8%
+    &:last-child
+        margin-right: 0
+        
+.b-questions
+    background-color: #fafafa
+    padding: 15px 10px 15px 42px
+    & ol
+        list-style-type: decimal
+        list-style-position: inside
+
+.questions-item
+    font-size: 14px
+    line-height: 1.71
+    color: #737373
+    font-weight: 400
+    padding-left: 15px
+
+.p-open-ss__b-list
+    & ol
+        list-style-type: decimal
+        list-style-position: inside
+    font-size: 14px
+    line-height: 2.14
+    color: #4d4d4d
+    width: 100%
+
+.swap
+    font-family: Helvetica
+    font-size: 12px
+    line-height: 1.5
+    letter-spacing: 0.3px
+    text-align: right
+    color: #808080
+    & p
+        margin-right: 5px
+        &:last-child
+            margin-right: 0
+
+.b-private__management
+    padding: 20px
+
+.stars-icon
+    +sprite(stars-icon)
+    position: absolute
+    top: 0
+    display: block
+    content: ''
+    right: 0
+
+.b-private__management
+    width: 630px
+    height: 270px
+    background-image: url("http://placehold.it/630x270")
+
+.b-text-private__management
+    & span
+        font-size: 36px
+    font-size: 28px
+    font-weight: 600
+    line-height: 1.31
+    letter-spacing: 0.8px
+    color: #ffffff
+    max-width: 458px
