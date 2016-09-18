@@ -726,40 +726,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .macbook {
-  background-image: url('../images/macbook.png?1473911611');
+  background-image: url('../images/macbook.png?1474096612');
   width: 365px;
   height: 197px;
   margin-top: -98px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .macbook {
-    background-image: url('../images/macbook@2x.png?1473911611');
+    background-image: url('../images/macbook@2x.png?1474096612');
     background-size: 364px 198px;
   }
 }
 
 .iphone {
-  background-image: url('../images/iphone.png?1473911611');
+  background-image: url('../images/iphone.png?1474096612');
   width: 263px;
   height: 161px;
   margin-top: -90px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .iphone {
-    background-image: url('../images/iphone@2x.png?1473911611');
+    background-image: url('../images/iphone@2x.png?1474096612');
     background-size: 265px 167px;
   }
 }
 
 .ipad {
-  background-image: url('../images/ipad.png?1473911611');
+  background-image: url('../images/ipad.png?1474096612');
   width: 260px;
   height: 225px;
   margin-top: -112px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .ipad {
-    background-image: url('../images/ipad@2x.png?1473911611');
+    background-image: url('../images/ipad@2x.png?1474096612');
     background-size: 228px 222px;
   }
 }
@@ -1963,14 +1963,14 @@ a {
 
 .b-logo {
   display: block;
-  background-image: url('../images/logo.png?1473911611');
+  background-image: url('../images/logo.png?1474096612');
   width: 249px;
   height: 43px;
   margin-right: 35px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-logo {
-    background-image: url('../images/logo2x.png?1473911611');
+    background-image: url('../images/logo2x.png?1474096612');
     background-size: 249px 43px;
   }
 }
@@ -2999,7 +2999,7 @@ a {
 }
 
 .b-main--page--parallax {
-  background-image: url('../images/parallax--top.jpg?1473911611');
+  background-image: url('../images/parallax--top.jpg?1474096612');
   background-position: center 15%;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -3007,17 +3007,17 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax {
-    background-image: url('../images/parallax--top@2x.jpg?1473911611');
+    background-image: url('../images/parallax--top@2x.jpg?1474096612');
     background-size: 1920px 950px;
   }
 }
 .b-main--page--parallax.type2 {
-  background-image: url('../images/parallax-2banner.jpg?1473911611');
+  background-image: url('../images/parallax-2banner.jpg?1474096612');
   background-position: center 0;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.type2 {
-    background-image: url('../images/parallax-2banner@2x.jpg?1473911611');
+    background-image: url('../images/parallax-2banner@2x.jpg?1474096612');
     background-size: 1920px 1274px;
   }
 }
@@ -3541,7 +3541,7 @@ a {
   margin: 0 auto;
   padding: 40px 35px;
   box-sizing: border-box;
-  background-image: url('../images/bg_blur_1.jpg?1473911611');
+  background-image: url('../images/bg_blur_1.jpg?1474096611');
   margin-bottom: 45px;
   -webkit-background-size: cover;
   background-size: cover;
@@ -3549,43 +3549,43 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-our--decisions--tab--video--wrapper {
-    background-image: url('../images/bg_blur_1@2x.jpg?1473911611');
+    background-image: url('../images/bg_blur_1@2x.jpg?1474096611');
     background-size: 1140px 294px;
   }
 }
 .b-our--decisions--tab--video--wrapper.bg2 {
-  background-image: url('../images/bg_blur_2.jpg?1473911611');
+  background-image: url('../images/bg_blur_2.jpg?1474096611');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-our--decisions--tab--video--wrapper.bg2 {
-    background-image: url('../images/bg_blur_2@2x.jpg?1473911611');
+    background-image: url('../images/bg_blur_2@2x.jpg?1474096611');
     background-size: 1140px 294px;
   }
 }
 .b-our--decisions--tab--video--wrapper.bg3 {
-  background-image: url('../images/bg_blur_3.jpg?1473911611');
+  background-image: url('../images/bg_blur_3.jpg?1474096611');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-our--decisions--tab--video--wrapper.bg3 {
-    background-image: url('../images/bg_blur_3@2x.jpg?1473911611');
+    background-image: url('../images/bg_blur_3@2x.jpg?1474096611');
     background-size: 1140px 294px;
   }
 }
 .b-our--decisions--tab--video--wrapper.bg4 {
-  background-image: url('../images/bg_blur_4.jpg?1473911611');
+  background-image: url('../images/bg_blur_4.jpg?1474096611');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-our--decisions--tab--video--wrapper.bg4 {
-    background-image: url('../images/bg_blur_4@2x.jpg?1473911611');
+    background-image: url('../images/bg_blur_4@2x.jpg?1474096611');
     background-size: 1140px 294px;
   }
 }
 .b-our--decisions--tab--video--wrapper.bg5 {
-  background-image: url('../images/bg_blur_5.jpg?1473911611');
+  background-image: url('../images/bg_blur_5.jpg?1474096611');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-our--decisions--tab--video--wrapper.bg5 {
-    background-image: url('../images/bg_blur_5@2x.jpg?1473911611');
+    background-image: url('../images/bg_blur_5@2x.jpg?1474096611');
     background-size: 1140px 292px;
   }
 }
@@ -3747,7 +3747,7 @@ a {
 }
 
 .b-competition {
-  background-image: url('../images/ballet-dancer.jpg?1473911611');
+  background-image: url('../images/ballet-dancer.jpg?1474096611');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -3755,16 +3755,16 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-competition {
-    background-image: url('../images/ballet-dancer@2x.jpg?1473911611');
+    background-image: url('../images/ballet-dancer@2x.jpg?1474096611');
     background-size: 1920px 950px;
   }
 }
 .b-competition.type2 {
-  background-image: url('../images/competition-2banner.jpg?1473911611');
+  background-image: url('../images/competition-2banner.jpg?1474096611');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-competition.type2 {
-    background-image: url('../images/competition-2banner@2x.jpg?1473911611');
+    background-image: url('../images/competition-2banner@2x.jpg?1474096611');
     background-size: 1920px 732px;
   }
 }
@@ -3787,7 +3787,7 @@ a {
 
 .b-analitics--best--traiders-number {
   width: 49%;
-  background-image: url('../images/banner.jpg?1473911611');
+  background-image: url('../images/banner.jpg?1474096611');
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
   height: 208px;
@@ -3798,7 +3798,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner@2x.jpg?1473911611');
+    background-image: url('../images/banner@2x.jpg?1474096611');
     background-size: 371px 212px;
   }
 }
@@ -7533,12 +7533,25 @@ td.b-traiders--dividents {
   }
 }
 
-.dd-table {
-  position: relative;
-  cursor: pointer;
+.content-t-row:first-child:hover {
+  background-color: #a1cdfd;
+}
+.content-t-row:first-child .content-t-cell {
+  padding: 19px 5px;
+  text-align: center;
+  color: #1a1a1a;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.content-t-row:first-child:first-child {
+  padding-left: 0px;
+}
+.content-t-row:first-child:last-child {
+  padding-right: 0px;
 }
 
-.dd-table .content-t-row .content-t-cell:after {
+.dd-table__title:after {
   position: absolute;
   display: block;
   right: 10px;
@@ -7549,22 +7562,50 @@ td.b-traiders--dividents {
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   content: "";
-  height: 20px;
-  width: 20px;
-  background-color: lightgrey;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  transform: rotate(-45deg);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
   cursor: pointer;
 }
 
-.dd-table .content-t-row .content-t-cell {
+.dd-table__title .rotate:after {
+  transform: rotate(135deg);
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+
+.dd-table > .content-table-wrapper {
   display: none;
 }
-
-.dd-table .content-t-row .content-t-cell .active {
-  display: table-cell;
+.dd-table > .content-table-wrapper.active {
+  display: block;
 }
 
-.dd-table .content-t-row:first-child .content-t-cell {
-  display: table-cell;
+.dd-table__title {
+  cursor: pointer;
+  padding: 13px 5px;
+  position: relative;
+  background-color: #003e6b;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .b-questions-col {
@@ -7667,7 +7708,7 @@ td.b-traiders--dividents {
 
 @media screen and (max-width: 1200px) {
   .b-logo {
-    background-image: url('../images/logo_small.png?1473911611');
+    background-image: url('../images/logo_small.png?1474096612');
     background-repeat: no-repeat;
     width: 31px;
     height: 40px;
@@ -7676,7 +7717,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-logo {
-    background-image: url('../images/logo_small@2x.png?1473911611');
+    background-image: url('../images/logo_small@2x.png?1474096612');
     background-size: 31px 40px;
   }
 }
@@ -7764,7 +7805,7 @@ td.b-traiders--dividents {
   }
 
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k.jpg?1473911611');
+    background-image: url('../images/banner250k.jpg?1474096611');
     background-size: cover;
     box-shadow: none;
     border-radius: 10px;
@@ -7772,7 +7813,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k@2x.jpg?1473911611');
+    background-image: url('../images/banner250k@2x.jpg?1474096611');
     background-size: 464px 212px;
   }
 }

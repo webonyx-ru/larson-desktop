@@ -3138,38 +3138,66 @@ td.b-traiders--dividents
     +sprite(hand-shaking-icon)
     display: inline-block
 
-.dd-table
-    position: relative
+//DD-TABLE_________________________________________________________________________________________
+.content-t-row:first-child
+    &:hover
+        background-color: #a1cdfd
+    .content-t-cell
+        padding: 19px 5px
+        text-align: center
+        color: #1a1a1a
+        background-color: #fff
+        font-size: 14px
+        text-align: center
+    &:first-child
+        padding-left: 0px
+    &:last-child
+        padding-right: 0px
+
+
+.dd-table__title:after
+    position: absolute
+    display: block
+    right: 10px
+    top: 50%
+    +transform(translateY(-50%))
+    content: ''
+    height: 15px
+    width: 15px
+    background-color: transparent
+    transform: rotate(-45deg)
+    border-top: 1px solid #fff
+    border-right: 1px solid #fff
     cursor: pointer
 
-.dd-table
-    .content-t-row
-        .content-t-cell:after
-            position: absolute
-            display: block
-            right: 10px
-            top: 50%
-            +transform(translateY(-50%))
-            content: ''
-            height: 20px
-            width: 20px
-            background-color: lightgrey
-            cursor: pointer
+.dd-table__title .rotate:after
+    transform: rotate(135deg)
+    position: absolute
+    display: block
+    right: 10px
+    top: 50%
+    +transform(translateY(-50%))
+    content: ''
+    height: 15px
+    width: 15px
+    background-color: transparent
+    border-top: 1px solid #fff
+    border-right: 1px solid #fff
+    cursor: pointer
 
-.dd-table
-    .content-t-row
-        .content-t-cell
-            display: none
+.dd-table > .content-table-wrapper
+    display: none
+    &.active
+        display: block
 
-.dd-table
-    .content-t-row
-        .content-t-cell .active
-            display: table-cell
-
-.dd-table
-    .content-t-row:first-child
-        .content-t-cell
-            display: table-cell
+.dd-table__title
+    cursor: pointer
+    padding: 13px 5px
+    position: relative
+    background-color: #003e6b
+    font-size: 18px
+    font-weight: 600
+    color: #ffffff
 
 .b-questions-col
     float: left
