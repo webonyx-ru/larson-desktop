@@ -1,4 +1,4 @@
-dvfunction CountdownTimer (elm, tl) {
+function CountdownTimer (elm, tl) {
  this.initialize.apply(this,arguments);
 }
 
