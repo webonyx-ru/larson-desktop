@@ -990,9 +990,11 @@
     line-height: 1.57
     color: #4d4d4d
     font-weight: 400
+    +trans
 
 .b-content__text p
     margin-bottom: 25px
+    +trans
     &:last-child
         margin-bottom: 0
 
@@ -1024,17 +1026,18 @@
 .content-t-row:last-child
     border-bottom: 2px solid #f4f4f4
 
-.content-t-row:first-child
-    .content-t-cell
-        padding: 13px 5px
-        background-color: #003e6b
-        font-size: 18px
-        font-weight: 600
-        color: #ffffff
-        &:first-child
-            border-radius: 5px 0 0 0
-        &:last-child
-            border-radius: 0 5px 0 0
+.hat
+    .content-t-row:first-child
+        .content-t-cell
+            padding: 13px 5px
+            background-color: #003e6b
+            font-size: 18px
+            font-weight: 600
+            color: #ffffff
+            &:first-child
+                border-radius: 5px 0 0 0
+            &:last-child
+                border-radius: 0 5px 0 0
 
 .content-t-row
     .content-t-cell:first-child

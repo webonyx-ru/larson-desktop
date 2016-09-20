@@ -9,6 +9,7 @@
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek,greek-ext,cyrillic-ext,cyrillic'
           rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -277,9 +278,11 @@
                 <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Главная</a>
                 </li>
                 <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Сервисы</a>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Виды
+                    счетов</a>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Открытие
+                    счета</a>
                 </li>
-                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Спецификации
-                    контрактов</a></li>
             </ul>
         </div>
     </div>
@@ -290,7 +293,7 @@
             <div class="b-site-left__outer-box">
                 <ul class="b-site-left__blue-menu">
                     <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Виды счетов</a></li>
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item b-active">Спецификации
+                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Спецификации
                         контрактов</a></li>
                     <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Торговые опции</a>
                     </li>
@@ -306,229 +309,175 @@
                     </li>
                     <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Социальная сеть
                         трейдеров</a></li>
-
+                </ul>
             </div>
         </div>
 
-        <div class="b-content-page-right-side ovh">
+        <div class="b-content-page-right-side ovh"><!--WSpace-->
             <div class="b-site-content__inner">
-                <h1 class="content-main-title tal mb20">Спецификации контрактов</h1>
-                <div class="b-content__help mb10 clearfix">
-                    <div class="b-content__help-item">
-                        Market Execution
-                        <div class="b-content__help-item-wrapper">
-                            <span class="b-content__help-icon"></span>
-                            <div class="b-content__help-popup">
-                                Все инструменты торгуются в режиме Market Execution, т.е по рынку.Технология
-                                автоматического перекрытия ордеров "умный дилер", позволяет исполнять более 20% ордеров
-                                лучше рынка.
+                <h1 class="content-main-title tal mb20">Регистрация нового клиента</h1>
+                <h2 class="content-title">Lorem ipsum dolor.</h2>
+                <div class="fill-form-wrapper">
+                    <p class="content-text mb25">Все поля являются обязательными, если не указано иное в описании
+                        поля.</p>
+                    <form action="url" class="fill-form clearfix">
+                        <div class="fill-form__inputes mb30">
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Фамилия</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp" type="text" name="Login" placeholder="">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Имя</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp" type="text" name="Login" placeholder="">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">E-mail</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp" type="text" name="Login" placeholder="">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Дата рождения</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp inputmask-bithday" type="text" name="Login"
+                                           placeholder="">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Страна</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <select class="fill-form__select" size="1">
+                                        <option value="Чебурашка">Чебурашка</option>
+                                        <option selected value="Крокодил Гена">Крокодил Гена</option>
+                                        <option value="Шапокляк">Шапокляк</option>
+                                        <option value="Крыса Лариса">Крыса Лариса</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Город</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <select class="fill-form__select" size="1" length="5">
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Lorem ipsum dolor.</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Moscow">Moscow</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Паспортные данные</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp" type="password" name="Login"
+                                           placeholder="">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Мобильный телефон</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp inputmask-phone" type="phone" name="Login"
+                                           placeholder="+7 (___) ___-__-__">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Требуется ли Вам оригинал клиентского соглашения?
+                                    (необязательное поле)</label>
+                                <div class="b-fill-form__inp-wrapper t15">
+                                    <input class="fill-form-inp" type="checkbox" checked>
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Почтовый адрес для отсылки клиентского соглашения
+                                    (необязательное поле)</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <textarea class="fill-form-inp" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Комментарии
+                                    (необязательное поле)</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <textarea class="fill-form-inp" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Internet</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input type="radio" name="имя" checked>
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Company Representative</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input type="radio" name="имя">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Пароль <br> (Латинские буквы и цифры, длина пароля должна быть от 6 до 15 символов. Пароль используется для входа в кабинет трейдера и метатрейдер)</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp" type="password" name="Login"
+                                           placeholder="">
+                                </div>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__label">Подтверждение пароля</label>
+                                <div class="b-fill-form__inp-wrapper">
+                                    <input class="fill-form-inp " type="password" name="Login"
+                                           placeholder="">
+                                </div>
+                            </div>
+                        </div> <!--END inputes -->
+                        <div class="fill-form__agreement mb40">
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__agreement__label ml10">Я прочитал и согласен с <a
+                                        href="#" class="td-n">Клиентским соглашением</a></label>
+                                <input class="fill-form-inp left" type="checkbox" name="Login"
+                                       checked>
+                            </div>
+                            <div class="b-fill-form clearfix">
+                                <label class="b-fill-form__agreement__label ml10">Я прочитал и согласен <a href="#" class="td-n">Памяткой Клиента</a> </label>
+                                <input class="fill-form-inp left" type="checkbox" name="Login"
+                                       checked>
                             </div>
                         </div>
-                    </div>
-                    <div class="b-content__help-item">
-                        Spread Politics
-                        <div class="b-content__help-item-wrapper">
-                            <span class="b-content__help-icon"></span>
-                            <div class="b-content__help-popup">
-                                По всем валютным парам действуют лучшие рыночные спреды от 0 пункта. Спреды динамически изменяются в зависимости от ситуации на рынке. В среднем диапазон изменения по основным валютным парам составляет 1-2 пункта, по кросс-курсам 3-4 пункта.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dd-tables-wrapper mb50">
-                    <div class="dd-table mb25">
-                        <div class="dd-table__title">
-                            FOREX INSTRUMENTS - 23 pairs. Leverage 1:100
-                            <span class="dd-table__arrow"></span>
-                        </div>
-                        <div class="content-table-wrapper">
-                            <table class="content-table mb15">
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">Lorem ipsum .</td>
-                                    <td class="content-t-cell">Lorem ipsum .</td>
-                                    <td class="content-t-cell">Lorem ipsum .</td>
-                                    <td class="content-t-cell">Lorem ipsum .</td>
-                                    <td class="content-t-cell">Lorem ipsum .</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="dd-table mb25">
-                        <div class="dd-table__title">
-                            CFDs on SHARES -33 instruments. Leverage 1:10
-                            <span class="dd-table__arrow"></span>
-                        </div>
-                        <div class="content-table-wrapper">
-                            <table class="content-table mb15">
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                    <td class="content-t-cell">Lorem ipsum.</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="dd-table mb25">
-                        <div class="dd-table__title">
-                            COMMODITIES - 10 instruments. Leverage 1:50
-                            <span class="dd-table__arrow"></span>
-                        </div>
-                        <div class="content-table-wrapper">
-                            <table class="content-table mb15">
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">XAUUSD</td>
-                                    <td class="content-t-cell">Gold on Spot</td>
-                                    <td class="content-t-cell">50 - 30</td>
-                                    <td class="content-t-cell">100 toz</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,1</a></td>
-                                    <td class="content-t-cell">100</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,3%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">XAGUSD</td>
-                                    <td class="content-t-cell">Silver on Spot</td>
-                                    <td class="content-t-cell">5-3</td>
-                                    <td class="content-t-cell">5`000 toz</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,1</a></td>
-                                    <td class="content-t-cell">10</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,3%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">PLTNM</td>
-                                    <td class="content-t-cell">Platinum on Spot</td>
-                                    <td class="content-t-cell">200-100</td>
-                                    <td class="content-t-cell">100 toz</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/1,0/1,0</a></td>
-                                    <td class="content-t-cell">200</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,3%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">^SOBNS</td>
-                                    <td class="content-t-cell">Soybeans</td>
-                                    <td class="content-t-cell">600-100</td>
-                                    <td class="content-t-cell">100 lb</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,1</a></td>
-                                    <td class="content-t-cell">100</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">^WT</td>
-                                    <td class="content-t-cell">WHEAT</td>
-                                    <td class="content-t-cell">500-100</td>
-                                    <td class="content-t-cell">100 bu</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/1,0/1,0</a></td>
-                                    <td class="content-t-cell">100</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">^Corn</td>
-                                    <td class="content-t-cell">Corn</td>
-                                    <td class="content-t-cell">200-50</td>
-                                    <td class="content-t-cell">1'000 lb</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,1</a></td>
-                                    <td class="content-t-cell">50</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">^CF</td>
-                                    <td class="content-t-cell">Coffee</td>
-                                    <td class="content-t-cell">90 - 30</td>
-                                    <td class="content-t-cell">1`000 lb</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/1,0/1,0</a></td>
-                                    <td class="content-t-cell">40</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">^Rice</td>
-                                    <td class="content-t-cell">Rice</td>
-                                    <td class="content-t-cell">90-30</td>
-                                    <td class="content-t-cell">10`000 lb</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,1/0,1</a></td>
-                                    <td class="content-t-cell">40</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">^NGAS</td>
-                                    <td class="content-t-cell">NaturalGas</td>
-                                    <td class="content-t-cell">90 - 30</td>
-                                    <td class="content-t-cell">10`000 bl</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/1,0/1,0</a></td>
-                                    <td class="content-t-cell">40</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">_QM</td>
-                                    <td class="content-t-cell">Light Sweet Gruide Oil</td>
-                                    <td class="content-t-cell">50-30</td>
-                                    <td class="content-t-cell">1`000 bl</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/1,0/1,0</a></td>
-                                    <td class="content-t-cell">100</td>
-                                    <td class="content-t-cell"><a href="#" class="td-n">no/0,2/0,5%</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="dd-table">
-                        <div class="dd-table__title">
-                            INDEXES - 03 instruments. Not for trading.
-                            <span class="dd-table__arrow"></span>
-                        </div>
-                        <div class="content-table-wrapper">
-                            <table class="content-table mb15">
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">_SP500</td>
-                                    <td class="content-t-cell">_NQCOMP</td>
-                                    <td class="content-t-cell">Standard Poors</td>
-                                    <td class="content-t-cell">NASDAQ</td>
-                                </tr>
-                                <tr class="content-t-row">
-                                    <td class="content-t-cell">_DJI</td>
-                                    <td class="content-t-cell">_XXX</td>
-                                    <td class="content-t-cell">Dow Jones</td>
-                                    <td class="content-t-cell">XXX XX</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="b-site-taber-content mb50">
-                    <div class="b-site-faq-content__vertical-taber">
-                        <a class="b-site-faq-content__item-taber" href="#">Комиссии</a>
-                        <div class="b-site-faq-content__hide-item-taber hidden">
-                            <p>За каждую торговую операцию берется фиксированная комиссия. Комиссия снижается по мере
-                                совершения торговых операций.</p>
-                        </div>
-                    </div>
-                    <div class="b-site-faq-content__vertical-taber">
-                        <a class="b-site-faq-content__item-taber" href="#">Ценообразование</a>
-                        <div class="b-site-faq-content__hide-item-taber hidden">
-                            <p>За каждую торговую операцию берется фиксированная комиссия. Комиссия снижается по мере
-                                совершения торговых операций.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="partnerships-buttons">
-                    <a href="#" class="left tac orange_btn">Открыть счет</a>
-                    <a href="#" class="right tac blue_btn ">Стать партнером</a>
-                </div>
+                        <button class="blue_btn">Зарегистрироваться</button>
+                    </form>
+                </div><!--end form-wrapper-->
             </div>
-        </div><!--Page content ride-side END-->
+        </div>
     </div>
 </div>
 
@@ -539,7 +488,7 @@
             <nav class="b-footer--menu--nav left">
                 <ul class="b-footer_menu--units">
                     <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">О компании</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Сервисы </a></li>
+                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Сервисы</a></li>
                     <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Метатрейдинг</a></li>
                     <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Партнерство</a></li>
                     <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Новости</a></li>
@@ -622,11 +571,13 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
+<script src="js/input.mask.js"></script>
 <!-- // <script src="js/retina.js"></script> -->
 <script src="js/countdown.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <!-- // <script src="PP/PP.js"></script> -->
 <script src="js/custom.js"></script>
+
 </body>
 
 </html>

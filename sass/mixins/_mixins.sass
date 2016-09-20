@@ -10,6 +10,12 @@
 	&::placeholder
 		@content
 
+=trans($property:all,$duration:0.5s,$effect:ease,$delay:0s)
+	-webkit-transition: $property $duration $effect $delay
+	-moz-transition: $property $duration $effect $delay
+	-o-transition: $property $duration $effect $delay
+	transition: $property $duration $effect $delay
+
 =transform($transform)
 	transform: $transform
 	-ms-transform: $transform
