@@ -325,15 +325,16 @@ $(document).ready(function () {
         $('input.data-inputmask, .inputmask-bithday').mask("99 99 999");
     }
 
-    $(document).on("click", '.dd-table__title', function (e) {
-        $(this).find('.dd-table__arrow').toggleClass('active');
+    $(document).on("click", '.dd-hat', function (e) {
         $(this).siblings('.content-table-wrapper').toggleClass('active');
-        $(this).closest('.dd-table__title').toggleClass('active');
+        $(this).closest('.dd-hat').toggleClass('active');
         e.preventDefault();
     });
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
         $(this).siblings('.b-content__text').toggleClass('active');
+        //$(this).siblings('.read-more-arrow').toggleClass('active');
+        $(this).closest('.b-content__read-more-title').toggleClass('active');
         e.preventDefault();
     });
 

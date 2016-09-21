@@ -3142,14 +3142,13 @@ td.b-traiders--dividents
 
 //DD-TABLE_________________________________________________________________________________________
 
-.dd-table__arrow
-    position: absolute
-    display: block
-    right: 27px
-    top: 39%
-    +transform(translateY(-50%))
+.dd-table__title-wrapper
+    vertical-align: middle
+    display: inline-block
+
+.dd-arrow
     content: ''
-    height: 7px
+    height: 8px
     width: 8px
     background-color: transparent
     transform: rotate(135deg)
@@ -3159,6 +3158,28 @@ td.b-traiders--dividents
     &.active
         top: 50%
         transform: rotate(-45deg)
+
+.arrow-table:after
+    @extend .dd-arrow
+    position: absolute
+    right: 27px
+    top: 39%
+    display: block
+
+.arrow-text:after
+    height: 5px
+    width: 5px
+    @extend .dd-arrow
+    display: inline-block
+    margin-left: 13px
+    vertical-align: 2px
+    border-top: 2px solid #000
+    border-right: 2px solid #000
+
+.arrow-text.active:after
+    vertical-align: middle
+    border-top: 2px solid #1683fb
+    border-right: 2px solid #1683fb
 
 .dd-table > .content-table-wrapper
     display: none
@@ -3317,7 +3338,8 @@ td.b-traiders--dividents
     line-height: 1.57
     color: #168de2
     cursor: pointer
-    border-bottom: 1px dashed #168de2
+    &.dashed
+        border-bottom: 1px dashed #168de2
 
 .b-content__read-more>.b-content__text
     display: none

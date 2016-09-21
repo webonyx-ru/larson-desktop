@@ -1022,28 +1022,37 @@
     width: 100%
     text-align: center
 
-
 .content-t-row:last-child
     border-bottom: 2px solid #f4f4f4
 
+.dd-hat
+    @extend .hat
+    border-radius: 5px 5px 5px 5px
+    +trans()
+    &.active
+        border-radius: 5px 5px 0 0
+
 .hat
-    .content-t-row:first-child
-        .content-t-cell
-            padding: 13px 5px
-            background-color: #003e6b
-            font-size: 18px
-            font-weight: 600
-            color: #ffffff
-            &:first-child
-                border-radius: 5px 0 0 0
-            &:last-child
-                border-radius: 0 5px 0 0
+    padding: 13px 5px
+    background-color: #003e6b
+    font-weight: 600
+    color: #ffffff
+
+.t-hat
+    .content-t-cell
+        @extend .hat
+        &:first-child
+            border-radius: 5px 0 0 0
+        &:last-child
+            border-radius: 0 5px 0 0
 
 .content-t-row
     .content-t-cell:first-child
         padding-left: 30px
     .content-t-cell:last-child
         padding-right: 30px
+    &.fz14
+        font-size: 14px
 
 .content-t-row:nth-of-type(2n)
     background-color: #fff

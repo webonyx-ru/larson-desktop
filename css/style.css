@@ -1881,17 +1881,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 2px solid #f4f4f4;
 }
 
-.hat .content-t-row:first-child .content-t-cell {
+.dd-hat {
+  border-radius: 5px 5px 5px 5px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+.dd-hat.active {
+  border-radius: 5px 5px 0 0;
+}
+
+.hat, .dd-hat, .t-hat .content-t-cell {
   padding: 13px 5px;
   background-color: #003e6b;
-  font-size: 18px;
   font-weight: 600;
   color: #ffffff;
 }
-.hat .content-t-row:first-child .content-t-cell:first-child {
+
+.t-hat .content-t-cell:first-child {
   border-radius: 5px 0 0 0;
 }
-.hat .content-t-row:first-child .content-t-cell:last-child {
+.t-hat .content-t-cell:last-child {
   border-radius: 0 5px 0 0;
 }
 
@@ -1900,6 +1912,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .content-t-row .content-t-cell:last-child {
   padding-right: 30px;
+}
+.content-t-row.fz14 {
+  font-size: 14px;
 }
 
 .content-t-row:nth-of-type(2n) {
@@ -7546,18 +7561,14 @@ td.b-traiders--dividents {
   }
 }
 
-.dd-table__arrow {
-  position: absolute;
-  display: block;
-  right: 27px;
-  top: 39%;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+.dd-table__title-wrapper {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.dd-arrow, .arrow-table:after, .arrow-text:after {
   content: "";
-  height: 7px;
+  height: 8px;
   width: 8px;
   background-color: transparent;
   transform: rotate(135deg);
@@ -7565,9 +7576,32 @@ td.b-traiders--dividents {
   border-right: 2px solid #fff;
   cursor: pointer;
 }
-.dd-table__arrow.active {
+.dd-arrow.active, .active.arrow-table:after, .active.arrow-text:after {
   top: 50%;
   transform: rotate(-45deg);
+}
+
+.arrow-table:after {
+  position: absolute;
+  right: 27px;
+  top: 39%;
+  display: block;
+}
+
+.arrow-text:after {
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  margin-left: 13px;
+  vertical-align: 2px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.arrow-text.active:after {
+  vertical-align: middle;
+  border-top: 2px solid #1683fb;
+  border-right: 2px solid #1683fb;
 }
 
 .dd-table > .content-table-wrapper {
@@ -7807,6 +7841,8 @@ td.b-traiders--dividents {
   line-height: 1.57;
   color: #168de2;
   cursor: pointer;
+}
+.b-content__read-more-title.dashed {
   border-bottom: 1px dashed #168de2;
 }
 
