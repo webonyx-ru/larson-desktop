@@ -325,9 +325,9 @@ $(document).ready(function () {
         $('input.data-inputmask, .inputmask-bithday').mask("99 99 999");
     }
 
-    $(document).on("click", '.dd-hat', function (e) {
+    $(document).on("click", '.dd-table__title', function (e) {
         $(this).siblings('.content-table-wrapper').toggleClass('active');
-        $(this).closest('.dd-hat').toggleClass('active');
+        $(this).closest('.dd-table__title').toggleClass('active');
         e.preventDefault();
     });
 
