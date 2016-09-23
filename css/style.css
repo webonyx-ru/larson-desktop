@@ -7858,7 +7858,7 @@ td.b-traiders--dividents {
   max-width: 355px;
 }
 
-.b-honors {
+.b-page-honors {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8089,6 +8089,30 @@ td.b-traiders--dividents {
   font-weight: 600;
   line-height: 1.87;
   color: #fff;
+}
+
+.b-user-info-popup {
+  padding: 10px;
+  width: 335px;
+  height: 82px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.b-user-info-popup__image {
+  width: 75px;
+  height: 75px;
+}
+
+.b-user-info-popup__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -8334,6 +8358,18 @@ input:focus, textarea:focus, a:focus, button:focus {
 
 .dib {
   display: inline-block;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.mr15 {
+  margin-right: 15px;
 }
 
 .mr30 {
