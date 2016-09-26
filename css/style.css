@@ -1059,6 +1059,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #168de2;
   color: #fff;
 }
+.b-content__text-info-acctype:hover .cog-icon {
+  display: none;
+}
 .b-content__text-info-acctype:hover .icon-acctype-user {
   background-image: url('../images/icons-se555865c66.png');
   background-position: 0 -1989px;
@@ -7194,7 +7197,7 @@ td.b-traiders--dividents {
 }
 
 .fill-form-wrapper {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .fill-form-wrapper .b-fill-form {
@@ -7900,10 +7903,6 @@ td.b-traiders--dividents {
 
 .b-content__feedback {
   max-width: 590px;
-}
-
-.fill-form-wrapper {
-  max-width: 500px;
 }
 
 .b-fill-form__inp-wrapper {
