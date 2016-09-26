@@ -339,6 +339,29 @@ $(document).ready(function () {
     });
 
     $("select, input:radio, input:checkbox").styler();
+
+    /*$(document).on("click", '.video-tabs-item', function(e) {
+        if ($(this).hasClass("all")) {
+            //$("[video-tab]").removeClass("active");
+            $(this).addClass("active");
+
+            $(".b-video-tabs-content").addClass("active");
+        } else {
+            if ($(this).hasClass("lessons")) {
+                $(".releases").removeClass("active");
+                //$(this).addClass("active");
+
+                $(".b-video-tabs-content").addClass("active");
+            }
+            if ($(this).hasClass("releases")) {
+                $(".lessons").removeClass("active");
+                //$(this).addClass("active");
+
+                $(".b-video-tabs-content").addClass("active");
+            }
+        }
+        e.preventDefault();
+    });*/
 });
 
 

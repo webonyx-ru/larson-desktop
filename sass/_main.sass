@@ -2146,7 +2146,7 @@ textarea
     top: -1px
     +transform(rotate(180deg))
 
-.b-comp--condition__item
+.b-comp--condition__itemb-comp--condition__item
     margin-bottom: 15px
 
     &:last-child
@@ -2898,6 +2898,7 @@ td.b-traiders--dividents
 .fill-form
     max-width: 570px
 
+
 .fill-form-wrapper
     max-width: 400px
 
@@ -3107,36 +3108,34 @@ td.b-traiders--dividents
     padding: 5px 6px 5px 13px
 
 .b-payment-variants
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
     border-radius: 5px
     background-image: linear-gradient(to bottom, #ffffff, #f0f0f0)
     border: solid 1px #ededed
     width: 100%
     padding: 15px 0 15px 0
-    height: 80px
-    & span
-        margin-right: 40px
-        &:last-child
-            margin-right: 0
+    height: 50px
+    align-items: center
 
 .safebox-icon
     +sprite(safebox-icon)
-    display: inline-block
 
 .qiwi-wallet-icon
     +sprite(qiwi-icon)
-    display: inline-block
 
 .web-money-icon
     +sprite(wm-icon)
-    display: inline-block
 
 .visa-icon
     +sprite(visa-icon)
-    display: inline-block
 
 .hand-shaking-icon
     +sprite(hand-shaking-icon)
-    display: inline-block
+
+.okpay-icon
+    +sprite(okpay-icon)
 
 //DD-TABLE_________________________________________________________________________________________
 
@@ -3258,7 +3257,8 @@ td.b-traiders--dividents
     display: none
     position: absolute
     right: -27px
-    top: 27px
+    margin-bottom: 40px
+    bottom: 100%
     font-size: 14px
     line-height: 1.57
     color: #ffffff
@@ -3415,10 +3415,10 @@ td.b-traiders--dividents
 //background-color: #fff
 
 .line-chart-icon
-    +sprite(line-chart-icon)
+    +sprite(line-chart-icon, "abs_middle")
 
 .speedometer-icon
-    +sprite(speedometer-icon)
+    +sprite(speedometer-icon, "abs_middle")
 
 .b-forex-tools_col
     float: left
@@ -3550,3 +3550,142 @@ td.b-traiders--dividents
     flex-wrap: wrap
     justify-content: space-between
     width: 50%
+
+
+.content-text-12
+    font-size: 12px
+    line-height: 1.83
+    color: #808080
+
+.b-page-profile
+    border-radius: 5px
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19)
+    border: solid 1px #c8c8c8
+    font-size: 14px
+    line-height: 2.36
+    color: #4d4d4d
+    display: flex
+    flex-wrap: wrap
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.b-page-profile__column
+    width: 30.3%
+    border-left: solid 1px #ededed
+    padding: 15px
+
+.b-page-profile__avatar
+    width: 30.3%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.b-fill-form
+    &.profile
+        width: 210px
+        position: relative
+        &>.jq-checkbox
+            position: absolute
+            right: 0
+            top: 10px
+
+
+.b-download-files_buttons>a
+    display: block
+    padding: 0px 45px
+
+.b-content__dialogs textarea
+    border-radius: 5px
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19)
+    border: solid 1px #c8c8c8
+
+
+.charter-label
+    font-size: 13px
+    font-style: italic
+    line-height: 1.69
+    color: #979797
+
+.b-video-tabs-content
+    display: none
+    &.active
+        display: block
+
+.b-payment-variants__item >.b-content__help-popup
+    margin-bottom: 20px
+    right: -105px
+    bottom: 100%
+    &:before
+        right: 130px
+        top: 150px
+        +arr(21, 17, #fe7d1b, b)
+
+.b-payment-variants__item
+    &:last-child
+        & >.b-content__help-popup
+            right: -30px
+            &:before
+                right: 80px
+                top: 150px
+                +arr(21, 17, #fe7d1b, b)
+
+    &:first-child
+        & >.b-content__help-popup
+            right: -185px
+            &:before
+                right: 200px
+                top: 150px
+                +arr(21, 17, #fe7d1b, b)
+
+.b-payment-variants__item
+    cursor: pointer
+    position: relative
+    height: 80px
+    &:hover
+        .b-content__help-popup
+            display: block
+
+.documents-col
+    width: 33%
+
+.b-page-forms__columns
+    display: flex
+    justify-content: space-between
+
+.pdf-icon
+    width: 28px
+    height: 36px
+    background-color: red
+    display: inline-block
+    vertical-align: middle
+
+
+.b-payment-variants__item
+    display: flex
+    align-items: center
+
+.cog-icon
+    +sprite(cog)
+    position: absolute
+    right: 0px
+    top: 0
+
+.game-controller-icon
+    +sprite(game-controller)
+    display: inline-block
+
+
+.graduation-cap-icon
+    +sprite(graduation-cap)
+    display: inline-block
+
+
+.star-icon
+    +sprite(star)
+    display: inline-block
+
+.shield-icon
+    +sprite(shield)
+    display: inline-block
