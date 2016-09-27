@@ -3257,8 +3257,8 @@ td.b-traiders--dividents
     display: none
     position: absolute
     right: -27px
-    margin-bottom: 40px
-    bottom: 100%
+    margin-top: 15px
+    top: 100%
     font-size: 14px
     line-height: 1.57
     color: #ffffff
@@ -3272,6 +3272,46 @@ td.b-traiders--dividents
         top: -10px
         right: 24px
         +arr(21, 17, #fe7d1b, t)
+
+//_____________________________________________________________
+.b-payment-variants__popup
+    @extend .b-content__help-popup
+    margin-bottom: 20px
+    right: -105px
+    bottom: 100%
+    top: auto
+    &:before
+        right: 130px
+        top: 150px
+        +arr(21, 17, #fe7d1b, b)
+
+.b-payment-variants__item
+    &:last-child
+        & >.b-payment-variants__popup
+            right: -30px
+            &:before
+                right: 80px
+                top: 150px
+                +arr(21, 17, #fe7d1b, b)
+
+    &:first-child
+        & >.b-payment-variants__popup
+            right: -185px
+            &:before
+                right: 200px
+                top: 150px
+                +arr(21, 17, #fe7d1b, b)
+
+.b-payment-variants__item
+    cursor: pointer
+    position: relative
+    height: 80px
+    &:hover
+        .b-payment-variants__popup
+            display: block
+
+//_____________________________________________________________
+
 
 .b-content__help-item
     font-size: 13px
@@ -3609,40 +3649,6 @@ td.b-traiders--dividents
     display: none
     &.active
         display: block
-
-.b-payment-variants__item >.b-content__help-popup
-    margin-bottom: 20px
-    right: -105px
-    bottom: 100%
-    &:before
-        right: 130px
-        top: 150px
-        +arr(21, 17, #fe7d1b, b)
-
-.b-payment-variants__item
-    &:last-child
-        & >.b-content__help-popup
-            right: -30px
-            &:before
-                right: 80px
-                top: 150px
-                +arr(21, 17, #fe7d1b, b)
-
-    &:first-child
-        & >.b-content__help-popup
-            right: -185px
-            &:before
-                right: 200px
-                top: 150px
-                +arr(21, 17, #fe7d1b, b)
-
-.b-payment-variants__item
-    cursor: pointer
-    position: relative
-    height: 80px
-    &:hover
-        .b-content__help-popup
-            display: block
 
 .documents-col
     width: 33%

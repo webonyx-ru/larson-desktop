@@ -7761,15 +7761,15 @@ td.b-traiders--dividents {
   color: #ffffff;
 }
 
-.b-content__help-popup {
+.b-content__help-popup, .b-payment-variants__popup {
   padding: 15px;
   width: 254px;
   z-index: 100;
   display: none;
   position: absolute;
   right: -27px;
-  margin-bottom: 40px;
-  bottom: 100%;
+  margin-top: 15px;
+  top: 100%;
   font-size: 14px;
   line-height: 1.57;
   color: #ffffff;
@@ -7777,7 +7777,7 @@ td.b-traiders--dividents {
   background-color: #fe7d1b;
   box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
 }
-.b-content__help-popup:before {
+.b-content__help-popup:before, .b-payment-variants__popup:before {
   content: "";
   display: block;
   position: absolute;
@@ -7788,6 +7788,56 @@ td.b-traiders--dividents {
   border-style: solid;
   border-width: 0 10.5px 17px 10.5px;
   border-color: transparent transparent #fe7d1b transparent;
+}
+
+.b-payment-variants__popup {
+  margin-bottom: 20px;
+  right: -105px;
+  bottom: 100%;
+  top: auto;
+}
+.b-payment-variants__popup:before {
+  right: 130px;
+  top: 150px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 17px 10.5px 0 10.5px;
+  border-color: #fe7d1b transparent transparent transparent;
+}
+
+.b-payment-variants__item:last-child > .b-payment-variants__popup {
+  right: -30px;
+}
+.b-payment-variants__item:last-child > .b-payment-variants__popup:before {
+  right: 80px;
+  top: 150px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 17px 10.5px 0 10.5px;
+  border-color: #fe7d1b transparent transparent transparent;
+}
+.b-payment-variants__item:first-child > .b-payment-variants__popup {
+  right: -185px;
+}
+.b-payment-variants__item:first-child > .b-payment-variants__popup:before {
+  right: 200px;
+  top: 150px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 17px 10.5px 0 10.5px;
+  border-color: #fe7d1b transparent transparent transparent;
+}
+
+.b-payment-variants__item {
+  cursor: pointer;
+  position: relative;
+  height: 80px;
+}
+.b-payment-variants__item:hover .b-payment-variants__popup {
+  display: block;
 }
 
 .b-content__help-item {
@@ -7819,7 +7869,7 @@ td.b-traiders--dividents {
     width: 14px;
   }
 }
-.b-content__help-item:hover .b-content__help-popup {
+.b-content__help-item:hover .b-content__help-popup, .b-content__help-item:hover .b-payment-variants__popup {
   display: block;
 }
 
@@ -8230,55 +8280,6 @@ td.b-traiders--dividents {
   display: none;
 }
 .b-video-tabs-content.active {
-  display: block;
-}
-
-.b-payment-variants__item > .b-content__help-popup {
-  margin-bottom: 20px;
-  right: -105px;
-  bottom: 100%;
-}
-.b-payment-variants__item > .b-content__help-popup:before {
-  right: 130px;
-  top: 150px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 17px 10.5px 0 10.5px;
-  border-color: #fe7d1b transparent transparent transparent;
-}
-
-.b-payment-variants__item:last-child > .b-content__help-popup {
-  right: -30px;
-}
-.b-payment-variants__item:last-child > .b-content__help-popup:before {
-  right: 80px;
-  top: 150px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 17px 10.5px 0 10.5px;
-  border-color: #fe7d1b transparent transparent transparent;
-}
-.b-payment-variants__item:first-child > .b-content__help-popup {
-  right: -185px;
-}
-.b-payment-variants__item:first-child > .b-content__help-popup:before {
-  right: 200px;
-  top: 150px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 17px 10.5px 0 10.5px;
-  border-color: #fe7d1b transparent transparent transparent;
-}
-
-.b-payment-variants__item {
-  cursor: pointer;
-  position: relative;
-  height: 80px;
-}
-.b-payment-variants__item:hover .b-content__help-popup {
   display: block;
 }
 
