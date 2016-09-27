@@ -119,7 +119,6 @@ a
 
 .b-dropdown--wrapper
     font-weight: 400
-
     &:hover
         .b-dropdown
             display: block
@@ -3064,11 +3063,12 @@ td.b-traiders--dividents
     display: block
     font-size: 18px
     font-weight: 600
-    height: 27px
+    line-height: 1.55em
+    white-space: nowrap
     color: #168de2
     cursor: pointer
     margin-bottom: 5px
-    //background-color: lightgrey
+    height: 35px
     position: relative
     line-height: 1.55em
     &:hover
@@ -3078,23 +3078,24 @@ td.b-traiders--dividents
             border-left: 1px solid #ededed
             border-bottom: 1px solid #ededed
             width: 87%
-//background: linear-gradient(-45deg, red, yellow)
+            color: #1a1a1a
+            height: 26px
+
 
 .video-education-menu-item:hover
     &:after
+        display: block
+        width: 25px
+        height: 24px
+        right: 6px
+        transform: rotate(45deg)
+        position: absolute
+        top: 17%
         background: linear-gradient(to bottom, #fbfbfb, #ededed)
         border: 1px solid #ededed
         content: ""
         display: block
-        //background: linear-gradient(-45deg, red, yellow)
-        //+transform(TranslateY(-50%))
-        right: 2%
-        width: 25px
-        margin-top: -15px
-        height: 25px
         transform: rotate(45deg)
-        position: absolute
-        top: 78%
 
 .video-education-menu-item-inner
     position: relative
@@ -3179,16 +3180,13 @@ td.b-traiders--dividents
     border-top: 2px solid #1683fb
     border-right: 2px solid #1683fb
 
-.dd-table > .content-table-wrapper
-    display: none
-    &.active
-        display: block
 
 .dd-table__title
     @extend .dd-hat
     @extend .content-title2
     position: relative
     cursor: pointer
+    padding-left: 20px
 
 .b-questions-col
     float: left
@@ -3366,15 +3364,10 @@ td.b-traiders--dividents
     font-size: 14px
     line-height: 1.57
     color: #168de2
+    +trans()
     cursor: pointer
     &.dashed
         border-bottom: 1px dashed #168de2
-
-.b-content__read-more > .b-content__text
-    display: none
-    +trans
-    &.active
-        display: block
 
 .b-content__info-column
     float: left
@@ -3706,3 +3699,37 @@ td.b-traiders--dividents
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+    align-items: baseline
+    padding-bottom: 15px
+
+
+
+.open-email
+    +sprite(open-email)
+
+.msg-notification
+    width: 14px
+    height: 11px
+    position: absolute
+    top: -2px
+    right: -5px
+    background: red
+    border-radius: 60px/50px
+    font-size: 7px
+    font-weight: 600
+    color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: center
+
+.t-sup-text
+    font-size: 11px
+    font-weight: 600
+    line-height: 1.45
+    color: #79c5fb
+    position: relative
+    top: -5px
+
+
+
+

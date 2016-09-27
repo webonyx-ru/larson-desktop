@@ -298,8 +298,6 @@ $(document).ready(function () {
         $(".sub-tree-menu").toggle(300);
         $(this).toggleClass('close-tree');
         return false
-
-
     });
 
     var loginBarBtn = $('.b-loginbar-btn'),
@@ -326,18 +324,19 @@ $(document).ready(function () {
     }
 
     $(document).on("click", '.dd-table__title', function (e) {
-        $(this).siblings('.content-table-wrapper').toggleClass('active');
+        $(this).siblings('.content-table-wrapper').stop().slideToggle(300);
         $(this).closest('.dd-table__title').toggleClass('active');
         e.preventDefault();
     });
 
     $(document).on("click", '.b-results-and-honors-title', function (e) {
         $(this).siblings('.b-results-and-honors').slideToggle(400);
+        $(this).closest('.b-results-and-honors-title').toggleClass('hidden');
         e.preventDefault();
     });
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
-        $(this).siblings('.b-content__text').toggleClass('active');
+        $(this).siblings('.b-content__text').slideToggle(400);
         //$(this).siblings('.read-more-arrow').toggleClass('active');
         $(this).closest('.b-content__read-more-title').toggleClass('active');
         e.preventDefault();
