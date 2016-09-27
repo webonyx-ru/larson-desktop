@@ -3148,6 +3148,11 @@ td.b-traiders--dividents
     border-top: 2px solid #fff
     border-right: 2px solid #fff
     cursor: pointer
+    &.grey
+        border-top: 2px solid grey
+        border-right: 2px solid grey
+        width: 6px
+        height: 6px
     &.active
         top: 50%
         transform: rotate(-45deg)
@@ -3531,42 +3536,39 @@ td.b-traiders--dividents
     background-color: #ffffff
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19)
     border: solid 1px #dbdbdb
-
+//___________________________results-and-honors_____________
 .b-results-and-honors
     height: 290px
+    height: 350px
+    box-sizing: border-box
     width: 100%
+    padding: 45px 150px 0px 95px
     background: linear-gradient(to left, #013e69, #0771bd)
-//background-image: url("http://placehold.it/1150x290")
 
-.b-results-and-honors-content
-    padding: 30px 90px
-
-.results-and-honors-text-block
+.b-results-and-honors-text
     color: #fff
-    p
-        opacity: 0.7
-        font-size: 13px
-        line-height: 2.15
-    span
-        opacity: 0.9
-        font-family: Helvetica
-        font-size: 36px
-        font-weight: 600
-        line-height: 0.78
+    font-size: 13px
+    line-height: 2.15
 
 .results-and-honors-title
-    font-size: 28px
+    font-size: 36px
     font-weight: 600
     line-height: 1
     color: #fff
 
-.results-ans-honors-links
+.moneybag
+    display: inline-block
+    content: ''
+    background-color: #fff
+    width: 17px
+    height: 20px
+
+.results-ans-honors-link
     height: 28px
     font-size: 15px
-    font-weight: 600
     line-height: 1.87
     color: #fff
-
+//__________________________________________________________
 .b-user-info-popup
     padding: 10px
     width: 335px
@@ -3692,3 +3694,15 @@ td.b-traiders--dividents
 .shield-icon
     +sprite(shield)
     display: inline-block
+
+.rherh
+    background-color: blue
+    width: 15px
+    height: 15px
+
+.b-results-and-honors-title
+    border-bottom: solid 0.5px #c8c8c8
+    font-weight: 600
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around

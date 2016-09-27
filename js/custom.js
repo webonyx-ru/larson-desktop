@@ -331,6 +331,11 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+    $(document).on("click", '.b-results-and-honors-title', function (e) {
+        $(this).siblings('.b-results-and-honors').slideToggle(400);
+        e.preventDefault();
+    });
+
     $(document).on("click", '.b-content__read-more-title', function (e) {
         $(this).siblings('.b-content__text').toggleClass('active');
         //$(this).siblings('.read-more-arrow').toggleClass('active');

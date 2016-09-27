@@ -7629,6 +7629,12 @@ td.b-traiders--dividents {
   border-right: 2px solid #fff;
   cursor: pointer;
 }
+.dd-arrow.grey, .grey.arrow-table:after, .grey.arrow-text:after {
+  border-top: 2px solid grey;
+  border-right: 2px solid grey;
+  width: 6px;
+  height: 6px;
+}
 .dd-arrow.active, .active.arrow-table:after, .active.arrow-text:after {
   top: 50%;
   transform: rotate(-45deg);
@@ -8153,41 +8159,37 @@ td.b-traiders--dividents {
 
 .b-results-and-honors {
   height: 290px;
+  height: 350px;
+  box-sizing: border-box;
   width: 100%;
+  padding: 45px 150px 0px 95px;
   background: linear-gradient(to left, #013e69, #0771bd);
 }
 
-.b-results-and-honors-content {
-  padding: 30px 90px;
-}
-
-.results-and-honors-text-block {
+.b-results-and-honors-text {
   color: #fff;
-}
-.results-and-honors-text-block p {
-  opacity: 0.7;
   font-size: 13px;
   line-height: 2.15;
 }
-.results-and-honors-text-block span {
-  opacity: 0.9;
-  font-family: Helvetica;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 0.78;
-}
 
 .results-and-honors-title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1;
   color: #fff;
 }
 
-.results-ans-honors-links {
+.moneybag {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  width: 17px;
+  height: 20px;
+}
+
+.results-ans-honors-link {
   height: 28px;
   font-size: 15px;
-  font-weight: 600;
   line-height: 1.87;
   color: #fff;
 }
@@ -8405,6 +8407,20 @@ td.b-traiders--dividents {
     height: 40px;
     width: 36px;
   }
+}
+
+.rherh {
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+}
+
+.b-results-and-honors-title {
+  border-bottom: solid 0.5px #c8c8c8;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 1200px) {
@@ -8833,6 +8849,14 @@ input:focus, textarea:focus, a:focus, button:focus {
   display: none;
 }
 
+.td-u {
+  text-decoration: underline;
+}
+
+.op07 {
+  opacity: 0.7;
+}
+
 .w0 {
   width: 0;
 }
@@ -8913,6 +8937,18 @@ input:focus, textarea:focus, a:focus, button:focus {
 
 .wdth215 {
   width: 215px !important;
+}
+
+.fz15 {
+  font-size: 15px;
+}
+
+.fz28 {
+  font-size: 28px;
+}
+
+.fz42 {
+  font-size: 42px;
 }
 
 .ovh {
@@ -9037,6 +9073,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   text-decoration: none;
 }
 
+.fz22 {
+  font-size: 22px;
+}
+
 .cur-p {
   cursor: pointer;
 }
@@ -9048,6 +9088,11 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 strong {
   font-weight: 900;
+}
+
+.contest-accounts {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
