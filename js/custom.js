@@ -330,14 +330,14 @@ $(document).ready(function () {
     });
 
     $(document).on("click", '.b-results-and-honors-title', function (e) {
-        $(this).siblings('.b-results-and-honors').slideToggle(400);
+        $(this).siblings('.b-results-and-honors').stop().slideToggle(400);
         $(this).closest('.b-results-and-honors-title').toggleClass('hidden');
         e.preventDefault();
     });
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
-        $(this).siblings('.b-content__text').slideToggle(400);
-        //$(this).siblings('.read-more-arrow').toggleClass('active');
+        $(this).siblings('.b-content__text').stop().slideToggle(400);
+        $(this).closest('.b-content__read-more-title').toggleClass('active');
         e.preventDefault();
     });
 

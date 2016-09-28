@@ -54,7 +54,7 @@ a
     border-radius: 7px
     cursor: pointer
     font-weight: 400
-    +trans
+    +trans()
 
     &.white
         color: #fff
@@ -75,7 +75,7 @@ a
 
 .b-header--the--phone--link
     color: #575757
-    font-family: Roboto
+    font-family: Roboto, serif
     font-size: 18px
     font-weight: 400
     text-decoration: none
@@ -2394,6 +2394,7 @@ textarea
             display: none
 
         .search-input__wrapper
+            width: 100% //hthth
             float: left
             display: block
             line-height: 60px
@@ -2404,7 +2405,6 @@ input.search-input
     display: inline-block
     vertical-align: middle
     width: auto
-    color: #fff
     box-shadow: none
     border-left: 1px solid #fff
     border-radius: 0
@@ -3353,7 +3353,6 @@ td.b-traiders--dividents
     font-size: 14px
     line-height: 1.57
     color: #168de2
-    +trans()
     cursor: pointer
 
 .b-content__info-column
@@ -3725,3 +3724,12 @@ td.b-traiders--dividents
     +sprite(big-blue-cog)
 
 
+.b-rtg-table-search-form
+    border-radius: 2px
+    background-color: #ffffff
+    border: solid 1px #cccccc
+    line-height: 0
+    font-weight: 300
+    font-size: 0
+    & > .search-input
+        color: #4d4d4d
