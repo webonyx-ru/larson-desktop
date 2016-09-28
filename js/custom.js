@@ -80,23 +80,27 @@ $(document).ready(function () {
         $(this).siblings().removeClass('active').end().addClass('active');
 
         $('.js--live--spread--tab[data-tab-block="' + target + '"]').siblings().hide().end().stop().show()
-    })
+    });
 
-    $('.b-honors--listing').owlCarousel({
-        items: 7,
-        responsive: {
-            0: {
-                items: 4
+    if ($('.b-honors--listing').length > 0) {
+        $('.b-honors--listing').owlCarousel({
+            items: 7,
+            responsive: {
+                0: {
+                    items: 4
+                },
+                1200: {
+                    items: 6
+                },
             },
-            1200: {
-                items: 6
-            },
-        },
-        loop: true,
-        autoheight: false,
-        pagination: false,
-        nav: true
-    })
+            loop: true,
+            autoheight: false,
+            pagination: false,
+            nav: true
+        })
+    }
+
+
 
     $(document).on('click', '.js--traiders--table--selector[data-tab--target]', function (e) {
         e.preventDefault();
@@ -341,7 +345,10 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    $("select, input:radio, input:checkbox").styler();
+    if ($("select, input:radio, input:checkbox").length > 0){
+        $("select, input:radio, input:checkbox").styler();
+    }
+
 
     /*$(document).on("click", '.video-tabs-item', function(e) {
         if ($(this).hasClass("all")) {

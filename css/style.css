@@ -171,7 +171,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   line-height: 1.56;
   width: 100%;
-  background: #f7f7f7;
   display: inline-block;
   position: relative;
   padding: 10px 50px 10px 15px;
@@ -497,7 +496,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
   font-size: 42px;
   font-weight: normal;
-  line-height: 43px;
   color: #168de2;
   margin-top: 30px;
   margin-bottom: 25px;
@@ -895,7 +893,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 40px;
   border-radius: 7px;
   background-color: #ff7100;
-  font-family: HelveticaNeue;
+  font-family: HelveticaNeue, serif;
   font-size: 20px;
   font-weight: normal;
   color: #ffffff;
@@ -939,7 +937,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 40px;
   border-radius: 7px;
   background-color: #ff7100;
-  font-family: HelveticaNeue;
+  font-family: HelveticaNeue, serif;
   font-size: 20px;
   font-weight: normal;
   color: #ffffff;
@@ -3658,7 +3656,6 @@ a {
 
 .b-our--decisions--tab--title {
   color: #1a1a1a;
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -3729,7 +3726,6 @@ a {
 
 .b-our--decisions--tab--video--title {
   color: #fff;
-  font-family: "Open Sans";
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -3965,7 +3961,6 @@ a {
 }
 
 .b-analitics--live--spread--title {
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -3987,7 +3982,6 @@ a {
 
 .b-analitics--best-result--title {
   color: #4d4d4d;
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
 }
@@ -4096,8 +4090,7 @@ a {
 
 .b-analitics--paybacks--td {
   color: #4d4d4d;
-  font-family: roboto;
-  font-weight: 300;
+  font-family: roboto, serif;
   letter-spacing: 0.3px;
   height: 22px;
   padding: 0 15px;
@@ -4125,7 +4118,6 @@ a {
   padding: 0 10px;
   font-size: 16px;
   font-weight: 300;
-  text-decoration: none;
   text-decoration: underline;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -4882,7 +4874,6 @@ ul.b-footer--gray--color li:after {
   height: 52px;
   opacity: 0.9;
   color: #4d4d4d;
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -5444,7 +5435,7 @@ ul.b-footer--gray--color li:after {
 
 .b-traiders--table--lock--number {
   color: #25ba13;
-  font-family: "roboto";
+  font-family: roboto, serif;
   font-size: 8px;
   font-weight: 300;
   line-height: 10px;
@@ -5462,7 +5453,7 @@ ul.b-footer--gray--color li:after {
 }
 .blue--table--banner .traiders--competition {
   color: white;
-  font-family: Roboto;
+  font-family: Roboto, serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
@@ -5479,7 +5470,7 @@ ul.b-footer--gray--color li:after {
   margin: 0 15px;
   line-height: 45px;
   font-size: 16px;
-  font-family: roboto;
+  font-family: roboto, serif;
   font-weight: 300;
 }
 .traiders--price--found .bold, .traiders--price--places .bold, .traiders--price--nominants .bold {
@@ -5500,7 +5491,7 @@ ul.b-footer--gray--color li:after {
   line-height: 36px;
   font-size: 13px;
   font-weight: 500;
-  font-family: roboto;
+  font-family: roboto, serif;
   border: none;
 }
 .table--banner--buttons--wrapper .orange_btn, .table--banner--buttons--wrapper .priv-managment__btn {
@@ -5611,7 +5602,6 @@ ul.b-footer--gray--color li:after {
   color: #4d4d4d;
   font-size: 16px;
   font-weight: 300;
-  line-height: 22px;
   width: 25%;
   text-align: left;
   float: left;
@@ -5671,7 +5661,7 @@ ul.b-footer--gray--color li:after {
 .table--traiders--price--block span {
   font-size: 8px;
   color: red;
-  font-family: roboto;
+  font-family: roboto, serif;
   line-height: 10px;
   font-weight: 300;
   position: absolute;
@@ -6169,7 +6159,7 @@ textarea:focus, textarea.input-error {
   height: 10px;
   width: 11px;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 0;
   display: block;
 }
@@ -6214,11 +6204,11 @@ textarea:focus, textarea.input-error {
   cursor: pointer;
 }
 .b-comp--condition__header.active .icon-blue_arrow {
-  transform: rotate(0);
-  -ms-transform: rotate(0);
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -o-transform: rotate(0);
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 .b-comp--condition__content {
@@ -6285,7 +6275,6 @@ textarea:focus, textarea.input-error {
   position: relative;
   padding: 20px;
   border: 1px dashed #ededed;
-  margin-bottom: 15px;
   max-width: 940px;
   box-sizing: border-box;
   width: 90%;
@@ -7512,7 +7501,6 @@ td.b-traiders--dividents {
   display: block;
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.55em;
   white-space: nowrap;
   color: #168de2;
   cursor: pointer;
@@ -7532,11 +7520,9 @@ td.b-traiders--dividents {
 }
 
 .video-education-menu-item:hover:after {
-  display: block;
   width: 25px;
   height: 24px;
   right: 6px;
-  transform: rotate(45deg);
   position: absolute;
   top: 17%;
   background: linear-gradient(to bottom, #fbfbfb, #ededed);
@@ -8188,11 +8174,10 @@ td.b-traiders--dividents {
 }
 
 .b-results-and-honors {
-  height: 290px;
   height: 350px;
   box-sizing: border-box;
   width: 100%;
-  padding: 45px 150px 0px 95px;
+  padding: 45px 150px 0 95px;
   background: linear-gradient(to left, #013e69, #0771bd);
 }
 
@@ -8292,7 +8277,7 @@ td.b-traiders--dividents {
 
 .b-download-files_buttons > a {
   display: block;
-  padding: 0px 45px;
+  padding: 0 45px;
 }
 
 .b-content__dialogs textarea {
@@ -8346,7 +8331,7 @@ td.b-traiders--dividents {
   height: 22px;
   width: 22px;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 0;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
@@ -9262,10 +9247,6 @@ input:focus, textarea:focus, a:focus, button:focus {
     display: none;
   }
 }
-strong {
-  font-weight: 900;
-}
-
 .contest-accounts {
   max-width: 1100px;
   margin: 0 auto;
