@@ -338,7 +338,6 @@ $(document).ready(function () {
     $(document).on("click", '.b-content__read-more-title', function (e) {
         $(this).siblings('.b-content__text').slideToggle(400);
         //$(this).siblings('.read-more-arrow').toggleClass('active');
-        $(this).closest('.b-content__read-more-title').toggleClass('active');
         e.preventDefault();
     });
 
