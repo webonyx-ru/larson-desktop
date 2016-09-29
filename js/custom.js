@@ -334,14 +334,20 @@ $(document).ready(function () {
     });
 
     $(document).on("click", '.b-results-and-honors-title', function (e) {
-        $(this).siblings('.b-results-and-honors').stop().slideToggle(400);
-        $(this).closest('.b-results-and-honors-title').toggleClass('hidden');
+        $(this).siblings('.b-results-and-honors').stop().slideDown(400);
+        $(this).closest('.b-results-and-honors-title').stop().slideUp(400);
         e.preventDefault();
     });
 
+    $(document).on("click", '.b-results-and-honors__close', function (e) {
+        $('.b-results-and-honors').stop().slideUp(400);
+        $('.b-results-and-honors-title').stop().slideDown(400);
+        e.preventDefault();
+    });
+
+
     $(document).on("click", '.b-content__read-more-title', function (e) {
-        $(this).siblings('.b-content__text').stop().slideToggle(400);
-        $(this).closest('.b-content__read-more-title').toggleClass('active');
+        $(this).siblings('.b-results-and-honors').stop().slideToggle(400);
         e.preventDefault();
     });
 
@@ -349,29 +355,6 @@ $(document).ready(function () {
         $("select, input:radio, input:checkbox").styler();
     }
 
-
-    /*$(document).on("click", '.video-tabs-item', function(e) {
-        if ($(this).hasClass("all")) {
-            //$("[video-tab]").removeClass("active");
-            $(this).addClass("active");
-
-            $(".b-video-tabs-content").addClass("active");
-        } else {
-            if ($(this).hasClass("lessons")) {
-                $(".releases").removeClass("active");
-                //$(this).addClass("active");
-
-                $(".b-video-tabs-content").addClass("active");
-            }
-            if ($(this).hasClass("releases")) {
-                $(".lessons").removeClass("active");
-                //$(this).addClass("active");
-
-                $(".b-video-tabs-content").addClass("active");
-            }
-        }
-        e.preventDefault();
-    });*/
 });
 
 

@@ -56,11 +56,13 @@ a
     font-weight: 400
     +trans()
 
+
     &.white
         color: #fff
         font-weight: 400
 
     &:hover
+        text-decoration: none
         background-color: #2086e5
         color: #fff
         border-color: #2086e5
@@ -643,6 +645,7 @@ a
 
 .b-our--decisions--tab--blocks--wrapper
     position: relative
+    overflow: hidden
     height: 0
     +trans
 
@@ -3292,6 +3295,9 @@ td.b-traiders--dividents
 
 //_____________________________________________________________
 
+.video-education-video
+    width: calc(100% - 315px)
+
 
 .b-content__help-item
     font-size: 13px
@@ -3357,18 +3363,23 @@ td.b-traiders--dividents
     max-width: 355px
 
 .b-page-honors
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+    font-size: 0
 
-//rgergr
 .b-honors-item
-    width: 264px
+    width: 30%
     height: 253px
+    margin: 2.5%
+    display: inline-block
+    vertical-align: top
     margin-bottom: 35px
     position: relative
+    &:first-child
+        margin-left: 0
+    &:nth-child(3n)
+        margin-right: 0
+    &:nth-child(4n)
+        margin-left: 0
 
-//box-sizing: border-box
 
 
 .b-honors-item-content
@@ -3447,19 +3458,39 @@ td.b-traiders--dividents
     cursor: pointer
     display: inline-block
     margin-right: 20px
+    padding: 5px
     &:last-child
         margin-right: 0
     &:hover
-        background-color: #168de2
         color: #fff
+        background-color: #168de2
+
+
+
+.b-video-tabs-link
+    &:hover
+        color: #fc4f08
+
+.video-tabs-item-link
+    &:hover
+        color: #fff
+        text-decoration: none
+        background-color: #168de2
+
+
 
 .b-video-tabs-content-r
-    width: 360px
+    width: calc(100% - 480px)
 
 .b-video-tabs-link
     font-size: 12px
+    cursor: pointer
     color: #808080
     text-decoration: underline
+
+.h-orange:hover
+    color: #fe7d1b //regrg
+
 
 .b-video-tabs__text
     font-size: 13px
@@ -3613,11 +3644,6 @@ td.b-traiders--dividents
     line-height: 1.69
     color: #979797
 
-.b-video-tabs-content
-    display: none
-    &.active
-        display: block
-
 .documents-col
     width: 33%
 
@@ -3720,3 +3746,39 @@ td.b-traiders--dividents
     font-size: 0
     & > .search-input
         color: #4d4d4d
+
+
+.b-results-and-honors__close
+    position: absolute
+    top: 45px
+    right: 60px
+    height: 5px
+    width: 5px
+    padding: 10px 35px
+    cursor: pointer
+    +trans
+    &:before
+        display: block
+        background-color: #fff
+        width: 15%
+        height: 1px
+        position: absolute
+        top: 50%
+        content: ""
+        +transform(translateY(-50%))
+        +transform(translateY(-50%) rotate(45deg))
+    &:after
+        display: block
+        background-color: #fff
+        width: 15%
+        height: 1px
+        position: absolute
+        top: 50%
+        content: ""
+        +transform(translateY(-50%))
+        +transform(translateY(-50%) rotate(-45deg))
+    &:hover
+        &:before
+            background-color: #1683fb
+        &:after
+            background-color: #1683fb
