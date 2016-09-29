@@ -272,7 +272,7 @@
 }
 
 .jq-selectbox.focused .jq-selectbox__select {
-    box-shadow: inset 0 0 0 1px #5794BF;
+    box-shadow: inset 0 0 0 2px #2192fd;
 }
 
 .jq-selectbox.disabled .jq-selectbox__select {
@@ -373,7 +373,7 @@
     color:#008ee3;
 }
 
-.jq-selectbox li.selected:after {
+.jq-selectbox li.sel:after {
     content: '';
     height: 6px;
     width: 13px;
