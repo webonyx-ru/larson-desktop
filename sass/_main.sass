@@ -121,6 +121,8 @@ a
 
 .b-dropdown--wrapper
     font-weight: 400
+    position: relative
+    z-index: 10
     &:hover
         .b-dropdown
             display: block
@@ -349,13 +351,26 @@ a
     background-repeat: no-repeat
     background-size: 100% auto
     background-attachment: fixed
+    padding-top: 60px
 
     &.type2
         +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
         background-position: center 0
 
+.parallax-owl-carousel
+    .owl-next, .owl-prev
+        opacity: 0.5
+        +trans
+        &:hover
+            opacity: 1
+
 .b-nav--menu
     background: rgba(0, 0, 0, 0.7)
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 5
 
 .b-nav--menu_item
     display: inline-block
@@ -426,7 +441,7 @@ a
     display: block
 
 .b-main--page--parallax--content
-    h1
+    h1, .parallax--title, h2
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
         color: #fff
         font-size: 30px
@@ -878,6 +893,9 @@ a
     color: #fff
     text-decoration: none
     font-weight: 400
+
+.b-main--page--parallax__wrapper
+    position: relative
 
 .b-analitics--best--result
     border: 1px solid #1584d4

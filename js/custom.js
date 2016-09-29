@@ -100,7 +100,14 @@ $(document).ready(function () {
         })
     }
 
-
+    $('.parallax-owl-carousel').owlCarousel({
+        responsive: {
+            0: {
+                items: 1
+            }
+        },
+        nav: true
+    });
 
     $(document).on('click', '.js--traiders--table--selector[data-tab--target]', function (e) {
         e.preventDefault();
