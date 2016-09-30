@@ -22,7 +22,6 @@
         line-height: 1.57
 
 .b-content-page-right-side
-    padding-bottom: 25px
     font-weight: normal
     //padding-left: 30px
     overflow: visible
@@ -407,7 +406,7 @@
     display: inline-block
     width: 32px
     height: 40px
-    margin-left: 30px
+    margin-left: 20px
 
 .icon-partners-franhize
     +sprite(icon-partners-franhize-grey)
@@ -415,7 +414,7 @@
     width: 43px
     height: 40px
     display: inline-block
-    margin-left: 30px
+    margin-left: 20px
 
 .icon-partners-wb
     +sprite(icon-partners-wb-grey)
@@ -423,7 +422,7 @@
     width: 43px
     height: 40px
     display: inline-block
-    margin-left: 30px
+    margin-left: 20px
 
 .icon-partners-buss
     +sprite(icon-partners-buss-grey)
@@ -431,7 +430,17 @@
     width: 74px
     height: 35px
     display: inline-block
-    margin-left: 30px
+    margin-left: 20px
+
+.icon-circles-extended
+    +sprite(circles-extended)
+    display: inline-block
+    margin-left: 20px
+
+.icon-bar-graph
+    +sprite(bar-graph)
+    display: inline-block
+    margin-left: 20px
 
 .partners-form-list li
     margin-bottom: 10px
@@ -657,13 +666,12 @@
         margin-right: 0
 
 .b-site__item-circle
-    position: relative
+    text-align: center
+    display: flex
     width: 59px
     height: 59px
-    line-height: 59px
     border: 1px solid #000
     border-radius: 50%
-    text-align: center
     margin-bottom: 7px
     +trans
 
@@ -713,49 +721,20 @@
             +sprite(big-blue-cog)
 
 .b-site__item-circle-inner
-    display: inline-block
-    vertical-align: middle
+    margin: auto
     line-height: normal
     font-weight: 600
 
 .icon-acctype-user
-    width: 22px
-    height: 22px
-    position: absolute
-    top: 50%
-    margin-top: -11px
-    left: 50%
-    margin-left: -11px
     +sprite(icon-acctype-user)
 
 .icon-acctype-blocked
-    width: 22px
-    height: 22px
-    position: absolute
-    top: 50%
-    margin-top: -11px
-    left: 50%
-    margin-left: -11px
     +sprite(icon-acctype-blocked)
 
 .icon-binary-money
-    width: 22px
-    height: 22px
-    position: absolute
-    top: 50%
-    margin-top: -11px
-    left: 50%
-    margin-left: -11px
     +sprite(icon-binary-money)
 
 .icon-tumblr
-    width: 22px
-    height: 22px
-    position: absolute
-    top: 50%
-    margin-top: -11px
-    left: 50%
-    margin-left: -11px
     +sprite(icon-tumblr)
 
 .b-content-fb__link-nw-inner
@@ -1092,6 +1071,7 @@
     color: #1a1a1a
     width: 100%
     text-align: center
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.19)
 
 .content-t-row:last-child
     border-bottom: 2px solid #f4f4f4
