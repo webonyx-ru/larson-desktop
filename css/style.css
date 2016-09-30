@@ -8172,6 +8172,15 @@ td.b-traiders--dividents {
   color: #1a1a1a;
   height: 26px;
 }
+.video-education-menu-item.active .video-education-menu-item-inner {
+  background: linear-gradient(to bottom, #fbfbfb, #ededed);
+  border-top: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  width: 87%;
+  color: #1a1a1a;
+  height: 26px;
+}
 
 .video-education-menu-item:hover:after {
   width: 25px;
@@ -8751,8 +8760,13 @@ td.b-traiders--dividents {
 .video-tabs-item:last-child {
   margin-right: 0;
 }
-.video-tabs-item:hover {
+
+.video-tabs-item > a {
+  padding: 5px;
+}
+.video-tabs-item > a:hover {
   color: #fff;
+  text-decoration: none;
   background-color: #168de2;
 }
 

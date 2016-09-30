@@ -364,6 +364,25 @@ $(document).ready(function () {
         $("select, input:radio, input:checkbox").styler();
     }
 
+    $(document).on("click", '[video-tab]', function(e) {
+        var this_tab = $(this).data("tab");
+
+        if ($(this).hasClass("all")) {
+            $("[data-tab]").removeClass("active");
+            $(this).addClass("active");
+
+            $("[data-tab-content]").addClass("active");
+        } else {
+            $("[data-tab]").removeClass("active");
+            $(this).addClass("active");
+
+            $("[data-tab-content]").removeClass("active");
+            $("[data-tab-content=" + this_tab + "]").addClass("active");
+        }
+
+        e.preventDefault();
+    });
+
     /*if($('.parallax-owl-carousel').length > 0) {
         $('.parallax-owl-carousel').owlCarousel({
             responsive: {
