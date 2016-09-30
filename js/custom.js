@@ -357,7 +357,7 @@ $(document).ready(function () {
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
         $(this).siblings('.b-content__text').stop().slideToggle(400);
-        $(this).closest('.b-content__read-more').toggleClass('active');
+        $(this).closest('.arrow-text').toggleClass('active');
         e.preventDefault();
     });
 

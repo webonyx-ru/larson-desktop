@@ -430,7 +430,7 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .ovv {
-  overflow: visible;
+  overflow: visible !important;
 }
 
 .red {
@@ -8771,6 +8771,10 @@ td.b-traiders--dividents {
   margin-right: 0;
 }
 
+.b-content__dialogs > .video-tabs > .video-tabs__listing > .video-tabs-item {
+  margin-right: 15px;
+}
+
 .video-tabs-item > a {
   padding: 5px;
 }
@@ -9300,6 +9304,13 @@ td.b-traiders--dividents {
 }
 .video-title:hover {
   color: #fe7d1b;
+}
+
+.dial-content {
+  display: none;
+}
+.dial-content.active {
+  display: block;
 }
 
 @media screen and (max-width: 1200px) {
