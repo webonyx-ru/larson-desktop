@@ -356,7 +356,9 @@ $(document).ready(function () {
     });
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
+        $('.b-content__text').stop().slideUp(400);
         $(this).siblings('.b-content__text').stop().slideToggle(400);
+
         $(this).closest('.arrow-text').toggleClass('active');
         e.preventDefault();
     });
