@@ -228,7 +228,7 @@
 }
 
 .jq-number.focused .jq-number__field {
-    border: 1px solid #5794BF;
+    /*border: 1px solid #5794BF;*/
 }
 
 .jq-number.disabled .jq-number__field,
@@ -272,7 +272,7 @@
 }
 
 .jq-selectbox.focused .jq-selectbox__select {
-    border: 1px solid #5794BF;
+    box-shadow: inset 0 0 0 2px #2192fd;
 }
 
 .jq-selectbox.disabled .jq-selectbox__select {
@@ -373,7 +373,7 @@
     color:#008ee3;
 }
 
-.jq-selectbox li.selected:after {
+.jq-selectbox li.sel:after {
     content: '';
     height: 6px;
     width: 13px;
