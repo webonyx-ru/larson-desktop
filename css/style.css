@@ -8640,6 +8640,12 @@ td.b-traiders--dividents {
   background-color: #1683fb;
 }
 
+.b-content-page-right-side {
+  width: calc(100% - 295px);
+  float: right;
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 1200px) {
   .b-logo {
     background-image: url('../images/logo_small.png?1473911611');
@@ -9031,6 +9037,11 @@ input:focus, textarea:focus, a:focus, button:focus {
   background-color: #fafafa;
   border: dashed 1px #c8c8c8;
   padding: 20px;
+}
+
+.b-info-grey {
+  border-radius: 5px;
+  background-color: #fafafa;
 }
 
 .mr-35 {
