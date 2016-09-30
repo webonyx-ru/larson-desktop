@@ -357,6 +357,7 @@ $(document).ready(function () {
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
         $(this).siblings('.b-content__text').stop().slideToggle(400);
+        $(this).closest('.b-content__read-more').toggleClass('active');
         e.preventDefault();
     });
 
@@ -364,7 +365,7 @@ $(document).ready(function () {
         $("select, input:radio, input:checkbox").styler();
     }
 
-    $(document).on("click", '[video-tab]', function(e) {
+    $(document).on("click", '[data-tab]', function(e) {
         var this_tab = $(this).data("tab");
 
         if ($(this).hasClass("all")) {
