@@ -2901,6 +2901,7 @@ td.b-traiders--dividents
     padding-top: 10px
     float: left
     max-width: 200px
+    line-height: 1.57
 
 .b-fill-form__inp-wrapper
     position: relative
@@ -3209,14 +3210,15 @@ td.b-traiders--dividents
     padding: 15px 10px 15px 42px
     & ol
         list-style-type: decimal
-        list-style-position: inside
+        list-style-position: outside
+        margin-left: 15px
 
 .questions-item
     font-size: 14px
     line-height: 1.71
     color: #737373
     font-weight: 400
-    padding-left: 15px
+    padding-left: 4px
 
 .p-open-ss__b-list
     & ol
@@ -3279,29 +3281,12 @@ td.b-traiders--dividents
     @extend .b-content__help-popup
     margin-bottom: 20px
     right: -105px
-    bottom: 100%
-    top: auto
+    top: 100%
+    bottom: auto
     &:before
         right: 130px
-        top: 150px
-        +arr(21, 17, #fe7d1b, b)
-
-.b-payment-variants__item
-    &:last-child
-        & >.b-payment-variants__popup
-            right: -30px
-            &:before
-                right: 80px
-                top: 150px
-                +arr(21, 17, #fe7d1b, b)
-
-    &:first-child
-        & >.b-payment-variants__popup
-            right: -185px
-            &:before
-                right: 200px
-                top: 150px
-                +arr(21, 17, #fe7d1b, b)
+        bottom: 150px
+        +arr(21, 17, #fe7d1b, t)
 
 .b-payment-variants__item
     cursor: pointer
@@ -3332,6 +3317,11 @@ td.b-traiders--dividents
             display: inline-block
         .b-content__help-popup
             display: block
+
+.b-content__help-item
+    & > p
+        float: left
+        margin-right: 5px
 
 .b-content__help-item-wrapper
     position: relative
@@ -3458,13 +3448,6 @@ td.b-traiders--dividents
 .speedometer-icon
     +sprite(speedometer-icon)
 
-.b-forex-tools_col
-    float: left
-    width: 46%
-    margin-right: 8%
-    &:last-child
-        margin-right: 0
-
 .b-forex-tools-item
     font-size: 20px
     line-height: 2.5
@@ -3505,10 +3488,6 @@ td.b-traiders--dividents
     cursor: pointer
     color: #808080
     text-decoration: underline
-
-.h-orange:hover
-    color: #fe7d1b //regrg
-
 
 .b-video-tabs__text
     font-size: 13px
@@ -3630,10 +3609,10 @@ td.b-traiders--dividents
     padding: 15px
 
 .b-page-profile__avatar
-    width: 30.3%
     display: flex
     align-items: center
     justify-content: center
+    flex: 1 1 25%
 
 
 .b-fill-form
@@ -3669,12 +3648,11 @@ td.b-traiders--dividents
     display: flex
     justify-content: space-between
 
+
 .pdf-icon
     width: 28px
     height: 36px
-    background-color: red
-    display: inline-block
-    vertical-align: middle
+    background: url("http://placehold.it/28x36")
 
 
 .b-payment-variants__item
@@ -3720,6 +3698,10 @@ td.b-traiders--dividents
 
 .open-email
     +sprite(open-email)
+    display: inline-block
+    vertical-align: middle
+    overflow: visible
+    position: relative
 
 .msg-notification
     width: 14px
@@ -3804,4 +3786,20 @@ td.b-traiders--dividents
 .b-content-page-right-side
     width: calc(100% - 295px)
     float: right
-    margin-bottom: 50px
+
+
+.b-lime
+    & > .left
+        width: calc(100% - 285px)
+    & > .right
+        width: 265px
+
+.b-site-left__blue-menu > .b-site-left__blue-menu__inner
+    border-bottom: 1px solid #e6e6e6 //regehrh
+
+
+.video-title
+    color: #168de2
+    text-decoration: none
+    &:hover
+        color: #fe7d1b

@@ -179,6 +179,7 @@
     &:last-child
         border: none
 
+
 .b-site__blue-menu-item
     display: block
     color: #168de2
@@ -362,6 +363,7 @@
 .b-content__text-info-feedback-ps
     padding-left: 50px
     padding-right: 50px
+    padding-top: 30px
     min-width: 629px
     border-radius: 5px
     min-height: 271px
@@ -376,6 +378,18 @@
             color: #4d4d4d
         .partners-form-list span
             color: #168de2
+        .icon-partners-agent
+            +sprite(icon-partners-agent)
+            display: inline-block
+        .icon-partners-franhize
+            +sprite(icon-partners-franhize)
+            display: inline-block
+        .icon-partners-wb
+            +sprite(icon-partners-wb)
+            display: inline-block
+        .icon-partners-buss
+            +sprite(icon-partners-buss)
+            display: inline-block
 
 .b-content__text-info-title-ps
     position: relative
@@ -383,47 +397,41 @@
     font-size: 42px
     font-weight: normal
     color: #168de2
-    margin-top: 30px
-    margin-bottom: 25px
     max-width: 515px
     line-height: 55px
     +trans
 
 .icon-partners-agent
-    &:after
-        +sprite(icon-partners-agent)
-        content: ""
-        display: inline-block
-        width: 32px
-        height: 40px
-        margin-left: 30px
+    +sprite(icon-partners-agent-grey)
+    content: ""
+    display: inline-block
+    width: 32px
+    height: 40px
+    margin-left: 30px
 
 .icon-partners-franhize
-    &:after
-        +sprite(icon-partners-franhize)
-        content: ""
-        width: 43px
-        height: 40px
-        display: inline-block
-        margin-left: 30px
+    +sprite(icon-partners-franhize-grey)
+    content: ""
+    width: 43px
+    height: 40px
+    display: inline-block
+    margin-left: 30px
 
 .icon-partners-wb
-    &:after
-        +sprite(icon-partners-wb)
-        content: ""
-        width: 43px
-        height: 40px
-        display: inline-block
-        margin-left: 30px
+    +sprite(icon-partners-wb-grey)
+    content: ""
+    width: 43px
+    height: 40px
+    display: inline-block
+    margin-left: 30px
 
 .icon-partners-buss
-    &:after
-        +sprite(icon-partners-buss)
-        content: ""
-        width: 74px
-        height: 35px
-        display: inline-block
-        margin-left: 30px
+    +sprite(icon-partners-buss-grey)
+    content: ""
+    width: 74px
+    height: 35px
+    display: inline-block
+    margin-left: 30px
 
 .partners-form-list li
     margin-bottom: 10px
@@ -668,6 +676,7 @@
 .b-content__text-info-acctype
     padding-left: 50px
     padding-right: 50px
+    padding-top: 30px
     min-width: 629px
     border-radius: 5px
     min-height: 271px
@@ -1009,11 +1018,35 @@
 .b-site-content__inner
     max-width: 870px
 
+.b-info-grey-dashed
+    background-color: #fafafa
+    border: dashed 1px #c8c8c8
+    padding: 20px
+
+.b-info-grey
+    border-radius: 5px
+    padding: 20px
+    background-color: #fafafa ///6868/6
+
+.b-lime
+    border-radius: 5px
+    padding: 20px
+    background-color: #e8f4fd
+
 .content-text, .b-content__text
     font-size: 14px
     line-height: 1.57
     color: #4d4d4d
     font-weight: 400
+    &.fw600
+        font-weight: 600
+
+
+.blue-link
+    text-decoration: none
+    color: #168de2
+    &:hover
+        text-decoration: underline
 
 .b-content__text p
     margin-bottom: 25px
@@ -1032,11 +1065,16 @@
     font-size: 22px
     line-height: 1.82
     color: #1a1a1a
+    &.black
+        color: #4d4d4d
 
 .content-title2
     font-size: 18px
     line-height: 1.57
     color: #1a1a1a
+    font-weight: 600
+    &.black
+        color: #4d4d4d
 
 //_________________________TABLE_________________
 .t-grey-line

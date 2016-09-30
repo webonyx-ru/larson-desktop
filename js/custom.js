@@ -100,14 +100,17 @@ $(document).ready(function () {
         })
     }
 
-    $('.parallax-owl-carousel').owlCarousel({
-        responsive: {
-            0: {
-                items: 1
-            }
-        },
-        nav: true
-    });
+    if($('.parallax-owl-carousel').length > 0) {
+        $('.parallax-owl-carousel').owlCarousel({
+            responsive: {
+                0: {
+                    items: 1
+                }
+            },
+            nav: true
+        });
+    }
+
 
     $(document).on('click', '.js--traiders--table--selector[data-tab--target]', function (e) {
         e.preventDefault();
@@ -352,15 +355,26 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-
     $(document).on("click", '.b-content__read-more-title', function (e) {
-        $(this).siblings('.b-results-and-honors').stop().slideToggle(400);
+        $(this).siblings('.b-content__text').stop().slideToggle(400);
         e.preventDefault();
     });
 
     if ($("select, input:radio, input:checkbox").length > 0){
         $("select, input:radio, input:checkbox").styler();
     }
+
+    /*if($('.parallax-owl-carousel').length > 0) {
+        $('.parallax-owl-carousel').owlCarousel({
+            responsive: {
+                0: {
+                    items: 1
+                }
+            },
+            nav: true
+        });
+    }*/
+
 
 });
 
