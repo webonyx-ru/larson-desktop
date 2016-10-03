@@ -996,7 +996,8 @@ input:focus, textarea:focus, a:focus, button:focus {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
-  min-width: 629px;
+  display: flex;
+  flex: 1 1 300px;
   border-radius: 5px;
   min-height: 271px;
   border: 1px dashed #979797;
@@ -1263,14 +1264,20 @@ input:focus, textarea:focus, a:focus, button:focus {
   margin-bottom: 0;
 }
 
+.b-content-feedback-ps {
+  display: flex;
+  flex-direction: row;
+}
+
 .b-content-button-feedback-partners {
-  vertical-align: top;
-  padding-left: 30px;
-  padding-top: 8px;
   display: flex;
   flex-direction: column;
   flex: 0 1 200px;
   align-items: center;
+  padding-left: 30px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .b-site-ps__usl-ps {
@@ -3851,7 +3858,12 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
+}
+.b-nav--menu_item.active {
+  background-color: #000;
 }
 .b-nav--menu_item.active:after {
   position: absolute;
