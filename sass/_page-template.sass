@@ -52,6 +52,11 @@
     color: #4d4d4d
     position: relative
     padding-right: 12px
+    &:last-child
+        & > .b-site-breadcrumb__item-menu
+            &:hover
+                text-decoration: none
+
 
 .b-site-breadcrumb__list-outer
     &:before
@@ -363,10 +368,11 @@
     padding-left: 50px
     padding-right: 50px
     padding-top: 30px
+    padding-bottom: 60px //eth
     display: flex
     flex: 1 1 300px
     border-radius: 5px
-    min-height: 271px
+    min-height: 200px
     border: 1px dashed #979797
     +trans
     &:hover
@@ -528,9 +534,9 @@
 // programm for traders	
 
 .b-site-list__item-inner
-    width: 824px
-    min-height: 271px
+    min-height: 271px //rger
     padding-left: 57px
+    flex: 1 1 900px
     padding-right: 57px
     border-radius: 5px
     border: 1px dashed #979797
@@ -602,6 +608,7 @@
     width: 245px
     vertical-align: top
     text-align: center
+    padding-top: 10px
 
 .appstore-button
     position: relative
@@ -671,8 +678,8 @@
     display: inline-block
     width: 125px
     vertical-align: top
-    margin: 2px
-    margin-right: 40px
+    margin: 7px
+    margin-right: 35px
     &:last-child
         margin-right: 0
 

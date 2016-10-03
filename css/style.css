@@ -486,12 +486,22 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #4d4d4d;
 }
 
+.col-black {
+  color: #1a1a1a !important;
+}
+
 .cw {
   color: #fff;
 }
 
 .bgf5 {
   background-color: #f5f5f5;
+}
+
+.bordersl {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  border: solid 1px #dbdbdb;
+  border-radius: 5px;
 }
 
 .borderdt {
@@ -637,6 +647,9 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #4d4d4d;
   position: relative;
   padding-right: 12px;
+}
+.b-site-breadcrumb__list-outer:last-child > .b-site-breadcrumb__item-menu:hover {
+  text-decoration: none;
 }
 
 .b-site-breadcrumb__list-outer:before {
@@ -996,10 +1009,11 @@ input:focus, textarea:focus, a:focus, button:focus {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
+  padding-bottom: 60px;
   display: flex;
   flex: 1 1 300px;
   border-radius: 5px;
-  min-height: 271px;
+  min-height: 200px;
   border: 1px dashed #979797;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1355,9 +1369,9 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .b-site-list__item-inner {
-  width: 824px;
   min-height: 271px;
   padding-left: 57px;
+  flex: 1 1 900px;
   padding-right: 57px;
   border-radius: 5px;
   border: 1px dashed #979797;
@@ -1540,6 +1554,7 @@ input:focus, textarea:focus, a:focus, button:focus {
   width: 245px;
   vertical-align: top;
   text-align: center;
+  padding-top: 10px;
 }
 
 .appstore-button {
@@ -1656,8 +1671,8 @@ input:focus, textarea:focus, a:focus, button:focus {
   display: inline-block;
   width: 125px;
   vertical-align: top;
-  margin: 2px;
-  margin-right: 40px;
+  margin: 7px;
+  margin-right: 35px;
 }
 .b-site__item-account-list:last-child {
   margin-right: 0;
@@ -6910,7 +6925,7 @@ textarea:focus, textarea.input-error {
 .b-comp--condition__title {
   font-size: 18px;
   line-height: 1.6;
-  color: #4d4d4d;
+  color: #1a1a1a;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -7168,6 +7183,10 @@ textarea:focus, textarea.input-error {
   float: left;
   display: block;
   line-height: 60px;
+}
+
+.b-header__search-form > .search-input__wrapper > input.search-input {
+  color: #fff;
 }
 
 input.search-input {
@@ -8062,7 +8081,7 @@ td.b-traiders--dividents {
   content: "";
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 11px;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -8488,6 +8507,7 @@ td.b-traiders--dividents {
 
 .b-private__management {
   padding: 20px;
+  float: left;
 }
 
 .stars-icon {
@@ -8515,7 +8535,9 @@ td.b-traiders--dividents {
   width: 590px;
   height: 235px;
   border-radius: 5px;
-  background-image: url("http://placehold.it/630x270");
+  background-image: url("../images/private-management.png");
+  background-size: cover;
+  background-position: center 15%;
 }
 
 .b-text-private__management {
@@ -8914,6 +8936,7 @@ td.b-traiders--dividents {
   box-sizing: border-box;
   width: 100%;
   padding: 45px 150px 0 95px;
+  border-radius: 5px 5px 0 0;
   background: linear-gradient(to left, #013e69, #0771bd);
 }
 
@@ -9036,12 +9059,6 @@ td.b-traiders--dividents {
 .b-page-forms__columns {
   display: flex;
   justify-content: space-between;
-}
-
-.pdf-icon {
-  width: 28px;
-  height: 36px;
-  background: url("http://placehold.it/28x36");
 }
 
 .b-payment-variants__item {
@@ -9567,6 +9584,25 @@ td.b-traiders--dividents {
   padding: 0 40px;
 }
 
+.b-site-list__item-programm {
+  display: flex;
+}
+
+@media screen and (min-width: 0) and (max-width: 1190px) {
+  .b-private__management {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .pm-r {
+    display: flex;
+    align-content: center;
+  }
+  .pm-r > a {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 1200px) {
   .b-logo {
     background-image: url('../images/logo_small.png?1473911611');
