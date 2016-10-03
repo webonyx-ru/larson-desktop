@@ -455,6 +455,10 @@
     vertical-align: top
     padding-left: 30px
     padding-top: 8px
+    display: flex
+    flex-direction: column //rgerhehhthrtsd
+    flex: 0 1 200px
+    align-items: center
 
 .b-site-ps__usl-ps
     border-radius: 4px
@@ -661,6 +665,7 @@
     display: inline-block
     width: 125px
     vertical-align: top
+    margin: 2px
     margin-right: 40px
     &:last-child
         margin-right: 0
@@ -684,10 +689,12 @@
 .b-content__text-info-acctype
     padding-left: 50px
     padding-right: 50px
+    padding-bottom: 50px
     padding-top: 30px
-    min-width: 629px
+    margin-bottom: 35px
+    display: flex
+    flex: 1 1 300px
     border-radius: 5px
-    min-height: 271px
     border: 1px dashed #979797
     +trans
     &:hover
@@ -719,6 +726,7 @@
             +sprite(sphere-icon-hover)
         .big-grey-cog
             +sprite(big-blue-cog)
+            display: inline-block
 
 .b-site__item-circle-inner
     margin: auto
@@ -1001,6 +1009,10 @@
     background-color: #fafafa
     border: dashed 1px #c8c8c8
     padding: 20px
+
+.grey-sep-top
+    border-top: 1px solid #f5f5f5
+    padding-top: 35px
 
 .b-info-grey
     border-radius: 5px

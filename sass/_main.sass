@@ -371,12 +371,28 @@ a
     left: 0
     right: 0
     z-index: 5
+    &.static
+        position: relative
+        background-color: #1a1a1a
+        color: #fff
+
 
 .b-nav--menu_item
     display: inline-block
     vertical-align: middle
     margin-right: 20px
     position: relative
+    &.active
+
+        &:after
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 4px
+            background-color: #2192fd
+            display: block
+            content: ''
 
     &:hover
         &:after
@@ -2397,6 +2413,8 @@ textarea
     font-weight: 300
     margin-right: 45px
     font-size: 0
+    display: inline-block
+    white-space: nowrap
 
     .button-search
         line-height: 60px
@@ -3463,7 +3481,7 @@ td.b-traiders--dividents
     cursor: pointer
     display: inline-block
     margin-right: 20px
-    padding: 5px
+    //padding: 5px
     &:last-child
         margin-right: 0
 
@@ -3694,11 +3712,6 @@ td.b-traiders--dividents
     +sprite(shield)
     display: inline-block
 
-.rherh
-    background-color: blue
-    width: 15px
-    height: 15px
-
 .b-results-and-honors-title
     border-bottom: solid 0.5px #c8c8c8
     font-weight: 600
@@ -3744,6 +3757,7 @@ td.b-traiders--dividents
 
 .big-grey-cog
     +sprite(big-grey-cog)
+    display: inline-block
 
 .big-blue-cog
     +sprite(big-blue-cog)
@@ -3816,3 +3830,76 @@ td.b-traiders--dividents
     display: none
     &.active
         display: block
+
+.b-content-acc-type
+    display: flex
+    flex-wrap: wrap //degergrgrtjrtj
+
+.pdf-icon
+    +sprite(pdf)
+    display: inline-block
+
+.calendar-icon
+    +sprite(calendar)
+    display: inline-block
+
+.moneybag-blue
+    +sprite(money-bag-with-dollar-blue) //reehehrt
+    display: inline-block
+
+.timer-icon
+    +sprite(time-slot)
+    display: inline-block
+
+.cup-icon
+    +sprite(trophy)
+    display: inline-block
+
+.b-results-and-honors-title-item
+    align-items: baseline
+    display: flex //ehtht
+
+
+.money-with-cup
+    display: block
+    position: absolute
+    +retina-bg("money-with-cup.png", "money-with-cup@2x.png")
+    min-width: 100%
+    min-height: 100%
+    top: 27%
+    left: 38%
+    background-repeat: no-repeat
+    
+.map-agents
+    width: 100%
+    height: 100%
+
+.map-events
+    width: 100%
+    height: 100%
+
+.moneybag-white
+    +sprite(money-bag-with-dollar-white)
+    display: inline-block
+
+.rate-streamer-icon
+    +sprite(rate-streamer)
+    display: inline-block
+
+.b-charity-head
+    +retina-bg("charity.png", "charity@2x.png")
+    background-position: center 15%
+    background-repeat: no-repeat
+    background-size: 100% auto
+    height: 400px
+
+
+.b-charter
+    width: 255px
+
+.charter-img
+    width: 100%
+
+.partnerships-buttons
+    & > a
+        padding: 0 40px
