@@ -357,6 +357,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+
     $(document).on("click", '.b-content__read-more-title', function (e) {
         var bl = $(this).closest(".b-our--decisions--tab--block");
         if ($(this).closest('.arrow-text').hasClass('active')) {

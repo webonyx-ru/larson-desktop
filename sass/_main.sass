@@ -2974,6 +2974,37 @@ td.b-traiders--dividents
     +arr(8, 6, #000, b)
     position: absolute
     +transform(translateY(-50%))
+    //erregergergergreg
+
+.d-arr > .jq-selectbox__select > .jq-selectbox__trigger:before
+    display: none
+
+.d-arr > .jq-selectbox__select > .jq-selectbox__trigger:after
+    display: none
+
+.sn > .jq-selectbox__select
+    width: 90px
+    box-shadow: none
+
+.jq-selectbox.d-arr
+    .jq-selectbox__trigger
+        content: ''
+        display: block
+        position: absolute
+        top: 16px
+        right: 17px
+        height: 6px
+        width: 6px
+        background-color: transparent
+        transform: rotate(135deg)
+        border-top: 2px solid #4d4d4d
+        border-right: 2px solid #4d4d4d
+    &.opened
+        .jq-selectbox__trigger
+            transform: rotate(-45deg)
+            top: 20px
+            right: 17px
+
 //_____________________END_open-office_____
 
 
@@ -3565,7 +3596,7 @@ td.b-traiders--dividents
     box-sizing: border-box
     width: 100%
     padding: 45px 150px 0 95px
-    border-radius:  5px 5px 0 0
+    border-radius: 5px 5px 0 0
     background: linear-gradient(to left, #013e69, #0771bd)
 
 .b-results-and-honors-text
@@ -3890,11 +3921,10 @@ td.b-traiders--dividents
     & > a
         padding: 0 40px
 
-
 .b-site-list__item-programm
     display: flex
 
-@media screen and ( min-width: 0) and ( max-width: 1190px)
+@media screen and (min-width: 0) and (max-width: 1190px)
     .b-private__management
         float: none
         margin: 0 auto

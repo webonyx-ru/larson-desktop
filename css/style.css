@@ -494,6 +494,14 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #fff;
 }
 
+.w90 {
+  width: 90px;
+}
+
+.h30 {
+  height: 30px;
+}
+
 .bgf5 {
   background-color: #f5f5f5;
 }
@@ -8049,6 +8057,38 @@ td.b-traiders--dividents {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+
+.d-arr > .jq-selectbox__select > .jq-selectbox__trigger:before {
+  display: none;
+}
+
+.d-arr > .jq-selectbox__select > .jq-selectbox__trigger:after {
+  display: none;
+}
+
+.sn > .jq-selectbox__select {
+  width: 90px;
+  box-shadow: none;
+}
+
+.jq-selectbox.d-arr .jq-selectbox__trigger {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  height: 6px;
+  width: 6px;
+  background-color: transparent;
+  transform: rotate(135deg);
+  border-top: 2px solid #4d4d4d;
+  border-right: 2px solid #4d4d4d;
+}
+.jq-selectbox.d-arr.opened .jq-selectbox__trigger {
+  transform: rotate(-45deg);
+  top: 20px;
+  right: 17px;
 }
 
 .content-table-wrapper {
