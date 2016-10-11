@@ -396,6 +396,14 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+
+
+
+
+
+
+
+
     /*if($('.parallax-owl-carousel').length > 0) {
      $('.parallax-owl-carousel').owlCarousel({
      responsive: {
