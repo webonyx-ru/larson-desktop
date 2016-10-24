@@ -3944,8 +3944,71 @@ td.b-traiders--dividents
         width: 35px
         padding: 0
 
-.contacts-event-dd
-    width: calc(100% - 215px)
+.contacts-event-dd-inner
+    & .select-wrapper
+        width: calc(50% - 10px)
+
+.contacts-event-dd-inner
     float: right
-    & > .select-wrapper
-        width: 50%
+
+.marker[class~="pred"]
+    +sprite(marker-pred)
+
+.marker[class~="meet"]
+    +sprite(marker-meet)
+
+.marker
+    display: block
+    text-indent: -9999px
+    width: 14px
+    height: 15px
+    outline: none
+    cursor: pointer
+
+.pred[class~="active"]
+    +sprite(marker-active) //thyh
+    width: 24px
+    height: 31px
+
+.popup
+    width: 224px
+    position: absolute
+    padding: 8px
+    background: #ffffff
+    color: #474747
+    font-weight: normal
+    font-size: 11px
+    line-height: 20px
+    -webkit-border-radius: 8px //thytj
+    -moz-border-radius: 8px
+    border-radius: 8px
+    border: 1px #0087c9 solid
+
+
+.contacts-form
+    & .contacts-event-dd-inner
+        width: 415px
+    & .b-fill-form__inp-wrapper
+        max-width: 415px
+
+.map
+    position: relative
+    overflow: hidden
+    cursor: default
+    width: 899px
+    height: 478px
+    background-image: url("../images/map@2x.png") //hghj
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+//_________________________________________________________________
+.textBoxCaptcha
+    +sprite(captcha)
+    display: inline-block
+    vertical-align: middle
+    & + input
+        display: inline-block
+        vertical-align: middle
+        margin-left: 20px
+        width: calc(100% - 160px)

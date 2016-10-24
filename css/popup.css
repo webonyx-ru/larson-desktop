@@ -1,0 +1,141 @@
+.b-popup.ui-dialog.ui-widget-content {
+    padding: 0;
+    background: #ffffff url(../img/popup-bottom.gif) no-repeat bottom center;
+    border: none;
+}
+
+.b-popup .ui-state-hover{
+    border: none;
+    background: none;
+}
+
+.b-popup .ui-dialog-titlebar {
+    border: none;
+    background: url(../img/popup-header.gif) no-repeat 9px 9px;
+    color: #003B8C;
+    padding-left: 25px;
+}
+
+.b-popup.ui-dialog .ui-dialog-titlebar-close {
+    padding: 0;
+    top: 35%;
+    right: .25em;
+}
+
+.b-popup .ui-widget-header .ui-icon {
+    background-image: url(../../../css/images/ui-icons_375ee6_256x240.png);
+}
+
+.b-popup.ui-dialog .ui-dialog-content {
+    padding: 0px 9px 80px 9px;
+    text-align: center;
+}
+
+.b-popup.ui-dialog .ui-dialog-content .title {
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    color: #003e88;
+}
+
+.b-popup.ui-dialog .ui-dialog-content .popup-content {
+    margin: 15px 20px 25px;
+    border: solid 2px #777;
+    border-radius: 15px;
+}
+
+.b-popup.ui-dialog .ui-dialog-content p {
+    text-align: left;
+    font-family: Arial;
+    margin: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.b-popup.ui-dialog .ui-dialog-content .ok {
+    height: 41px;
+    width: 118px;
+    background: url("../img/pop_ok.png") no-repeat 0 0;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -59px;
+    cursor: pointer;
+}
+
+/* Chat DialogBox */
+.im-dialog {}
+
+.im-dialog .popup {
+    padding-bottom: 30px !important;
+}
+
+.im-dialog .popup-content {
+    margin: 0px 15px 15px !important;
+}
+
+.im-dialog .popup-content p {
+    text-align: center !important;
+}
+
+.im-dialog .ok {
+    bottom: 7px !important;
+    display: block !important;
+}
+
+.im-dialog .btn-yes,
+.im-dialog .btn-no {
+    background: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: -20px;
+    margin-right: 25px;
+    padding: 2px;
+}
+
+.im-dialog .btn-yes {
+    color: #003D8C;
+}
+
+.im-dialog .btn-no {
+    color: #680E28;
+}
+
+#docTypesDialog {
+    padding: 0 0 20px 30px;
+    text-align: left;
+}
+
+#docTypesDialog > div:first-child {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+#docTypesDialog > div {
+    color: #777;
+    font: 16px Arial;
+    margin: 0 0 7px 20px;
+}
+
+#docTypesDialog .selectbutton {
+    width: 162px;
+    height: 34px;
+    border: 1px solid #afafaf;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #505050;
+    font-size: 14px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+

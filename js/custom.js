@@ -280,7 +280,7 @@ $(document).ready(function () {
         $('[data-popup="' + bl + '"]').stop().fadeIn(200);
         e.preventDefault();
     });
-})
+});
 
 function check_clearinput_vis(block) {
     if (block.siblings('.js--clearinput_input').val() != '') {
@@ -397,24 +397,92 @@ $(document).ready(function () {
     });
 
 
+        $('.block-info').delegate('.step', 'click', function(){
+            var step = (($(this).attr('id')).split('-'))[1]
+                ,   t    = new Date();
+
+            t.setTime(+ t + 600000);
+
+            $('.block-info .cell').removeClass('cell-hover');
+            $(this).closest('.cell').addClass('cell-hover');
+
+            $.cookie('copydeal', step, {path: '/', expires: t});
+        });
+
+        // -------------------------------------------------------------------------------
+
+        var isSend = false
+            ,   ajaxLoader = function(url, data, callback){
+            if (isSend) {
+                return false;
+            }
+
+            isSend = true;
+
+            $.ajax({
+                url: url,
+                data: data,
+                success: function (content) {
+                    if (typeof content == 'object') {
+                        $('#mql5-dialog').dialog('close');
+                        $.IM.MessageBox(content.content);
+
+                        if (401 == content.code) {
+                            setTimeout(function(){
+                                window.location.href = copyDealsLinkLogin;
+                            }, 3000);
+                        }
+                    } else {
+                        $('#mql5-dialog').html(content).dialog('open');
+
+                        if (callback) {
+                            callback.apply(null);
+                        }
+                    }
+
+                    isSend = false;
+                }
+            });
+        };
 
 
-
-
-
-
-
-    /*if($('.parallax-owl-carousel').length > 0) {
-     $('.parallax-owl-carousel').owlCarousel({
-     responsive: {
-     0: {
-     items: 1
-     }
-     },
-     nav: true
-     });
-     }*/
-
+    $('.map').craftmap({
+        cookies:false, // (bool) remember position
+        fullscreen:false, // (bool) fullscreen
+        container:{
+            name:'imgContent' // (string) class name for an image container
+        },
+        image:{
+            width: 899, // (int) image width
+            height: 478, // (int) image height
+            name:'imgMap' // (string) class name for an image
+        },
+        map:{
+            position:'center'  // (string) map position after loading - 'X Y', 'center', 'top_left', 'top_right', 'bottom_left', 'bottom_right'
+        },
+        marker:{
+            name:'marker', // (string) class name for a marker
+            center:true, // (bool) set true to pan the map to the center
+            popup:true, // (bool) set true to show a popup
+            popup_name:'popup', // (string) class name for popup
+            onClick:function (marker, popup) {
+            },
+            onClose:function (marker, popup) {
+            }
+        },
+        controls:{
+            init: false, // (bool) set true to control a map from any place on the page
+            name:'controls', // (string) class name for controls container
+            onClick:function (marker) {
+            }
+        },
+        preloader:{
+            init: true, // (bool) set true to preload an image
+            name:'preloader', // (string) class name for a preload container
+            onLoad:function (img, dimensions) {
+            }
+        }
+    });
 
 });
 
