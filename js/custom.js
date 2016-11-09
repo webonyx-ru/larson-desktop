@@ -464,7 +464,7 @@ $(document).ready(function () {
             name:'marker', // (string) class name for a marker
             center:true, // (bool) set true to pan the map to the center
             popup:true, // (bool) set true to show a popup
-            popup_name:'popup', // (string) class name for popup
+            popup_name:'popup-map', // (string) class name for popup
             onClick:function (marker, popup) {
             },
             onClose:function (marker, popup) {
