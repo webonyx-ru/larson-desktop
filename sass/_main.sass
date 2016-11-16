@@ -2817,18 +2817,126 @@ td.b-traiders--dividents
     width: 100%
     z-index: 15
 
+    .jq-selectbox__trigger
+        display: none
+
+    .jq-selectbox__select-text
+        line-height: 1
+        font-size: 18px
+        font-weight: 600
+        color: #168de2
+        text-align: center
+
+        &::after
+            content: ''
+            width: 7px
+            height: 7px
+            -webkit-transform: rotate(225deg)
+            -moz-transform: rotate(225deg)
+            -o-transform: rotate(225deg)
+            transform: rotate(225deg)
+            border-left: 1px solid #168de2
+            border-top: 1px solid #168de2
+            display: inline-block
+            margin-left: 10px
+            vertical-align: top
+            margin-top: 4px
+            -webkit-transition: all .2s ease-in-out
+            -moz-transition: all .2s ease-in-out
+            -o-transition: all .2s ease-in-out
+            transition: all .2s ease-in-out
+
+    .jq-selectbox
+
+        &.opened
+            .jq-selectbox__select-text
+                &::after
+                    -webkit-transform: rotate(45deg)
+                    -moz-transform: rotate(45deg)
+                    -o-transform: rotate(45deg)
+                    transform: rotate(45deg)
+                    margin-top: 7px
+
+
+    .jq-selectbox__dropdown
+        background-color: #ffffff
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.16)
+        border: solid 1px #ededed
+        top: 23px
+        left: -8px
+
+        li
+            line-height: 28px
+            cursor: pointer
+            padding: 0 8px
+            font-size: 18px
+            color: #4d4d4d
+
+            &:hover
+                background: #eaf4fe
+
+    .has-drop
+        position: relative
+
+        > div
+            position: absolute
+            top: 100%
+            left: 50%
+            width: 120px
+            margin-left: -60px
+            display: none
+            padding-top: 2px
+            text-align: center
+
+            span
+                display: inline-block
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 0 9px 16px 9px
+                border-color: transparent transparent #fe7d1b transparent
+                margin-bottom: -5px
+
+            p
+                border-radius: 2px
+                background-color: #fe7d1b
+                box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2)
+                min-height: 29px
+                line-height: 29px
+                font-size: 14px
+                text-align: center
+                color: #ffffff
+
+        &:hover
+            > div
+                display: block
+
+    .lgoui
+        font-size: 14px
+        font-weight: 600
+        color: #1a1a1a
+
+.b-loginbar-container
+    margin: 0 auto
+    max-width: 1000px
+    width: 1000%
+    padding: 0 20px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
 .b-loginbar-cont
     max-height: 0
     background: #fff
     margin-top: -10px
     padding-top: 10px
-    transition: max-height 0.15s ease-out
+    transition: max-height 0.3s ease-out
     height: 100%
     overflow: hidden
 
     &.active
-        max-height: 500px
-        transition: max-height 0.25s ease-in
+        max-height: 10000px
+        transition: max-height 0.3s ease-in
 
 .b-loginbar--title
     font-size: 30px
@@ -2849,7 +2957,7 @@ td.b-traiders--dividents
     vertical-align: middle
 
 .b-loginbar-buttons
-    margin: 0 30px
+    margin: 0 15px
     display: inline-block
     font-size: 14px
     width: 140px
@@ -2862,11 +2970,66 @@ td.b-traiders--dividents
     border: 2px solid #f5f5f5
 
 .b-loginbar-user--info
-    line-height: 40px
+    height: 40px
+    font-size: 0
 
     span
         width: 150px
         display: inline-block
+        font-size: 14px
+        vertical-align: top
+        font-weight: normal
+        color: #1a1a1a
+
+    small
+        width: calc(100% - 150px)
+        display: inline-block
+        font-size: 14px
+        vertical-align: top
+        font-weight: normal
+        color: #4d4d4d
+
+        a
+            display: block
+
+.b-loginbar-sides
+
+    li
+        margin-bottom: 24px
+
+        &:last-child
+            margin-bottom: 0
+
+        &::after
+            content: ''
+            display: block
+            clear: both
+
+        p
+            float: left
+            width: 50%
+            padding: 0 15px
+            -webkit-box-sizing: border-box
+            -moz-box-sizing: border-box
+            box-sizing: border-box
+            text-align: right
+            font-size: 14px
+            line-height: 1.57
+            color: #1a1a1a
+            font-weight: normal
+
+            &:last-child
+                text-align: left
+                color: #4d4d4d
+
+            a
+                display: block
+                text-decoration: none
+                line-height: 1.57
+                font-size: 14px
+
+                &:first-child
+                    color: #4d4d4d
 
 //_____________________________________________________________________
 

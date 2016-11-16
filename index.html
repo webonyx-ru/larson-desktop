@@ -16,7 +16,8 @@
     <section class="b-loginbar">
         <div class="b-loginbar-cont clearfix">
             <div class="b-loginbar-user line--bot">
-                <div class="container">
+                <!-- Logged user info -->
+                <div class="b-loginbar-container">
                     <div class="b-loginbar-user-info">
                         <div class="margin-top20 margin-bottom10 clearfix">
                             <span class="left margin-right50 fw400">Здравствуйте, <b class="fw600">Иванов Александр</b></span>
@@ -29,22 +30,43 @@
                                 <img src="http://placehold.it/102x102" alt=""
                                      class="b-loginbar-user--ava margin-bottom10">
                                 <div class="clearfix">
-                                    <a href="#" class="left blue_link">Плечо</a>
-                                    <a href="#" class="right blue_link">Сервис</a>
+                                    <a href="#" class="left blue_link has-drop">
+                                        Плечо
+                                        <div>
+                                            <span></span>
+                                            <p>Плечо —1:100</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="right blue_link has-drop">
+                                        Сервис
+                                        <div>
+                                            <span></span>
+                                            <p>Classic Start</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </li>
                             <li class="margin-right20 margin-left20 left">
-                                <p class="b-loginbar-user--info">
+                                <p class="b-loginbar-user--info margin-top10">
                                     <span>Номер счёта:</span>
-                                    <a href="#" class="blue_link">374005</a>
+                                    <small>
+                                        <span class="select-wrapper">
+                                            <select name="" id="">
+                                                <option value="203004" selected>203004</option>
+                                                <option value="105689">105689</option>
+                                                <option value="345121">345121</option>
+                                                <option value="547310">547310</option>
+                                            </select>
+                                        </span>
+                                    </small>
                                 </p>
                                 <p class="b-loginbar-user--info">
                                     <span>Ваш консультант:</span>
-                                    <a href="#" class="blue_link">Сидоров Руслан</a>
+                                    <small>Сидоров Руслан</small>
                                 </p>
                                 <p class="b-loginbar-user--info">
                                     <span>Контакты:</span>
-                                    <small>+7 (800) 550-00-15 <a href="#" class="blue_link margin-left20">Поддержка</a>
+                                    <small>+7 (800) 550-00-15 <a href="#" class="blue_link margin-top10">Поддержка</a>
                                     </small>
                                 </p>
                             </li>
@@ -55,6 +77,51 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Logged user info end -->
+
+                <!-- user referal_2 -->
+                <div class="b-loginbar-container">
+                    <ul class="b-loginbar-sides margin-top20">
+                        <li>
+                            <p>Ваш консультант:</p>
+                            <p>Malahov Ivan</p>
+                        </li>
+                        <li>
+                            <p>Контакты:</p>
+                            <p>
+                                <a href="tel:+79634567089">+79634567089</a>
+                                <a href="mailto:malahov_i@gmail.com">malahov_i@gmail.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="margin-top20 margin-bottom20 tac">
+                        <a href="#" class="b-loginbar-buttons blue_btn">Войти</a>
+                        <a href="#" class="b-loginbar-buttons orange_btn">Стать партнером</a>
+                    </div>
+                </div>
+                <!-- user referal_2 end -->
+
+                <!-- user logout -->
+                <div class="b-loginbar-container">
+                    <p class="b-loginbar--info tac margin-top20 lgoui">Вы не вошли в личный кабинет</p>
+                    <ul class="b-loginbar-sides margin-top20">
+                        <li>
+                            <p>Ваш консультант:</p>
+                            <p>POWER TRADE GROUP</p>
+                        </li>
+                        <li>
+                            <p>Контакты:</p>
+                            <p>
+                                <a href="tel:+79634567089">+79819674010</a>
+                                <a href="mailto:aasmirnov@tcs-company.ru">aasmirnov@tcs-company.ru</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="margin-top20 margin-bottom20 tac">
+                        <a href="#" class="b-loginbar-buttons blue_btn">Войти</a>
+                    </div>
+                </div>
+                <!-- user logout end -->
             </div>
         </div>
         <div class="container clearfix">
