@@ -396,13 +396,14 @@
 						set: function(){
 							MARKER.each(function(){
 								var t = $(this), position = t.attr('data-coords').split(',');
-									x = parseInt(position[0]), y = parseInt(position[1]),
+									x = (parseInt(position[0]) * 100) / D.w, y = (parseInt(position[1]) * 100) / D.h,
 									css = {
 										position: 'absolute',
 										zIndex: '2',
-										top: y,
-										left: x
+										top: y + '%',
+										left: x + '%'
 									};
+
 								t.css(css);
 							}).wrapInner($('<div />').addClass(S.marker.name+'Content').hide());
 						},

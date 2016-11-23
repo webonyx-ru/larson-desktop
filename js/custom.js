@@ -445,8 +445,97 @@ $(document).ready(function () {
             });
         };
 
+    var map = $('.map'),
+        mapImage = map.find('.map-image'),
+        mapImageWidth = mapImage.get(0).naturalWidth,
+        mapImageHeight = mapImage.get(0).naturalHeight,
+        mapPopup = map.find('.popup'),
+        mapWidth = map.outerWidth();
+        
+    $('[data-coords]').each(function (e) {
+        var _self = $(this),
+            t = _self, position = t.data('coords').split(','),
+            x = (parseInt(position[0]) * 100) / mapImageWidth, y = (parseInt(position[1]) * 100) / mapImageHeight,
+            css = {
+                top: y + '%',
+                left: x + '%'
+            };
 
-    $('.map').craftmap({
+        _self.css(css);
+
+        _self.click(function (e) {
+            e.preventDefault();
+
+            var mapEventFunc = function () {
+                var mapPopupHeight = (parseInt(mapPopup.outerHeight()) * 100) / mapImageHeight,
+                    mapPopupWidth = (parseInt(mapPopup.outerWidth()) * 100) / mapImageWidth,
+                    mapPopupTopPosition = ((y - (mapPopupHeight / 2 ) - 1) - 2),
+                    mapPopupLeftPosition = x - (mapPopupWidth / 2);
+
+                var mapSettings = {
+                    top: 0,
+                    left: 0
+                };
+
+                if(mapPopupLeftPosition <= 5) mapSettings.left = 5 + (mapPopupWidth / 2);
+                else {
+                    if((mapPopupWidth + mapPopupLeftPosition) >= 95) mapSettings.left = 95 -  (mapPopupWidth / 2);
+                    else mapSettings.left = x;
+                }
+
+                if(mapPopupTopPosition <= 10) mapSettings.top = y + (mapPopupHeight / 2) + 5;
+                else {
+                    if((mapPopupHeight + mapPopupTopPosition) >= 95) mapSettings.top = 95 -  (mapPopupHeight / 2);
+                    else mapSettings.top = mapPopupTopPosition;
+                }
+
+                mapPopup.css({
+                    top: mapSettings.top + '%',
+                    left: mapSettings.left + '%'
+                });
+            };
+
+            if(mapPopup.hasClass('active') !== true) {
+                mapPopup.addClass('active');
+                mapPopup.find('.popup-cont').html(_self.html());
+
+                $('[data-coords]').removeClass('active');
+                _self.addClass('active');
+
+                setTimeout(function () {
+                    mapEventFunc();
+                }, 300);
+            } else {
+                if(_self.hasClass('active') !== true) {
+                    $('[data-coords]').removeClass('active');
+                    _self.addClass('active');
+                    mapPopup.find('.popup-cont').html(_self.html());
+
+                    setTimeout(function () {
+                        mapEventFunc();
+                    }, 300);
+                } else {
+                    $('[data-coords]').removeClass('active');
+                    mapPopup.removeClass('active');
+                    mapPopup.find('.popup-cont').html('');
+                }
+
+            }
+
+            return false;
+        })
+    });
+
+    $('[data-map-popup-exit]').click(function (e) {
+        e.preventDefault();
+
+        mapPopup.removeClass('active');
+        mapPopup.find('.popup-cont').html('');
+
+        return false;
+    });
+
+    /*$('.map').craftmap({
         cookies:false, // (bool) remember position
         fullscreen:false, // (bool) fullscreen
         container:{
@@ -477,13 +566,12 @@ $(document).ready(function () {
             }
         },
         preloader:{
-            init: true, // (bool) set true to preload an image
+            init: false, // (bool) set true to preload an image
             name:'preloader', // (string) class name for a preload container
             onLoad:function (img, dimensions) {
             }
         }
-    });
-
+    });*/
 });
 
 
