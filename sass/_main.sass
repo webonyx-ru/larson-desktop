@@ -356,6 +356,30 @@ a
     &.type2
         +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
         background-position: center 0
+        
+    &.forum-top-banner
+        min-height: 517px
+        background-size: auto
+        background-position: center top
+        box-sizing: border-box
+        +retina-bg('new-static-banner.jpg', 'new-static-banner@2x.jpg')
+
+        @media screen and (max-width: 1350px)
+            background-size: 1390px !important
+            margin-bottom: -100px
+            background-position: center 59px
+            background-image: url(../images/new-static-banner.jpg)
+
+            &:before
+                display: block
+                content: ''
+                width: 100%
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                height: 60px
+                background: #000
 
 .parallax-owl-carousel
     .owl-next, .owl-prev
@@ -589,6 +613,11 @@ a
         box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.17)
         color: #fff
         border-color: #1e79cf
+
+    &.db
+        display: block
+        width: 100%
+        box-sizing: border-box
 
 .icon--soc1
     +sprite(white-yt)
