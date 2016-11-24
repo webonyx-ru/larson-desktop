@@ -717,6 +717,9 @@ a
             color: #fff
 
 .b-traiders-table-pagination
+    margin-top: 20px
+    padding: 8px 0 0 0
+    border-top: 2px solid #fe7d1b
     > div
         float: left
         width: 50%
@@ -724,6 +727,11 @@ a
 
         &:nth-child(2)
             text-align: right
+
+        p
+            font-size: 14px
+            color: #1a1a1a
+            line-height: 22px
 
 .pagination-widget
     display: inline-block
@@ -735,6 +743,10 @@ a
 
     li
         float: left
+        margin-left: 5px
+
+        &:first-child
+            margin-left: 0
 
         a
             display: block
@@ -754,14 +766,25 @@ a
 
             &:hover,
             &:focus,
-            &:active
+            &:active,
+            &.active
                 background-color: #168de2
                 color: #fff
                 text-decoration: none
 
             &:visited
-                background-color: transparent
+                background-color: #fff
                 color: #168de2
+
+                &:hover,
+                &:focus,
+                &:active,
+                &.active
+                    background-color: #168de2
+                    color: #fff
+                    text-decoration: none
+
+
 
         span
             font-size: 14px

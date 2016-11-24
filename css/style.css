@@ -4411,6 +4411,11 @@ a {
   color: #fff;
 }
 
+.b-traiders-table-pagination {
+  margin-top: 20px;
+  padding: 8px 0 0 0;
+  border-top: 2px solid #fe7d1b;
+}
 .b-traiders-table-pagination > div {
   float: left;
   width: 50%;
@@ -4418,6 +4423,11 @@ a {
 }
 .b-traiders-table-pagination > div:nth-child(2) {
   text-align: right;
+}
+.b-traiders-table-pagination > div p {
+  font-size: 14px;
+  color: #1a1a1a;
+  line-height: 22px;
 }
 
 .pagination-widget {
@@ -4430,6 +4440,10 @@ a {
 }
 .pagination-widget li {
   float: left;
+  margin-left: 5px;
+}
+.pagination-widget li:first-child {
+  margin-left: 0;
 }
 .pagination-widget li a {
   display: block;
@@ -4447,14 +4461,19 @@ a {
   vertical-align: middle;
   height: 100%;
 }
-.pagination-widget li a:hover, .pagination-widget li a:focus, .pagination-widget li a:active {
+.pagination-widget li a:hover, .pagination-widget li a:focus, .pagination-widget li a:active, .pagination-widget li a.active {
   background-color: #168de2;
   color: #fff;
   text-decoration: none;
 }
 .pagination-widget li a:visited {
-  background-color: transparent;
+  background-color: #fff;
   color: #168de2;
+}
+.pagination-widget li a:visited:hover, .pagination-widget li a:visited:focus, .pagination-widget li a:visited:active, .pagination-widget li a:visited.active {
+  background-color: #168de2;
+  color: #fff;
+  text-decoration: none;
 }
 .pagination-widget li span {
   font-size: 14px;
