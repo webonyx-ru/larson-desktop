@@ -694,6 +694,14 @@ a
     cursor: pointer
     +trans
 
+    a
+        text-decoration: none
+        display: block
+        color: #1683fb
+
+        &:hover
+            text-decoration: none
+
     &:last-child
         border-right: 2px solid #1683fb
         border-radius: 0 5px 5px 0
@@ -704,6 +712,73 @@ a
     &.active, &:hover
         background: #1683fb
         color: #fff
+
+        a
+            color: #fff
+
+.b-traiders-table-pagination
+    > div
+        float: left
+        width: 50%
+        text-align: left
+
+        &:nth-child(2)
+            text-align: right
+
+.pagination-widget
+    display: inline-block
+
+    &::after
+        content: ''
+        display: block
+        clear: both
+
+    li
+        float: left
+
+        a
+            display: block
+            font-size: 14px
+            color: #168de2
+            width: 22px
+            height: 22px
+            border-radius: 2px
+            text-align: center
+            text-decoration: none
+
+            &::before
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                height: 100%
+
+            &:hover,
+            &:focus,
+            &:active
+                background-color: #168de2
+                color: #fff
+                text-decoration: none
+
+            &:visited
+                background-color: transparent
+                color: #168de2
+
+        span
+            font-size: 14px
+            color: #1a1a1a
+            display: block
+            width: 22px
+            height: 18px
+            text-align: center
+
+            &::before
+                content: ''
+                display: inline-block
+                vertical-align: bottom
+                height: 100%
+
+
+
 
 .b-our--decisions--tab--blocks--wrapper
     position: relative
@@ -4218,6 +4293,9 @@ td.b-traiders--dividents
 .lh40
     line-height: 40px
 
+.lh28
+    line-height: 28px
+
 .fullwidth
     width: 100%
     max-width: 100%
@@ -4228,7 +4306,7 @@ td.b-traiders--dividents
     float: left
 
 .twothirdwidth
-    max-width: 70%
+    max-width: 75%
     width: 100%
     float: left
     padding-right: 10px
@@ -4237,13 +4315,39 @@ td.b-traiders--dividents
     box-sizing: border-box
 
 .onethirdwidth
-    max-width: 30%
+    max-width: 25%
     width: 100%
     float: left
     padding-left: 10px
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
     box-sizing: border-box
+
+.larger-btn
+    width: 147px
+    text-align: center
+
+.before-map
+    margin-top: 80px
+
+    .jq-selectbox__select
+        height: 28px
+
+    .jq-selectbox__select-text
+        line-height: 28px!important
+
+    .jq-selectbox
+
+        .jq-selectbox__trigger
+            top: 9px
+
+        &.opened
+            .jq-selectbox__trigger
+                top: 14px
+
+    .blue_btn
+        height: 28px
+        line-height: 28px
 
 .map
     position: relative

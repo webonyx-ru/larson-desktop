@@ -378,62 +378,367 @@
     <section class="b-our--decisions mb50 p0">
         <div class="container">
             <div class="b-our--decisions--tab--links--wrapper mb35">
-                <div class="b-our--decisions--tab--links--item active js--toggle--link">
+                <div class="b-our--decisions--tab--links--item js--toggle--link">
                     <a href="#">О конкурсе</a>
                 </div>
                 <div class="b-our--decisions--tab--links--item js--toggle--link"><a href="#">Правила</a></div>
-                <div class="b-our--decisions--tab--links--item js--toggle--link"><a href="#">Рейтинговая таблица</a></div>
+                <div class="b-our--decisions--tab--links--item js--toggle--link active"><a href="#">Рейтинговая таблица</a></div>
                 <div class="b-our--decisions--tab--links--item js--toggle--link"><a href="#">Результаты и награды</a></div>
             </div>
             <div class="b-our--decisions--tab--blocks--wrapper contest-accounts clearfix">
-                <div class="b-our--decisions--tab--block js--toggle--block active tal" data-toggle-block="#toggle1">
-                    <div class="b-site-details-link mb35 tac">
-                        <a class="b-site-promo__refil-link has-icon__new-window" href="#">РЕЙТИНГОВАЯ ТАБЛИЦА
-                            ТРЕЙДЕРОВ</a>
+                <div class="b-our--decisions--tab--block js--toggle--block mb50 tal active" data-toggle-block="#toggle3">
+                    <div class=" clearfix">
+                        <form action="#" class="mb10 right b-rtg-table-search-form">
+                            <button type="submit" class="button-search"><i class="icon-search-grey dib"></i></button>
+                            <div class="search-input__wrapper dib">
+                                <input type="text" class="black search-input" placeholder="Ник или логин трейдера">
+                            </div>
+                        </form>
                     </div>
-                    <div class="b-content__text  mt10tal mb30">
-                        <p>Компания Larson&Holz IT Ltd ежемесячно проводит конкурс трейдеров среди реальных счетов
-                            размер,
-                            которых превышает 100$
-                            <a href="#" class="td-n">Бездепозитные счета </a>также участвуют в конкурсе, но только после
-                            пополнения депозита реальными средствами.</p>
-                        <p>Специально регистрироваться в конкурсе не нужно. Достаточно открыть <a href="#" class="td-n">реальный
-                            счет </a>по любому тарифу, пополнить его на любую сумму более 100$, и максимум через пять
-                            рабочих дней (для реальных счетов быстрее, для бездепозитных медленнее) вы автоматически
-                            попадете в специальную рейтинговую таблицу на основе которой и проводятся конкурсы.
-                            Ежемесячно разыгрываются <span class="fw600">несколько десятков призовых мест</span>, общий
-                            призовой фонд нередко превышает 10'000$. Если у Вас несколько реальных счетов, то все они
-                            участвуют в конкурсе. Первого числа каждого месяца автоматически подводятся итоги, призы
-                            зачисляются на торговые счета и сразу же стартует новый конкурс. Вы можете участвовать и
-                            получать призы неограниченное число раз. Информация о победителях всех конкурсов хранится в
-                            <a href="#" class="td-n">специальном разделе сайта</a>. </p>
-                        <p>Места в конкурсной таблице распределяются в порядке убывания средней месячной доходности, а
-                            точнее доходности, которую показал трейдер с момента попадание в рейтинг и по последнее
-                            число
-                            месяца, без учета списываний и пополнений счета, выраженную в процентах. Ведь новые
-                            трейдеры,
-                            только зарегистрировавшие и пополнившие счета, присоединяются к рейтингу в произвольное
-                            число
-                            месяца, но уже и в этом месяце имеют шансы получить приз. Первого числа следующего месяца
-                            результаты всех участников обнуляются и стартует новый конкурс.
-                            Рейтинговая таблица имеет множество назначений. По сути это глобальная социальная сеть
-                            трейдеров. Вы можете сортировать трейдеров по разным столбцам, вести переписку в чате с
-                            любым
-                            трейдером. Подгружать аватары, открывать или закрывать различные данные в своем кабинете. С
-                            помощью данного рейтинга трейдер сможет найти инвестора, а инвестор выбрать трейдера.</p>
-                    </div>
+                    <div class="b-traiders--table-wrapper tac">
+                        <table class="b-traiders--table col-black mb20">
+                            <thead>
+                            <tr>
+                                <th class="b-traiders--number">N</th>
+                                <th class="b-traiders--lock"><i class="icon--lock grey"></i></th>
+                                <th class="b-traiders--nic">Trader Nick</th>
+                                <th class="b-traiders--chat">Chat</th>
+                                <th class="b-traiders--country">Contry</th>
+                                <th class="b-traiders--city">City</th>
+                                <th class="b-traiders--pers_mounth">Monthly,%</th>
+                                <th class="b-traiders--pres_week">Weekly,%</th>
+                                <th class="b-traiders--pers_day">Daily,%</th>
+                                <th class="b-traiders--price">PRISE,$</th>
+                                <th class="b-traiders--life">LIFE, DS</th>
+                                <th class="b-traiders--friends">FRIENDS</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">-20</span></i>
+                                </td>
+                                <td>veil-9tu</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Kazakhstan</td>
+                                <td>Seme.</td>
+                                <td>426,34%</td>
+                                <td>6,60%</td>
+                                <td>3,27%</td>
 
-                    <div class="b-site-details-link mb15 tac">
-                        <a class="b-site-promo__refil-link has-icon__new-window" href="#">ПОДРОБНЕЕ О ПРАВИЛАХ
-                            ПРОВЕДЕНИЯ
-                            КОНКУРСА</a>
-                    </div>
-                    <div class="b-site-details-link mb25 tac">
-                        <a class="b-site-promo__refil-link has-icon__new-window" href="#">СМОТРЕТЬ РЕЙТИНГОВУЮ
-                            ТАБЛИЦУ</a>
-                    </div>
-                    <div class="tac">
-                        <a href="#" class="dib orange_btn">Открыть счет</a>
+                                <td>
+                                    <div class="dib table--traiders--price--block"><p>1`000 USD <span
+                                            class="green">+0</span></p>
+
+                                    </div>
+                                </td>
+                                <td>1111 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">+60</span></i>
+                                </td>
+                                <td>squally-b9s</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Cook Islands</td>
+                                <td>Dnip.</td>
+                                <td>370,85%</td>
+                                <td>14,33%</td>
+                                <td>7,95%</td>
+
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        <p>1`000 USD<span>+0</span></p>
+                                    </div>
+                                </td>
+
+                                <td>23 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr class="hidden--1000">
+                                <td colspan="12" class="blue--table--banner">
+
+                                    <div class="clearfix dib vam">
+                                        <div class="dib vam traiders--competition">КОНКУРС -
+                                            №
+                                            37</div>
+                                        <div class="dib vam traiders--price--found">Призовой фонд <span class="bold">14 000 $</span>
+                                        </div>
+
+                                        <div class="dib vam traiders--price--places"><p>Призовых мест <span
+                                                class="bold">145</span></p>
+                                        </div>
+                                        <div class="dib vam traiders--price--nominants"><p>Номинантов <span
+                                                class="bold">160</span></p>
+                                        </div>
+
+                                        <div class="table--banner--buttons--wrapper">
+                                            <a href="#" class="white_btn color_blue right">Правила</a>
+                                            <a href="#" class="margin-right20 orange_btn right fw600">Участвовать</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">-20</span></i>
+                                </td>
+                                <td>veil-9tu</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Kazakhstan</td>
+                                <td>Seme.</td>
+                                <td>426,34%</td>
+                                <td>6,60%</td>
+                                <td>3,27%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD <span>-6</span>
+                                    </div>
+                                </td>
+                                <td>1111 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">+60</span></i>
+                                </td>
+                                <td>squally-b9s</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Cook Islands</td>
+                                <td>Dnip.</td>
+                                <td>370,85%</td>
+                                <td>14,33%</td>
+                                <td>7,95%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD <span>-6</span>
+                                    </div>
+                                </td>
+
+                                <td>23 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td><i class="icon--lock orange"><span
+                                        class="b-traiders--table--lock--number">+60</span></i></td>
+                                <td>veil-9tu</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Kazakhstan</td>
+                                <td>Seme.</td>
+                                <td>426,34%</td>
+                                <td>6,60%</td>
+                                <td>3,27%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD<span>+0</span>
+                                    </div>
+                                </td>
+
+                                <td>1111 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">+60</span></i>
+                                </td>
+                                <td>squally-b9s</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Cook Islands</td>
+                                <td>Dnip.</td>
+                                <td>370,85%</td>
+                                <td>14,33%</td>
+                                <td>7,95%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD<span>+0</span>
+                                    </div>
+                                </td>
+
+                                <td>23 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">+60</span></i>
+                                </td>
+                                <td>veil-9tu</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Kazakhstan</td>
+                                <td>Seme.</td>
+                                <td>426,34%</td>
+                                <td>6,60%</td>
+                                <td>3,27%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD<span>+0</span>
+                                    </div>
+                                </td>
+
+                                <td>1111 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">+60</span></i>
+                                </td>
+                                <td>squally-b9s</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Cook Islands</td>
+                                <td>Dnip.</td>
+                                <td>370,85%</td>
+                                <td>14,33%</td>
+                                <td>7,95%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD<span>+0</span>
+                                    </div>
+                                </td>
+
+                                <td>23 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>9</td>
+                                <td><i class="icon--lock"><span
+                                        class="b-traiders--table--lock--number red">-20</span></i></td>
+                                <td>veil-9tu</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Kazakhstan</td>
+                                <td>Seme.</td>
+                                <td>426,34%</td>
+                                <td>6,60%</td>
+
+                                <td>3,27%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block"><p>1`000 USD<span>+0</span></p>
+                                    </div>
+                                </td>
+
+                                <td>1111 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>10</td>
+                                <td><i class="icon--lock"><span class="b-traiders--table--lock--number">+60</span></i>
+                                </td>
+                                <td>squally-b9s</td>
+                                <td>
+                                    <i class="table--icon--chat">
+                                        <span class="top table--traiders--chat--text red">+4</span>
+                                        <span class="bottom table--traiders--chat--text green">-7</span>
+                                    </i>
+                                </td>
+                                <td>Cook Islands</td>
+                                <td>Dnip.</td>
+                                <td>370,85%</td>
+                                <td>14,33%</td>
+                                <td>7,95%</td>
+                                <td>
+                                    <div class="dib table--traiders--price--block">
+                                        1`000 USD<span>+0</span>
+                                    </div>
+                                </td>
+
+                                <td>23 days</td>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="empty--button tac dib">Смотреть всю таблицу</a>
+                        <div class="b-traiders-table-pagination clearfix">
+                            <div>
+                                <p>Всего трейдеров-номинантов: <span>1245</span></p>
+                            </div>
+                            <div>
+                                <ul class="pagination-widget">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><span>...</span></li>
+                                    <li><a href="#">48</a></li>
+                                    <li><a href="#">49</a></li>
+                                    <li><a href="#">50</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -441,90 +746,90 @@
     </section>
 
 
-<footer>
-    <div class="b-information--footer clearfix">
-        <div class="container--inside">
-            <nav class="b-footer--menu--nav left">
-                <ul class="b-footer_menu--units">
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">О компании</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Сервисы </a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Метатрейдинг</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Партнерство</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Новости</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">FAQ</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Поиск</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Политика
-                        конфиденциальности</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Предупреждение о
-                        риске</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Борьба с отмыванием
-                        средств</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Авторские статьи</a>
-                    </li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Карта сайта</a></li>
-                    <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Обратная связь</a></li>
-                </ul>
-            </nav>
-            <aside class="b-footer--information right">
-                <p>Larson&Holz IT Ltd - это группа компаний, бизнес которых оптимизирован для решения единой бизнес
-                    задачи, предоставления качественного сервиса по доступу на внебиржевые рынки (OTC markets) – CFD
-                    контракты и Бинарные опционы.</p>
-                <p>Компания не занимается управлением средствами и не гарантирует получения дохода. Более того, компания
-                    предупреждает о том, что торговля на финансовых рынках сопряжена с риском и подходит не всем. </p>
-                <p>Все сервисы компании поддерживаются в режиме он-лайн через единый официальный веб-сервер, который
-                    находится под управлением следующего юридического лица, осуществляющего координирующую функцию для
-                    остальных подразделений группы компаний:</p>
+    <footer>
+        <div class="b-information--footer clearfix">
+            <div class="container--inside">
+                <nav class="b-footer--menu--nav left">
+                    <ul class="b-footer_menu--units">
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">О компании</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Сервисы </a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Метатрейдинг</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Партнерство</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Новости</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">FAQ</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Поиск</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Политика
+                            конфиденциальности</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Предупреждение о
+                            риске</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Борьба с отмыванием
+                            средств</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Авторские статьи</a>
+                        </li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Карта сайта</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                <aside class="b-footer--information right">
+                    <p>Larson&Holz IT Ltd - это группа компаний, бизнес которых оптимизирован для решения единой бизнес
+                        задачи, предоставления качественного сервиса по доступу на внебиржевые рынки (OTC markets) – CFD
+                        контракты и Бинарные опционы.</p>
+                    <p>Компания не занимается управлением средствами и не гарантирует получения дохода. Более того, компания
+                        предупреждает о том, что торговля на финансовых рынках сопряжена с риском и подходит не всем. </p>
+                    <p>Все сервисы компании поддерживаются в режиме он-лайн через единый официальный веб-сервер, который
+                        находится под управлением следующего юридического лица, осуществляющего координирующую функцию для
+                        остальных подразделений группы компаний:</p>
 
-                <ul class="b-footer--gray--color">
-                    <li>LARSON AND HOLZ IT LTD</li>
-                    <li>SAINT VINCENT AND THE GRENADINES, THE FINANCIAL SERVICES CENTRE STONEY GROUND, KINGSTOWN, VC
-                        P.O.BOX 1823
-                    </li>
-                    <li>International Business Company Number - 21925 IBC2014.</li>
-                </ul>
-                <p>Организация авторизована и зарегистрированная, как финансовая компания следующим органом: </p>
+                    <ul class="b-footer--gray--color">
+                        <li>LARSON AND HOLZ IT LTD</li>
+                        <li>SAINT VINCENT AND THE GRENADINES, THE FINANCIAL SERVICES CENTRE STONEY GROUND, KINGSTOWN, VC
+                            P.O.BOX 1823
+                        </li>
+                        <li>International Business Company Number - 21925 IBC2014.</li>
+                    </ul>
+                    <p>Организация авторизована и зарегистрированная, как финансовая компания следующим органом: </p>
 
-                <ul class="b-footer--gray--color">
-                    <li>THE FINANCIAL SERVICES AUTHORITY OF SAINT VINCENT AND THE GRENADINES.</li>
-                </ul>
+                    <ul class="b-footer--gray--color">
+                        <li>THE FINANCIAL SERVICES AUTHORITY OF SAINT VINCENT AND THE GRENADINES.</li>
+                    </ul>
 
-                <p>Сайт доступен на различных языках, в том числе и на русском. Компания не является резидентом РФ, не
-                    имеет постоянного зарегистрированного представительства, не является проф. участником в соответствии
-                    с 460 ФЗ РФ и осуществляет свою деятельность в соответствии с законодательством своей страны
-                    регистрации.</p>
+                    <p>Сайт доступен на различных языках, в том числе и на русском. Компания не является резидентом РФ, не
+                        имеет постоянного зарегистрированного представительства, не является проф. участником в соответствии
+                        с 460 ФЗ РФ и осуществляет свою деятельность в соответствии с законодательством своей страны
+                        регистрации.</p>
 
-                <p>Необходимую информационную поддержку клиенты могут получить через форму обратной связи, либо через
-                    независимых агентов (франчайзи), уполномоченных компанией. Франчайзи осуществляют только
-                    консультационную поддержку, являются самостоятельными юридическими лицами и действуют в собственных
-                    интересах и интересах своих клиентов.</p>
-            </aside>
-        </div>
-    </div>
-
-    <div class="b-copyright--footer tac">
-        <div class="container">
-            <div class="b-footer--payment--methods tac">
-                <div class="dib vam b-footer--payment--item payment1"></div>
-                <div class="dib vam b-footer--payment--item payment2"></div>
-                <div class="dib vam b-footer--payment--item payment3"></div>
-                <div class="dib vam b-footer--payment--item payment4"></div>
-                <div class="dib vam b-footer--payment--item payment5"></div>
-            </div>
-            <div class="b-footer--social">
-                <a href="#" class="dib vam b-footer--social--icon footer-social-yt"></a>
-                <a href="#" class="dib vam b-footer--social--icon footer-social-vk"></a>
-                <a href="#" class="dib vam b-footer--social--icon footer-social-tw"></a>
-                <a href="#" class="dib vam b-footer--social--icon footer-social-fb"></a>
-                <a href="#" class="dib vam b-footer--social--icon footer-social-rss"></a>
-            </div>
-            <div class="b-footer--address">
-                <p>Для корреспонденции:</p>
-                <p>ООО ККМ, 129515, Москва, </p>
-                <p>ул. Академика Королева, д.13, стр.1</p>
+                    <p>Необходимую информационную поддержку клиенты могут получить через форму обратной связи, либо через
+                        независимых агентов (франчайзи), уполномоченных компанией. Франчайзи осуществляют только
+                        консультационную поддержку, являются самостоятельными юридическими лицами и действуют в собственных
+                        интересах и интересах своих клиентов.</p>
+                </aside>
             </div>
         </div>
-    </div>
-</footer>
+
+        <div class="b-copyright--footer tac">
+            <div class="container">
+                <div class="b-footer--payment--methods tac">
+                    <div class="dib vam b-footer--payment--item payment1"></div>
+                    <div class="dib vam b-footer--payment--item payment2"></div>
+                    <div class="dib vam b-footer--payment--item payment3"></div>
+                    <div class="dib vam b-footer--payment--item payment4"></div>
+                    <div class="dib vam b-footer--payment--item payment5"></div>
+                </div>
+                <div class="b-footer--social">
+                    <a href="#" class="dib vam b-footer--social--icon footer-social-yt"></a>
+                    <a href="#" class="dib vam b-footer--social--icon footer-social-vk"></a>
+                    <a href="#" class="dib vam b-footer--social--icon footer-social-tw"></a>
+                    <a href="#" class="dib vam b-footer--social--icon footer-social-fb"></a>
+                    <a href="#" class="dib vam b-footer--social--icon footer-social-rss"></a>
+                </div>
+                <div class="b-footer--address">
+                    <p>Для корреспонденции:</p>
+                    <p>ООО ККМ, 129515, Москва, </p>
+                    <p>ул. Академика Королева, д.13, стр.1</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 
 

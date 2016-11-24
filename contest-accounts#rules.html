@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Контакты</title>
+    <title>Конкурсные счета</title>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,cyrillic-ext,latin-ext,cyrillic'
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek,greek-ext,cyrillic-ext,cyrillic'
           rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/jquery.formstyler.css">
-    <link rel="stylesheet" href="css/easy-autocomplete.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 <div class="main--site--wrapper">
     <header class="b-header clearfix">
@@ -23,7 +22,7 @@
                 <a href="#" class="empty--button js--account--money">Пополнить</a>
             </div>
             <div class="b-header--phone--nuber--wrapper left">
-                <p class="b-header--the--phone margin-bottom5"><a class="blue-b-header--the--phone--link"
+                <p class="b-header--the--phone margin-bottom5"><a class="b-header--the--phone--link"
                                                                   href="tel:8-800-550-00-15">8-800-550-00-15</a></p>
                 <p class="b-header--chat--feedback--wrapper">
                     <a href="#" class="link--feedback blue_link margin-right10"><i class="icon--feedback"></i>Обратная
@@ -109,7 +108,7 @@
     <nav class="b-nav--menu clearfix static">
         <div class="container">
             <ul class="b-nav--menu_units left">
-                <li class="b-nav--menu_item active">
+                <li class="b-nav--menu_item">
                     <a class="b-nav--menu_link" href="#">О компании</a>
                     <ul class="b-nav--menu--dropdown hidden">
                         <li class="b-nav--menu--dropdown--item"><a
@@ -132,7 +131,7 @@
                                 class="b-nav--menu--dropdown--item--link">Контакты</a></li>
                     </ul>
                 </li>
-                <li class="b-nav--menu_item ">
+                <li class="b-nav--menu_item active">
                     <a class="b-nav--menu_link" href="#">Сервисы</a>
                     <ul class="b-nav--menu--dropdown hidden">
                         <li class="b-nav--menu--dropdown--item">
@@ -361,224 +360,284 @@
             </div>
         </div>
     </nav>
-
     <div class="container clearfix">
         <div class="b-site-breadcrumb">
             <ul class="b-site-breadcrumb__menu">
                 <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Главная</a>
                 </li>
-                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">О
-                    компании</a>
-                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Контакты</a>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Сервисы</a>
                 </li>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Конкурсные
+                    счета</a></li>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">О
+                    конкурсе</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="container mb50 clearfix">
-
-        <div class="b-content-page-left-side left">
-            <div class="b-site-left__outer-box">
-                <ul class="b-site-left__blue-menu">
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Информация о
-                        компании</a></li>
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Награды</a></li>
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Видео</a></li>
-                    <li class="b-site-left__outer-box">
-                    <li class="b-site__blue-menu-inner"><a href="#"
-                                                           class="b-site__blue-menu-item tree-menu open-tree close-tree">Благотворительность</a>
-                        <ul class="sub-tree-menu db">
-                            <li class="b-site__blue-menu-sub-inner"><a href="#" class="b-site__blue-sub-menu-item">Новости
-                                компании</a></li>
-                            <li class="b-site__blue-menu-sub-inner"><a href="#" class="b-site__blue-sub-menu-item">Экономическеи
-                                новости</a></li>
-                            <li class="b-site__blue-menu-sub-inner"><a href="#" class="b-site__blue-sub-menu-item">Шокирующие
-                                прогнозы</a></li>
-                        </ul>
-                    </li>
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Бизнес Модель</a>
-                    </li>
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Контакты</a></li>
-                </ul>
+    <section class="b-our--decisions mb50 p0">
+        <div class="container">
+            <div class="b-our--decisions--tab--links--wrapper mb35">
+                <div class="b-our--decisions--tab--links--item js--toggle--link">
+                    <a href="#">О конкурсе</a>
+                </div>
+                <div class="b-our--decisions--tab--links--item js--toggle--link active"><a href="#">Правила</a></div>
+                <div class="b-our--decisions--tab--links--item js--toggle--link"><a href="#">Рейтинговая таблица</a></div>
+                <div class="b-our--decisions--tab--links--item js--toggle--link"><a href="#">Результаты и награды</a></div>
+            </div>
+            <div class="b-our--decisions--tab--blocks--wrapper contest-accounts clearfix">
+                <div class="b-our--decisions--tab--block js--toggle--block  active tal" data-toggle-block="#toggle2">
+                    <p class="content-title mb20 tac">Условия проведения ежемесячного конкурса трейдеров и работы
+                        рейтинга</p>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Различные назначения рейтинга</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Продолжительность и периодичность проведения конкурса</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Как зарегистрироваться в конкурсе?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">У меня реальный счет, но я не вижу себя в рейтинге</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Какой призовой фонд в конкурсе?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Как посмотреть, какой у меня приз и как мне его получить?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">У некоторых трейдеров открыты стейтменты или личные данные, а у некоторых нет. Почему?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Как мне связаться с трейдером?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Сколько раз я могу участвовать в конкурсе?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="b-content__read-more mb30">
+                        <span class="b-content__read-more-title arrow-text">Зависит ли мое место в рейтинге и размер приза от величины счета?</span>
+                        <div class="b-content__text hidden mt10">
+                            <p>Стоит отметить, что у этого индикатора отсутствует множество значений параметров, что
+                                облегчает его использование, так как не нужно тестировать каждое значение индикатора на
+                                предмет его эффективности.
+                                Действие этого индикатора основано на следующих вполне логичных предпосылках. Во-первых,
+                                при
+                                трендах цены закрытия находятся около своих крайних значений: так при бычьем тренде
+                                закрытие
+                                ближе к максимальной цене, а при медвежьем тренде цены закрытия ближе к минимальной
+                                цене.
+                                Во-вторых, при уверенном тренде объемы торгов, как правило, превышают средний уровень.
+                                Из
+                                этого следует, что при бычьем тренде VA будет повышаться и значения его будут
+                                положительными, а при нисходящем медвежьем тренде VA будет уменьшаться, принимая
+                                отрицательные значения.
+                                Сигналами применения индикатора VA будут подтверждающие сигналы роста тренда -
+                                однонаправленность динамики индикатора и цены на бычьем тренде и расхождение на
+                                медвежьем
+                                тренде, а также опровергающие тренд сигналы - бычье расхождение медвежье схождение
+                                индикатора с графиком цены.</p>
+                        </div>
+                    </div>
+                    <div class="partnerships-buttons tac">
+                        <a href="#" class="tac orange_btn mr30">Открыть счет</a>
+                        <a href="#" class="tac blue_btn ">Стать партнером</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="b-content-page-right-side ovh"><!--WSpace-->
-            <div class="b-site-content__inner">
-                <h1 class="content-main-title tal mb20">Контакты</h1>
-                <div class="b-content__info-columns mb50 clearfix">
-                    <div class="b-content__info-column">
-                        <div class="b-content__info-column-top mb10">
-                            <p class="content-title2 fw400">Телефон поддержки:</p>
-                            <a href="#" class="content-title2 blue-link blue">8-800-550-00-15</a>
-                        </div>
-                        <div class="b-content__info-column-bottom">
-                            <p class="content-title2 fw400">Электронная почта:</p>
-                            <a href="#" class="content-title2 blue-link blue">info@lh-broker.com</a>
-                        </div>
-                    </div>
-                    <div class="b-content__info-column">
-                        <p class="content-title2 fw400 mb5">
-                            Ресурс управляется:
-                            LARSON & HOLZ SVG
-                        </p>
-                        <p class="content-text">
-                            The Financial Services Centre
-                            Stoney Ground, Kingstown
-                            St. Vincent & the Grenadines
-                            +852-3015-68-32, +43-1229-74-35
-                        </p>
-                    </div>
-                    <div class="b-content__info-column">
-                        <p class="content-title2 fw400 mb5">
-                            Для корреспонденции:
-                            ООО ККМ
-                        </p>
-                        <p class="content-text">
-                            Адрес: 129515, Россия, г.Москва
-                            ул. Академика Королева, д.13, стр.1
-                            E-mail: <a href="#" class="blue-link">russia@lh-broker.ru</a>
-                            Телефон: +7 (495) 181-59-45
-                        </p>
-                    </div>
-                </div>
-                <div class="fill-form-wrapper mb70 fullwidth">
-                    <h2 class="content-title">Обратная связь</h2>
-                    <p class="content-text">Форма обратной связи предназначена только для посетителей сайта.</p>
-                    <p class="content-text mb25">Для действующих клиентов Larson&Holz предназначен личный кабинет.</p>
-                    <form action="#" class="fill-form contacts-form clearfix">
-                        <div class="contacts-form mb30">
-                            <div class="fill-form__inputes mb30">
-                                <div class="clearfix">
-                                    <div class="b-fill-form">
-                                        <div class="b-fill-form__inp-wrapper right">
-                                            <input class="fill-form-inp" type="text" name="Login" placeholder="Ваше имя" required>
-                                        </div>
-                                    </div>
-                                    <div class="select-wrapper left prel halfwidth">
-                                        <select class="fill-form__select  d-arr" size="1">
-                                            <option value="Россия">Россия</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="clearfix">
-                                    <div class="b-fill-form">
-                                        <div class="b-fill-form__inp-wrapper right">
-                                            <input class="fill-form-inp" type="text" name="Login" placeholder="Электронная почта" required>
-                                        </div>
-                                    </div>
-                                    <div class="select-wrapper left prel halfwidth">
-                                        <select class="fill-form__select  d-arr" size="1">
-                                            <option value="Чебурашка">Чебурашка</option>
-                                            <option selected value="Крокодил Гена">Крокодил Гена</option>
-                                            <option value="Шапокляк">Шапокляк</option>
-                                            <option value="Крыса Лариса">Крыса Лариса</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="clearfix">
-                                    <div class="b-fill-form">
-                                        <div class="b-fill-form__inp-wrapper right">
-                                            <input class="fill-form-inp inputmask-phone" type="text" name="Login" placeholder="+7 (___) ___-__-__">
-                                        </div>
-                                    </div>
-                                    <div class="halfwidth right">
-                                        <textarea class="fill-form-inp" name="" id="" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="clearfix margin-top20">
-                                    <div class="b-fill-form"></div>
-                                    <div class="b-fill-form">
-                                        <div class="b-fill-form__inp-wrapper  fl-row right">
-                                            <span class="textBoxCaptcha  dib"></span>
-                                            <i class="refresh-icon"></i>
-                                            <input class="fill-form-inp  code dib" type="text" name="Login" required>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tar">
-                            <button class="blue_btn larger-btn tar clearfix">Отправить</button>
-                        </div>
-                    </form>
-                    <div class="clearfix fullwidth margin-bottom40 margin-top20">
-                        <div class="halfwidth">
-                            <p class="lh28">Найдите представительство Larson & Holz в своем городе</p>
-                        </div>
-                        <div class="before-map">
-                            <div class="halfwidth">
-                                <form action="" class="clearfix">
-                                    <div class="twothirdwidth">
-                                        <div class="select-wrapper left prel fullwidth">
-                                            <select class="fill-form__select  d-arr" size="1">
-                                                <option value="Чебурашка">Чебурашка</option>
-                                                <option selected value="Крокодил Гена">Крокодил Гена</option>
-                                                <option value="Шапокляк">Шапокляк</option>
-                                                <option value="Крыса Лариса">Крыса Лариса</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="onethirdwidth tar">
-                                        <button class="blue_btn  clearfix">Найти</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="map-wrapper">
-                <div class="map">
-                    <img src="./images/map.png" alt="" class="map-image">
-                    <!-- НЕ ТРОГАТЬ ОСТАВИТЬ КАК ЕСТЬ (Попап не менять и не добавлять контент все через JS)-->
-                    <div class="popup">
-                        <div class="popup-wrap">
-                            <a href="#" data-map-popup-exit><span></span><span></span></a>
-                            <div class="popup-cont"></div>
-                        </div>
-                    </div>
-                    <!-- Конец НЕ ТРОГАТЬ ОСТАВИТЬ КАК ЕСТЬ -->
-
-
-                    <div data-coords="699, 345" class="marker meet">
-                        <div class="has-info">
-                            <i class="icon-active"></i>
-                            <h3 class="">г.Москва</h3>
-                        </div>
-                        <p class="margin-top10">В вашем городе еще остались вакантные места. </p>
-                        <p class="margin-top10">
-                            <a href="#" class="orange_btn">Стать партнером</a>
-                        </p>
-                    </div>
-                    <div class="marker pred" data-coords="552, 99">
-                        <h3>ООО ККМ</h3>
-                        <p>Город: <span>Челябинск</span></p>
-                        <p>Страна: <span>Россия</span></p>
-                        <p>Статус: <span>Активен</span></p>
-                        <p class="has-info">
-                            <i class="icon-active"></i>
-                            Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div>
-                <ul class="map-info-list">
-                    <li><i class="marker meet"></i> Агенты</li>
-                    <li><i class="marker pred"></i> Запланированные события</li>
-                </ul>
-            </div>
-            <div class="b-content__text b-info-grey-dashed fw600 ">
-                <p>Услуги по доступу на мировые внебиржевые финансовые рынки (OTC - over the counter markets)
-                    обеспечиваются юридическим лицом
-                    <a href="#" class="blue-link">Larson&Holz IT Ltd</a>. Сервисы на внебиржевом рынке FOREX и CFD
-                    контрактов могут быть ограничены для некоторых категорий клиентов или территорий. </p>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="b-information--footer clearfix">
@@ -586,7 +645,7 @@
                 <nav class="b-footer--menu--nav left">
                     <ul class="b-footer_menu--units">
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">О компании</a></li>
-                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Сервисы</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Сервисы </a></li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Метатрейдинг</a></li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Партнерство</a></li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link">Новости</a></li>
@@ -598,26 +657,20 @@
                             риске</a></li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Борьба с отмыванием
                             средств</a></li>
-                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Авторские
-                            статьи</a>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Авторские статьи</a>
                         </li>
-                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Карта сайта</a>
-                        </li>
-                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Обратная связь</a>
-                        </li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Карта сайта</a></li>
+                        <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Обратная связь</a></li>
                     </ul>
                 </nav>
                 <aside class="b-footer--information right">
                     <p>Larson&Holz IT Ltd - это группа компаний, бизнес которых оптимизирован для решения единой бизнес
                         задачи, предоставления качественного сервиса по доступу на внебиржевые рынки (OTC markets) – CFD
                         контракты и Бинарные опционы.</p>
-                    <p>Компания не занимается управлением средствами и не гарантирует получения дохода. Более того,
-                        компания
-                        предупреждает о том, что торговля на финансовых рынках сопряжена с риском и подходит не
-                        всем. </p>
+                    <p>Компания не занимается управлением средствами и не гарантирует получения дохода. Более того, компания
+                        предупреждает о том, что торговля на финансовых рынках сопряжена с риском и подходит не всем. </p>
                     <p>Все сервисы компании поддерживаются в режиме он-лайн через единый официальный веб-сервер, который
-                        находится под управлением следующего юридического лица, осуществляющего координирующую функцию
-                        для
+                        находится под управлением следующего юридического лица, осуществляющего координирующую функцию для
                         остальных подразделений группы компаний:</p>
 
                     <ul class="b-footer--gray--color">
@@ -633,18 +686,14 @@
                         <li>THE FINANCIAL SERVICES AUTHORITY OF SAINT VINCENT AND THE GRENADINES.</li>
                     </ul>
 
-                    <p>Сайт доступен на различных языках, в том числе и на русском. Компания не является резидентом РФ,
-                        не
-                        имеет постоянного зарегистрированного представительства, не является проф. участником в
-                        соответствии
+                    <p>Сайт доступен на различных языках, в том числе и на русском. Компания не является резидентом РФ, не
+                        имеет постоянного зарегистрированного представительства, не является проф. участником в соответствии
                         с 460 ФЗ РФ и осуществляет свою деятельность в соответствии с законодательством своей страны
                         регистрации.</p>
 
-                    <p>Необходимую информационную поддержку клиенты могут получить через форму обратной связи, либо
-                        через
+                    <p>Необходимую информационную поддержку клиенты могут получить через форму обратной связи, либо через
                         независимых агентов (франчайзи), уполномоченных компанией. Франчайзи осуществляют только
-                        консультационную поддержку, являются самостоятельными юридическими лицами и действуют в
-                        собственных
+                        консультационную поддержку, являются самостоятельными юридическими лицами и действуют в собственных
                         интересах и интересах своих клиентов.</p>
                 </aside>
             </div>
@@ -678,16 +727,12 @@
 
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.formstyler.min.js"></script>
-<script src="js/input.mask.js"></script>
-<script src="js/craftmap.js"></script>
+<!--<script src="js/formstyler.min.js"></script>-->
 <!-- // <script src="js/retina.js"></script> -->
 <script src="js/countdown.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.easy-autocomplete.min.js"></script>
 <!-- // <script src="PP/PP.js"></script> -->
 <script src="js/custom.js"></script>
-
 </body>
 
 </html>
