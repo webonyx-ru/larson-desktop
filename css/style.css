@@ -10625,6 +10625,7 @@ td.b-traiders--dividents {
 .mw550 {
   max-width: 550px;
   width: 100%;
+  margin: 20px 0;
 }
 
 .mw600 {
@@ -10634,6 +10635,12 @@ td.b-traiders--dividents {
 }
 
 .mw780 {
+  max-width: 780px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.mw750 {
   max-width: 780px;
   width: 100%;
   margin: 20px 0;
@@ -10683,6 +10690,13 @@ td.b-traiders--dividents {
 .responsive-img {
   max-width: 100%;
   width: 100%;
+}
+
+.boxed-warning {
+  background: #fafcec;
+  padding: 15px 18px;
+  font-size: 12px;
+  color: #4d4d4d;
 }
 
 @media screen and (max-width: 1260px) {
