@@ -356,7 +356,7 @@ a
     &.type2
         +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
         background-position: center 0
-        
+
     &.forum-top-banner
         min-height: 517px
         background-size: auto
@@ -4594,3 +4594,71 @@ td.b-traiders--dividents
 
 .icon-MT-5
     +sprite(icon-MT-5)
+
+.icon-larson
+    +sprite(icon-l-h)
+    margin: 15px 0
+
+.mw225
+    max-width: 225px
+    width: 100%
+
+.mw550
+    max-width: 550px
+    width: 100%
+
+.mw600
+    max-width: 660px
+    width: 100%
+    margin: 20px 0
+
+.mw780
+    max-width: 780px
+    width: 100%
+    margin: 20px 0
+
+.margin-small
+    margin: 10px 0
+
+.MT-list-desc
+
+    li
+        margin-bottom: 14px
+
+        &::after
+            content: ''
+            display: block
+            clear: both
+
+        &.has-icon
+            font-size:  0
+
+            > i
+                display: inline-block
+                margin: 0 4px
+                width: 57px
+
+            p
+                width: calc(100% - 65px)
+                display: inline-block
+                font-style: italic
+                line-height: 1.2
+                vertical-align: middle
+                font-size: 14px
+
+.grid
+    overflow: hidden
+
+    &-double
+        > div
+            width: calc(50% - 15px)
+            float: left
+            margin: 15px 0
+
+            &:nth-child(2n)
+                float: right
+
+
+.responsive-img
+    max-width: 100%
+    width: 100%

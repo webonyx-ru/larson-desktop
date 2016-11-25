@@ -446,12 +446,14 @@ $(document).ready(function () {
         };
 
     var map = $('.map'),
-        mapImage = map.find('.map-image'),
-        mapImageWidth = mapImage.get(0).naturalWidth,
-        mapImageHeight = mapImage.get(0).naturalHeight,
-        mapPopup = map.find('.popup'),
-        mapWidth = map.outerWidth();
-        
+        mapImage = map.find('.map-image');
+
+    if(mapImage) {
+        var mapImageWidth = mapImage.get(0).naturalWidth,
+            mapImageHeight = mapImage.get(0).naturalHeight,
+            mapPopup = map.find('.popup'),
+            mapWidth = map.outerWidth();
+
     $('[data-coords]').each(function (e) {
         var _self = $(this),
             t = _self, position = t.data('coords').split(','),
@@ -534,6 +536,8 @@ $(document).ready(function () {
 
         return false;
     });
+    }
+
 
     /*$('.map').craftmap({
         cookies:false, // (bool) remember position
