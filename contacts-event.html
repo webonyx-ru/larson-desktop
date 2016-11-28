@@ -467,13 +467,10 @@
                                             <input class="fill-form-inp" type="text" name="Login" placeholder="Электронная почта" required>
                                         </div>
                                     </div>
-                                    <div class="select-wrapper left prel halfwidth">
-                                        <select class="fill-form__select  d-arr" size="1">
-                                            <option value="Чебурашка">Чебурашка</option>
-                                            <option selected value="Крокодил Гена">Крокодил Гена</option>
-                                            <option value="Шапокляк">Шапокляк</option>
-                                            <option value="Крыса Лариса">Крыса Лариса</option>
-                                        </select>
+
+                                    <div class="select-wrapper autocomplete-input-wrap left prel halfwidth">
+                                        <input class="fill-form-inp autocomplete-input" id="city_autocomplete" type="text" name="" placeholder="Введите город или населенный пункт" required>
+                                        <i class="icon"></i>
                                     </div>
                                 </div>
                                 <div class="clearfix">
@@ -687,6 +684,30 @@
 <script src="js/jquery.easy-autocomplete.min.js"></script>
 <!-- // <script src="PP/PP.js"></script> -->
 <script src="js/custom.js"></script>
+<script>
+    var options = {
+
+        data: [
+            {"name": "Afghanistan", "code": "AF"},
+            {"name": "Aland Islands", "code": "AX"},
+            {"name": "Albania", "code": "AL"},
+            {"name": "Algeria", "code": "DZ"},
+            {"name": "American Samoa", "code": "AS"}
+        ],
+
+        getValue: "name",
+
+        list: {
+            match: {
+                enabled: true
+            }
+        },
+
+        theme: "square"
+    };
+
+    $("#city_autocomplete").easyAutocomplete(options);
+</script>
 
 </body>
 
