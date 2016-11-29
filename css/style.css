@@ -82,6 +82,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-items: center;
 }
 
+.fl-items-center {
+  display: flex;
+  align-items: center !important;
+}
+
 .fl-row {
   display: flex;
   flex-direction: row;
@@ -246,6 +251,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   margin-left: 20px;
 }
 
+.mt3 {
+  margin-top: 3px;
+}
+
 .mt5 {
   margin-top: 5px;
 }
@@ -366,6 +375,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #808080 !important;
 }
 
+.text-grey {
+  color: #979797 !important;
+}
+
 .mx819 {
   max-width: 819px;
 }
@@ -428,6 +441,10 @@ input:focus, textarea:focus, a:focus, button:focus {
 
 .fw600 {
   font-weight: 600 !important;
+}
+
+.fwbold {
+  font-weight: bold !important;
 }
 
 .wdth215 {
@@ -8758,8 +8775,8 @@ td.b-traiders--dividents {
   cursor: pointer;
 }
 .dd-arrow.grey, .grey.arrow-table:after, .grey.arrow-text:after {
-  border-top: 2px solid grey;
-  border-right: 2px solid grey;
+  border-top: 2px solid #c8c8c8;
+  border-right: 2px solid #c8c8c8;
   width: 6px;
   height: 6px;
 }
@@ -8781,8 +8798,8 @@ td.b-traiders--dividents {
   display: inline-block;
   margin-left: 13px;
   vertical-align: 2px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  border-top: 2px solid #008ee3;
+  border-right: 2px solid #008ee3;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -8795,6 +8812,11 @@ td.b-traiders--dividents {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
+  border-color: #000;
+}
+
+.b-results-and-honors-title-item .orange {
+  color: #fe7d1b !important;
 }
 
 .dd-table__title {
@@ -9825,6 +9847,7 @@ td.b-traiders--dividents {
 .b-results-and-honors-title-item {
   align-items: baseline;
   display: flex;
+  color: #979797;
 }
 
 .money-with-cup {
@@ -10812,6 +10835,25 @@ td.b-traiders--dividents {
   }
   .b-nav--socialmedia--units--wrapper:hover .b-nav--socialmedia--units {
     display: block;
+  }
+}
+@media screen and (max-width: 1155px) {
+  .b-content-honor-type-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .b-content-honor__photo {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .b-content-honor__full-text {
+    margin-bottom: 20px;
+    float: none;
   }
 }
 @media screen and (max-width: 1200px) {

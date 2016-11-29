@@ -3505,8 +3505,8 @@ td.b-traiders--dividents
     border-right: 2px solid #fff
     cursor: pointer
     &.grey
-        border-top: 2px solid grey
-        border-right: 2px solid grey
+        border-top: 2px solid #c8c8c8
+        border-right: 2px solid #c8c8c8
         width: 6px
         height: 6px
     &.active
@@ -3528,13 +3528,18 @@ td.b-traiders--dividents
         display: inline-block
         margin-left: 13px
         vertical-align: 2px
-        border-top: 2px solid #000
-        border-right: 2px solid #000
+        border-top: 2px solid #008ee3
+        border-right: 2px solid #008ee3
         +trans
 
     &.active
         &:after
             +transform(rotate(-45deg))
+            border-color: #000
+
+.b-results-and-honors-title-item
+    & .orange
+        color: #fe7d1b !important
 
 .dd-table__title
     @extend .dd-hat
@@ -4166,8 +4171,7 @@ td.b-traiders--dividents
 .b-results-and-honors-title-item
     align-items: baseline
     display: flex
-//ehtht
-
+    color: #979797
 
 .money-with-cup
     display: block

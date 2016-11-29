@@ -6,11 +6,13 @@
     margin: 0 4px 0 0;
     border-radius: 3px;
     cursor: pointer;
-    background-color: #008ee3;
+    background-color: #fff;
     box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.27);
 }
 
-
+.jq-checkbox.checked{
+    background-color: #008ee3;
+}
 
 .jq-checkbox.checked .jq-checkbox__div {
     width: 9px;
