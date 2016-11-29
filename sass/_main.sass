@@ -2710,8 +2710,8 @@ input.search-input
         border-right: 1px solid #e2e2e2
 
     &.active, &:hover
+        border-color: #008ee3
         background-color: #008ee3
-        border-left: solid 1px #008ee3
         color: #fff
 
         & + *
@@ -4698,3 +4698,14 @@ td.b-traiders--dividents
         line-height: 1.29
         color: #4d4d4d
         font-family: 'Courier New'
+
+.b-news-arrow.b-news-arrow__left
+    padding-left: 35px
+    &:before
+        top: 50%
+        +transform(translateY(-50%))
+.b-news-arrow.b-news-arrow__right
+    padding-right: 35px
+    &:before
+        top: 50%
+        +transform(translateY(-50%))
