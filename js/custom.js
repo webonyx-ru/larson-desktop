@@ -359,15 +359,16 @@ $(document).ready(function () {
 
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
-        var bl = $(this).closest(".b-our--decisions--tab--block");
+        var bl = $(this).closest(".b-content__read-more-list");
         if ($(this).closest('.arrow-text').hasClass('active')) {
             bl.find('.arrow-text').removeClass('active');
             $(this).siblings('.b-content__text').stop().slideToggle(400, tabs_h);
+            $(this).closest('.arrow-text').removeClass('active');
         } else {
             bl.find('.arrow-text').removeClass('active');
             bl.find('.b-content__text').stop().slideUp(400);
             $(this).siblings('.b-content__text').stop().slideToggle(400, tabs_h);
-            $(this).closest('.arrow-text').toggleClass('active');
+            $(this).closest('.arrow-text').addClass('active');
         }
 
         e.preventDefault();
