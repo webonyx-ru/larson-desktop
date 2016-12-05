@@ -303,6 +303,21 @@ $(document).ready(function () {
             $(this).addClass('active-taber').next().slideDown(300);
         }
     });
+
+    $(document).on('click', '.b-nav--menu--dropdown--item--link.has-dropdown', function (e) {
+        e.preventDefault();
+        var parentNode = $(this).parent();
+
+        if(parentNode.hasClass('active')) {
+            parentNode.removeClass('active');
+            parentNode.find('.traider-submenu').slideUp();
+        } else {
+            parentNode.addClass('active');
+            parentNode.find('.traider-submenu').slideDown();
+        }
+
+        return false;
+    });
 });
 
 
