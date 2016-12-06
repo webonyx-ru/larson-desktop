@@ -4015,35 +4015,6 @@ a {
   width: calc(100% - 28px);
   text-align: left;
 }
-.b-nav--menu--dropdown--item--link.has-dropdown:before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  background-image: url('../images/icons-s3e6c9ef2cf.png');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  height: 7px;
-  width: 11px;
-  margin-top: -1px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .b-nav--menu--dropdown--item--link.has-dropdown:before {
-    background-image: url('../images/icons-2x-scf5a643634.png');
-    background-size: 146px auto;
-    background-position: 0 0;
-    height: 7px;
-    width: 11px;
-  }
-}
 .b-nav--menu--dropdown--item--link:hover {
   background-color: #2192fd !important;
 }
