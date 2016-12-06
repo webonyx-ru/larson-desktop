@@ -440,7 +440,6 @@ a
     left: 0
     min-width: 100%
     background: #2192fd
-    padding: 10px 0
     z-index: 10
     white-space: nowrap
 
@@ -453,21 +452,6 @@ a
 
         .b-nav--menu--dropdown--item--link
             background: rgba(0, 0, 0, 0.1)
-
-    &.active
-        .b-nav--menu--dropdown--item--link
-            &.has-dropdown
-                &:before
-                    +sprite(arrow_small)
-                    margin-top: -1px
-                    -webkit-transform: rotate(0deg)
-                    -moz-transform: rotate(0deg)
-                    -ms-transform: rotate(0deg)
-                    -o-transform: rotate(0deg)
-                    transform: rotate(0deg)
-
-        .traider-submenu
-            display: block
 
 .b-nav--menu--dropdown--item--link
     background-color: #2383e3
@@ -500,12 +484,12 @@ a
             top: 50%
             right: 12px
             +sprite(arrow_small)
-            margin-top: -3.5px
-            -webkit-transform: rotate(-90deg)
-            -moz-transform: rotate(-90deg)
-            -ms-transform: rotate(-90deg)
-            -o-transform: rotate(-90deg)
-            transform: rotate(-90deg)
+            margin-top: -1px
+            -webkit-transform: rotate(0deg)
+            -moz-transform: rotate(0deg)
+            -ms-transform: rotate(0deg)
+            -o-transform: rotate(0deg)
+            transform: rotate(0deg)
 
     &:hover
         background-color: #2192fd!important
@@ -4625,7 +4609,7 @@ td.b-traiders--dividents
 .traider-submenu
     box-shadow: inset 0 8px 5px -10px #000
     background: #0b61b8
-    display: none
+    display: block
 
 .dib-icon-meta-traider-wrapper
     width: 20px

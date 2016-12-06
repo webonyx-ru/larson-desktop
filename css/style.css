@@ -3979,7 +3979,6 @@ a {
   left: 0;
   min-width: 100%;
   background: #2192fd;
-  padding: 10px 0;
   z-index: 10;
   white-space: nowrap;
 }
@@ -3992,33 +3991,6 @@ a {
 }
 .b-nav--menu--dropdown--item:hover .b-nav--menu--dropdown--item--link {
   background: rgba(0, 0, 0, 0.1);
-}
-.b-nav--menu--dropdown--item.active .b-nav--menu--dropdown--item--link.has-dropdown:before {
-  background-image: url('../images/icons-s3e6c9ef2cf.png');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  height: 7px;
-  width: 11px;
-  margin-top: -1px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .b-nav--menu--dropdown--item.active .b-nav--menu--dropdown--item--link.has-dropdown:before {
-    background-image: url('../images/icons-2x-scf5a643634.png');
-    background-size: 146px auto;
-    background-position: 0 0;
-    height: 7px;
-    width: 11px;
-  }
-}
-.b-nav--menu--dropdown--item.active .traider-submenu {
-  display: block;
 }
 
 .b-nav--menu--dropdown--item--link {
@@ -4056,12 +4028,12 @@ a {
   display: block;
   height: 7px;
   width: 11px;
-  margin-top: -3.5px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  margin-top: -1px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
   .b-nav--menu--dropdown--item--link.has-dropdown:before {
@@ -10579,7 +10551,7 @@ td.b-traiders--dividents {
 .traider-submenu {
   box-shadow: inset 0 8px 5px -10px #000;
   background: #0b61b8;
-  display: none;
+  display: block;
 }
 
 .dib-icon-meta-traider-wrapper {

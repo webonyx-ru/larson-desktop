@@ -304,7 +304,7 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('click', '.b-nav--menu--dropdown--item--link.has-dropdown', function (e) {
+    /*$(document).on('click', '.b-nav--menu--dropdown--item--link.has-dropdown', function (e) {
         e.preventDefault();
         var parentNode = $(this).parent();
 
@@ -317,7 +317,7 @@ $(document).ready(function () {
         }
 
         return false;
-    });
+    });*/
 });
 
 
