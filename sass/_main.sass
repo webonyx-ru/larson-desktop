@@ -357,6 +357,9 @@ a
         +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
         background-position: center 0
 
+    &.type3
+        +retina-bg("ny-bg.jpg", "ny-bg@2x.jpg") //grt
+
     &.forum-top-banner
         min-height: 517px
         background-size: auto
@@ -1001,6 +1004,7 @@ a
 
     &.type2
         +retina-bg("competition-2banner.jpg", "competition-2banner@2x.jpg")
+
 
 .b-competition--open--account--text
     color: #fff
@@ -4833,6 +4837,41 @@ td.b-traiders--dividents
 
 .icon-programs-metatrader2
     +sprite(programs-metatrader2)
+
+.icon-play
+    &:after
+        content: ''
+        display: inline-block
+        border: 7px solid transparent
+        border-left: 13px solid #fff
+        vertical-align: middle
+
+
+.type3
+    .parallax--inside--container
+        min-height: 475px
+        width: 100%
+        padding: 0 55px
+        display: inline-flex
+        align-items: flex-end
+    .type3__buttons
+        margin-bottom: 37px
+        position: relative
+        a
+            &:first-child
+                position: absolute
+                left: 50%
+                bottom: 0
+                margin-left: -247px
+            &:last-child
+                position: absolute
+                right: 50%
+                bottom: 0
+                margin-right: -462px
+
+.b-main--page--parallax.type3
+    background-position: center top
+    background-size: cover
 
 .programs-input
     width: 172px!important
