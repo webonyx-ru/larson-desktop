@@ -3879,12 +3879,12 @@ a {
     background-size: 1920px 1274px;
   }
 }
-.b-main--page--parallax.type3 {
-  background-image: url('../images/ny-bg.jpg?1481685990');
+.b-main--page--parallax.new-year-banner {
+  background-image: url('../images/ny-bg.jpg?1481704838');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.type3 {
-    background-image: url('../images/ny-bg@2x.jpg?1481685990');
+  .b-main--page--parallax.new-year-banner {
+    background-image: url('../images/ny-bg@2x.jpg?1481705016');
     background-size: 1920px 530px;
   }
 }
@@ -11222,31 +11222,31 @@ td.b-traiders--dividents {
   vertical-align: middle;
 }
 
-.type3 .parallax--inside--container {
-  min-height: 475px;
+.new-year-banner .parallax--inside--container {
+  min-height: 510px;
   width: 100%;
   padding: 0 55px;
   display: inline-flex;
   align-items: flex-end;
 }
-.type3 .type3__buttons {
+.new-year-banner .new-year-banner__buttons {
   margin-bottom: 37px;
   position: relative;
 }
-.type3 .type3__buttons a:first-child {
+.new-year-banner .new-year-banner__buttons a:first-child {
   position: absolute;
   left: 50%;
   bottom: 0;
   margin-left: -247px;
 }
-.type3 .type3__buttons a:last-child {
+.new-year-banner .new-year-banner__buttons a:last-child {
   position: absolute;
   right: 50%;
   bottom: 0;
   margin-right: -462px;
 }
 
-.b-main--page--parallax.type3 {
+.b-main--page--parallax.new-year-banner {
   background-position: center top;
   background-size: cover;
 }
