@@ -556,6 +556,14 @@ a
         color: #fff
         border: none
 
+.red_btn
+    @extend .orange_btn
+    background: #ff0000
+    border-color: #ff0000
+    
+    &:hover
+        background: #ff0000 * 0.8
+
 .watch--video--link
     color: #fff
     font-size: 14px
@@ -4598,6 +4606,7 @@ td.b-traiders--dividents
     padding: 0 10px 0 28px
     line-height: 37px
     background-color: #0b61b8
+    font-size: 0
     &:not(:first-child)
         border-top: solid 1px rgba(255, 255, 255, 0.1)
 
@@ -4607,10 +4616,15 @@ td.b-traiders--dividents
     &:hover
         background-color: #034d97!important
 
+    .dib:not(.dib-icon-meta-traider-wrapper)
+        font-size: 14px
+
 .traider-submenu__link
     color: #fff
     text-decoration: none
     font-weight: 500
+    display: flex
+    align-items: center
 
 .b-nav--menu--dropdown
     &.metatraider-menu-type
@@ -4626,6 +4640,7 @@ td.b-traiders--dividents
     margin-right: 10px
     text-align: center
     font-size: 0
+    white-space: nowrap
 
 #map-wrapper
     max-width: 870px
@@ -4868,7 +4883,7 @@ td.b-traiders--dividents
                 position: absolute
                 left: 50%
                 bottom: 0
-                margin-left: -247px
+                margin-left: -297px
             &:last-child
                 position: absolute
                 right: 50%
