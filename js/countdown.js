@@ -55,7 +55,7 @@ function CDT() {
         if ($(this).attr('data-day'))
             var tl = new Date($(this).attr('data-day'));
         else
-            var tl = new Date("Thu, 16 Mar 2050 19:00:00 GMT");
+            var tl = new Date("Thu, 16 Mar 2017 19:00:00 GMT");
 
         // You can add time's up message here
         var timer = new CountdownTimer($(this).attr('id'), tl);
