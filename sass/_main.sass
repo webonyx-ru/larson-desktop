@@ -480,19 +480,19 @@ a
 
 
     &.has-dropdown
-        //&:before
-        //    display: block
-        //    content: ''
-        //    position: absolute
-        //    top: 50%
-        //    right: 12px
-        //    +sprite(arrow_small)
-        //    margin-top: -1px
-        //    -webkit-transform: rotate(0deg)
-        //    -moz-transform: rotate(0deg)
-        //    -ms-transform: rotate(0deg)
-        //    -o-transform: rotate(0deg)
-        //    transform: rotate(0deg)
+        &:before
+            display: block
+            content: ''
+            position: absolute
+            top: 50%
+            right: 12px
+            +sprite(arrow_small)
+            margin-top: -1px
+            +transform(rotate(0deg))
+
+        &.active
+            &:before
+                +transform(rotate(180deg))
 
     &:hover
         background-color: #2192fd!important
@@ -4604,9 +4604,9 @@ td.b-traiders--dividents
 
 .traider-submenu__item
     padding: 0 10px 0 28px
-    line-height: 37px
+    //line-height: 37px
     background-color: #0b61b8
-    font-size: 0
+    //font-size: 0
     &:not(:first-child)
         border-top: solid 1px rgba(255, 255, 255, 0.1)
 
@@ -4625,6 +4625,7 @@ td.b-traiders--dividents
     font-weight: 500
     display: flex
     align-items: center
+    height: 37px
 
 .b-nav--menu--dropdown
     &.metatraider-menu-type

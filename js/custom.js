@@ -594,5 +594,27 @@ $(document).ready(function () {
     });*/
 });
 
+var LH = {};
 
+LH.menu = function (className) {
+    var menu = {};
 
+    menu.el = $(className);
+    menu.item = menu.el.find('.b-nav--menu--dropdown--item');
+
+    menu.open = function (item) {
+        item.siblings().removeClass('active').find('.traider-submenu').stop().slideUp(100);
+        item.addClass('active').find('.traider-submenu').stop().slideDown(100);
+
+    };
+
+    menu.close = function (item) {
+        item.removeClass('active').find('.traider-submenu').stop().slideUp(100);
+    };
+
+    menu.item.hover(function () {
+        menu.open($(this));
+    });
+};
+
+LH.menu('.b-nav--menu_units');
