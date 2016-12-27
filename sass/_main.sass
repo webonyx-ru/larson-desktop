@@ -360,6 +360,13 @@ a
     &.new-year-banner
         +retina-bg("ny-bg.jpg", "ny-bg@2x.jpg")
 
+    &.semenovich-new-year
+        +retina-bg("top-banners/semenovich-banner-ny.jpg", "top-banners/semenovich-banner-ny@2x.jpg")
+        background-position: center center
+        height: 570px
+        background-size: auto
+        box-sizing: border-box
+
     &.forum-top-banner
         min-height: 517px
         background-size: auto
@@ -792,6 +799,7 @@ a
             color: #168de2
             width: 22px
             height: 22px
+            line-height: 22px
             border-radius: 2px
             text-align: center
             text-decoration: none
@@ -4890,6 +4898,22 @@ td.b-traiders--dividents
                 right: 50%
                 bottom: 0
                 margin-right: -462px
+
+.semenovich-new-year
+    .new-year-banner__buttons
+        margin-bottom: 37px
+        position: relative
+        a
+            &:first-child
+                position: absolute
+                left: 50%
+                bottom: 0
+                margin-left: -137px
+            &:last-child
+                position: absolute
+                right: 50%
+                bottom: 0
+                margin-right: -672px
 
 .b-main--page--parallax.new-year-banner
     background-position: center top
