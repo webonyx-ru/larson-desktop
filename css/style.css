@@ -11510,6 +11510,7 @@ td.b-traiders--dividents {
   border: solid 1px #fafafa;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: none;
 }
 .payment-calendar .content-table {
   box-shadow: none;
@@ -11531,7 +11532,7 @@ td.b-traiders--dividents {
   font-size: 0 !important;
 }
 .payment-calendar .content-t-row:nth-of-type(2) .content-t-cell {
-  height: 30px !important;
+  height: 30px;
 }
 .payment-calendar .content-t-row .content-t-cell {
   height: 40px;
