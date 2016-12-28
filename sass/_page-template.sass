@@ -133,6 +133,10 @@
         margin-top: -7px
     &:hover
         text-decoration: none
+        color: #168de2
+        
+        &:before, &:after
+            background: #168de2
 
 .b-site-faq-content__hide-item-taber
     padding: 15px 15px
@@ -1018,12 +1022,17 @@
 
 //______________________________________________________________________
 .b-site-content__inner
-    max-width: 870px
+    &:not(.no-max-width)
+        max-width: 870px
+
 
 .b-info-grey-dashed
     background-color: #fafafa
     border: dashed 1px #c8c8c8
     padding: 20px
+
+.map-info-list__wrapper
+    padding: 20px 20px 0
 
 .grey-sep-top
     border-top: 1px solid #f5f5f5

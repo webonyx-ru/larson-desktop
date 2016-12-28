@@ -773,6 +773,10 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 .b-site-faq-content__item-taber:hover {
   text-decoration: none;
+  color: #168de2;
+}
+.b-site-faq-content__item-taber:hover:before, .b-site-faq-content__item-taber:hover:after {
+  background: #168de2;
 }
 
 .b-site-faq-content__hide-item-taber {
@@ -2606,7 +2610,7 @@ input:focus, textarea:focus, a:focus, button:focus {
   }
 }
 
-.b-site-content__inner {
+.b-site-content__inner:not(.no-max-width) {
   max-width: 870px;
 }
 
@@ -2614,6 +2618,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   background-color: #fafafa;
   border: dashed 1px #c8c8c8;
   padding: 20px;
+}
+
+.map-info-list__wrapper {
+  padding: 20px 20px 0;
 }
 
 .grey-sep-top {
@@ -3942,7 +3950,7 @@ a {
   }
 }
 .b-main--page--parallax.semenovich-new-year {
-  background-image: url('../images/top-banners/semenovich-banner-ny.jpg?1482816580');
+  background-image: url('../images/top-banners/semenovich-banner-ny.jpg?1482900404');
   background-position: center center;
   height: 570px;
   background-size: auto;
@@ -3950,7 +3958,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.semenovich-new-year {
-    background-image: url('../images/top-banners/semenovich-banner-ny@2x.jpg?1482816589');
+    background-image: url('../images/top-banners/semenovich-banner-ny@2x.jpg?1482900420');
     background-size: 1920px 570px;
   }
 }
@@ -10257,7 +10265,8 @@ td.b-traiders--dividents {
 }
 
 .before-map {
-  margin-top: 80px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .before-map .jq-selectbox__select {
   height: 28px;
@@ -10681,8 +10690,11 @@ td.b-traiders--dividents {
 }
 
 #map-wrapper {
-  max-width: 870px;
   width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 -1px 2px #ccc;
+  box-sizing: border-box;
 }
 
 .icon {
@@ -11399,7 +11411,7 @@ td.b-traiders--dividents {
   position: absolute;
   right: 50%;
   bottom: 0;
-  margin-right: -672px;
+  margin-right: -402px;
 }
 
 .b-main--page--parallax.new-year-banner {
@@ -11533,6 +11545,7 @@ td.b-traiders--dividents {
 }
 .payment-calendar .content-t-row:nth-of-type(2) .content-t-cell {
   height: 30px;
+  vertical-align: middle;
 }
 .payment-calendar .content-t-row .content-t-cell {
   height: 40px;
