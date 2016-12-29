@@ -134,12 +134,12 @@
     &:hover
         text-decoration: none
         color: #168de2
-        
+
         &:before, &:after
             background: #168de2
 
 .b-site-faq-content__hide-item-taber
-    padding: 15px 15px
+    padding: 15px 15px 0 15px
 
 .active-taber
     color: #168de2
@@ -154,6 +154,7 @@
     color: #168de2
 
 .b-site-faq-content__hide-item-taber
+
     font-size: 14px
     font-weight: normal
     line-height: 1.57
@@ -535,7 +536,7 @@
     margin-top: 40px
     margin-bottom: 30px
 
-// programm for traders	
+// programm for traders
 
 .b-site-list__item-inner
     min-height: 271px //rger
@@ -1063,11 +1064,15 @@
     &:hover
         text-decoration: underline
 
-.b-content__text p
-    margin-bottom: 25px
-    +trans
-    &:last-child
+.b-content__text
+    &.active
+        &:last-child
+            margin-top: -25px
+    p
         margin-bottom: 0
+        +trans
+        &:last-child
+            margin-bottom: 0
 
 .content-main-title
     font-size: 30px
@@ -1130,6 +1135,10 @@
     color: #ffffff
 
 .t-hat
+    &:hover
+        .content-t-cell
+            background-color: #003e6b !important
+
     .content-t-cell
         @extend .hat
         &:first-child
