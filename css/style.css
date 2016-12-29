@@ -11622,6 +11622,19 @@ td.b-traiders--dividents {
   background-color: #fff !important;
 }
 
+.block-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.b-content__text-info-feedback-ps, .b-site-list__item-inner {
+  position: relative;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1260px) {
   .b-nav--socialmedia--units {
     position: absolute;
