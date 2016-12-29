@@ -1,3 +1,5 @@
+@import "mixins/mixins.sass"
+
 .blue-link-year
     color: #168de2
     background: #fff
@@ -1170,41 +1172,32 @@
             background-color: #a1cdfd
 
     &.light-rose
-        &:hover
-            .content-t-cell
-                background-color: #ffcdd2
+        .content-t-cell
+            background-color: #ffcdd2
     &.manilla
-        &:hover
-            .content-t-cell
-                background-color: #ffff8d
+        .content-t-cell
+            background-color: #ffff8d
     &.bright-yellow
-        &:hover
-            .content-t-cell
-                background-color: #ffff00
+        .content-t-cell
+            background-color: #ffff00
     &.wheat
-        &:hover
-            .content-t-cell
-                background-color: #ffd180
+        .content-t-cell
+            background-color: #ffd180
     &.tangerine
-        &:hover
-            .content-t-cell
-                background-color: #ff9100
+        .content-t-cell
+            background-color: #ff9100
     &.powder-blue
-        &:hover
-            .content-t-cell
-                background-color: #bbdefb
+        .content-t-cell
+            background-color: #bbdefb
     &.medium-pink
-        &:hover
-            .content-t-cell
-                background-color: #f06292
+        .content-t-cell
+            background-color: #f06292
     &.washed-out-green
-        &:hover
-            .content-t-cell
-                background-color: #b9f6ca //frgr
+        .content-t-cell
+            background-color: #b9f6ca //frgr
     &.turquoise-green
-        &:hover
-            .content-t-cell
-                background-color: #00e676
+        .content-t-cell
+            background-color: #00e676
 
 .text-red
     color: #e51c23
@@ -1223,6 +1216,7 @@
     background-color: #a1cdfd
 
 .content-t-cell
+    +trans()
     padding: 19px 5px
     text-align: center
 //_________________________TABLE________________

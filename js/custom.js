@@ -353,9 +353,22 @@ $(document).ready(function () {
     }
 
     $(document).on("click", '.dd-table__title', function (e) {
-        $(this).siblings('.content-table-wrapper').stop().slideToggle(300);
-        $(this).closest('.dd-table__title').toggleClass('active');
+        var el = $(this);
+        var elWrapper = el.closest(".dd-tables-wrapper");
+        if (el.hasClass("active")){
+            el.siblings('.content-table-wrapper').stop().slideUp(300);
+            elWrapper.find(".dd-table__title").removeClass("active");
+
+        }
+        else{
+            elWrapper.find(".dd-table__title").removeClass("active");
+            el.closest('.dd-table__title').addClass('active');
+            elWrapper.find('.content-table-wrapper').stop().slideUp(300);
+            el.siblings('.content-table-wrapper').stop().slideDown(300);
+        }
+
         e.preventDefault();
+
     });
 
     $(document).on("click", '.b-results-and-honors-title', function (e) {
@@ -370,11 +383,18 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+    $(document).on("click", '.roll-up', function (e) {
+
+        e.preventDefault();
+    });
+
 
     $(document).on("click", '.b-content__read-more-title', function (e) {
         var title = $(this);
 
         var bl = title.closest(".b-content__read-more-list");
+
+        //var titleText = title.text();
 
         if (title.closest('.arrow-text').hasClass('active')) {
             bl.find('.arrow-text').removeClass('active');
@@ -388,7 +408,6 @@ $(document).ready(function () {
             title.siblings('.b-content__text').removeClass("active");
             title.closest('.arrow-text').addClass('active');
         }
-        title.siblings('.b-content__text').append(title);
 
         e.preventDefault();
     });

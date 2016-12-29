@@ -2785,31 +2785,31 @@ input:focus, textarea:focus, a:focus, button:focus {
 .content-t-row:hover .content-t-cell {
   background-color: #a1cdfd;
 }
-.content-t-row.light-rose:hover .content-t-cell {
+.content-t-row.light-rose .content-t-cell {
   background-color: #ffcdd2;
 }
-.content-t-row.manilla:hover .content-t-cell {
+.content-t-row.manilla .content-t-cell {
   background-color: #ffff8d;
 }
-.content-t-row.bright-yellow:hover .content-t-cell {
+.content-t-row.bright-yellow .content-t-cell {
   background-color: #ffff00;
 }
-.content-t-row.wheat:hover .content-t-cell {
+.content-t-row.wheat .content-t-cell {
   background-color: #ffd180;
 }
-.content-t-row.tangerine:hover .content-t-cell {
+.content-t-row.tangerine .content-t-cell {
   background-color: #ff9100;
 }
-.content-t-row.powder-blue:hover .content-t-cell {
+.content-t-row.powder-blue .content-t-cell {
   background-color: #bbdefb;
 }
-.content-t-row.medium-pink:hover .content-t-cell {
+.content-t-row.medium-pink .content-t-cell {
   background-color: #f06292;
 }
-.content-t-row.washed-out-green:hover .content-t-cell {
+.content-t-row.washed-out-green .content-t-cell {
   background-color: #b9f6ca;
 }
-.content-t-row.turquoise-green:hover .content-t-cell {
+.content-t-row.turquoise-green .content-t-cell {
   background-color: #00e676;
 }
 
@@ -2834,6 +2834,11 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .content-t-cell {
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
   padding: 19px 5px;
   text-align: center;
 }
