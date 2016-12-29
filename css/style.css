@@ -1332,8 +1332,6 @@ input:focus, textarea:focus, a:focus, button:focus {
   align-items: center;
   padding-left: 30px;
   padding-top: 8px;
-  display: flex;
-  flex-direction: column;
 }
 
 .b-site-ps__usl-ps {
