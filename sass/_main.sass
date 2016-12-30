@@ -367,6 +367,13 @@ a
         background-size: auto
         box-sizing: border-box
 
+    &.after-new-year-image
+        +retina-bg("top-banners/semenovich-after-ny.jpg", "top-banners/semenovich-after-ny@2x.jpg")
+        background-position: center center
+        height: 570px
+        background-size: auto
+        box-sizing: border-box
+
     &.forum-top-banner
         min-height: 517px
         background-size: auto
@@ -4919,6 +4926,28 @@ td.b-traiders--dividents
                 right: 50%
                 bottom: 0
                 margin-right: -402px
+
+.after-new-year-image
+    position: relative
+    .watch-video-parallax-button
+        position: absolute
+        bottom: 65px
+        right: 50%
+        margin-right: -460px
+        line-height: 46px
+        font-size: 18px
+        font-weight: 600
+
+        &:before
+            content: ''
+            display: inline-block
+            vertical-align: middle
+            border: 7px solid transparent
+            border-left: 10px solid #fff
+            margin-right: 3px
+            position: relative
+            top: -1px
+
 
 .b-main--page--parallax.new-year-banner
     background-position: center top
