@@ -4931,22 +4931,42 @@ td.b-traiders--dividents
     position: relative
     .watch-video-parallax-button
         position: absolute
-        bottom: 65px
+        bottom: 36px
         right: 50%
-        margin-right: -460px
+        margin-right: -338px
         line-height: 46px
         font-size: 18px
         font-weight: 600
 
-        &:before
-            content: ''
-            display: inline-block
-            vertical-align: middle
-            border: 7px solid transparent
-            border-left: 10px solid #fff
-            margin-right: 3px
+        .icon-play-video-button
+            height: 24px
             position: relative
+            width: 24px
+            border-radius: 100%
+            border: 1px solid #fff
+            display: inline-block
+            margin-right: 5px
+            vertical-align: middle
             top: -1px
+
+
+            &:before
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                border: 6px solid transparent
+                border-left: 7px solid #fff
+                top: 50%
+                left: 50%
+                margin-left: 4px
+                -webkit-transform: translate3d(-50%,-50%,0)
+                -moz-transform: translate3d(-50%,-50%,0)
+                -ms-transform: translate3d(-50%,-50%,0)
+                -o-transform: translate3d(-50%,-50%,0)
+                transform: translate3d(-50%,-50%,0)
+                position: absolute
+
+
 
 
 .b-main--page--parallax.new-year-banner
