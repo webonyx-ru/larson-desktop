@@ -3976,22 +3976,12 @@ a {
     background-size: 1920px 570px;
   }
 }
-.b-main--page--parallax.after-new-year-image {
-  background-image: url('../images/top-banners/semenovich-after-ny.jpg?1484020174');
+.b-main--page--parallax.after-new-year-image--type2 {
+  background-image: url('../images/top-banners/semenovich-after-ny-second.jpg?1484031588');
   background-position: center center;
   height: 570px;
   background-size: auto;
   box-sizing: border-box;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.after-new-year-image {
-    background-image: url('../images/top-banners/semenovich-after-ny@2x.jpg?1484020158');
-    background-size: 1920px 570px;
-  }
-}
-.b-main--page--parallax.after-new-year-image--type2 {
-  background-image: url('../images/top-banners/semenovich-after-ny-second.jpg?1484031588');
-  background-position: center center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.after-new-year-image--type2 {
@@ -4112,6 +4102,13 @@ a {
 .b-nav--menu--dropdown--item:hover .b-nav--menu--dropdown--item--link {
   background: rgba(0, 0, 0, 0.1);
 }
+.b-nav--menu--dropdown--item.active .has-dropdown:before {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 
 .b-nav--menu--dropdown--item--link {
   background-color: #2383e3;
@@ -4148,7 +4145,7 @@ a {
   display: block;
   height: 7px;
   width: 11px;
-  margin-top: -1px;
+  margin-top: -3px;
   transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -10683,7 +10680,7 @@ td.b-traiders--dividents {
 }
 
 .traider-submenu__item {
-  padding: 0 10px 0 28px;
+  padding: 0 20px 0 28px;
   background-color: #0b61b8;
 }
 .traider-submenu__item:not(:first-child) {

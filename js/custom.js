@@ -634,8 +634,18 @@ LH.menu = function (className) {
 
     menu.el = $(className);
     menu.item = menu.el.find('.b-nav--menu--dropdown--item');
+    menu.itemParent = menu.el.find('.b-nav--menu--dropdown');
+
+    menu.init = function () {
+        menu.itemParent.each(function () {
+            $(this).find('.b-nav--menu--dropdown--item:not(.active)').find('.traider-submenu').hide();
+        });
+    };
 
     menu.open = function (item) {
+        if(!item.find('.traider-submenu').length > 0)
+            return;
+
         item.siblings().removeClass('active').find('.traider-submenu').stop().slideUp(100);
         item.addClass('active').find('.traider-submenu').stop().slideDown(100);
 
@@ -645,9 +655,18 @@ LH.menu = function (className) {
         item.removeClass('active').find('.traider-submenu').stop().slideUp(100);
     };
 
-    menu.item.hover(function () {
-        menu.open($(this));
+    menu.item.click(function (e) {
+        var _this = $(this);
+
+        if(_this.hasClass('active')) {
+            menu.close(_this);
+        } else {
+            menu.open(_this);
+        }
+        e.preventDefault();
     });
+
+    menu.init();
 };
 
 LH.menu('.b-nav--menu_units');

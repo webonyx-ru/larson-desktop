@@ -367,16 +367,12 @@ a
         background-size: auto
         box-sizing: border-box
 
-    &.after-new-year-image
-        +retina-bg("top-banners/semenovich-after-ny.jpg", "top-banners/semenovich-after-ny@2x.jpg")
+    &.after-new-year-image--type2
+        +retina-bg("top-banners/semenovich-after-ny-second.jpg", "top-banners/semenovich-after-ny-second@2x.jpg")
         background-position: center center
         height: 570px
         background-size: auto
         box-sizing: border-box
-
-    &.after-new-year-image--type2
-        +retina-bg("top-banners/semenovich-after-ny-second.jpg", "top-banners/semenovich-after-ny-second@2x.jpg")
-        background-position: center center
 
     &.forum-top-banner
         min-height: 517px
@@ -474,6 +470,11 @@ a
         .b-nav--menu--dropdown--item--link
             background: rgba(0, 0, 0, 0.1)
 
+    &.active
+        .has-dropdown
+            &:before
+                +transform(rotate(180deg))
+
 .b-nav--menu--dropdown--item--link
     background-color: #2383e3
     display: block
@@ -505,7 +506,7 @@ a
             top: 50%
             right: 12px
             +sprite(arrow_small)
-            margin-top: -1px
+            margin-top: -3px
             +transform(rotate(0deg))
 
         &.active
@@ -4623,7 +4624,7 @@ td.b-traiders--dividents
     vertical-align: middle
 
 .traider-submenu__item
-    padding: 0 10px 0 28px
+    padding: 0 20px 0 28px
     //line-height: 37px
     background-color: #0b61b8
     //font-size: 0
