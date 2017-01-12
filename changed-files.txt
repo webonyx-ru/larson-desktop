@@ -1,0 +1,8 @@
+1. contacts-event.html изменена структура + стили
+2. index.html
+3. payments-calendar.html
+4. NDDECN-checkouts.html (сделал блок ссылкой)
+5. services-general.html
+6. types-of-partnerships.html
+7. types-of-accounts.html
+8. programm-for-traders.html

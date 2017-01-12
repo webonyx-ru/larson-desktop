@@ -1753,6 +1753,7 @@ input:focus, textarea:focus, a:focus, button:focus {
   padding-top: 30px;
   margin-bottom: 35px;
   display: flex;
+  text-decoration: none;
   flex: 1 1 300px;
   border-radius: 5px;
   border: 1px dashed #979797;
@@ -11268,8 +11269,10 @@ td.b-traiders--dividents {
 .b-site-list__item-programm-new .b-site-list-inner-rbox {
   width: 444px;
 }
-.b-site-list__item-programm-new .b-site-list__item-inner inline-b {
+.b-site-list__item-programm-new .b-site-list__item-inner {
   padding: 20px 57px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .list-inline {
