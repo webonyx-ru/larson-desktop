@@ -634,6 +634,7 @@ LH.menu = function (className) {
 
     menu.el = $(className);
     menu.item = menu.el.find('.b-nav--menu--dropdown--item');
+    menu.itemLink = menu.item.find('.b-nav--menu--dropdown--item--link.has-dropdown');
     menu.itemParent = menu.el.find('.b-nav--menu--dropdown');
 
     menu.init = function () {
@@ -648,20 +649,20 @@ LH.menu = function (className) {
 
         item.siblings().removeClass('active').find('.traider-submenu').stop().slideUp(100);
         item.addClass('active').find('.traider-submenu').stop().slideDown(100);
-
     };
 
     menu.close = function (item) {
         item.removeClass('active').find('.traider-submenu').stop().slideUp(100);
     };
 
-    menu.item.click(function (e) {
+    menu.itemLink.click(function (e) {
         var _this = $(this);
+        var parent = _this.closest('.b-nav--menu--dropdown--item');
 
-        if(_this.hasClass('active')) {
-            menu.close(_this);
+        if(parent.hasClass('active')) {
+            menu.close(parent);
         } else {
-            menu.open(_this);
+            menu.open(parent);
         }
         e.preventDefault();
     });
