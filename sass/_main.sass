@@ -374,6 +374,13 @@ a
         background-size: auto
         box-sizing: border-box
 
+    &.after-new-year-image--type3
+        +retina-bg("top-banners/lh-banner3-x1.jpg", "top-banners/lh-banner3-x2.jpg")
+        background-position: center center
+        height: 570px
+        background-size: auto
+        box-sizing: border-box
+
     &.forum-top-banner
         min-height: 517px
         background-size: auto
@@ -484,7 +491,7 @@ a
     color: #fff
     position: relative
     font-weight: 500
-    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.2)
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.2)
 
     > span
         display: inline-block
@@ -4936,6 +4943,11 @@ td.b-traiders--dividents
 
 .after-new-year-image
     position: relative
+
+    &.after-new-year-image--type3
+        .watch-video-parallax-button
+            margin-right: -313px
+
     .watch-video-parallax-button
         position: absolute
         bottom: 36px
@@ -4979,9 +4991,6 @@ td.b-traiders--dividents
 .b-main--page--parallax.new-year-banner
     background-position: center top
     background-size: cover
-
-
-
 
 .programs-input
     width: 172px!important
