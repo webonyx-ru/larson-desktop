@@ -3965,7 +3965,7 @@ a {
   }
 }
 .b-main--page--parallax.semenovich-depojet {
-  background-image: url('../images/top-banners/semenovich-depojet.jpg?1486030988');
+  background-image: url('../images/top-banners/semenovich-depojet.jpg?1486401062');
   background-position: center 0;
   background-size: cover;
   position: relative;
@@ -3974,7 +3974,7 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.semenovich-depojet {
-    background-image: url('../images/top-banners/semenovich-depojet@2x.jpg?1486031003');
+    background-image: url('../images/top-banners/semenovich-depojet@2x.jpg?1486401062');
     background-size: 1920px 570px;
   }
 }
@@ -3986,6 +3986,7 @@ a {
   margin-top: -10px;
   font-weight: 400;
   font-size: 21px;
+  background: #2F449F;
 }
 .b-main--page--parallax.type2 {
   background-image: url('../images/parallax-2banner.jpg?1475165179');
@@ -4295,10 +4296,13 @@ a {
   width: 190px;
   text-align: center;
   border-radius: 5px;
-  background: #781f61;
+  background: #2F449F;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
+}
+.purple-btn:hover {
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.2) inset;
 }
 .purple-btn .icon-arrow-square-right {
   display: inline-block;
