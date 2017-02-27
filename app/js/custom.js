@@ -497,6 +497,7 @@ $(document).ready(function () {
     var map = $('.map'),
         mapImage = map.find('.map-image');
 
+
     if(mapImage !== 'undefined' && map !== 'undefined') {
         var mapImageWidth = mapImage.get(0).naturalWidth,
             mapImageHeight = mapImage.get(0).naturalHeight,
