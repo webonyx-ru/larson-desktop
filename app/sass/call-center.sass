@@ -1,0 +1,102 @@
+@import "mixins/mixins"
+
+.first-screen-call-center
+  +retina-bg('call-center-top-screen.jpg', 'call-center-top-screen@2x.jpg', cover)
+  padding-top: 0
+  display: block
+
+.first-screen-call-center .parallax--inside--container
+  min-height: 330px
+
+.first-screen-call-center__descr
+  width: 487px
+  font-size: 22px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.27
+  letter-spacing: normal
+  text-align: center
+  color: #ffffff
+  background-color: rgba(0, 0, 0, 0.6)
+  padding: 10px 0
+  text-transform: uppercase
+  margin: 0 auto 20px
+
+.call-center-descr
+  padding: 20px 0 40px
+
+.call-center-descr p
+  margin-bottom: 10px
+
+.call-center-descr p:last-child
+  margin-bottom: 0
+
+.call-center-descr__subtitle
+  padding-top: 10px
+  font-size: 18px
+
+.infographic-grid
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin-top: -50px
+  text-align: center
+
+.infographic-grid__item
+  width: 33.3%
+  padding: 0 13px
+  margin-top: 50px
+  box-sizing: border-box
+
+.infographic_call-center
+  background-color: #f5fbff
+
+.infographic
+  padding: 50px 0
+
+.infographic-item
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.57
+  letter-spacing: normal
+  color: #4d4d4d
+
+.infographic__title
+  text-align: center
+  font-size: 22px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.27
+  letter-spacing: normal
+  color: #1a1a1a
+  margin-bottom: 40px
+
+.infographic-item_icon
+  margin-bottom: 10px
+
+.form-section
+  padding: 50px 0
+
+.form-section__title
+  font-size: 22px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.27
+  letter-spacing: normal
+  text-align: center
+  color: #1a1a1a
+  margin-bottom: 40px
+
+.fill-form-wrapper.center
+  margin: 0 auto
+
+.infographic-item_icon
+  margin-bottom: 10px
+
+  @for $i from 1 to 7
+    &.icon-#{$i}
+      +sprite(callcenter-icon-#{$i})

@@ -6,6 +6,13 @@ function tabs_h() {
 }
 
 $(document).ready(function () {
+    
+    $('.js-scroll-to-link').on('click', function (e) {
+      e.preventDefault();
+      
+      $('body, html').animate({scrollTop: $($(this).attr('data-target')).offset().top}, 1000);
+    });
+    
     /*$(document).on('click', '.js--dropdown--clickable', function() {
      $(this).toggleClass('active').next('.js--dropdown--hidden').stop().toggle();
      })
@@ -20,10 +27,10 @@ $(document).ready(function () {
     var int_i = 0;
     var interval_tab = setInterval(function () {
         if (int_i > 5)
-            clearInterval(interval_tab)
+            clearInterval(interval_tab);
         tabs_h();
         int_i++;
-    }, 1000)
+    }, 1000);
 
     var tabs_avail = true;
     var setT;
@@ -497,8 +504,7 @@ $(document).ready(function () {
     var map = $('.map'),
         mapImage = map.find('.map-image');
 
-
-    if(mapImage !== 'undefined' && map !== 'undefined') {
+    if(mapImage !== 'undefined' && map !== 'undefined' && map.length > 0 && mapImage > 0) {
         var mapImageWidth = mapImage.get(0).naturalWidth,
             mapImageHeight = mapImage.get(0).naturalHeight,
             mapPopup = map.find('.popup'),
