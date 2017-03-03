@@ -1791,11 +1791,52 @@ ul.b-footer--gray--color
     box-shadow: 0 0 2px #ccc
     border-radius: 50%
 
-    @each $flag in arabic, china, usa, france, esp, ger, indonesia, malaysia, polska, portugal, russia, thailand, vietnamese, serbian, croatian
-        &.icon--#{$flag}
-            &:after
-                content: ''
-                +sprite(flag-#{$flag}, $pos: "abs_middle")
+@each $flag in arabic, china, usa, france, esp, ger, indonesia, malaysia, polska, portugal, russia, thailand, vietnamese, serbian, croatian
+    .icon--lang.icon--#{$flag}
+        &:after
+            content: ''
+            +sprite(flag-#{$flag}, $pos: "abs_middle")
+        
+    // lang small icon
+    
+    .flag-small-#{$flag}
+        +sprite(flag-small-#{$flag})
+    
+    //.flag-small-china
+    //    +sprite(flag-small-china)
+    //
+    //.flag-small-esp
+    //    +sprite(flag-small-esp)
+    //
+    //.flag-small-france
+    //    +sprite(flag-small-france)
+    //
+    //.flag-small-ger
+    //    +sprite(flag-small-ger)
+    //
+    //.flag-small-indonesia
+    //    +sprite(flag-small-indonesia)
+    //
+    //.flag-small-malaysia
+    //    +sprite(flag-small-malaysia)
+    //
+    //.flag-small-polska
+    //    +sprite(flag-small-polska)
+    //
+    //.flag-small-portugal
+    //    +sprite(flag-small-portugal)
+    //
+    //.flag-small-russia
+    //    +sprite(flag-small-russia)
+    //
+    //.flag-small-thailand
+    //    +sprite(flag-small-thailand)
+    //
+    //.flag-small-usa
+    //    +sprite(flag-small-usa)
+    //
+    //.flag-small-croatian
+    //    +sprite(flag-small-croatian)
 
 .icon--lock
     +sprite(padlock_2)
