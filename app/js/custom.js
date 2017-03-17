@@ -343,11 +343,13 @@ $(document).ready(function () {
     loginBarBtn.click(function (e) {
         if (loginBarCont.hasClass('active') !== true) {
             loginBarCont.addClass('active');
+            loginBarBtn.addClass('active');
         } else {
             loginBarCont.removeClass('active');
+            loginBarBtn.removeClass('active');
         }
 
-        return false;
+        e.preventDefault();
     });
 
 

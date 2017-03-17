@@ -19,6 +19,9 @@ a
     padding: 0 20px
     box-sizing: border-box
 
+    &.position-relative
+        position: relative
+
 .main--site--wrapper
     max-width: 100%
     min-width: 1000px
@@ -3049,6 +3052,11 @@ td.b-traiders--dividents
     width: 100%
     z-index: 15
 
+    .b-loginbar-btn
+        position: absolute
+        top: 0
+        right: 15px
+
     .jq-selectbox__trigger
         display: none
 
@@ -3187,6 +3195,14 @@ td.b-traiders--dividents
     +sprite(icon-loginbar)
     display: inline-block
     vertical-align: middle
+
+.b-loginbar-btn
+    &.active
+        .icon--loginbar
+            +sprite(icon-close-normal)
+            margin-right: 4px
+            &:hover
+                +sprite(icon-close-hover)
 
 .b-loginbar-buttons
     margin: 0 15px
