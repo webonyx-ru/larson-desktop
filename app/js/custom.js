@@ -329,6 +329,23 @@ $(document).ready(function () {
 // Open/Close left menu
 
 $(document).ready(function () {
+    var upButtonTimeout,
+        upButton = $('.js-up-button');
+    $(window).scroll(function () {
+        clearInterval(upButtonTimeout);
+        upButtonTimeout = setTimeout(function () {
+            if($(window).scrollTop() > 1000)
+                upButton.addClass('visible');
+            else
+                upButton.removeClass('visible');
+        }, 500);
+    });
+
+    upButton.click(function (e) {
+        e.preventDefault();
+
+        $('body, html').animate({scrollTop: 0}, 1000);
+    });
 
     $(".tree-menu").click(function () {
         $(".sub-tree-menu").toggle(300);

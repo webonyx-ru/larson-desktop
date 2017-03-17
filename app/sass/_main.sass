@@ -5220,3 +5220,20 @@ td.b-traiders--dividents
 .b-content__text-info-feedback-ps, .b-site-list__item-inner
     position: relative
     overflow: hidden
+
+.up-button
+    +sprite(icon-up-btn)
+    display: inline-block
+    vertical-align: middle
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 99
+    cursor: pointer
+    opacity: 0
+    visibility: hidden
+    +trans()
+
+    &.visible
+        opacity: 1
+        visibility: visible
