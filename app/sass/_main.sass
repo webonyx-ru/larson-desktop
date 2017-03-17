@@ -1469,6 +1469,14 @@ a
 .b-traiders--table
     width: 100%
 
+    .b-traiders--friends
+        width: 1px
+        text-align: center
+
+        .jq-checkbox
+            margin: 0
+            box-shadow: 0 0 2px #000 inset
+
     &.tac
         td, th
             text-align: center
@@ -3167,7 +3175,7 @@ td.b-traiders--dividents
 
 .b-loginbar-cont
     max-height: 0
-    background: #fff
+    background: rgba(#fff, 0.95)
     margin-top: -10px
     padding-top: 10px
     transition: max-height 0.3s ease-out
@@ -3175,7 +3183,8 @@ td.b-traiders--dividents
     overflow: hidden
 
     &.active
-        max-height: 10000px
+        max-height: 100vh
+        overflow: auto
         transition: max-height 0.3s ease-in
 
 .b-loginbar--title
