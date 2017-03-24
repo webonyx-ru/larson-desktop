@@ -3186,8 +3186,7 @@ input:focus, textarea:focus, a:focus, button:focus {
   cursor: pointer;
   width: 100%;
 }
-
-.jq-selectbox__select {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__select {
   height: 40px;
   border-radius: 3px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.24);
@@ -3199,52 +3198,43 @@ input:focus, textarea:focus, a:focus, button:focus {
   max-width: 100%;
   background-color: #f8f8f8;
 }
-
-.jq-selectbox__select:active {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__select:active {
   background: #F5F5F5;
   box-shadow: inset 1px 1px 3px #DDD;
 }
-
-.jq-selectbox.focused .jq-selectbox__select {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox.focused .jq-selectbox__select {
   box-shadow: inset 0 0 0 2px #2192fd;
 }
-
-.jq-selectbox.disabled .jq-selectbox__select {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox.disabled .jq-selectbox__select {
   border-color: #CCC;
   background: #F5F5F5;
   box-shadow: none;
   color: #888;
 }
-
-.jq-selectbox__select-text {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__select-text {
   display: block;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-.jq-selectbox .placeholder {
+.jq-selectbox:not(.b-loginbar-user__select) .placeholder {
   color: #888;
 }
-
-.jq-selectbox__trigger {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__trigger {
   position: absolute;
   top: 0;
   right: 0;
   width: 34px;
   height: 100%;
 }
-
-.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox:hover .jq-selectbox__trigger-arrow {
   border-top-color: #000;
 }
-
-.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox.disabled .jq-selectbox__trigger-arrow {
   border-top-color: #AAA;
 }
-
-.jq-selectbox__dropdown {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__dropdown {
   box-sizing: border-box;
   width: 100%;
   margin: 2px 0 0;
@@ -3257,12 +3247,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   line-height: 2.14;
   color: #808080;
 }
-
-.jq-selectbox__search {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__search {
   margin: 5px;
 }
-
-.jq-selectbox__search input {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__search input {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
@@ -3275,25 +3263,21 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #333;
   -webkit-appearance: textfield;
 }
-
-.jq-selectbox__search input::-webkit-search-cancel-button,
-.jq-selectbox__search input::-webkit-search-decoration {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__search input::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-.jq-selectbox__not-found {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox__not-found {
   margin: 5px;
   padding: 5px 8px 6px;
   background: #F0F0F0;
   font-size: 13px;
 }
-
-.jq-selectbox ul {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox ul {
   margin: 0;
   padding: 0;
 }
-
-.jq-selectbox li {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li {
   min-height: 18px;
   padding: 5px 10px 6px;
   font-size: 14px;
@@ -3301,13 +3285,11 @@ input:focus, textarea:focus, a:focus, button:focus {
   font-weight: 400;
   color: #808080;
 }
-
-.jq-selectbox li.selected {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.selected {
   background-color: #fff;
   color: #008ee3;
 }
-
-.jq-selectbox li.sel:after {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.sel:after {
   content: "";
   height: 6px;
   width: 13px;
@@ -3319,34 +3301,27 @@ input:focus, textarea:focus, a:focus, button:focus {
   border-right: 2px solid #000;
   border-top: 2px solid #000;
 }
-
-.jq-selectbox li:hover {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li:hover {
   color: #008ee3;
 }
-
-.jq-selectbox li.disabled {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.disabled {
   color: #AAA;
 }
-
-.jq-selectbox li.disabled:hover {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.disabled:hover {
   background: none;
 }
-
-.jq-selectbox li.optgroup {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.optgroup {
   font-weight: bold;
 }
-
-.jq-selectbox li.optgroup:hover {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.optgroup:hover {
   background: none;
   color: #231F20;
   cursor: default;
 }
-
-.jq-selectbox li.option {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-selectbox li.option {
   padding-left: 25px;
 }
-
-.jq-select-multiple {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple {
   box-sizing: border-box;
   padding: 1px;
   border: 1px solid #CCC;
@@ -3358,24 +3333,20 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #333;
   cursor: default;
 }
-
-.jq-select-multiple.focused {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple.focused {
   border: 1px solid #5794BF;
 }
-
-.jq-select-multiple.disabled {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple.disabled {
   border-color: #CCC;
   background: #F5F5F5;
   box-shadow: none;
   color: #888;
 }
-
-.jq-select-multiple ul {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple ul {
   margin: 0;
   padding: 0;
 }
-
-.jq-select-multiple li {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li {
   padding: 3px 9px 4px;
   list-style: none;
   -webkit-user-select: none;
@@ -3384,35 +3355,28 @@ input:focus, textarea:focus, a:focus, button:focus {
   user-select: none;
   white-space: nowrap;
 }
-
-.jq-select-multiple li:first-child {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li:first-child {
   border-radius: 3px 3px 0 0;
 }
-
-.jq-select-multiple li:last-child {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li:last-child {
   border-radius: 0 0 3px 3px;
 }
-
-.jq-select-multiple li.selected {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li.selected {
   background: #08C;
   color: #FFF;
 }
-
-.jq-select-multiple li.disabled {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li.disabled {
   color: #AAA;
 }
-
-.jq-select-multiple.disabled li.selected,
-.jq-select-multiple li.selected.disabled {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple.disabled li.selected,
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li.selected.disabled {
   background: #CCC;
   color: #FFF;
 }
-
-.jq-select-multiple li.optgroup {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li.optgroup {
   font-weight: bold;
 }
-
-.jq-select-multiple li.option {
+.jq-selectbox:not(.b-loginbar-user__select) .jq-select-multiple li.option {
   padding-left: 25px;
 }
 
@@ -9011,7 +8975,7 @@ td.b-traiders--dividents {
   font-size: 18px;
   font-weight: 600;
   color: #168de2;
-  text-align: center;
+  text-align: left;
 }
 .b-loginbar .jq-selectbox__select-text::after {
   content: "";
