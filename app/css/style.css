@@ -645,8 +645,14 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #848484;
 }
 
-.b-content-news .blue-link {
-  line-height: 1.57;
+.b-content-news__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.b-content-news__excerpt {
+  color: #333;
 }
 
 .b-content-page-right-side {
@@ -4803,9 +4809,6 @@ a {
   background-color: #2192fd;
   display: block;
   content: "";
-}
-.b-nav--menu_item.active .b-nav--menu--dropdown, .b-nav--menu_item:hover .b-nav--menu--dropdown {
-  display: block;
 }
 
 .b-nav--menu--dropdown {
