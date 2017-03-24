@@ -301,12 +301,12 @@ function check_clearinput_vis(block) {
 $(document).ready(function () {
     $(document).on('click', '.b-site-faq-content__item-taber', function (event) {
         event.preventDefault();
-        if ($(this).hasClass("active-taber")) {
+        /*if ($(this).hasClass("active-taber")) {
             $(this).removeClass('active-taber').next('.b-site-faq-content__hide-item-taber').stop().slideUp(300);
-        } else {
-            $(this).closest('.b-site-faq-content__vertical-taber').siblings().find('.b-site-faq-content__item-taber').removeClass('active-taber').end().find('.b-site-faq-content__hide-item-taber').slideUp(300);
-            $(this).addClass('active-taber').next().slideDown(300);
-        }
+        } else {*/
+            // $(this).closest('.b-site-faq-content__vertical-taber').siblings().find('.b-site-faq-content__item-taber').removeClass('active-taber').end().find('.b-site-faq-content__hide-item-taber').slideUp(300);
+            $(this).toggleClass('active-taber').next().slideToggle(300);
+        // }
     });
 
     /*$(document).on('click', '.b-nav--menu--dropdown--item--link.has-dropdown', function (e) {

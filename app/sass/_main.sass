@@ -3204,12 +3204,15 @@ td.b-traiders--dividents
     +sprite(icon-loginbar)
     display: inline-block
     vertical-align: middle
+    position: relative
+
+    &:hover
+        +sprite(icon-loginbar-hover)
 
 .b-loginbar-btn
     &.active
         .icon--loginbar
             +sprite(icon-close-normal)
-            margin-right: 4px
             &:hover
                 +sprite(icon-close-hover)
 
