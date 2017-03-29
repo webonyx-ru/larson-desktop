@@ -2029,7 +2029,6 @@ ul.b-footer--gray--color
     position: absolute
     top: 50%
     right: 30px
-    +sprite(slider_arrow_right)
     font-size: 0
     +transform(translateY(-50%))
 
@@ -2044,7 +2043,6 @@ ul.b-footer--gray--color
 
     &.active
         &:after
-            +sprite(icon--check)
             display: inline-block
             vertical-align: middle
             margin-left: 10px
@@ -4965,3 +4963,9 @@ td.b-traiders--dividents
     &.visible
         opacity: 1
         visibility: visible
+
+.contact-form-select
+    padding-left: 200px
+    .b-fill-form
+        .b-fill-form__inp-wrapper
+            width: 49%

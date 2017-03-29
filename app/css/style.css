@@ -170,6 +170,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   width: 50%;
 }
 
+.w555 {
+  width: 555px;
+}
+
 .mr15 {
   margin-right: 15px;
 }
@@ -6090,29 +6094,12 @@ ul.b-footer--gray--color li:after {
   position: absolute;
   top: 50%;
   right: 30px;
-  background-image: url('../images/icons-sfe689ed293.png');
-  background-position: 0 -7278px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 50px;
-  width: 50px;
   font-size: 0;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .owl-prev, .owl-next {
-    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
-    background-size: 191px auto;
-    background-position: 0 -7301px;
-    height: 50px;
-    width: 50px;
-  }
 }
 
 .owl-prev {
@@ -6130,29 +6117,12 @@ ul.b-footer--gray--color li:after {
   white-space: nowrap;
 }
 .js--traiders--table--selector.active:after {
-  background-image: url('../images/icons-sfe689ed293.png');
-  background-position: 0 -2472px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 10px;
-  width: 14px;
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
   content: "";
   position: relative;
   top: -1px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .js--traiders--table--selector.active:after {
-    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
-    background-size: 191px auto;
-    background-position: 0 -2474px;
-    height: 10px;
-    width: 14px;
-  }
 }
 
 .overlay {
@@ -9450,6 +9420,13 @@ td.b-traiders--dividents {
 .up-button.visible {
   opacity: 1;
   visibility: visible;
+}
+
+.contact-form-select {
+  padding-left: 200px;
+}
+.contact-form-select .b-fill-form .b-fill-form__inp-wrapper {
+  width: 49%;
 }
 
 @media screen and (max-width: 1260px) {
