@@ -109,13 +109,11 @@ a
             background-color: #33ca19
 
 .icon--online_chat
-    +sprite(conversation)
     display: inline-block
     vertical-align: baseline
     margin-right: 5px
 
 .icon--feedback
-    +sprite(open-email)
     display: inline-block
     vertical-align: baseline
     position: relative
@@ -156,7 +154,6 @@ a
         position: relative
         &:after
             content: ''
-            +sprite(icon-forexfamily__#{$forex}, $pos: "abs_middle")
             right: 0
             margin-left: 0
             left: auto
@@ -168,7 +165,6 @@ a
     margin-bottom: 20px
 
 .icon-person_triangle
-    +sprite(icon-person_triangle)
     display: inline-block
     vertical-align: middle
     margin-left: 10px
@@ -222,7 +218,6 @@ a
         color: #fd7f23
 
 .icon--cabinet
-    +sprite(edit-profile)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -230,7 +225,6 @@ a
     margin-right: 5px
 
 .icon--select--trigger
-    +sprite(arrow_top_small)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -239,7 +233,6 @@ a
     margin-left: 8px
 
 .icon-worldwide
-    +sprite(icon-worldwide)
     display: inline-block
     vertical-align: middle
     margin-left: 5px
@@ -273,7 +266,6 @@ a
         &:after
             display: block
             content: ''
-            +sprite(arrow_top_small)
             position: absolute
             top: 15px
             right: 20px
@@ -317,7 +309,6 @@ a
         &:after
             vertical-align: middle
             content: ''
-            +sprite(arrow_top_small)
             display: inline-block
             position: relative
             top: -1px
@@ -524,7 +515,6 @@ a
             position: absolute
             top: 50%
             right: 12px
-            +sprite(arrow_small)
             margin-top: -3px
             +transform(rotate(0deg))
 
@@ -658,7 +648,6 @@ a
 
     &:after
         content: ''
-        +sprite(play--small)
         left: 50%
         top: 50%
         position: absolute
@@ -670,7 +659,6 @@ a
     position: absolute
     bottom: 65px
     right: 20px
-    +sprite(buble)
     vertical-align: middle
     line-height: 123px
     font-size: 18px
@@ -718,32 +706,26 @@ a
         box-sizing: border-box
 
 .icon--soc1
-    +sprite(white-yt)
     display: inline-block
     vertical-align: middle
 
 .icon--soc2
-    +sprite(white-vk)
     display: inline-block
     vertical-align: middle
 
 .icon--soc3
-    +sprite(white-tw)
     display: inline-block
     vertical-align: middle
 
 .icon--soc4
-    +sprite(white-fb)
     display: inline-block
     vertical-align: middle
 
 .icon--soc5
-    +sprite(white-rss)
     display: inline-block
     vertical-align: middle
 
 .icon--instruction
-    +sprite(icon-instruction)
     display: inline-block
     vertical-align: middle
     margin-right: 5px
@@ -1004,7 +986,6 @@ a
         display: block
         content: ''
         position: absolute
-        +sprite(play_big)
         z-index: 1
         left: 50%
         top: 50%
@@ -1421,7 +1402,6 @@ a
     object-fit: cover
 
     &:after
-        +sprite(video--logo)
         content: ''
         position: absolute
         top: 10px
@@ -1447,7 +1427,6 @@ a
         background: #fe7d1b
 
     &:after
-        +sprite(play--small, $pos: "abs_middle")
         content: ''
 
 .b-videos--listing--item--title
@@ -1617,23 +1596,18 @@ ul.b-footer--gray--color
     vertical-align: middle
 
     &.payment1
-        +sprite(visa)
         display: inline-block
 
     &.payment2
-        +sprite(mc)
         display: inline-block
 
     &.payment3
-        +sprite(rapid)
         display: inline-block
 
     &.payment4
-        +sprite(ev)
         display: inline-block
 
     &.payment5
-        +sprite(secure)
         display: inline-block
 
 .b-footer--payment--methods
@@ -1653,27 +1627,22 @@ ul.b-footer--gray--color
 
     &.footer-social-vk
         &:after
-            +sprite(f-vk, $pos: "abs_middle")
             content: ''
 
     &.footer-social-tw
         &:after
-            +sprite(f-tw, $pos: "abs_middle")
             content: ''
 
     &.footer-social-fb
         &:after
-            +sprite(f-fb, $pos: "abs_middle")
             content: ''
 
     &.footer-social-rss
         &:after
-            +sprite(f-rss, $pos: "abs_middle")
             content: ''
 
     &.footer-social-yt
         &:after
-            +sprite(f-yt, $pos: "abs_middle")
             content: ''
 
 .b-footer--social
@@ -1804,10 +1773,8 @@ ul.b-footer--gray--color
         &.icon--#{$flag}
             &:after
                 content: ''
-                +sprite(flag-#{$flag}, $pos: "abs_middle")
 
 .icon--lock
-    +sprite(padlock_2)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -1815,11 +1782,9 @@ ul.b-footer--gray--color
     margin-right: 10px
 
     &.orange
-        +sprite(padlock_orange)
         display: inline-block
 
     &.grey
-        +sprite(padlock_1)
         display: inline-block
 
 .b-traiders--table--lock--number
@@ -1882,7 +1847,6 @@ ul.b-footer--gray--color
         margin-right: 8px
 
 .table--icon--chat
-    +sprite(closed-envelope)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -1918,7 +1882,6 @@ ul.b-footer--gray--color
     padding-bottom: 2px
 
     &:after
-        +sprite(arrow_small)
         display: block
         content: ''
         position: absolute
@@ -2364,7 +2327,6 @@ textarea
     display: inline-block
 
 .icon-chain
-    +sprite(icon-chain)
     position: absolute
     top: 0
     right: 0
@@ -2410,7 +2372,6 @@ textarea
 .icon-blue_arrow
     position: relative
     vertical-align: middle
-    +sprite(blue_arrow_up)
     display: inline-block
     +trans
     margin-left: 10px
@@ -2714,7 +2675,6 @@ input.search-input
     vertical-align: middle
 
 .icon-search
-    +sprite(icon-search)
     display: inline-block
     vertical-align: middle
 
@@ -2743,7 +2703,6 @@ input.search-input
         color: #1a1a1a
 
 .icon-notification
-    +sprite(icon-notif)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -2789,16 +2748,12 @@ input.search-input
             &.active
 
                 &:after
-                    +sprite(icon--check)
                     display: inline-block
                     vertical-align: middle
                     position: relative
                     top: -1px
                     margin-left: 10px
                     content: ''
-
-.icon-filter
-    +sprite(icon-sort)
 
 .b-dropdown__filter-icon
     .icon-filter
@@ -2862,7 +2817,6 @@ input.b-traiders__search-input
         box-shadow: 0 0 2px #ccc
 
 .icon-search-grey
-    +sprite(icon-search-grey)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -2905,47 +2859,32 @@ input.b-traiders__search-input
         .checkbox-wrap, .icon-lock
             margin-right: 10px
 
-.icon-checkbox
-    +sprite(icon-checkbox)
-
-input:checked
-    & + .icon-checkbox
-        +sprite(icon-checkbox-checked)
-
 .icon-lock
     display: inline-block
     vertical-align: middle
 
     &.green
-        +sprite(padlock-green)
         display: inline-block
 
     &.orange-unlocked
-        +sprite(padlock-orange-unlocked)
         display: inline-block
 
     &.orange-locked
-        +sprite(padlock-orange-locked)
         display: inline-block
 
     &.blue-unlocked
-        +sprite(padlock-blue-unlocked)
         display: inline-block
 
     &.blue-locked
-        +sprite(padlock-blue-locked)
         display: inline-block
 
     &.black-unlocked
-        +sprite(padlock-black-unlocked)
         display: inline-block
 
     &.black-locked
-        +sprite(padlock-black-locked)
         display: inline-block
 
 .icon-question
-    +sprite(icon-question)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -2953,7 +2892,6 @@ input:checked
     cursor: pointer
 
     &.active
-        +sprite(icon-question-active)
         display: inline-block
         vertical-align: middle
 
@@ -3199,20 +3137,9 @@ td.b-traiders--dividents
     color: #4d4d4d
 
 .icon--loginbar
-    +sprite(icon-loginbar)
     display: inline-block
     vertical-align: middle
     position: relative
-
-    &:hover
-        +sprite(icon-loginbar-hover)
-
-.b-loginbar-btn
-    &.active
-        .icon--loginbar
-            +sprite(icon-close-normal)
-            &:hover
-                +sprite(icon-close-hover)
 
 .b-loginbar-buttons
     margin: 0 15px
@@ -3460,7 +3387,6 @@ td.b-traiders--dividents
     top: 50%
     left: 11px
     +transform(translateY(-50%))
-    +sprite(as-btn, 'abs_middle')
 
 .g-play-btn:after
     content: ''
@@ -3468,7 +3394,6 @@ td.b-traiders--dividents
     position: absolute
     top: 50%
     +transform(translateY(-50%))
-    +sprite(g-play-btn, 'abs_middle')
 
 //_____________________END_mobile-trading_________
 //_____________________open-new-bill______________
@@ -3497,7 +3422,6 @@ td.b-traiders--dividents
     top: 50%
     right: 15px
     +transform(translateY(-50%))
-    +sprite(link-out-blue)
 
 .content__buttons-partnerships
     width: 100px
@@ -3606,24 +3530,6 @@ td.b-traiders--dividents
     height: 50px
     align-items: center
 
-.safebox-icon
-    +sprite(safebox-icon)
-
-.qiwi-wallet-icon
-    +sprite(qiwi-icon)
-
-.web-money-icon
-    +sprite(wm-icon)
-
-.visa-icon
-    +sprite(visa-icon)
-
-.hand-shaking-icon
-    +sprite(hand-shaking-icon)
-
-.okpay-icon
-    +sprite(okpay-icon)
-
 //DD-TABLE_________________________________________________________________________________________
 
 .dd-arrow
@@ -3715,7 +3621,6 @@ td.b-traiders--dividents
     float: left
 
 .stars-icon
-    +sprite(stars-icon)
     display: inline-block
     vertical-align: middle
 
@@ -3803,7 +3708,6 @@ td.b-traiders--dividents
     color: #808080
     &:hover
         .b-content__help-icon
-            +sprite(help-orange-icon)
             display: inline-block
         .b-content__help-popup
             display: block
@@ -3818,7 +3722,6 @@ td.b-traiders--dividents
     display: inline-block
 
 .b-content__help-icon
-    +sprite(help-grey-icon)
     display: inline-block
     vertical-align: middle
 
@@ -3923,13 +3826,6 @@ td.b-traiders--dividents
         box-sizing: border-box
         z-index: 302
 //background-color: #fff
-
-.line-chart-icon
-    +sprite(line-chart-icon)
-
-.speedometer-icon
-
-    +sprite(speedometer-icon)
 
 .b-forex-tools-item
     font-size: 20px
@@ -4136,25 +4032,20 @@ td.b-traiders--dividents
     align-items: center
 
 .cog-icon
-    +sprite(cog)
     position: absolute
     right: 0
     top: 0
 
 .game-controller-icon
-    +sprite(game-controller)
     display: inline-block
 
 .graduation-cap-icon
-    +sprite(graduation-cap)
     display: inline-block
 
 .star-icon
-    +sprite(star)
     display: inline-block
 
 .shield-icon
-    +sprite(shield)
     display: inline-block
 
 .b-results-and-honors-title
@@ -4167,7 +4058,6 @@ td.b-traiders--dividents
     padding-bottom: 15px
 
 .open-email
-    +sprite(open-email)
     display: inline-block
     vertical-align: middle
     overflow: visible
@@ -4196,15 +4086,8 @@ td.b-traiders--dividents
     position: relative
     top: -5px
 
-.sphere-icon
-    +sprite(sphere-icon)
-
 .big-grey-cog
-    +sprite(big-grey-cog)
     display: inline-block
-
-.big-blue-cog
-    +sprite(big-blue-cog)
 
 .b-rtg-table-search-form
     border-radius: 2px
@@ -4279,24 +4162,18 @@ td.b-traiders--dividents
 //degergrgrtjrtj
 
 .pdf-icon
-    +sprite(pdf)
     display: inline-block
 
 .calendar-icon
-    +sprite(calendar)
     display: inline-block
 
 .moneybag-blue
-    +sprite(money-bag-with-dollar-blue)
-    //reehehrt
     display: inline-block
 
 .timer-icon
-    +sprite(time-slot)
     display: inline-block
 
 .cup-icon
-    +sprite(trophy)
     display: inline-block
 
 .b-results-and-honors-title-item
@@ -4323,11 +4200,9 @@ td.b-traiders--dividents
     height: 100%
 
 .moneybag-white
-    +sprite(money-bag-with-dollar-white)
     display: inline-block
 
 .rate-streamer-icon
-    +sprite(rate-streamer)
     display: inline-block
 
 .b-charity-head
@@ -4378,11 +4253,9 @@ td.b-traiders--dividents
     float: right
 
 .marker[class~="pred"]
-    +sprite(marker-pred)
     display: inline-block
 
 .marker[class~="meet"]
-    +sprite(marker-meet)
     display: inline-block
 
 .marker
@@ -4517,7 +4390,6 @@ td.b-traiders--dividents
         right: 11px
         top: 12.5px
         z-index: 2
-        +sprite(icon-search-autocomplete)
 
     .autocomplete-input
         padding-right: 37px
@@ -4561,7 +4433,6 @@ td.b-traiders--dividents
     height: 100%
 
 .map .popup .icon-active
-    +sprite(marker-active)
     display: inline-block
     vertical-align: top
     float: left
@@ -4624,7 +4495,6 @@ td.b-traiders--dividents
             margin-right: -2px
 //_________________________________________________________________
 .textBoxCaptcha
-    +sprite(captcha)
     display: inline-block
     vertical-align: middle
 
@@ -4653,7 +4523,6 @@ td.b-traiders--dividents
         @extend .content-text
 
 .refresh-icon
-    +sprite(refresh)
     display: inline-block //kokogrkgoefef
     margin-right: 10px
     cursor: pointer
@@ -4661,37 +4530,30 @@ td.b-traiders--dividents
 
 // new meta traider menu type
 .icon--meta-cog
-    +sprite(icon--meta-cog)
     display: inline-block
     vertical-align: middle
 
 .icon--meta-apple
-    +sprite(icon--meta-apple)
     display: inline-block
     vertical-align: middle
 
 .icon--meta-google
-    +sprite(icon--meta-google)
     display: inline-block
     vertical-align: middle
 
 .icon--binary-web-terminal
-    +sprite(icon--binary-web-terminal)
     display: inline-block
     vertical-align: middle
 
 .icon--classic-mobile
-    +sprite(icon--classic-mobile)
     display: inline-block
     vertical-align: middle
 
 .icon--classic-OSX
-    +sprite(icon--classic-OSX)
     display: inline-block
     vertical-align: middle
 
 .icon--classic-RT-icon
-    +sprite(icon--classic-RT-icon)
     display: inline-block
     vertical-align: middle
 
@@ -4747,121 +4609,6 @@ td.b-traiders--dividents
 .icon
     display: inline-block
     vertical-align: middle
-
-.icon-MT-1
-    +sprite(icon-MT-1)
-
-.icon-MT-2
-    +sprite(icon-MT-2)
-
-.icon-MT-3
-    +sprite(icon-MT-3)
-
-.icon-MT-4
-    +sprite(icon-MT-4)
-
-.icon-MT-5
-    +sprite(icon-MT-5)
-
-.icon-larson
-    +sprite(icon-l-h)
-    margin: 15px 0
-
-.icon-link-cogs
-    +sprite(icon-link-cog)
-
-.icon-link-bag
-    +sprite(icon-link-bag)
-
-.icon-link-list
-    +sprite(icon-link-list)
-
-.icon-link-bars
-    +sprite(icon-link-bars)
-
-.icon-link-star
-    +sprite(icon-link-star)
-
-.icon-link-cup
-    +sprite(icon-link-cup)
-
-.icon-link-circles
-    +sprite(icon-link-circles)
-
-.icon-menu-zero
-    +sprite(icon-menu-zero)
-
-.icon-menu-demo
-    +sprite(icon-menu-demo)
-
-.icon-menu-call-centers
-    +sprite(icon-menu-phone)
-
-.icon-menu-info
-    +sprite(icon-menu-info)
-
-.icon-menu-cup
-    +sprite(icon-menu-cup)
-
-.icon-menu-heart
-    +sprite(icon-menu-heart)
-
-.icon-menu-history
-    +sprite(icon-menu-history)
-
-.icon-menu-prognosis
-    +sprite(icon-menu-prognosis)
-
-.icon-menu-business-model
-    +sprite(icon-menu-business-model)
-
-.icon-menu-video
-    +sprite(icon-menu-video)
-
-.icon-menu-contacts
-    +sprite(icon-menu-contacts)
-
-.icon-menu-news
-    +sprite(icon-menu-news)
-
-.icon-menu-hands
-    +sprite(icon-menu-hands)
-
-.icon-menu-speaker
-    +sprite(icon-menu-speaker)
-
-.icon-menu-planet
-    +sprite(icon-menu-planet)
-
-.icon-menu-office
-    +sprite(icon-menu-office)
-
-.icon-menu-partners
-    +sprite(icon-menu-partners)
-
-.icon-link-people
-    +sprite(icon-link-people)
-
-.icon-link-graph
-    +sprite(icon-link-graph)
-
-.icon-link-bars2
-    +sprite(icon-link-bars2)
-
-.icon-link-paper
-    +sprite(icon-link-paper)
-
-.icon-link-calendar
-    +sprite(icon-link-calendar)
-
-.icon-link-awward
-    +sprite(icon-link-awward)
-
-.icon-link-boxes
-    +sprite(icon-link-boxes)
-
-.icon-link-web
-    +sprite(icon-link-web)
 
 .mw225
     max-width: 225px
@@ -4991,24 +4738,6 @@ td.b-traiders--dividents
 
         &:first-child
             margin: 0
-
-.icon-programs-logo
-    +sprite(logo-programs)
-
-.icon-programs-metatrader
-    +sprite(programs-metatrader)
-
-.icon-programs-apple
-    +sprite(programs-apple)
-
-.icon-programs-android
-    +sprite(programs-android)
-
-.icon-programs-osx
-    +sprite(programs-osx)
-
-.icon-programs-metatrader2
-    +sprite(programs-metatrader2)
 
 .icon-play
     &:after
@@ -5196,7 +4925,6 @@ td.b-traiders--dividents
 
 
 .icon-attention
-    +sprite(attention)
     display: inline-block
 
 .fluid
@@ -5223,7 +4951,6 @@ td.b-traiders--dividents
     overflow: hidden
 
 .up-button
-    +sprite(icon-up-btn)
     display: inline-block
     vertical-align: middle
     position: fixed

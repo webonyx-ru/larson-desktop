@@ -1,0 +1,468 @@
+.icon--cabinet
+	+sprite(edit-profile)
+
+.icon--feedback
+	+sprite(open-email)
+
+.icon--online_chat
+	+sprite(conversation)
+
+@each $forex in spread, nondeposit, persentage, multicurrency, mobileforex, sholder, competitions, autopayments, market, fivenumbers, bonuses, muslim, partnership, social, copydeal, enter
+	.icon-forexfamily__#{$forex}
+		&:after
+			+sprite(icon-forexfamily__#{$forex}, $pos: "abs_middle")
+
+.icon-person_triangle
+	+sprite(icon-person_triangle)
+
+.icon--select--trigger
+	+sprite(arrow_top_small)
+
+.icon-worldwide
+	+sprite(icon-worldwide)
+
+.b-dropdown
+	&.lang-bar
+		&:after
+			+sprite(arrow_top_small)
+
+.b-dropdown--item
+	&.selector--header
+		&:after
+			+sprite(arrow_top_small)
+
+.b-nav--menu--dropdown--item--link
+	&.has-dropdown
+		&:before
+			+sprite(arrow_small)
+
+.icon--watch--video
+	&:after
+		+sprite(play--small)
+
+.b-parallax--we--work--since
+	+sprite(buble)
+
+.icon--soc1
+	+sprite(white-yt)
+
+.icon--soc2
+	+sprite(white-vk)
+
+.icon--soc3
+	+sprite(white-tw)
+
+.icon--soc4
+	+sprite(white-fb)
+
+.icon--soc5
+	+sprite(white-rss)
+
+.icon--instruction
+	+sprite(icon-instruction)
+
+.b-our--decisions--tab--video
+	&:before
+		+sprite(play_big)
+
+.b-videos--listing--item--video--image--wrapper
+	&:after
+		+sprite(video--logo)
+
+.b-videos--listing--item--video--play--icon
+	&:after
+		+sprite(play--small, $pos: "abs_middle")
+
+.b-footer--payment--item
+	&.payment1
+		+sprite(visa)
+	&.payment2
+		+sprite(mc)
+	&.payment3
+		+sprite(rapid)
+	&.payment4
+		+sprite(ev)
+	&.payment5
+		+sprite(secure)
+
+.b-footer--social--icon
+	&.footer-social-vk
+		&:after
+			+sprite(f-vk, $pos: "abs_middle")
+	&.footer-social-tw
+		&:after
+			+sprite(f-tw, $pos: "abs_middle")
+	&.footer-social-fb
+		&:after
+			+sprite(f-fb, $pos: "abs_middle")
+	&.footer-social-rss
+		&:after
+			+sprite(f-rss, $pos: "abs_middle")
+	&.footer-social-yt
+		&:after
+			+sprite(f-yt, $pos: "abs_middle")
+
+.icon--lang
+	@each $flag in arabic, china, usa, france, esp, ger, indonesia, malaysia, polska, portugal, russia, thailand, vietnamese, serbian, croatian
+		&.icon--#{$flag}
+			&:after
+				content: ''
+				+sprite(flag-#{$flag}, $pos: "abs_middle")
+
+.icon--lock
+	+sprite(padlock_2)
+	&.orange
+		+sprite(padlock_orange)
+	&.grey
+		+sprite(padlock_1)
+
+.table--icon--chat
+	+sprite(closed-envelope)
+
+.b-traiders--table--selectors--dropdown--current
+	&:after
+		+sprite(arrow_small)
+
+.owl-prev, .owl-next
+	+sprite(slider_arrow_right)
+
+.js--traiders--table--selector
+	&.active
+		&:after
+			+sprite(icon--check)
+
+.icon-chain
+	+sprite(icon-chain)
+
+.icon-blue_arrow
+	+sprite(blue_arrow_up)
+
+.icon-search
+	+sprite(icon-search)
+
+.icon-notification
+	+sprite(icon-notif)
+
+.b-dropdown-wrapper
+	&.sorting
+		.b-dropdown__listing-item
+			&.active
+				&:after
+					+sprite(icon--check)
+
+.icon-filter
+	+sprite(icon-sort)
+
+.icon-search-grey
+	+sprite(icon-search-grey)
+
+.icon-checkbox
+	+sprite(icon-checkbox)
+
+input:checked
+	& + .icon-checkbox
+		+sprite(icon-checkbox-checked)
+
+.icon-lock
+	&.green
+		+sprite(padlock-green)
+	&.orange-unlocked
+		+sprite(padlock-orange-unlocked)
+	&.orange-locked
+		+sprite(padlock-orange-locked)
+	&.blue-unlocked
+		+sprite(padlock-blue-unlocked)
+	&.blue-locked
+		+sprite(padlock-blue-locked)
+	&.black-unlocked
+		+sprite(padlock-black-unlocked)
+	&.black-locked
+		+sprite(padlock-black-locked)
+
+.icon-question
+	+sprite(icon-question)
+	&.active
+		+sprite(icon-question-active)
+
+.icon--loginbar
+	+sprite(icon-loginbar)
+	&:hover
+		+sprite(icon-loginbar-hover)
+
+.b-loginbar-btn
+	&.active
+		.icon--loginbar
+			+sprite(icon-close-normal)
+			&:hover
+				+sprite(icon-close-hover)
+
+.app-store-btn:after
+	+sprite(as-btn, 'abs_middle')
+
+.g-play-btn:after
+	+sprite(g-play-btn, 'abs_middle')
+
+.link-out-icon
+	+sprite(link-out-blue)
+
+.safebox-icon
+	+sprite(safebox-icon)
+
+.qiwi-wallet-icon
+	+sprite(qiwi-icon)
+
+.web-money-icon
+	+sprite(wm-icon)
+
+.visa-icon
+	+sprite(visa-icon)
+
+.hand-shaking-icon
+	+sprite(hand-shaking-icon)
+
+.okpay-icon
+	+sprite(okpay-icon)
+
+.stars-icon
+	+sprite(stars-icon)
+
+.b-content__help-item
+	&:hover
+		.b-content__help-icon
+			+sprite(help-orange-icon)
+
+.b-content__help-icon
+	+sprite(help-grey-icon)
+
+.line-chart-icon
+	+sprite(line-chart-icon)
+
+.speedometer-icon
+	+sprite(speedometer-icon)
+
+.cog-icon
+	+sprite(cog)
+
+.game-controller-icon
+	+sprite(game-controller)
+
+.graduation-cap-icon
+	+sprite(graduation-cap)
+
+.star-icon
+	+sprite(star)
+
+.shield-icon
+	+sprite(shield)
+
+.open-email
+	+sprite(open-email)
+
+.sphere-icon
+	+sprite(sphere-icon)
+
+.big-grey-cog
+	+sprite(big-grey-cog)
+
+.big-blue-cog
+	+sprite(big-blue-cog)
+
+.pdf-icon
+	+sprite(pdf)
+
+.calendar-icon
+	+sprite(calendar)
+
+.moneybag-blue
+	+sprite(money-bag-with-dollar-blue)
+
+.timer-icon
+	+sprite(time-slot)
+
+.cup-icon
+	+sprite(trophy)
+
+.moneybag-white
+	+sprite(money-bag-with-dollar-white)
+
+.rate-streamer-icon
+	+sprite(rate-streamer)
+
+.marker[class~="pred"]
+	+sprite(marker-pred)
+
+.marker[class~="meet"]
+	+sprite(marker-meet)
+
+.autocomplete-input-wrap
+	> .icon
+		+sprite(icon-search-autocomplete)
+
+.map .popup .icon-active
+	+sprite(marker-active)
+
+.textBoxCaptcha
+	+sprite(captcha)
+
+.refresh-icon
+	+sprite(refresh)
+
+.icon--meta-cog
+	+sprite(icon--meta-cog)
+
+.icon--meta-apple
+	+sprite(icon--meta-apple)
+
+.icon--meta-google
+	+sprite(icon--meta-google)
+
+.icon--binary-web-terminal
+	+sprite(icon--binary-web-terminal)
+
+.icon--classic-mobile
+	+sprite(icon--classic-mobile)
+
+.icon--classic-OSX
+	+sprite(icon--classic-OSX)
+
+.icon--classic-RT-icon
+	+sprite(icon--classic-RT-icon)
+
+.icon-MT-1
+	+sprite(icon-MT-1)
+
+.icon-MT-2
+	+sprite(icon-MT-2)
+
+.icon-MT-3
+	+sprite(icon-MT-3)
+
+.icon-MT-4
+	+sprite(icon-MT-4)
+
+.icon-MT-5
+	+sprite(icon-MT-5)
+
+.icon-larson
+	+sprite(icon-l-h)
+	margin: 15px 0
+
+.icon-link-cogs
+	+sprite(icon-link-cog)
+
+.icon-link-bag
+	+sprite(icon-link-bag)
+
+.icon-link-list
+	+sprite(icon-link-list)
+
+.icon-link-bars
+	+sprite(icon-link-bars)
+
+.icon-link-star
+	+sprite(icon-link-star)
+
+.icon-link-cup
+	+sprite(icon-link-cup)
+
+.icon-link-circles
+	+sprite(icon-link-circles)
+
+.icon-menu-zero
+	+sprite(icon-menu-zero)
+
+.icon-menu-demo
+	+sprite(icon-menu-demo)
+
+.icon-menu-call-centers
+	+sprite(icon-menu-phone)
+
+.icon-menu-info
+	+sprite(icon-menu-info)
+
+.icon-menu-cup
+	+sprite(icon-menu-cup)
+
+.icon-menu-heart
+	+sprite(icon-menu-heart)
+
+.icon-menu-history
+	+sprite(icon-menu-history)
+
+.icon-menu-prognosis
+	+sprite(icon-menu-prognosis)
+
+.icon-menu-business-model
+	+sprite(icon-menu-business-model)
+
+.icon-menu-video
+	+sprite(icon-menu-video)
+
+.icon-menu-contacts
+	+sprite(icon-menu-contacts)
+
+.icon-menu-news
+	+sprite(icon-menu-news)
+
+.icon-menu-hands
+	+sprite(icon-menu-hands)
+
+.icon-menu-speaker
+	+sprite(icon-menu-speaker)
+
+.icon-menu-planet
+	+sprite(icon-menu-planet)
+
+.icon-menu-office
+	+sprite(icon-menu-office)
+
+.icon-menu-partners
+	+sprite(icon-menu-partners)
+
+.icon-link-people
+	+sprite(icon-link-people)
+
+.icon-link-graph
+	+sprite(icon-link-graph)
+
+.icon-link-bars2
+	+sprite(icon-link-bars2)
+
+.icon-link-paper
+	+sprite(icon-link-paper)
+
+.icon-link-calendar
+	+sprite(icon-link-calendar)
+
+.icon-link-awward
+	+sprite(icon-link-awward)
+
+.icon-link-boxes
+	+sprite(icon-link-boxes)
+
+.icon-link-web
+	+sprite(icon-link-web)
+
+.icon-programs-logo
+	+sprite(logo-programs)
+
+.icon-programs-metatrader
+	+sprite(programs-metatrader)
+
+.icon-programs-apple
+	+sprite(programs-apple)
+
+.icon-programs-android
+	+sprite(programs-android)
+
+.icon-programs-osx
+	+sprite(programs-osx)
+
+.icon-programs-metatrader2
+	+sprite(programs-metatrader2)
+
+.icon-attention
+	+sprite(attention)
+
+.up-button
+	+sprite(icon-up-btn)
