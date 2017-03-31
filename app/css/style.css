@@ -391,6 +391,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   max-width: 600px;
 }
 
+.w870 {
+  max-width: 870px;
+}
+
 .w50 {
   width: 50%;
 }
@@ -8522,6 +8526,10 @@ td.b-traiders--dividents {
   float: left;
 }
 
+.fill-form__select ul li {
+  padding: 5px 35px 5px 15px !important;
+}
+
 @media screen and (max-width: 1260px) {
   .b-nav--socialmedia--units {
     position: absolute;
@@ -8543,29 +8551,10 @@ td.b-traiders--dividents {
     z-index: 5;
   }
   .b-nav--socialmedia--units--wrapper:before {
-    background-image: url('../images/icons-sfe689ed293.png');
-    background-position: 0 -7204px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: middle;
-    height: 24px;
-    width: 24px;
     content: "";
     display: inline-block;
     vertical-align: middle;
   }
-}
-@media screen and (max-width: 1260px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1260px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 1260px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 1260px) and (min-resolution: 1.5dppx) {
-  .b-nav--socialmedia--units--wrapper:before {
-    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
-    background-size: 191px auto;
-    background-position: 0 -7227px;
-    height: 24px;
-    width: 24px;
-  }
-}
-@media screen and (max-width: 1260px) {
   .b-nav--socialmedia--units--wrapper:hover {
     background: #2192fd;
   }
@@ -13642,6 +13631,143 @@ input:checked + .icon-checkbox {
     background-position: 0 -1606px;
     height: 16px;
     width: 16px;
+  }
+}
+
+.infographic-item_icon.icon-1 {
+  background-image: url('../images/icons-sfe689ed293.png');
+  background-position: 0 -377px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 55px;
+  width: 55px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .infographic-item_icon.icon-1 {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -377px;
+    height: 55px;
+    width: 55px;
+  }
+}
+.infographic-item_icon.icon-2 {
+  background-image: url('../images/icons-sfe689ed293.png');
+  background-position: 0 -437px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 55px;
+  width: 57px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .infographic-item_icon.icon-2 {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -437px;
+    height: 55px;
+    width: 57px;
+  }
+}
+.infographic-item_icon.icon-3 {
+  background-image: url('../images/icons-sfe689ed293.png');
+  background-position: 0 -497px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 55px;
+  width: 55px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .infographic-item_icon.icon-3 {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -497px;
+    height: 55px;
+    width: 55px;
+  }
+}
+.infographic-item_icon.icon-4 {
+  background-image: url('../images/icons-sfe689ed293.png');
+  background-position: 0 -557px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 53px;
+  width: 55px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .infographic-item_icon.icon-4 {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -557px;
+    height: 53px;
+    width: 55px;
+  }
+}
+.infographic-item_icon.icon-5 {
+  background-image: url('../images/icons-sfe689ed293.png');
+  background-position: 0 -615px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 49px;
+  width: 55px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .infographic-item_icon.icon-5 {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -615px;
+    height: 49px;
+    width: 55px;
+  }
+}
+.infographic-item_icon.icon-6 {
+  background-image: url('../images/icons-sfe689ed293.png');
+  background-position: 0 -669px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 47px;
+  width: 55px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .infographic-item_icon.icon-6 {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -669px;
+    height: 47px;
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .b-nav--socialmedia--units--wrapper:before {
+    background-image: url('../images/icons-sfe689ed293.png');
+    background-position: 0 -7204px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (max-width: 1260px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1260px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 1260px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 1260px) and (min-resolution: 1.5dppx) {
+  .b-nav--socialmedia--units--wrapper:before {
+    background-image: url('../images/icons-2x-sf9f1d5cb55.png');
+    background-size: 191px auto;
+    background-position: 0 -7227px;
+    height: 24px;
+    width: 24px;
   }
 }
 

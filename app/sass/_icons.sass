@@ -621,3 +621,13 @@ input:checked
 
 .flag-small-croatian
 	+sprite(flag-small-croatian)
+
+.infographic-item_icon
+	@for $i from 1 to 7
+		&.icon-#{$i}
+			+sprite(callcenter-icon-#{$i})
+
+@media screen and (max-width: 1260px)
+	.b-nav--socialmedia--units--wrapper
+		&:before
+			+sprite(share_1024)
