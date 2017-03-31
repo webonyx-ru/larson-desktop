@@ -2004,7 +2004,7 @@ input:focus, textarea:focus, a:focus, button:focus {
   margin-right: 25px;
 }
 .b-content-page-center .b-site-content__inner {
-  width: 555px;
+  width: 645px;
 }
 
 .contact-page .b-content-page-left-side {
@@ -8513,7 +8513,7 @@ td.b-traiders--dividents {
 }
 
 .contact-form-select {
-  padding-left: 200px;
+  padding-left: 215px;
 }
 .contact-form-select .b-fill-form .b-fill-form__inp-wrapper {
   width: 49%;
@@ -8528,6 +8528,15 @@ td.b-traiders--dividents {
 
 .fill-form__select ul li {
   padding: 5px 35px 5px 15px !important;
+}
+
+.contact-page .fill-form__select {
+  font-size: 12px;
+  font-stretch: normal;
+}
+.contact-page .fill-form__select ul li {
+  font-size: 12px;
+  font-stretch: normal;
 }
 
 @media screen and (max-width: 1260px) {
