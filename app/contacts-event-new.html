@@ -403,7 +403,7 @@
             </div>
         </div>
 
-        <div class="b-content-page-right-side ovh"><!--WSpace-->
+        <div class="b-content-page-right-side ovh c-light-gray"><!--WSpace-->
             <div class="b-site-content__inner no-max-width">
                 <h1 class="content-main-title tal mb20">Контакты</h1>
                 <div class="b-site-content__inner w555 left">
@@ -457,8 +457,20 @@
                                 <div class="b-fill-form clearfix">
                                     <label class="b-fill-form__label">*Сообщение:</label>
                                     <div class="b-fill-form__inp-wrapper right">
-                                        <textarea class="fill-form-inp" name="" cols="30" rows="10"></textarea>
+                                        <textarea class="fill-form-inp mb10" name="" cols="30" rows="10"></textarea>
+                                        <p>Доступно символов: 4000</p>
                                     </div>
+                                </div>
+                                <div class="b-fill-form clearfix">
+                                    <label class="b-fill-form__label">*Введите код::</label>
+                                    <div class="b-fill-form__inp-wrapper fl-row right">
+                                        <span class="textBoxCaptcha  dib"></span>
+                                        <i class="refresh-icon"></i>
+                                        <input class="fill-form-inp  code dib" type="text" name="Login" required="">
+                                    </div>
+                                </div>
+                                <div class="tar">
+                                    <button class="blue_btn larger-btn tar clearfix">Отправить</button>
                                 </div>
                             </div>
                         </form>
