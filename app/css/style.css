@@ -455,6 +455,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   font-weight: 600 !important;
 }
 
+.fw700 {
+  font-weight: 700;
+}
+
 .fwbold {
   font-weight: bold !important;
 }
@@ -635,6 +639,10 @@ input:focus, textarea:focus, a:focus, button:focus {
 .contest-accounts {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.required {
+  color: #255273;
 }
 
 .blue-link-year {
@@ -8114,14 +8122,17 @@ td.b-traiders--dividents {
   font-stretch: normal;
 }
 .contact-page .fill-form__select ul li {
-  font-size: 12px;
   font-stretch: normal;
+  font-size: 12px;
 }
 .contact-page .jq-selectbox__select {
   padding: 3px 15px !important;
 }
 .contact-page #map-wrapper .jq-selectbox__select {
   padding: 7px 15px !important;
+}
+.contact-page #map-wrapper .jq-selectbox__trigger {
+  top: 15px;
 }
 
 @media screen and (max-width: 1260px) {
