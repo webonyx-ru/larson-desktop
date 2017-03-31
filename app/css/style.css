@@ -431,6 +431,10 @@ input:focus, textarea:focus, a:focus, button:focus {
   font-size: 12px;
 }
 
+.fz13 {
+  font-size: 13px;
+}
+
 .fz36 {
   font-size: 36px;
 }
@@ -1995,8 +1999,8 @@ input:focus, textarea:focus, a:focus, button:focus {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
-  padding: 19px 5px;
   text-align: center;
+  padding: 19px 5px;
 }
 
 .b-content-page-center {
@@ -2010,6 +2014,7 @@ input:focus, textarea:focus, a:focus, button:focus {
 .contact-page .b-content-page-left-side {
   background-color: rgba(176, 176, 176, 0.1);
   padding: 15px;
+  width: 269px;
 }
 .contact-page .b-content__info-column {
   width: 100%;
@@ -2630,16 +2635,9 @@ a {
 
 .b-logo {
   display: block;
-  background-image: url('../images/logo.png?1490906033');
   width: 249px;
   height: 43px;
   margin-right: 35px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-logo {
-    background-image: url('../images/logo2x.png?1490906033');
-    background-size: 249px 43px;
-  }
 }
 
 .empty--button, .orange_btn, .red_btn, .priv-managment__btn, .blue_btn, .white_btn, .white-orange_btn {
@@ -2746,8 +2744,8 @@ a {
   background-color: transparent;
 }
 .dropdown--current .icon--lang {
-  width: 16px;
   height: 16px;
+  width: 16px;
 }
 .dropdown--current.active .icon--select--trigger {
   transform: rotate(180deg);
@@ -2757,171 +2755,11 @@ a {
   -o-transform: rotate(180deg);
 }
 
-.icon-forexfamily__spread {
-  position: relative;
-}
-.icon-forexfamily__spread:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__nondeposit {
-  position: relative;
-}
-.icon-forexfamily__nondeposit:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__persentage {
-  position: relative;
-}
-.icon-forexfamily__persentage:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__multicurrency {
-  position: relative;
-}
-.icon-forexfamily__multicurrency:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__mobileforex {
-  position: relative;
-}
-.icon-forexfamily__mobileforex:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__sholder {
-  position: relative;
-}
-.icon-forexfamily__sholder:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__competitions {
-  position: relative;
-}
-.icon-forexfamily__competitions:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__autopayments {
-  position: relative;
-}
-.icon-forexfamily__autopayments:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__market {
-  position: relative;
-}
-.icon-forexfamily__market:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__fivenumbers {
-  position: relative;
-}
-.icon-forexfamily__fivenumbers:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__bonuses {
-  position: relative;
-}
-.icon-forexfamily__bonuses:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__muslim {
-  position: relative;
-}
-.icon-forexfamily__muslim:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__partnership {
-  position: relative;
-}
-.icon-forexfamily__partnership:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__social {
-  position: relative;
-}
-.icon-forexfamily__social:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__copydeal {
-  position: relative;
-}
-.icon-forexfamily__copydeal:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
-.icon-forexfamily__enter {
-  position: relative;
-}
-.icon-forexfamily__enter:after {
-  content: "";
-  right: 0;
-  margin-left: 0;
-  left: auto;
-}
-
 .b-forexfamily__hidden--title {
   font-size: 24px;
   color: #4d4d4d;
-  line-height: normal;
   margin-bottom: 20px;
+  line-height: normal;
 }
 
 .icon-person_triangle {
@@ -3125,32 +2963,18 @@ a {
 }
 
 .b-main--page--parallax {
-  background-image: url('../images/parallax--top.jpg?1490906033');
   background-position: center 15%;
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding-top: 60px;
   display: block;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax {
-    background-image: url('../images/parallax--top@2x.jpg?1490906033');
-    background-size: 1920px 950px;
-  }
-}
 .b-main--page--parallax.semenovich-depojet {
-  background-image: url('../images/top-banners/semenovich-depojet.jpg?1490906033');
   background-position: center 0;
   background-size: cover;
   position: relative;
-  height: 570px;
   box-sizing: border-box;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.semenovich-depojet {
-    background-image: url('../images/top-banners/semenovich-depojet@2x.jpg?1490906033');
-    background-size: 1920px 570px;
-  }
+  height: 570px;
 }
 .b-main--page--parallax.semenovich-depojet .purple-btn {
   position: absolute;
@@ -3163,75 +2987,31 @@ a {
   background: #2F449F;
 }
 .b-main--page--parallax.type2 {
-  background-image: url('../images/parallax-2banner.jpg?1490906033');
   background-position: center 0;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.type2 {
-    background-image: url('../images/parallax-2banner@2x.jpg?1490906033');
-    background-size: 1920px 1274px;
-  }
-}
-.b-main--page--parallax.new-year-banner {
-  background-image: url('../images/ny-bg.jpg?1490906033');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.new-year-banner {
-    background-image: url('../images/ny-bg@2x.jpg?1490906033');
-    background-size: 1920px 530px;
-  }
-}
 .b-main--page--parallax.semenovich-new-year {
-  background-image: url('../images/top-banners/semenovich-banner-ny.jpg?1490906033');
   background-position: center center;
   height: 570px;
   background-size: auto;
   box-sizing: border-box;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.semenovich-new-year {
-    background-image: url('../images/top-banners/semenovich-banner-ny@2x.jpg?1490906033');
-    background-size: 1920px 570px;
-  }
 }
 .b-main--page--parallax.after-new-year-image--type2 {
-  background-image: url('../images/top-banners/semenovich-after-ny-second.jpg?1490906033');
   background-position: center center;
   height: 570px;
   background-size: auto;
   box-sizing: border-box;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.after-new-year-image--type2 {
-    background-image: url('../images/top-banners/semenovich-after-ny-second@2x.jpg?1490906033');
-    background-size: 1920px 570px;
-  }
 }
 .b-main--page--parallax.after-new-year-image--type3 {
-  background-image: url('../images/top-banners/lh-banner3-x1.jpg?1490906033');
   background-position: center center;
   height: 570px;
   background-size: auto;
   box-sizing: border-box;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.after-new-year-image--type3 {
-    background-image: url('../images/top-banners/lh-banner3-x2.jpg?1490906033');
-    background-size: 1920px 570px;
-  }
 }
 .b-main--page--parallax.forum-top-banner {
   min-height: 517px;
   background-size: auto;
   background-position: center top;
   box-sizing: border-box;
-  background-image: url('../images/new-static-banner.jpg?1490906033');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.forum-top-banner {
-    background-image: url('../images/new-static-banner@2x.jpg?1490906033');
-    background-size: 1942px 517px;
-  }
 }
 @media screen and (max-width: 1350px) {
   .b-main--page--parallax.forum-top-banner {
@@ -3837,53 +3617,10 @@ a {
   margin: 0 auto;
   padding: 40px 35px;
   box-sizing: border-box;
-  background-image: url('../images/bg_blur_1.jpg?1490906031');
   margin-bottom: 45px;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-our--decisions--tab--video--wrapper {
-    background-image: url('../images/bg_blur_1@2x.jpg?1490906031');
-    background-size: 1140px 294px;
-  }
-}
-.b-our--decisions--tab--video--wrapper.bg2 {
-  background-image: url('../images/bg_blur_2.jpg?1490906031');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-our--decisions--tab--video--wrapper.bg2 {
-    background-image: url('../images/bg_blur_2@2x.jpg?1490906031');
-    background-size: 1140px 294px;
-  }
-}
-.b-our--decisions--tab--video--wrapper.bg3 {
-  background-image: url('../images/bg_blur_3.jpg?1490906031');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-our--decisions--tab--video--wrapper.bg3 {
-    background-image: url('../images/bg_blur_3@2x.jpg?1490906031');
-    background-size: 1140px 294px;
-  }
-}
-.b-our--decisions--tab--video--wrapper.bg4 {
-  background-image: url('../images/bg_blur_4.jpg?1490906031');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-our--decisions--tab--video--wrapper.bg4 {
-    background-image: url('../images/bg_blur_4@2x.jpg?1490906031');
-    background-size: 1140px 294px;
-  }
-}
-.b-our--decisions--tab--video--wrapper.bg5 {
-  background-image: url('../images/bg_blur_5.jpg?1490906031');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-our--decisions--tab--video--wrapper.bg5 {
-    background-image: url('../images/bg_blur_5@2x.jpg?1490906031');
-    background-size: 1140px 292px;
-  }
 }
 
 .b-our--decisions--tab--video--content {
@@ -4026,26 +3763,10 @@ a {
 }
 
 .b-competition {
-  background-image: url('../images/ballet-dancer.jpg?1490906031');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   padding: 110px 0 60px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-competition {
-    background-image: url('../images/ballet-dancer@2x.jpg?1490906031');
-    background-size: 1920px 950px;
-  }
-}
-.b-competition.type2 {
-  background-image: url('../images/competition-2banner.jpg?1490906031');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-competition.type2 {
-    background-image: url('../images/competition-2banner@2x.jpg?1490906031');
-    background-size: 1920px 732px;
-  }
 }
 
 .b-competition--open--account--text {
@@ -4066,7 +3787,6 @@ a {
 
 .b-analitics--best--traiders-number {
   width: 49%;
-  background-image: url('../images/banner.jpg?1490906031');
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
   height: 208px;
@@ -4074,12 +3794,6 @@ a {
   background-repeat: no-repeat;
   padding: 30px;
   box-sizing: border-box;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-analitics--best--traiders-number {
-    background-image: url('../images/banner@2x.jpg?1490906031');
-    background-size: 371px 212px;
-  }
 }
 
 .b-analitics--best--traiders-number__count {
@@ -4844,51 +4558,6 @@ ul.b-footer--gray--color li:after {
   position: relative;
   box-shadow: 0 0 2px #ccc;
   border-radius: 50%;
-}
-.icon--lang.icon--arabic:after {
-  content: "";
-}
-.icon--lang.icon--china:after {
-  content: "";
-}
-.icon--lang.icon--usa:after {
-  content: "";
-}
-.icon--lang.icon--france:after {
-  content: "";
-}
-.icon--lang.icon--esp:after {
-  content: "";
-}
-.icon--lang.icon--ger:after {
-  content: "";
-}
-.icon--lang.icon--indonesia:after {
-  content: "";
-}
-.icon--lang.icon--malaysia:after {
-  content: "";
-}
-.icon--lang.icon--polska:after {
-  content: "";
-}
-.icon--lang.icon--portugal:after {
-  content: "";
-}
-.icon--lang.icon--russia:after {
-  content: "";
-}
-.icon--lang.icon--thailand:after {
-  content: "";
-}
-.icon--lang.icon--vietnamese:after {
-  content: "";
-}
-.icon--lang.icon--serbian:after {
-  content: "";
-}
-.icon--lang.icon--croatian:after {
-  content: "";
 }
 
 .icon--lock {
@@ -7580,18 +7249,11 @@ td.b-traiders--dividents {
 .money-with-cup {
   display: block;
   position: absolute;
-  background-image: url('../images/money-with-cup.png?1490906033');
   min-width: 100%;
   min-height: 100%;
   top: 27%;
   left: 38%;
   background-repeat: no-repeat;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .money-with-cup {
-    background-image: url('../images/money-with-cup@2x.png?1490906033');
-    background-size: 376px 191px;
-  }
 }
 
 .map-agents {
@@ -7613,17 +7275,10 @@ td.b-traiders--dividents {
 }
 
 .b-charity-head {
-  background-image: url('../images/charity.png?1490906031');
   background-position: center 15%;
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 400px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-charity-head {
-    background-image: url('../images/charity@2x.png?1490906031');
-    background-size: 1366px 369px;
-  }
 }
 
 .b-charter {
@@ -8321,81 +7976,6 @@ td.b-traiders--dividents {
   color: #000;
 }
 
-.comp-osx {
-  background-image: url('../images/comp.png?1490906031');
-  width: 294px;
-  height: 179px;
-  margin-top: -89.5px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .comp-osx {
-    background-image: url('../images/comp@2x.png?1490906031');
-    width: 588px;
-    height: 358px;
-    margin-top: -179px;
-  }
-}
-
-.cross-phones {
-  background-image: url('../images/cross-phones.png?1490906031');
-  width: 227px;
-  height: 249px;
-  margin-top: -124.5px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .cross-phones {
-    background-image: url('../images/cross-phones@2x.png?1490906031');
-    width: 454px;
-    height: 498px;
-    margin-top: -249px;
-  }
-}
-
-.macbook-2 {
-  background-image: url('../images/macbook-2.png?1490906033');
-  width: 314px;
-  height: 191px;
-  margin-top: -95.5px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .macbook-2 {
-    background-image: url('../images/macbook-2@2x.png?1490906033');
-    width: 628px;
-    height: 382px;
-    margin-top: -191px;
-  }
-}
-
-.apple-phones {
-  background-image: url('../images/ios-phones.png?1490906033');
-  width: 275px;
-  height: 229px;
-  margin-top: -114.5px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .apple-phones {
-    background-image: url('../images/ios-phones@2x.png?1490906033');
-    width: 550px;
-    height: 458px;
-    margin-top: -229px;
-  }
-}
-
-.android-phones {
-  background-image: url('../images/android-phones.png?1490906031');
-  width: 275px;
-  height: 226px;
-  margin-top: -113px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .android-phones {
-    background-image: url('../images/android-phones@2x.png?1490906031');
-    width: 550px;
-    height: 452px;
-    margin-top: -226px;
-  }
-}
-
 .b-lime-dashed {
   border-radius: 5px;
   padding: 20px;
@@ -8526,10 +8106,9 @@ td.b-traiders--dividents {
   float: left;
 }
 
-.fill-form__select ul li {
-  padding: 5px 35px 5px 15px !important;
+.contact-page .jq-selectbox__dropdown ul li {
+  padding-left: 10px;
 }
-
 .contact-page .fill-form__select {
   font-size: 12px;
   font-stretch: normal;
@@ -8537,6 +8116,12 @@ td.b-traiders--dividents {
 .contact-page .fill-form__select ul li {
   font-size: 12px;
   font-stretch: normal;
+}
+.contact-page .jq-selectbox__select {
+  padding: 3px 15px !important;
+}
+.contact-page #map-wrapper .jq-selectbox__select {
+  padding: 7px 15px !important;
 }
 
 @media screen and (max-width: 1260px) {
@@ -13778,6 +13363,465 @@ input:checked + .icon-checkbox {
     height: 24px;
     width: 24px;
   }
+}
+
+.b-logo {
+  background-image: url('../images/logo.png?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-logo {
+    background-image: url('../images/logo2x.png?1490906033');
+    background-size: 249px 43px;
+  }
+}
+
+.b-main--page--parallax {
+  background-image: url('../images/parallax--top.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax {
+    background-image: url('../images/parallax--top@2x.jpg?1490906033');
+    background-size: 1920px 950px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet {
+  background-image: url('../images/top-banners/semenovich-depojet.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet {
+    background-image: url('../images/top-banners/semenovich-depojet@2x.jpg?1490906033');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet.type2 {
+  background-image: url('../images/parallax-2banner.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet.type2 {
+    background-image: url('../images/parallax-2banner@2x.jpg?1490906033');
+    background-size: 1920px 1274px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet.new-year-banner {
+  background-image: url('../images/ny-bg.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet.new-year-banner {
+    background-image: url('../images/ny-bg@2x.jpg?1490906033');
+    background-size: 1920px 530px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet.semenovich-new-year {
+  background-image: url('../images/top-banners/semenovich-banner-ny.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet.semenovich-new-year {
+    background-image: url('../images/top-banners/semenovich-banner-ny@2x.jpg?1490906033');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet.after-new-year-image--type2 {
+  background-image: url('../images/top-banners/semenovich-after-ny-second.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet.after-new-year-image--type2 {
+    background-image: url('../images/top-banners/semenovich-after-ny-second@2x.jpg?1490906033');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet.after-new-year-image--type3 {
+  background-image: url('../images/top-banners/lh-banner3-x1.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet.after-new-year-image--type3 {
+    background-image: url('../images/top-banners/lh-banner3-x2.jpg?1490906033');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.semenovich-depojet.forum-top-banner {
+  background-image: url('../images/new-static-banner.jpg?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.semenovich-depojet.forum-top-banner {
+    background-image: url('../images/new-static-banner@2x.jpg?1490906033');
+    background-size: 1942px 517px;
+  }
+}
+
+.b-our--decisions--tab--video--wrapper {
+  background-image: url('../images/bg_blur_1.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-our--decisions--tab--video--wrapper {
+    background-image: url('../images/bg_blur_1@2x.jpg?1490906031');
+    background-size: 1140px 294px;
+  }
+}
+.b-our--decisions--tab--video--wrapper.bg2 {
+  background-image: url('../images/bg_blur_2.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-our--decisions--tab--video--wrapper.bg2 {
+    background-image: url('../images/bg_blur_2@2x.jpg?1490906031');
+    background-size: 1140px 294px;
+  }
+}
+.b-our--decisions--tab--video--wrapper.bg3 {
+  background-image: url('../images/bg_blur_3.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-our--decisions--tab--video--wrapper.bg3 {
+    background-image: url('../images/bg_blur_3@2x.jpg?1490906031');
+    background-size: 1140px 294px;
+  }
+}
+.b-our--decisions--tab--video--wrapper.bg4 {
+  background-image: url('../images/bg_blur_4.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-our--decisions--tab--video--wrapper.bg4 {
+    background-image: url('../images/bg_blur_4@2x.jpg?1490906031');
+    background-size: 1140px 294px;
+  }
+}
+.b-our--decisions--tab--video--wrapper.bg5 {
+  background-image: url('../images/bg_blur_5.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-our--decisions--tab--video--wrapper.bg5 {
+    background-image: url('../images/bg_blur_5@2x.jpg?1490906031');
+    background-size: 1140px 292px;
+  }
+}
+
+.b-competition {
+  background-image: url('../images/ballet-dancer.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-competition {
+    background-image: url('../images/ballet-dancer@2x.jpg?1490906031');
+    background-size: 1920px 950px;
+  }
+}
+.b-competition.type2 {
+  background-image: url('../images/competition-2banner.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-competition.type2 {
+    background-image: url('../images/competition-2banner@2x.jpg?1490906031');
+    background-size: 1920px 732px;
+  }
+}
+
+.b-analitics--best--traiders-number {
+  background-image: url('../images/banner.jpg?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-analitics--best--traiders-number {
+    background-image: url('../images/banner@2x.jpg?1490906031');
+    background-size: 371px 212px;
+  }
+}
+
+.money-with-cup {
+  background-image: url('../images/money-with-cup.png?1490906033');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .money-with-cup {
+    background-image: url('../images/money-with-cup@2x.png?1490906033');
+    background-size: 376px 191px;
+  }
+}
+
+.b-charity-head {
+  background-image: url('../images/charity.png?1490906031');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-charity-head {
+    background-image: url('../images/charity@2x.png?1490906031');
+    background-size: 1366px 369px;
+  }
+}
+
+.comp-osx {
+  background-image: url('../images/comp.png?1490906031');
+  width: 294px;
+  height: 179px;
+  margin-top: -89.5px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .comp-osx {
+    background-image: url('../images/comp@2x.png?1490906031');
+    width: 588px;
+    height: 358px;
+    margin-top: -179px;
+  }
+}
+
+.cross-phones {
+  background-image: url('../images/cross-phones.png?1490906031');
+  width: 227px;
+  height: 249px;
+  margin-top: -124.5px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .cross-phones {
+    background-image: url('../images/cross-phones@2x.png?1490906031');
+    width: 454px;
+    height: 498px;
+    margin-top: -249px;
+  }
+}
+
+.macbook-2 {
+  background-image: url('../images/macbook-2.png?1490906033');
+  width: 314px;
+  height: 191px;
+  margin-top: -95.5px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .macbook-2 {
+    background-image: url('../images/macbook-2@2x.png?1490906033');
+    width: 628px;
+    height: 382px;
+    margin-top: -191px;
+  }
+}
+
+.apple-phones {
+  background-image: url('../images/ios-phones.png?1490906033');
+  width: 275px;
+  height: 229px;
+  margin-top: -114.5px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .apple-phones {
+    background-image: url('../images/ios-phones@2x.png?1490906033');
+    width: 550px;
+    height: 458px;
+    margin-top: -229px;
+  }
+}
+
+.android-phones {
+  background-image: url('../images/android-phones.png?1490906031');
+  width: 275px;
+  height: 226px;
+  margin-top: -113px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .android-phones {
+    background-image: url('../images/android-phones@2x.png?1490906031');
+    width: 550px;
+    height: 452px;
+    margin-top: -226px;
+  }
+}
+
+.icon--lang.icon--arabic:after {
+  content: "";
+}
+.icon--lang.icon--china:after {
+  content: "";
+}
+.icon--lang.icon--usa:after {
+  content: "";
+}
+.icon--lang.icon--france:after {
+  content: "";
+}
+.icon--lang.icon--esp:after {
+  content: "";
+}
+.icon--lang.icon--ger:after {
+  content: "";
+}
+.icon--lang.icon--indonesia:after {
+  content: "";
+}
+.icon--lang.icon--malaysia:after {
+  content: "";
+}
+.icon--lang.icon--polska:after {
+  content: "";
+}
+.icon--lang.icon--portugal:after {
+  content: "";
+}
+.icon--lang.icon--russia:after {
+  content: "";
+}
+.icon--lang.icon--thailand:after {
+  content: "";
+}
+.icon--lang.icon--vietnamese:after {
+  content: "";
+}
+.icon--lang.icon--serbian:after {
+  content: "";
+}
+.icon--lang.icon--croatian:after {
+  content: "";
+}
+
+.icon-forexfamily__spread {
+  position: relative;
+}
+.icon-forexfamily__spread:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__nondeposit {
+  position: relative;
+}
+.icon-forexfamily__nondeposit:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__persentage {
+  position: relative;
+}
+.icon-forexfamily__persentage:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__multicurrency {
+  position: relative;
+}
+.icon-forexfamily__multicurrency:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__mobileforex {
+  position: relative;
+}
+.icon-forexfamily__mobileforex:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__sholder {
+  position: relative;
+}
+.icon-forexfamily__sholder:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__competitions {
+  position: relative;
+}
+.icon-forexfamily__competitions:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__autopayments {
+  position: relative;
+}
+.icon-forexfamily__autopayments:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__market {
+  position: relative;
+}
+.icon-forexfamily__market:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__fivenumbers {
+  position: relative;
+}
+.icon-forexfamily__fivenumbers:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__bonuses {
+  position: relative;
+}
+.icon-forexfamily__bonuses:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__muslim {
+  position: relative;
+}
+.icon-forexfamily__muslim:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__partnership {
+  position: relative;
+}
+.icon-forexfamily__partnership:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__social {
+  position: relative;
+}
+.icon-forexfamily__social:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__copydeal {
+  position: relative;
+}
+.icon-forexfamily__copydeal:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.icon-forexfamily__enter {
+  position: relative;
+}
+.icon-forexfamily__enter:after {
+  content: "";
+  right: 0;
+  margin-left: 0;
+  left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

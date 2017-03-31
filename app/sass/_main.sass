@@ -41,7 +41,6 @@ a
 
 .b-logo
     display: block
-    +retina-bg("logo.png", "logo2x.png")
     width: 249px
     height: 43px
     margin-right: 35px
@@ -139,8 +138,8 @@ a
         background-color: transparent
 
     .icon--lang
-        width: 16px
         height: 16px
+        width: 16px
 
     // &.icon
 
@@ -149,20 +148,11 @@ a
         .icon--select--trigger
             +transform(rotate(180deg))
 
-@each $forex in spread, nondeposit, persentage, multicurrency, mobileforex, sholder, competitions, autopayments, market, fivenumbers, bonuses, muslim, partnership, social, copydeal, enter
-    .icon-forexfamily__#{$forex}
-        position: relative
-        &:after
-            content: ''
-            right: 0
-            margin-left: 0
-            left: auto
-
 .b-forexfamily__hidden--title
     font-size: 24px
     color: #4d4d4d
-    line-height: normal
     margin-bottom: 20px
+    line-height: normal
 
 .icon-person_triangle
     display: inline-block
@@ -339,7 +329,6 @@ a
         color: grey
 
 .b-main--page--parallax
-    +retina-bg("parallax--top.jpg", "parallax--top@2x.jpg")
     background-position: center 15%
     background-repeat: no-repeat
     background-size: 100% auto
@@ -348,12 +337,11 @@ a
     display: block
 
     &.semenovich-depojet
-        +retina-bg('top-banners/semenovich-depojet.jpg', 'top-banners/semenovich-depojet@2x.jpg')
         background-position: center 0
         background-size: cover
         position: relative
-        height: 570px
         box-sizing: border-box
+        height: 570px
 
         .purple-btn
             position: absolute
@@ -366,28 +354,21 @@ a
             background: #2F449F
 
     &.type2
-        +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
         background-position: center 0
 
-    &.new-year-banner
-        +retina-bg("ny-bg.jpg", "ny-bg@2x.jpg")
-
     &.semenovich-new-year
-        +retina-bg("top-banners/semenovich-banner-ny.jpg", "top-banners/semenovich-banner-ny@2x.jpg")
         background-position: center center
         height: 570px
         background-size: auto
         box-sizing: border-box
 
     &.after-new-year-image--type2
-        +retina-bg("top-banners/semenovich-after-ny-second.jpg", "top-banners/semenovich-after-ny-second@2x.jpg")
         background-position: center center
         height: 570px
         background-size: auto
         box-sizing: border-box
 
     &.after-new-year-image--type3
-        +retina-bg("top-banners/lh-banner3-x1.jpg", "top-banners/lh-banner3-x2.jpg")
         background-position: center center
         height: 570px
         background-size: auto
@@ -398,7 +379,6 @@ a
         background-size: auto
         background-position: center top
         box-sizing: border-box
-        +retina-bg('new-static-banner.jpg', 'new-static-banner@2x.jpg')
 
         @media screen and (max-width: 1350px)
             background-size: 1390px !important
@@ -927,23 +907,10 @@ a
     margin: 0 auto
     padding: 40px 35px
     box-sizing: border-box
-    +retina-bg("bg_blur_1.jpg", "bg_blur_1@2x.jpg")
     margin-bottom: 45px
     -webkit-background-size: cover
     background-size: cover
     background-position: center center
-
-    &.bg2
-        +retina-bg("bg_blur_2.jpg", "bg_blur_2@2x.jpg")
-
-    &.bg3
-        +retina-bg("bg_blur_3.jpg", "bg_blur_3@2x.jpg")
-
-    &.bg4
-        +retina-bg("bg_blur_4.jpg", "bg_blur_4@2x.jpg")
-
-    &.bg5
-        +retina-bg("bg_blur_5.jpg", "bg_blur_5@2x.jpg")
 
 .b-our--decisions--tab--video--content
     overflow: hidden
@@ -1058,15 +1025,10 @@ a
         border-color: #fe7d1b
 
 .b-competition
-    +retina-bg("ballet-dancer.jpg", "ballet-dancer@2x.jpg")
     background-repeat: no-repeat
     background-position: center center
     background-attachment: fixed
     padding: 110px 0 60px
-
-    &.type2
-        +retina-bg("competition-2banner.jpg", "competition-2banner@2x.jpg")
-
 
 .b-competition--open--account--text
     color: #fff
@@ -1083,7 +1045,6 @@ a
 
 .b-analitics--best--traiders-number
     width: 49%
-    +retina-bg('banner.jpg', 'banner@2x.jpg')
     border-radius: 5px
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
     height: 208px
@@ -1768,11 +1729,6 @@ ul.b-footer--gray--color
     position: relative
     box-shadow: 0 0 2px #ccc
     border-radius: 50%
-
-    @each $flag in arabic, china, usa, france, esp, ger, indonesia, malaysia, polska, portugal, russia, thailand, vietnamese, serbian, croatian
-        &.icon--#{$flag}
-            &:after
-                content: ''
 
 .icon--lock
     display: inline-block
@@ -4102,7 +4058,6 @@ td.b-traiders--dividents
 .money-with-cup
     display: block
     position: absolute
-    +retina-bg("money-with-cup.png", "money-with-cup@2x.png")
     min-width: 100%
     min-height: 100%
     top: 27%
@@ -4124,7 +4079,6 @@ td.b-traiders--dividents
     display: inline-block
 
 .b-charity-head
-    +retina-bg("charity.png", "charity@2x.png")
     background-position: center 15%
     background-repeat: no-repeat
     background-size: 100% auto
@@ -4771,22 +4725,6 @@ td.b-traiders--dividents
         border: solid 1px #168de2!important
         color: #000
 
-.comp-osx
-    +retina-bg-ac('comp.png', 'comp@2x.png')
-
-.cross-phones
-    +retina-bg-ac('cross-phones.png', 'cross-phones@2x.png')
-
-.macbook-2
-    +retina-bg-ac('macbook-2.png', 'macbook-2@2x.png')
-
-.apple-phones
-    +retina-bg-ac('ios-phones.png', 'ios-phones@2x.png')
-
-.android-phones
-    +retina-bg-ac('android-phones.png', 'android-phones@2x.png')
-
-
 .b-lime-dashed
     border-radius: 5px
     padding: 20px
@@ -4896,15 +4834,21 @@ td.b-traiders--dividents
     padding: 20px 20px 20px 20px
     float: left
 
-.fill-form__select
-    ul
-        li
-            padding: 5px 35px 5px 15px !important
+.contact-page
+    .jq-selectbox__dropdown
+        ul
+            li
+                padding-left: 10px
+    .fill-form__select
+        font-size: 12px
+        font-stretch: normal
+        ul
+            li
+                font-size: 12px
+                font-stretch: normal
+    .jq-selectbox__select
+        padding: 3px 15px !important
 
-.contact-page .fill-form__select
-    font-size: 12px
-    font-stretch: normal
-    ul
-        li
-            font-size: 12px
-            font-stretch: normal
+    #map-wrapper
+        .jq-selectbox__select
+            padding: 7px 15px !important
