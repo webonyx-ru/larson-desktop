@@ -1696,7 +1696,7 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 .close-tree:before {
   content: "";
-  width: 6px;
+  width: 11px;
   height: 10px;
   position: absolute;
   right: 20px;
@@ -2025,6 +2025,28 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 .contact-page .b-content__info-column {
   width: 100%;
+}
+
+.contact-form-line__label {
+  flex: none;
+  max-width: 215px;
+  width: 100%;
+}
+
+.contact-form-line__input {
+  flex-grow: 1;
+}
+
+.contact-form-line__select:first-child {
+  padding-left: 215px;
+}
+
+.contact-form .fl-row textarea {
+  min-width: 0;
+}
+.contact-form .fl-grid {
+  width: 100%;
+  align-items: flex-start;
 }
 
 .jq-checkbox {
@@ -8106,17 +8128,17 @@ td.b-traiders--dividents {
   width: 49%;
 }
 
-.blue-border-wrap {
+.contact-page-content__form {
   border: solid 1px #1584d4;
   border-radius: 5px;
-  float: left;
   padding: 20px 20px 20px 20px;
 }
 
-.contact-page {
-  width: 1140px;
-  margin: 0 auto;
+.contact-page-content__contacts {
+  width: 100%;
+  max-width: 265px;
 }
+
 .contact-page .jq-selectbox__dropdown ul li {
   padding-left: 10px;
 }
@@ -8168,6 +8190,10 @@ td.b-traiders--dividents {
   }
   .b-nav--socialmedia--units--wrapper:hover .b-nav--socialmedia--units {
     display: block;
+  }
+
+  .contact-form-line__select:first-child {
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 1155px) {

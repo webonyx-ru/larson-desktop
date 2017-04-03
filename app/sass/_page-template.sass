@@ -866,7 +866,7 @@
     position: relative
     &:before
         content: ""
-        width: 6px
+        width: 11px
         height: 10px
         position: absolute
         right: 20px
@@ -1147,3 +1147,23 @@
             width: 100%
     .b-content__info-column
         width: 100%
+
+.contact-form-line__label
+    flex: none
+    max-width: 215px
+    width: 100%
+
+.contact-form-line__input
+    flex-grow: 1
+
+.contact-form-line__select
+    &:first-child
+        padding-left: 215px
+
+.contact-form
+    .fl-row textarea
+        min-width: 0
+
+    .fl-grid
+        width: 100%
+        align-items: flex-start
