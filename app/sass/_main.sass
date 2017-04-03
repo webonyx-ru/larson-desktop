@@ -4835,13 +4835,16 @@ td.b-traiders--dividents
             width: 49%
 
 .contact-page-content__form
+    flex-grow: 1
     border: solid 1px #1584d4
     border-radius: 5px
     padding: 20px 20px 20px 20px
 
+
 .contact-page-content__contacts
-    width: 100%
-    max-width: 265px
+    flex-basis: 265px
+    box-sizing: border-box
+    flex-shrink: 0
     background-color: rgba(176, 176, 176, 0.1)
     padding: 20px
 
@@ -4866,3 +4869,4 @@ td.b-traiders--dividents
 
         .jq-selectbox__trigger
             top: 15px
+
