@@ -1,12 +1,12 @@
 .first-screen-call-center {
-  background-image: url('../images/call-center-top-screen.jpg?1490906031');
+  background-image: url('../images/call-center-top-screen.jpg?1490779092');
   background-size: cover;
   padding-top: 0;
   display: block;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen-call-center {
-    background-image: url('../images/call-center-top-screen@2x.jpg?1490906031');
+    background-image: url('../images/call-center-top-screen@2x.jpg?1490779092');
     background-size: cover;
   }
 }
