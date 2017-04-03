@@ -654,6 +654,30 @@ input:focus, textarea:focus, a:focus, button:focus {
   color: #255273;
 }
 
+.call-centers-button {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom, #67ff81, #01b51f);
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  font-weight: 400;
+}
+.call-centers-button:hover {
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.2);
+}
+.call-centers-button [class*="icon-"] {
+  margin-right: 10px;
+}
+
 .blue-link-year {
   color: #168de2;
   background: #fff;
@@ -1315,40 +1339,40 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .macbook {
-  background-image: url('../images/macbook.png?1490779093');
+  background-image: url('../images/macbook.png?1486034725');
   width: 365px;
   height: 197px;
   margin-top: -98px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .macbook {
-    background-image: url('../images/macbook@2x.png?1490779093');
+    background-image: url('../images/macbook@2x.png?1486034725');
     background-size: 364px 198px;
   }
 }
 
 .iphone {
-  background-image: url('../images/iphone.png?1490779093');
+  background-image: url('../images/iphone.png?1486034725');
   width: 263px;
   height: 161px;
   margin-top: -90px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .iphone {
-    background-image: url('../images/iphone@2x.png?1490779093');
+    background-image: url('../images/iphone@2x.png?1486034725');
     background-size: 265px 167px;
   }
 }
 
 .ipad {
-  background-image: url('../images/ipad.png?1490779093');
+  background-image: url('../images/ipad.png?1486034725');
   width: 260px;
   height: 225px;
   margin-top: -112px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .ipad {
-    background-image: url('../images/ipad@2x.png?1490779093');
+    background-image: url('../images/ipad@2x.png?1486034725');
     background-size: 228px 222px;
   }
 }
@@ -3480,6 +3504,13 @@ a {
 .b-our--decisions {
   padding: 40px 0;
   text-align: center;
+}
+
+.b-our--decisions--tab--watch--video--wrapper {
+  margin-bottom: -15px;
+}
+.b-our--decisions--tab--watch--video--wrapper a {
+  margin-bottom: 15px;
 }
 
 .b-our--decisions--tab--links--wrapper {
@@ -8240,7 +8271,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) {
   .b-logo {
-    background-image: url('../images/logo_small.png?1490779093');
+    background-image: url('../images/logo_small.png?1486034725');
     background-repeat: no-repeat;
     width: 31px;
     height: 40px;
@@ -8249,7 +8280,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-logo {
-    background-image: url('../images/logo_small@2x.png?1490779093');
+    background-image: url('../images/logo_small@2x.png?1486034725');
     background-size: 31px 40px;
   }
 }
@@ -8288,7 +8319,7 @@ td.b-traiders--dividents {
   }
 
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k.jpg?1490779092');
+    background-image: url('../images/banner250k.jpg?1486034726');
     background-size: cover;
     background-size: cover;
     box-shadow: none;
@@ -8297,7 +8328,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k@2x.jpg?1490779092');
+    background-image: url('../images/banner250k@2x.jpg?1486034726');
     background-size: cover;
   }
 }
