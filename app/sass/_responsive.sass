@@ -28,11 +28,17 @@
             .b-nav--socialmedia--units
                 display: block
 
-    .contact-form-line__select
-        &:first-child
-            padding-left: 0px
+    .fl-row_pl215
+        flex-direction: column
+        .contact-form-line__select
+            &:first-child
+                margin-bottom: 15px
 
 @media screen and (max-width: 1155px)
+
+    .contact-form-line__captcha
+        flex-direction: column
+
     .b-content-honor-type-outer
         display: flex
         justify-content: center

@@ -1143,6 +1143,7 @@
             padding: 20px
             width: 225px
     .contact-page__map
+        padding-left: 295px
         .b-site-content__inner
             width: 100%
     .b-content__info-column
@@ -1150,15 +1151,12 @@
 
 .contact-form-line__label
     flex: none
-    max-width: 215px
+    max-width: 150px
     width: 100%
 
 .contact-form-line__input
     flex-grow: 1
-
-.contact-form-line__select
-    &:first-child
-        padding-left: 215px
+    width: 100%
 
 .contact-form
     .fl-row textarea
@@ -1167,3 +1165,11 @@
     .fl-grid
         width: 100%
         align-items: flex-start
+
+    .contact-form-line__captcha
+        display: flex
+        width: 100%
+        white-space: nowrap
+
+        .fill-form-inp.code
+            width: 100%

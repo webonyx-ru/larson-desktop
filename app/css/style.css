@@ -94,6 +94,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: space-between;
 }
 
+.fl-row_wrap {
+  flex-wrap: wrap;
+}
+
+.fl-row_pl215 {
+  padding-left: 150px;
+}
+
 .base-l {
   display: flex;
   align-items: baseline;
@@ -2020,6 +2028,9 @@ input:focus, textarea:focus, a:focus, button:focus {
   padding: 20px;
   width: 225px;
 }
+.contact-page .contact-page__map {
+  padding-left: 295px;
+}
 .contact-page .contact-page__map .b-site-content__inner {
   width: 100%;
 }
@@ -2029,16 +2040,13 @@ input:focus, textarea:focus, a:focus, button:focus {
 
 .contact-form-line__label {
   flex: none;
-  max-width: 215px;
+  max-width: 150px;
   width: 100%;
 }
 
 .contact-form-line__input {
   flex-grow: 1;
-}
-
-.contact-form-line__select:first-child {
-  padding-left: 215px;
+  width: 100%;
 }
 
 .contact-form .fl-row textarea {
@@ -2047,6 +2055,14 @@ input:focus, textarea:focus, a:focus, button:focus {
 .contact-form .fl-grid {
   width: 100%;
   align-items: flex-start;
+}
+.contact-form .contact-form-line__captcha {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}
+.contact-form .contact-form-line__captcha .fill-form-inp.code {
+  width: 100%;
 }
 
 .jq-checkbox {
@@ -8192,11 +8208,18 @@ td.b-traiders--dividents {
     display: block;
   }
 
-  .contact-form-line__select:first-child {
-    padding-left: 0px;
+  .fl-row_pl215 {
+    flex-direction: column;
+  }
+  .fl-row_pl215 .contact-form-line__select:first-child {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 1155px) {
+  .contact-form-line__captcha {
+    flex-direction: column;
+  }
+
   .b-content-honor-type-outer {
     display: flex;
     justify-content: center;
