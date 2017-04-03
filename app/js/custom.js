@@ -523,7 +523,7 @@ $(document).ready(function () {
     var map = $('.map'),
         mapImage = map.find('.map-image');
 
-    if(mapImage !== 'undefined' && map !== 'undefined' && map.length > 0 && mapImage > 0) {
+    if(mapImage !== 'undefined' && map !== 'undefined' && map.length > 0 && mapImage.length > 0) {
         var mapImageWidth = mapImage.get(0).naturalWidth,
             mapImageHeight = mapImage.get(0).naturalHeight,
             mapPopup = map.find('.popup'),
