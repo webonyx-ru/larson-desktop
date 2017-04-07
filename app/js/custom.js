@@ -176,8 +176,8 @@ $(document).ready(function () {
         $('.b-cabinet--control').slideToggle(200)
     })
 
-    if ($('input[data-inputmask]').length > 0)
-        $('input[data-inputmask]').mask("+7 (999) 999-99-99");
+    /*if ($('input[data-inputmask]').length > 0)
+        $('input[data-inputmask]').mask("+9 (999) 999-99-99");*/
 
     $(document).on("click", '.js--clearinput_cross', function (e) {
         $(this).siblings('input').val('');
@@ -371,11 +371,11 @@ $(document).ready(function () {
 
 
     if ($('input.data-inputmask, .inputmask-phone').length > 0) {
-        $('input.data-inputmask, .inputmask-phone').mask("+7 (999) 999-99-99");
+        $('input.data-inputmask, .inputmask-phone').mask("+9 (999) 999-99-99");
     }
 
     if ($('input.data-inputmask, .inputmask-bithday').length > 0) {
-        $('input.data-inputmask, .inputmask-bithday').mask("99 99 999");
+        $('input.data-inputmask, .inputmask-bithday').mask("99 99 9999");
     }
 
     $(document).on("click", '.dd-table__title', function (e) {
