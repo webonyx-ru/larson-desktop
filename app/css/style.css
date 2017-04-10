@@ -1343,40 +1343,40 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .macbook {
-  background-image: url('../images/macbook.png?1490779093');
+  background-image: url('../images/macbook.png?1475165179');
   width: 365px;
   height: 197px;
   margin-top: -98px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .macbook {
-    background-image: url('../images/macbook@2x.png?1490779093');
+    background-image: url('../images/macbook@2x.png?1475165179');
     background-size: 364px 198px;
   }
 }
 
 .iphone {
-  background-image: url('../images/iphone.png?1490779093');
+  background-image: url('../images/iphone.png?1475165179');
   width: 263px;
   height: 161px;
   margin-top: -90px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .iphone {
-    background-image: url('../images/iphone@2x.png?1490779093');
+    background-image: url('../images/iphone@2x.png?1475165179');
     background-size: 265px 167px;
   }
 }
 
 .ipad {
-  background-image: url('../images/ipad.png?1490779093');
+  background-image: url('../images/ipad.png?1475165179');
   width: 260px;
   height: 225px;
   margin-top: -112px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .ipad {
-    background-image: url('../images/ipad@2x.png?1490779093');
+    background-image: url('../images/ipad@2x.png?1475165179');
     background-size: 228px 222px;
   }
 }
@@ -2245,14 +2245,14 @@ input:focus, textarea:focus, a:focus, button:focus {
   font: 14px Arial, sans-serif;
   color: #333;
   text-align: left;
-  /* ╨┤╨╗╤П Opera Presto┬а */
+  /* ╨┤╨╗╤Å Opera Presto┬á */
   -moz-appearance: textfield;
 }
 
 .jq-number__field input::-webkit-inner-spin-button,
 .jq-number__field input::-webkit-outer-spin-button {
   margin: 0;
-  /* ╨▓ ╨║╨░╨║╨╕╤Е-╤В╨╛ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░╤Е ╨┐╤А╨╕╤Б╤Г╤В╤Б╤В╨▓╤Г╨╡╤В ╨╛╤В╤Б╤В╤Г╨┐ */
+  /* ╨▓ ╨║╨░╨║╨╕╤à-╤é╨╛ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░╤à ╨┐╤Ç╨╕╤ü╤â╤é╤ü╤é╨▓╤â╨╡╤é ╨╛╤é╤ü╤é╤â╨┐ */
   -webkit-appearance: none;
 }
 
@@ -3529,6 +3529,9 @@ a {
   color: #1683fb;
 }
 .b-our--decisions--tab--links--item a:hover {
+  text-decoration: none;
+}
+.b-our--decisions--tab--links--item:hover {
   text-decoration: none;
 }
 .b-our--decisions--tab--links--item:last-child {
@@ -8265,7 +8268,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) {
   .b-logo {
-    background-image: url('../images/logo_small.png?1490779093');
+    background-image: url('../images/logo_small.png?1475165179');
     background-repeat: no-repeat;
     width: 31px;
     height: 40px;
@@ -8274,7 +8277,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-logo {
-    background-image: url('../images/logo_small@2x.png?1490779093');
+    background-image: url('../images/logo_small@2x.png?1475165179');
     background-size: 31px 40px;
   }
 }
@@ -8313,7 +8316,7 @@ td.b-traiders--dividents {
   }
 
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k.jpg?1490779092');
+    background-image: url('../images/banner250k.jpg?1475165179');
     background-size: cover;
     background-size: cover;
     box-shadow: none;
@@ -8322,7 +8325,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k@2x.jpg?1490779092');
+    background-image: url('../images/banner250k@2x.jpg?1475165179');
     background-size: cover;
   }
 }
