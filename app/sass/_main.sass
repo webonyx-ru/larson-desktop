@@ -19,6 +19,9 @@ a
     padding: 0 20px
     box-sizing: border-box
 
+    &.position-relative
+        position: relative
+
 .main--site--wrapper
     max-width: 100%
     min-width: 1000px
@@ -38,7 +41,6 @@ a
 
 .b-logo
     display: block
-    +retina-bg("logo.png", "logo2x.png")
     width: 249px
     height: 43px
     margin-right: 35px
@@ -106,13 +108,11 @@ a
             background-color: #33ca19
 
 .icon--online_chat
-    +sprite(conversation)
     display: inline-block
     vertical-align: baseline
     margin-right: 5px
 
 .icon--feedback
-    +sprite(open-email)
     display: inline-block
     vertical-align: baseline
     position: relative
@@ -138,8 +138,8 @@ a
         background-color: transparent
 
     .icon--lang
-        width: 16px
         height: 16px
+        width: 16px
 
     // &.icon
 
@@ -148,24 +148,13 @@ a
         .icon--select--trigger
             +transform(rotate(180deg))
 
-@each $forex in spread, nondeposit, persentage, multicurrency, mobileforex, sholder, competitions, autopayments, market, fivenumbers, bonuses, muslim, partnership, social, copydeal, enter
-    .icon-forexfamily__#{$forex}
-        position: relative
-        &:after
-            content: ''
-            +sprite(icon-forexfamily__#{$forex}, $pos: "abs_middle")
-            right: 0
-            margin-left: 0
-            left: auto
-
 .b-forexfamily__hidden--title
     font-size: 24px
     color: #4d4d4d
-    line-height: normal
     margin-bottom: 20px
+    line-height: normal
 
 .icon-person_triangle
-    +sprite(icon-person_triangle)
     display: inline-block
     vertical-align: middle
     margin-left: 10px
@@ -219,7 +208,6 @@ a
         color: #fd7f23
 
 .icon--cabinet
-    +sprite(edit-profile)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -227,7 +215,6 @@ a
     margin-right: 5px
 
 .icon--select--trigger
-    +sprite(arrow_top_small)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -236,7 +223,6 @@ a
     margin-left: 8px
 
 .icon-worldwide
-    +sprite(icon-worldwide)
     display: inline-block
     vertical-align: middle
     margin-left: 5px
@@ -270,7 +256,6 @@ a
         &:after
             display: block
             content: ''
-            +sprite(arrow_top_small)
             position: absolute
             top: 15px
             right: 20px
@@ -314,7 +299,6 @@ a
         &:after
             vertical-align: middle
             content: ''
-            +sprite(arrow_top_small)
             display: inline-block
             position: relative
             top: -1px
@@ -345,7 +329,6 @@ a
         color: grey
 
 .b-main--page--parallax
-    +retina-bg("parallax--top.jpg", "parallax--top@2x.jpg")
     background-position: center 15%
     background-repeat: no-repeat
     background-size: 100% auto
@@ -354,12 +337,11 @@ a
     display: block
 
     &.semenovich-depojet
-        +retina-bg('top-banners/semenovich-depojet.jpg', 'top-banners/semenovich-depojet@2x.jpg')
         background-position: center 0
         background-size: cover
         position: relative
-        height: 570px
         box-sizing: border-box
+        height: 570px
 
         .purple-btn
             position: absolute
@@ -372,28 +354,21 @@ a
             background: #2F449F
 
     &.type2
-        +retina-bg("parallax-2banner.jpg", "parallax-2banner@2x.jpg")
         background-position: center 0
 
-    &.new-year-banner
-        +retina-bg("ny-bg.jpg", "ny-bg@2x.jpg")
-
     &.semenovich-new-year
-        +retina-bg("top-banners/semenovich-banner-ny.jpg", "top-banners/semenovich-banner-ny@2x.jpg")
         background-position: center center
         height: 570px
         background-size: auto
         box-sizing: border-box
 
     &.after-new-year-image--type2
-        +retina-bg("top-banners/semenovich-after-ny-second.jpg", "top-banners/semenovich-after-ny-second@2x.jpg")
         background-position: center center
         height: 570px
         background-size: auto
         box-sizing: border-box
 
     &.after-new-year-image--type3
-        +retina-bg("top-banners/lh-banner3-x1.jpg", "top-banners/lh-banner3-x2.jpg")
         background-position: center center
         height: 570px
         background-size: auto
@@ -404,7 +379,6 @@ a
         background-size: auto
         background-position: center top
         box-sizing: border-box
-        +retina-bg('new-static-banner.jpg', 'new-static-banner@2x.jpg')
 
         @media screen and (max-width: 1350px)
             background-size: 1390px !important
@@ -462,10 +436,8 @@ a
             display: block
             content: ''
 
-
-
-        .b-nav--menu--dropdown
-            display: block
+        //.b-nav--menu--dropdown
+        //    display: block
 
 .b-nav--menu--dropdown
     position: absolute
@@ -523,7 +495,6 @@ a
             position: absolute
             top: 50%
             right: 12px
-            +sprite(arrow_small)
             margin-top: -3px
             +transform(rotate(0deg))
 
@@ -657,7 +628,6 @@ a
 
     &:after
         content: ''
-        +sprite(play--small)
         left: 50%
         top: 50%
         position: absolute
@@ -669,7 +639,6 @@ a
     position: absolute
     bottom: 65px
     right: 20px
-    +sprite(buble)
     vertical-align: middle
     line-height: 123px
     font-size: 18px
@@ -717,32 +686,26 @@ a
         box-sizing: border-box
 
 .icon--soc1
-    +sprite(white-yt)
     display: inline-block
     vertical-align: middle
 
 .icon--soc2
-    +sprite(white-vk)
     display: inline-block
     vertical-align: middle
 
 .icon--soc3
-    +sprite(white-tw)
     display: inline-block
     vertical-align: middle
 
 .icon--soc4
-    +sprite(white-fb)
     display: inline-block
     vertical-align: middle
 
 .icon--soc5
-    +sprite(white-rss)
     display: inline-block
     vertical-align: middle
 
 .icon--instruction
-    +sprite(icon-instruction)
     display: inline-block
     vertical-align: middle
     margin-right: 5px
@@ -781,6 +744,12 @@ a
 .b-our--decisions
     padding: 40px 0
     text-align: center
+
+.b-our--decisions--tab--watch--video--wrapper
+    margin-bottom: -15px
+
+    a
+        margin-bottom: 15px
 
 .b-our--decisions--tab--links--wrapper
     display: inline-block
@@ -944,23 +913,10 @@ a
     margin: 0 auto
     padding: 40px 35px
     box-sizing: border-box
-    +retina-bg("bg_blur_1.jpg", "bg_blur_1@2x.jpg")
     margin-bottom: 45px
     -webkit-background-size: cover
     background-size: cover
     background-position: center center
-
-    &.bg2
-        +retina-bg("bg_blur_2.jpg", "bg_blur_2@2x.jpg")
-
-    &.bg3
-        +retina-bg("bg_blur_3.jpg", "bg_blur_3@2x.jpg")
-
-    &.bg4
-        +retina-bg("bg_blur_4.jpg", "bg_blur_4@2x.jpg")
-
-    &.bg5
-        +retina-bg("bg_blur_5.jpg", "bg_blur_5@2x.jpg")
 
 .b-our--decisions--tab--video--content
     overflow: hidden
@@ -1003,7 +959,6 @@ a
         display: block
         content: ''
         position: absolute
-        +sprite(play_big)
         z-index: 1
         left: 50%
         top: 50%
@@ -1076,15 +1031,10 @@ a
         border-color: #fe7d1b
 
 .b-competition
-    +retina-bg("ballet-dancer.jpg", "ballet-dancer@2x.jpg")
     background-repeat: no-repeat
     background-position: center center
     background-attachment: fixed
     padding: 110px 0 60px
-
-    &.type2
-        +retina-bg("competition-2banner.jpg", "competition-2banner@2x.jpg")
-
 
 .b-competition--open--account--text
     color: #fff
@@ -1101,7 +1051,6 @@ a
 
 .b-analitics--best--traiders-number
     width: 49%
-    +retina-bg('banner.jpg', 'banner@2x.jpg')
     border-radius: 5px
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19)
     height: 208px
@@ -1420,7 +1369,6 @@ a
     object-fit: cover
 
     &:after
-        +sprite(video--logo)
         content: ''
         position: absolute
         top: 10px
@@ -1446,7 +1394,6 @@ a
         background: #fe7d1b
 
     &:after
-        +sprite(play--small, $pos: "abs_middle")
         content: ''
 
 .b-videos--listing--item--title
@@ -1465,6 +1412,14 @@ a
 
 .b-traiders--table
     width: 100%
+
+    .b-traiders--friends
+        width: 1px
+        text-align: center
+
+        .jq-checkbox
+            margin: 0
+            box-shadow: 0 0 2px #000 inset
 
     &.tac
         td, th
@@ -1608,23 +1563,18 @@ ul.b-footer--gray--color
     vertical-align: middle
 
     &.payment1
-        +sprite(visa)
         display: inline-block
 
     &.payment2
-        +sprite(mc)
         display: inline-block
 
     &.payment3
-        +sprite(rapid)
         display: inline-block
 
     &.payment4
-        +sprite(ev)
         display: inline-block
 
     &.payment5
-        +sprite(secure)
         display: inline-block
 
 .b-footer--payment--methods
@@ -1644,27 +1594,22 @@ ul.b-footer--gray--color
 
     &.footer-social-vk
         &:after
-            +sprite(f-vk, $pos: "abs_middle")
             content: ''
 
     &.footer-social-tw
         &:after
-            +sprite(f-tw, $pos: "abs_middle")
             content: ''
 
     &.footer-social-fb
         &:after
-            +sprite(f-fb, $pos: "abs_middle")
             content: ''
 
     &.footer-social-rss
         &:after
-            +sprite(f-rss, $pos: "abs_middle")
             content: ''
 
     &.footer-social-yt
         &:after
-            +sprite(f-yt, $pos: "abs_middle")
             content: ''
 
 .b-footer--social
@@ -1791,55 +1736,7 @@ ul.b-footer--gray--color
     box-shadow: 0 0 2px #ccc
     border-radius: 50%
 
-@each $flag in arabic, china, usa, france, esp, ger, indonesia, malaysia, polska, portugal, russia, thailand, vietnamese, serbian, croatian
-    .icon--lang.icon--#{$flag}
-        &:after
-            content: ''
-            +sprite(flag-#{$flag}, $pos: "abs_middle")
-        
-    // lang small icon
-    
-    .flag-small-#{$flag}
-        +sprite(flag-small-#{$flag})
-    
-    //.flag-small-china
-    //    +sprite(flag-small-china)
-    //
-    //.flag-small-esp
-    //    +sprite(flag-small-esp)
-    //
-    //.flag-small-france
-    //    +sprite(flag-small-france)
-    //
-    //.flag-small-ger
-    //    +sprite(flag-small-ger)
-    //
-    //.flag-small-indonesia
-    //    +sprite(flag-small-indonesia)
-    //
-    //.flag-small-malaysia
-    //    +sprite(flag-small-malaysia)
-    //
-    //.flag-small-polska
-    //    +sprite(flag-small-polska)
-    //
-    //.flag-small-portugal
-    //    +sprite(flag-small-portugal)
-    //
-    //.flag-small-russia
-    //    +sprite(flag-small-russia)
-    //
-    //.flag-small-thailand
-    //    +sprite(flag-small-thailand)
-    //
-    //.flag-small-usa
-    //    +sprite(flag-small-usa)
-    //
-    //.flag-small-croatian
-    //    +sprite(flag-small-croatian)
-
 .icon--lock
-    +sprite(padlock_2)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -1847,11 +1744,9 @@ ul.b-footer--gray--color
     margin-right: 10px
 
     &.orange
-        +sprite(padlock_orange)
         display: inline-block
 
     &.grey
-        +sprite(padlock_1)
         display: inline-block
 
 .b-traiders--table--lock--number
@@ -1914,7 +1809,6 @@ ul.b-footer--gray--color
         margin-right: 8px
 
 .table--icon--chat
-    +sprite(closed-envelope)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -1950,7 +1844,6 @@ ul.b-footer--gray--color
     padding-bottom: 2px
 
     &:after
-        +sprite(arrow_small)
         display: block
         content: ''
         position: absolute
@@ -2098,7 +1991,6 @@ ul.b-footer--gray--color
     position: absolute
     top: 50%
     right: 30px
-    +sprite(slider_arrow_right)
     font-size: 0
     +transform(translateY(-50%))
 
@@ -2113,7 +2005,6 @@ ul.b-footer--gray--color
 
     &.active
         &:after
-            +sprite(icon--check)
             display: inline-block
             vertical-align: middle
             margin-left: 10px
@@ -2396,7 +2287,6 @@ textarea
     display: inline-block
 
 .icon-chain
-    +sprite(icon-chain)
     position: absolute
     top: 0
     right: 0
@@ -2442,7 +2332,6 @@ textarea
 .icon-blue_arrow
     position: relative
     vertical-align: middle
-    +sprite(blue_arrow_up)
     display: inline-block
     +trans
     margin-left: 10px
@@ -2538,86 +2427,6 @@ textarea
 
             &:after
                 opacity: 1
-
-// 		.icon-nav-checked
-// 			+sprite(icon-check-outline)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-wallet
-// 			+sprite(icon-wallet)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-profile
-// 			+sprite(icon-account-box)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-profile-checked
-// 			+sprite(icon-check-person-white)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-money
-// 			+sprite(icon-money)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-money-wallet
-// 			+sprite(icon-money-wallet)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-cog
-// 			+sprite(icon-cog)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// 		.icon-nav-graph
-// 			+sprite(icon-graph)
-// 			display: inline-block
-// 			vertical-align: middle
-
-// .icon-nav-checked
-// 	+sprite(icon-check-outline-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-wallet
-// 	+sprite(icon-wallet-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-profile
-// 	+sprite(icon-account-box-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-profile-checked
-// 	+sprite(icon-check-person-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-money
-// 	+sprite(icon-money-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-money-wallet
-// 	+sprite(icon-money-wallet-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-cog
-// 	+sprite(icon-cog-blue)
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .icon-nav-graph
-// 	+sprite(icon-graph-blue)
-// 	display: inline-block
-// 	vertical-align: middle
 
 .copy-deals__popup-navigation__number
     display: inline-block
@@ -2746,7 +2555,6 @@ input.search-input
     vertical-align: middle
 
 .icon-search
-    +sprite(icon-search)
     display: inline-block
     vertical-align: middle
 
@@ -2775,7 +2583,6 @@ input.search-input
         color: #1a1a1a
 
 .icon-notification
-    +sprite(icon-notif)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -2821,16 +2628,12 @@ input.search-input
             &.active
 
                 &:after
-                    +sprite(icon--check)
                     display: inline-block
                     vertical-align: middle
                     position: relative
                     top: -1px
                     margin-left: 10px
                     content: ''
-
-.icon-filter
-    +sprite(icon-sort)
 
 .b-dropdown__filter-icon
     .icon-filter
@@ -2894,7 +2697,6 @@ input.b-traiders__search-input
         box-shadow: 0 0 2px #ccc
 
 .icon-search-grey
-    +sprite(icon-search-grey)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -2937,47 +2739,32 @@ input.b-traiders__search-input
         .checkbox-wrap, .icon-lock
             margin-right: 10px
 
-.icon-checkbox
-    +sprite(icon-checkbox)
-
-input:checked
-    & + .icon-checkbox
-        +sprite(icon-checkbox-checked)
-
 .icon-lock
     display: inline-block
     vertical-align: middle
 
     &.green
-        +sprite(padlock-green)
         display: inline-block
 
     &.orange-unlocked
-        +sprite(padlock-orange-unlocked)
         display: inline-block
 
     &.orange-locked
-        +sprite(padlock-orange-locked)
         display: inline-block
 
     &.blue-unlocked
-        +sprite(padlock-blue-unlocked)
         display: inline-block
 
     &.blue-locked
-        +sprite(padlock-blue-locked)
         display: inline-block
 
     &.black-unlocked
-        +sprite(padlock-black-unlocked)
         display: inline-block
 
     &.black-locked
-        +sprite(padlock-black-locked)
         display: inline-block
 
 .icon-question
-    +sprite(icon-question)
     display: inline-block
     vertical-align: middle
     position: relative
@@ -2985,7 +2772,6 @@ input:checked
     cursor: pointer
 
     &.active
-        +sprite(icon-question-active)
         display: inline-block
         vertical-align: middle
 
@@ -3090,6 +2876,11 @@ td.b-traiders--dividents
     width: 100%
     z-index: 15
 
+    .b-loginbar-btn
+        position: absolute
+        top: 0
+        right: 15px
+
     .jq-selectbox__trigger
         display: none
 
@@ -3098,7 +2889,7 @@ td.b-traiders--dividents
         font-size: 18px
         font-weight: 600
         color: #168de2
-        text-align: center
+        text-align: left
 
         &::after
             content: ''
@@ -3200,7 +2991,7 @@ td.b-traiders--dividents
 
 .b-loginbar-cont
     max-height: 0
-    background: #fff
+    background: rgba(#fff, 0.95)
     margin-top: -10px
     padding-top: 10px
     transition: max-height 0.3s ease-out
@@ -3208,7 +2999,8 @@ td.b-traiders--dividents
     overflow: hidden
 
     &.active
-        max-height: 10000px
+        max-height: 100vh
+        overflow: auto
         transition: max-height 0.3s ease-in
 
 .b-loginbar--title
@@ -3225,9 +3017,9 @@ td.b-traiders--dividents
     color: #4d4d4d
 
 .icon--loginbar
-    +sprite(icon-loginbar)
     display: inline-block
     vertical-align: middle
+    position: relative
 
 .b-loginbar-buttons
     margin: 0 15px
@@ -3475,7 +3267,6 @@ td.b-traiders--dividents
     top: 50%
     left: 11px
     +transform(translateY(-50%))
-    +sprite(as-btn, 'abs_middle')
 
 .g-play-btn:after
     content: ''
@@ -3483,7 +3274,6 @@ td.b-traiders--dividents
     position: absolute
     top: 50%
     +transform(translateY(-50%))
-    +sprite(g-play-btn, 'abs_middle')
 
 //_____________________END_mobile-trading_________
 //_____________________open-new-bill______________
@@ -3512,7 +3302,6 @@ td.b-traiders--dividents
     top: 50%
     right: 15px
     +transform(translateY(-50%))
-    +sprite(link-out-blue)
 
 .content__buttons-partnerships
     width: 100px
@@ -3621,24 +3410,6 @@ td.b-traiders--dividents
     height: 50px
     align-items: center
 
-.safebox-icon
-    +sprite(safebox-icon)
-
-.qiwi-wallet-icon
-    +sprite(qiwi-icon)
-
-.web-money-icon
-    +sprite(wm-icon)
-
-.visa-icon
-    +sprite(visa-icon)
-
-.hand-shaking-icon
-    +sprite(hand-shaking-icon)
-
-.okpay-icon
-    +sprite(okpay-icon)
-
 //DD-TABLE_________________________________________________________________________________________
 
 .dd-arrow
@@ -3730,7 +3501,6 @@ td.b-traiders--dividents
     float: left
 
 .stars-icon
-    +sprite(stars-icon)
     display: inline-block
     vertical-align: middle
 
@@ -3818,7 +3588,6 @@ td.b-traiders--dividents
     color: #808080
     &:hover
         .b-content__help-icon
-            +sprite(help-orange-icon)
             display: inline-block
         .b-content__help-popup
             display: block
@@ -3833,7 +3602,6 @@ td.b-traiders--dividents
     display: inline-block
 
 .b-content__help-icon
-    +sprite(help-grey-icon)
     display: inline-block
     vertical-align: middle
 
@@ -3938,13 +3706,6 @@ td.b-traiders--dividents
         box-sizing: border-box
         z-index: 302
 //background-color: #fff
-
-.line-chart-icon
-    +sprite(line-chart-icon)
-
-.speedometer-icon
-
-    +sprite(speedometer-icon)
 
 .b-forex-tools-item
     font-size: 20px
@@ -4151,25 +3912,20 @@ td.b-traiders--dividents
     align-items: center
 
 .cog-icon
-    +sprite(cog)
     position: absolute
     right: 0
     top: 0
 
 .game-controller-icon
-    +sprite(game-controller)
     display: inline-block
 
 .graduation-cap-icon
-    +sprite(graduation-cap)
     display: inline-block
 
 .star-icon
-    +sprite(star)
     display: inline-block
 
 .shield-icon
-    +sprite(shield)
     display: inline-block
 
 .b-results-and-honors-title
@@ -4182,7 +3938,6 @@ td.b-traiders--dividents
     padding-bottom: 15px
 
 .open-email
-    +sprite(open-email)
     display: inline-block
     vertical-align: middle
     overflow: visible
@@ -4211,15 +3966,8 @@ td.b-traiders--dividents
     position: relative
     top: -5px
 
-.sphere-icon
-    +sprite(sphere-icon)
-
 .big-grey-cog
-    +sprite(big-grey-cog)
     display: inline-block
-
-.big-blue-cog
-    +sprite(big-blue-cog)
 
 .b-rtg-table-search-form
     border-radius: 2px
@@ -4294,24 +4042,18 @@ td.b-traiders--dividents
 //degergrgrtjrtj
 
 .pdf-icon
-    +sprite(pdf)
     display: inline-block
 
 .calendar-icon
-    +sprite(calendar)
     display: inline-block
 
 .moneybag-blue
-    +sprite(money-bag-with-dollar-blue)
-    //reehehrt
     display: inline-block
 
 .timer-icon
-    +sprite(time-slot)
     display: inline-block
 
 .cup-icon
-    +sprite(trophy)
     display: inline-block
 
 .b-results-and-honors-title-item
@@ -4322,7 +4064,6 @@ td.b-traiders--dividents
 .money-with-cup
     display: block
     position: absolute
-    +retina-bg("money-with-cup.png", "money-with-cup@2x.png")
     min-width: 100%
     min-height: 100%
     top: 27%
@@ -4338,15 +4079,12 @@ td.b-traiders--dividents
     height: 100%
 
 .moneybag-white
-    +sprite(money-bag-with-dollar-white)
     display: inline-block
 
 .rate-streamer-icon
-    +sprite(rate-streamer)
     display: inline-block
 
 .b-charity-head
-    +retina-bg("charity.png", "charity@2x.png")
     background-position: center 15%
     background-repeat: no-repeat
     background-size: 100% auto
@@ -4393,11 +4131,9 @@ td.b-traiders--dividents
     float: right
 
 .marker[class~="pred"]
-    +sprite(marker-pred)
     display: inline-block
 
 .marker[class~="meet"]
-    +sprite(marker-meet)
     display: inline-block
 
 .marker
@@ -4532,7 +4268,6 @@ td.b-traiders--dividents
         right: 11px
         top: 12.5px
         z-index: 2
-        +sprite(icon-search-autocomplete)
 
     .autocomplete-input
         padding-right: 37px
@@ -4576,7 +4311,6 @@ td.b-traiders--dividents
     height: 100%
 
 .map .popup .icon-active
-    +sprite(marker-active)
     display: inline-block
     vertical-align: top
     float: left
@@ -4639,7 +4373,6 @@ td.b-traiders--dividents
             margin-right: -2px
 //_________________________________________________________________
 .textBoxCaptcha
-    +sprite(captcha)
     display: inline-block
     vertical-align: middle
 
@@ -4668,7 +4401,6 @@ td.b-traiders--dividents
         @extend .content-text
 
 .refresh-icon
-    +sprite(refresh)
     display: inline-block //kokogrkgoefef
     margin-right: 10px
     cursor: pointer
@@ -4676,37 +4408,30 @@ td.b-traiders--dividents
 
 // new meta traider menu type
 .icon--meta-cog
-    +sprite(icon--meta-cog)
     display: inline-block
     vertical-align: middle
 
 .icon--meta-apple
-    +sprite(icon--meta-apple)
     display: inline-block
     vertical-align: middle
 
 .icon--meta-google
-    +sprite(icon--meta-google)
     display: inline-block
     vertical-align: middle
 
 .icon--binary-web-terminal
-    +sprite(icon--binary-web-terminal)
     display: inline-block
     vertical-align: middle
 
 .icon--classic-mobile
-    +sprite(icon--classic-mobile)
     display: inline-block
     vertical-align: middle
 
 .icon--classic-OSX
-    +sprite(icon--classic-OSX)
     display: inline-block
     vertical-align: middle
 
 .icon--classic-RT-icon
-    +sprite(icon--classic-RT-icon)
     display: inline-block
     vertical-align: middle
 
@@ -4762,121 +4487,6 @@ td.b-traiders--dividents
 .icon
     display: inline-block
     vertical-align: middle
-
-.icon-MT-1
-    +sprite(icon-MT-1)
-
-.icon-MT-2
-    +sprite(icon-MT-2)
-
-.icon-MT-3
-    +sprite(icon-MT-3)
-
-.icon-MT-4
-    +sprite(icon-MT-4)
-
-.icon-MT-5
-    +sprite(icon-MT-5)
-
-.icon-larson
-    +sprite(icon-l-h)
-    margin: 15px 0
-
-.icon-link-cogs
-    +sprite(icon-link-cog)
-
-.icon-link-bag
-    +sprite(icon-link-bag)
-
-.icon-link-list
-    +sprite(icon-link-list)
-
-.icon-link-bars
-    +sprite(icon-link-bars)
-
-.icon-link-star
-    +sprite(icon-link-star)
-
-.icon-link-cup
-    +sprite(icon-link-cup)
-
-.icon-link-circles
-    +sprite(icon-link-circles)
-
-.icon-menu-zero
-    +sprite(icon-menu-zero)
-
-.icon-menu-demo
-    +sprite(icon-menu-demo)
-
-.icon-menu-call-centers
-    +sprite(icon-menu-phone)
-
-.icon-menu-info
-    +sprite(icon-menu-info)
-
-.icon-menu-cup
-    +sprite(icon-menu-cup)
-
-.icon-menu-heart
-    +sprite(icon-menu-heart)
-
-.icon-menu-history
-    +sprite(icon-menu-history)
-
-.icon-menu-prognosis
-    +sprite(icon-menu-prognosis)
-
-.icon-menu-business-model
-    +sprite(icon-menu-business-model)
-
-.icon-menu-video
-    +sprite(icon-menu-video)
-
-.icon-menu-contacts
-    +sprite(icon-menu-contacts)
-
-.icon-menu-news
-    +sprite(icon-menu-news)
-
-.icon-menu-hands
-    +sprite(icon-menu-hands)
-
-.icon-menu-speaker
-    +sprite(icon-menu-speaker)
-
-.icon-menu-planet
-    +sprite(icon-menu-planet)
-
-.icon-menu-office
-    +sprite(icon-menu-office)
-
-.icon-menu-partners
-    +sprite(icon-menu-partners)
-
-.icon-link-people
-    +sprite(icon-link-people)
-
-.icon-link-graph
-    +sprite(icon-link-graph)
-
-.icon-link-bars2
-    +sprite(icon-link-bars2)
-
-.icon-link-paper
-    +sprite(icon-link-paper)
-
-.icon-link-calendar
-    +sprite(icon-link-calendar)
-
-.icon-link-awward
-    +sprite(icon-link-awward)
-
-.icon-link-boxes
-    +sprite(icon-link-boxes)
-
-.icon-link-web
-    +sprite(icon-link-web)
 
 .mw225
     max-width: 225px
@@ -5007,24 +4617,6 @@ td.b-traiders--dividents
         &:first-child
             margin: 0
 
-.icon-programs-logo
-    +sprite(logo-programs)
-
-.icon-programs-metatrader
-    +sprite(programs-metatrader)
-
-.icon-programs-apple
-    +sprite(programs-apple)
-
-.icon-programs-android
-    +sprite(programs-android)
-
-.icon-programs-osx
-    +sprite(programs-osx)
-
-.icon-programs-metatrader2
-    +sprite(programs-metatrader2)
-
 .icon-play
     &:after
         content: ''
@@ -5139,22 +4731,6 @@ td.b-traiders--dividents
         border: solid 1px #168de2!important
         color: #000
 
-.comp-osx
-    +retina-bg-ac('comp.png', 'comp@2x.png')
-
-.cross-phones
-    +retina-bg-ac('cross-phones.png', 'cross-phones@2x.png')
-
-.macbook-2
-    +retina-bg-ac('macbook-2.png', 'macbook-2@2x.png')
-
-.apple-phones
-    +retina-bg-ac('ios-phones.png', 'ios-phones@2x.png')
-
-.android-phones
-    +retina-bg-ac('android-phones.png', 'android-phones@2x.png')
-
-
 .b-lime-dashed
     border-radius: 5px
     padding: 20px
@@ -5211,7 +4787,6 @@ td.b-traiders--dividents
 
 
 .icon-attention
-    +sprite(attention)
     display: inline-block
 
 .fluid
@@ -5230,9 +4805,68 @@ td.b-traiders--dividents
     position: absolute
     top: 0
     left: 0
-    right: 0
     bottom: 0
+    right: 0
 
 .b-content__text-info-feedback-ps, .b-site-list__item-inner
     position: relative
     overflow: hidden
+
+.up-button
+    display: inline-block
+    vertical-align: middle
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 99
+    cursor: pointer
+    opacity: 0
+    visibility: hidden
+    +trans()
+
+    &.visible
+        opacity: 1
+        visibility: visible
+
+.contact-form-select
+    padding-left: 215px
+    .b-fill-form
+        .b-fill-form__inp-wrapper
+            width: 49%
+
+.contact-page-content__form
+    flex-grow: 1
+    border: solid 1px #1584d4
+    border-radius: 5px
+    padding: 20px 20px 20px 20px
+
+
+.contact-page-content__contacts
+    flex-basis: 265px
+    box-sizing: border-box
+    flex-shrink: 0
+    background-color: rgba(176, 176, 176, 0.1)
+    padding: 20px
+
+.contact-page
+    .jq-selectbox__dropdown
+        ul
+            li
+                padding-left: 10px
+    .fill-form__select
+        font-size: 12px
+        font-stretch: normal
+        ul
+            li
+                font-stretch: normal
+                font-size: 12px
+    .jq-selectbox__select
+        padding: 3px 15px !important
+
+    #map-wrapper
+        .jq-selectbox__select
+            padding: 7px 15px !important
+
+        .jq-selectbox__trigger
+            top: 15px
+

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>larson | Награды</title>
+    <title>Контакты</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,cyrillic-ext,latin-ext,cyrillic"
-          rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek,greek-ext,cyrillic-ext,cyrillic"
-          rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,cyrillic-ext,latin-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek,greek-ext,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/easy-autocomplete.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 <div class="main--site--wrapper">
     <header class="b-header clearfix">
@@ -22,7 +22,7 @@
                 <a href="#" class="empty--button js--account--money">Пополнить</a>
             </div>
             <div class="b-header--phone--nuber--wrapper left">
-                <p class="b-header--the--phone margin-bottom5"><a class="b-header--the--phone--link"
+                <p class="b-header--the--phone margin-bottom5"><a class="blue-b-header--the--phone--link"
                                                                   href="tel:8-800-550-00-15">8-800-550-00-15</a></p>
                 <p class="b-header--chat--feedback--wrapper">
                     <a href="#" class="link--feedback blue_link margin-right10"><i class="icon--feedback"></i>Обратная
@@ -108,7 +108,7 @@
     <nav class="b-nav--menu clearfix static">
         <div class="container">
             <ul class="b-nav--menu_units left">
-                <li class="b-nav--menu_item">
+                <li class="b-nav--menu_item active">
                     <a class="b-nav--menu_link" href="#">О компании</a>
                     <ul class="b-nav--menu--dropdown hidden">
                         <li class="b-nav--menu--dropdown--item"><a
@@ -131,7 +131,7 @@
                                 class="b-nav--menu--dropdown--item--link">Контакты</a></li>
                     </ul>
                 </li>
-                <li class="b-nav--menu_item">
+                <li class="b-nav--menu_item ">
                     <a class="b-nav--menu_link" href="#">Сервисы</a>
                     <ul class="b-nav--menu--dropdown hidden">
                         <li class="b-nav--menu--dropdown--item">
@@ -361,23 +361,31 @@
         </div>
     </nav>
 
-    <div class="container clearfix">
+    <div class="container--inside clearfix">
         <div class="b-site-breadcrumb">
             <ul class="b-site-breadcrumb__menu">
                 <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Главная</a>
                 </li>
-                <li class="b-site-breadcrumb__list-outer">Новости</li>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">О
+                    компании</a>
+                <li class="b-site-breadcrumb__list-outer"><a class="b-site-breadcrumb__item-menu" href="#">Контакты</a>
+                </li>
             </ul>
         </div>
     </div>
 
-    <div class="container mb50 clearfix">
-
-        <div class="b-content-page-left-side left">
-            <div class="b-site-left__outer-box">
-                <ul class="b-site-left__blue-menu">
-                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item tree-menu open-tree">Новости</a>
-                        <ul class="sub-tree-menu hidden">
+    <div class="container--inside contact-page mb50 clearfix">
+        <div class="fl-row mb30">
+            <div class="contact-page__item mr30">
+                <ul class="b-site-left__blue-menu w265">
+                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Информация о
+                        компании</a></li>
+                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Награды</a></li>
+                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Видео</a></li>
+                    <li class="b-site-left__outer-box">
+                    <li class="b-site__blue-menu-inner"><a href="#"
+                                                           class="b-site__blue-menu-item tree-menu open-tree close-tree">Благотворительность</a>
+                        <ul class="sub-tree-menu db">
                             <li class="b-site__blue-menu-sub-inner"><a href="#" class="b-site__blue-sub-menu-item">Новости
                                 компании</a></li>
                             <li class="b-site__blue-menu-sub-inner"><a href="#" class="b-site__blue-sub-menu-item">Экономическеи
@@ -386,147 +394,456 @@
                                 прогнозы</a></li>
                         </ul>
                     </li>
+                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Бизнес Модель</a>
+                    </li>
+                    <li class="b-site__blue-menu-inner"><a href="#" class="b-site__blue-menu-item">Контакты</a></li>
                 </ul>
             </div>
+            <div class="contact-page__item contact-page-content">
+                <h1 class="content-main-title tal mb20">Контакты</h1>
+                <div class="fl-row">
+                    <div class="contact-page-content__form mr30">
+                        <h2 class="content-title fz18">Обратная связь</h2>
+                        <p class="content-text fz13 mb25">Форма обратной связи предназначена только для посетителей сайта. Для действующих клиентов Larson&Holz предназначен личный кабинет.</p>
+                        <p class="content-text fz13 mb25">Поля, отмеченные <span class="required fw700">*</span>, обязательны для заполнения.</p>
+                        <div class="contact-form">
+                            <div class="fl-row contact-form-line mb15">
+                                <label class="contact-form-line__label"><span class="required fw700">*</span>Ваше имя</label>
+                                <input type="text" class="contact-form-line__input fill-form-inp">
+                            </div>
+                            <div class="fl-row contact-form-line mb15">
+                                <label class="contact-form-line__label"><span class="required fw700">*</span>E-mail для связи</label>
+                                <input type="text" class="contact-form-line__input fill-form-inp">
+                            </div>
+                            <div class="fl-row contact-form-line mb15">
+                                <label class="contact-form-line__label"><span class="required fw700">*</span>Телефон для связи</label>
+                                <input type="text" class="contact-form-line__input fill-form-inp inputmask-phone" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <div class="fl-row fl-row_pl215 contact-form-line mb15">
+                                <select class="contact-form-line__select fill-form__select d-arr mr15" size="1">
+                                    <option value="Чебурашка">Чебурашка</option>
+                                    <option selected value="Крокодил Гена">Крокодил Гена</option>
+                                    <option value="Шапокляк">Шапокляк</option>
+                                    <option value="Крыса Лариса">Крыса Лариса/option>
+                                </select>
+                                <select class="contact-form-line__select fill-form__select d-arr" size="1">
+                                    <option value="Чебурашка">Moscow</option>
+                                    <option selected value="Крокодил Гена">Moscow</option>
+                                    <option value="Шапокляк">Moscow</option>
+                                    <option value="Крыса Лариса">Moscow/option>
+                                </select>
+                            </div>
+                            <div class="fl-row contact-form-line mb15">
+                                <label class="contact-form-line__label"><span class="required fw700">*</span>Сообщение:</label>
+                                <div class="fl-grid">
+                                    <textarea class="contact-form-line__input fill-form-inp mb10"></textarea>
+                                    <p class="fz13">Доступно символов: 4000</p>
+                                </div>
+                            </div>
+                            <div class="fl-row">
+                                <label class="contact-form-line__label"><span class="required fw700">*</span>Введите код:</label>
+                                <div class="contact-form-line__captcha">
+                                    <span class="mb15">
+                                        <span class="textBoxCaptcha dib"></span>
+                                        <i class="refresh-icon"></i>
+                                    </span>
+                                    <input class="fill-form-inp code dib" type="text" name="Login" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-page-content__contacts ovh c-light-gray">
+                        <div class="mb15">
+                            <p class="content-title2 fw600">Телефон поддержки:</p>
+                            <p><a href="#" class="content-title2 blue-link blue">8-800-550-00-15</a></p>
+                        </div>
+                        <div class="mb15">
+                            <p class="content-title2 fw600">Электронная почта:</p>
+                            <p class="mb15"><a href="#" class="content-title2 blue-link blue">info@lh-broker.com</a></p>
+                            <p><img class="w100" src="images/group-5.jpg" alt=""></p>
+                        </div>
+                        <div class="mb15">
+                            <p class="content-title2 fw600 mb5">
+                                Ресурс управляется:<br>
+                                LARSON & HOLZ SVG
+                            </p>
+                            <p class="content-text mb15">
+                                The Financial Services Centre<br>
+                                Stoney Ground, Kingstown<br>
+                                St. Vincent & the Grenadines<br>
+                                +852-3015-68-32, +43-1229-74-35<br>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="content-title2 fw600 mb5">
+                                Для корреспонденции:<br>
+                                ООО ККМ
+                            </p>
+                            <p class="content-text">
+                                Адрес: 129515, Россия, г.Москва<br>
+                                ул. Академика Королева, д.13, стр.1<br>
+                                E-mail: <a href="#" class="blue-link">russia@lh-broker.ru</a><br>
+                                Телефон: +7 (495) 181-59-45
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="contact-page__map">
+            <div id="map-wrapper" class="b-site-content__inner mb20 no-max-width ovh">
+                <div class="clearfix fullwidth margin-bottom40 before-map">
+                    <div class="halfwidth">
+                        <p class="lh28">Найдите представительство Larson & Holz в своем городе</p>
+                    </div>
+                    <div class="halfwidth">
+                        <form action="" class="clearfix">
+                            <div class="select-wrapper left prel fullwidth">
+                                <select class="fill-form__select d-arr" size="1">
+                                    <option value="Чебурашка">Чебурашка</option>
+                                    <option selected value="Крокодил Гена">Крокодил Гена</option>
+                                    <option value="Шапокляк">Шапокляк</option>
+                                    <option value="Крыса Лариса">Крыса Лариса</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="map">
+                    <img src="./images/map.png" alt="" class="map-image">
+                    <!-- НЕ ТРОГАТЬ ОСТАВИТЬ КАК ЕСТЬ (Попап не менять и не добавлять контент все через JS)-->
+                    <div class="popup">
+                        <div class="popup-wrap">
+                            <a href="#" data-map-popup-exit><span></span><span></span></a>
+                            <div class="popup-cont"></div>
+                        </div>
+                    </div>
+                    <!-- Конец НЕ ТРОГАТЬ ОСТАВИТЬ КАК ЕСТЬ -->
+                    <!--
 
-        <div class="b-content-page-right-side ovh">
-            <div class="b-site-faq-content__inner">
-                <div class="title-faq-page">
-                    <h1>Новости</h1>
+                                        <div data-coords="699, 345" class="marker meet">
+                                            <div class="has-info">
+                                                <i class="icon-active"></i>
+                                                <h3 class="">г.Москва</h3>
+                                            </div>
+                                            <p class="margin-top10">В вашем городе еще остались вакантные места. </p>
+                                            <p class="margin-top10">
+                                                <a href="#" class="orange_btn">Стать партнером</a>
+                                            </p>
+                                        </div>
+                                        <div class="marker pred" data-coords="552, 99">
+                                            <h3>ООО ККМ</h3>
+                                            <p>Город: <span>Челябинск</span></p>
+                                            <p>Страна: <span>Россия</span></p>
+                                            <p>Статус: <span>Активен</span></p>
+                                            <p class="has-info">
+                                                <i class="icon-active"></i>
+                                                Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a>
+                                            </p>
+                                        </div>-->
+
+                    <div data-coords="699, 345" class="marker meet">
+                        <h3>May 6-7 2016 года</h3>
+                        <p>Franchising &amp; Business Opportunities Expo 2016 Australia, Perth</p>
+                    </div>
+                    <div data-coords="688, 250" class="marker meet">
+                        <h3>November 28-30, 2016</h3>
+                        <p>TradeTech FX Asia 2016, Singapore</p>
+                    </div>
+                    <div data-coords="688, 262" class="marker meet">
+                        <h3>28 February &ndash; 2 March 2017</h3>
+                        <p>Private Banking 2017 , Singapore</p>
+                    </div>
+                    <div data-coords="530, 177" class="marker meet">
+                        <h3>November 3 - 4, 2016</h3>
+                        <p>17 MENA FFXPRO Dubai, Dubai</p>
+                    </div>
+                    <div data-coords="463, 99" class="marker meet">
+                        <h3>November 2-3, 2016</h3>
+                        <p>MOSCOW FINANCIAL EXPO 2016 Russia, Moscow</p>
+                    </div>
+                    <div data-coords="463, 81" class="marker meet">
+                        <h3>March 22-23, 2017</h3>
+                        <p>World Exchange Congress 2017 Budapest, Hungary</p>
+                    </div>
+                    <div data-coords="441, 98" class="marker meet">
+                        <h3>October 20-23, 2016</h3>
+                        <p>Berlin Financial Partners Expo Berlin, Germany</p>
+                    </div>
+                    <div data-coords="445, 113" class="marker meet">
+                        <h3>May 24-25, 2017</h3>
+                        <p>KIEV FOREX &amp; FINANCIAL EXPO 2017 Kiev, Ukraine</p>
+                    </div>
+                    <div data-coords="685, 187" class="marker meet">
+                        <h3>February 21-23, 2017</h3>
+                        <p>iFXEXPO Asia 2017 Hong Kong, China</p>
+                    </div>
+                    <div data-coords="695, 187" class="marker meet">
+                        <h3>October 28-29, 2016</h3>
+                        <p>4th China FOREX Expo 2016, Shenzhen</p>
+                    </div>
+                    <div data-coords="91, 135" class="marker meet">
+                        <h3>February 7, 2017</h3>
+                        <p>The Trading Show West Coast 2017, Sun Francisco, USA</p>
+                    </div>
+                    <div data-coords="540, 197" class="marker meet">
+                        <h3>May 22 - 23, 2017</h3>
+                        <p>Middle East Investment Summit 2017, Dubai</p>
+                    </div>
+                    <div data-coords="598, 203" class="marker meet">
+                        <h3>November 18 - 19, 2016</h3>
+                        <p>India FFXPO 2016 Mumbai, India</p>
+                    </div>
+                    <div data-coords="549, 177" class="marker meet">
+                        <h3>October 13 - 14, 2016</h3>
+                        <p>Qatar FFXPO 2016, Qatar</p>
+                    </div>
+                    <div data-coords="489, 117" class="marker meet">
+                        <h3>August, 2017</h3>
+                        <p>SOCHI B2B Forex Forum 2017, Russia, Sochi</p>
+                    </div>
+                    <div data-coords="489, 166" class="marker meet">
+                        <h3>May 2016</h3>
+                        <p>Middle East &amp; North Africa International Franchise Exhibition 2016, Egypt, Cairo</p>
+                    </div>
+                    <div data-coords="215, 117" class="marker meet">
+                        <h3>October 6, 2016</h3>
+                        <p>The Trading Show New York 2016 New York, USA</p>
+                    </div>
+                    <div data-coords="179, 173" class="marker meet">
+                        <h3>February 13-15, 2017</h3>
+                        <p>TradeTech FX 2017 Miami, USA</p>
+                    </div>
+                    <div data-coords="225, 87" class="marker meet">
+                        <h3>November 10, 2016</h3>
+                        <p>Quant World Canada Toronto, Canada</p>
+                    </div>
+                    <div data-coords="413, 75" class="marker meet">
+                        <h3>February 24, 2017</h3>
+                        <p>The London Forex Show 2017 UK, London</p>
+                    </div>
+                    <div data-coords="445, 67" class="marker meet">
+                        <h3>September 29, 2017</h3>
+                        <p>Geneva Forex Event Swiss, Geneva</p>
+                    </div>
+                    <div data-coords="445, 48" class="marker meet">
+                        <h3>September 13-15, 2016</h3>
+                        <p>TradeTech FX 2016 London, UK</p>
+                    </div>
+                    <div data-coords="457, 48" class="marker meet">
+                        <h3>September 13, 2016</h3>
+                        <p>European Financial Summit 2016 London, UK</p>
+                    </div>
+                    <div data-coords="248, 359" class="marker meet">
+                        <h3>November 3, 2016</h3>
+                        <p>Bonds, Loans &amp; Derivatives Argentina from GFC Media Group Argentina, Buenos Aires</p>
+                    </div>
+                    <div data-coords="123, 190" class="marker meet">
+                        <h3>September 22, 2016</h3>
+                        <p>Bonds, Loans &amp; Derivatives Mexico from GFC Media Group Mexico City, Mexico</p>
+                    </div>
+                    <div data-coords="402, 89" class="marker meet">
+                        <h3>February 19-20, 2016</h3>
+                        <p>The Franchise Show, London, UK</p>
+                    </div>
+                    <div data-coords="390, 95" class="marker meet">
+                        <h3>June 26-28, 2017</h3>
+                        <p>Money20/20 Europe 2017 from i2i Events Group Copenhagen, Denmark</p>
+                    </div>
+                    <div data-coords="711, 170" class="marker meet">
+                        <h3>January 11-13 , 2016</h3>
+                        <p>HKTDC Hong Kong International Licensing Show, China, Hong Kong</p>
+                    </div>
+                    <div data-coords="722, 210" class="marker meet">
+                        <h3>November 15-16, 2016</h3>
+                        <p>Philippines Forex Expo 2016, Philippine, Manila</p>
+                    </div>
+                    <div data-coords="700, 140" class="marker meet">
+                        <h3>December 2-4, 2016</h3>
+                        <p>Money Fair Shanghai 2016 Shanghai, China</p>
+                    </div>
+                    <div data-coords="700, 147" class="marker meet">
+                        <h3>November 15, 2016</h3>
+                        <p>Profit &amp; Loss Shanghai 2016 Shanghai, China</p>
+                    </div>
+                    <div class="marker meet" data-coords="403, 109">
+                        <h3>March 20 - 23, 2016</h3>
+                        <p>Franchise Expo Paris 2016, Paris, France</p>
+                    </div>
+                    <div class="marker meet" data-coords="387, 131">
+                        <h3>April 21 - 23, 2016</h3>
+                        <p>EXPOFRANQUICIA 2016, Spain, Madrid</p>
+                    </div>
+                    <div class="marker meet" data-coords="292, 282">
+                        <h3>November 8 - 11, 2016</h3>
+                        <p>ABF Franchising Expo Nordestу, Brasilia, Olinda</p>
+                    </div>
+                    <div class="marker meet" data-coords="187, 255">
+                        <h3>July 6-7, 2016</h3>
+                        <p>Feria Andina De Negocios Y Franquicias (FANYF), Colombia, Bogota</p>
+                    </div>
+                    <div class="marker meet" data-coords="471, 334">
+                        <h3>August 14-15, 2016</h3>
+                        <p>South Africa Forex Expo and Conference South Africa, Johannesburg</p>
+                    </div>
+                    <div class="marker meet" data-coords="790, 355">
+                        <h3>March 18 - 20, 2016</h3>
+                        <p>Franchising &amp; Business Opportunities 2016, Sydney, Australia</p>
+                    </div>
+                    <div class="marker pred" data-coords="452, 67">
+                        <h3>Санкт-Петербург</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="552, 99">
+                        <h3>Челябинск</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="760, 80">
+                        <h3>Петропавловск-Камчатский</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="491, 94">
+                        <h3>Москва</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div data-coords="565, 125" class="marker pred">
+                        <h3>Павлодар</h3>
+                        <p>Страна: Казахстан</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div data-coords="598, 121" class="marker pred">
+                        <h3>Омск</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="455, 87">
+                        <h3>Минск</h3>
+                        <p>Страна: Беларусь</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="463, 109">
+                        <h3>Киев</h3>
+                        <p>Страна: Украина</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="522, 85">
+                        <h3>Казань</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="540, 70">
+                        <h3>Самара</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="535, 77">
+                        <h3>Тольятти</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="545, 85">
+                        <h3>Оренбург</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="565, 60">
+                        <h3>Сургут</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="645, 88">
+                        <h3>Иркутск</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="512, 113">
+                        <h3>Ростов-на-Дону</h3>
+                        <p>Страна: Россия</p>
+                        <p>Статус: Активен</p>
+                        <p>Информация доступна <a href="https://lh-broker.ru/account_management_4/">здесь</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="156, 193">
+                        <h3>LARSON &amp; HOLZ IT LTD</h3>
+                        <b>The Financial Services Centre</b>
+                        <p>Stoney Ground, Kingstown</p>
+                        <p>St. Vincent &amp; the Grenadines</p>
+                        <p><span class="skype_c2c_print_container notranslate">+852-3015-68-32</span><span
+                                id="skype_c2c_container" class="skype_c2c_container notranslate" dir="ltr" tabindex="-1"
+                                onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)"
+                                onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)"
+                                onclick="SkypeClick2Call.MenuInjectionHandler.makeCall(this, event)"
+                                data-numbertocall="+85230156832" data-numbertype="paid" data-isfreecall="false"
+                                data-isrtl="false" data-ismobile="false"><span
+                                class="skype_c2c_highlighting_inactive_common" dir="ltr"
+                                skypeaction="skype_dropdown"><span class="skype_c2c_textarea_span" id="non_free_num_ui"><img
+                                height="0" width="0"
+                                src="resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/call_skype_logo.png"
+                                alt="" class="skype_c2c_logo_img"/><span
+                                class="skype_c2c_text_span">+852-3015-68-32</span></span></span></span></p>
+                    </div>
+                    <div class="marker pred" data-coords="711, 177">
+                        <h3>LARSON &amp; HOLZ IT LTD</h3>
+                        <b>Franchise office</b>
+                        <p>#604 Tower A, New Trade Plaza</p>
+                        <p>6 On Ping Street, Shatin, N.T.</p>
+                        <p>Hong Kong</p>
+                        <p>Tel / fax: +852.3015-6832</p>
+                    </div>
+                    <div class="marker pred" data-coords="99, 106">
+                        <h3>LARSON &amp; HOLZ IT LTD</h3>
+                        <b>Technical office</b>
+                        <p>800 5th Ave #101-225</p>
+                        <p>Seattle, WA 98104-3191</p>
+                        <p>USA</p>
+                        <p>Tel / fax: +1. 206. 374.2463</p>
+                        <p>E-mail: <a href="mailto:support@larson-holz.co.uk"
+                                      target="_blank">support@larson-holz.co.uk</a></p>
+                    </div>
+                    <div class="marker pred" data-coords="419, 109">
+                        <h3>LARSON &amp; HOLZ IT LTD</h3>
+                        <b>Secretary office </b>
+                        <p>6/F Yen Sheng Centre</p>
+                        <p>64 Hoi Yuen Road</p>
+                        <p>Kwun Tong, Hong Kong</p>
+                    </div>
+
+
                 </div>
 
-                <div class="b-content-bottom__other-text margin-bottom10">
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">01.06.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Шокирующие прогнозы от Larson&Holz на июнь</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">01.06.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Шокирующие прогнозы от Larson&Holz на июнь</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">28.05.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Расписание CFD контрактов на 30 и 31 мая</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">18.05.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">В связи с изменением формата представления CFDs контрактов на
-                                Кофе, временно приостановлена торговля по данному инструменту</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">06.05.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Свежий видео прогноз валютных и нефтяных рынков от экспертов на
-                                популярном канале LIFENEWS</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">29.04.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Всвязи с празднованиями 1 мая в странах Европы возможно
-                                увеличение времени исполнения ордеров и появление гэпов, связанных с повышенной
-                                ликвидностью на рынках</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">15.04.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Шокирующие прогнозы от Larson&Holz на май - Экономика Японии
-                                осталась без поддержки</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">08.04.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">20 и 21 апреля состоятся очередные выездные семинары с участием
-                                штатных специалистов Larson&Holz и приглашенных аналитиков в Уфе</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">25.03.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Шокирующие прогнозы от Larson&Holz на апрель месяц</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">18.03.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Расписание CFD контрактов на апрель</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">16.03.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">В связи с изменением формата представления CFDs контрактов на
-                                Кофе, временно приостановлена торговля по данному инструменту</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">28.02.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Свежий видео прогноз валютных и нефтяных рынков от экспертов на
-                                популярном канале LIFENEWS</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">14.02.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">В странах Европы возможно увеличение времени исполнения ордеров
-                                и появление гэпов, связанных с повышенной ликвидностью на рынках</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">12.02.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">Шокирующие прогнозы от Larson&Holz на март</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
-                    <article class="b-content-news margin-bottom35">
-                        <small class="c-light-gray">08.02.2016</small>
-                        <p class="margin-top10 b-content-news__title">
-                            <a href="" class="blue-link">27-28 февраля состоятся очередные выездные семинары с участием
-                                штатных специалистов Larson&Holz и приглашенных аналитиков в Самаре</a>
-                        </p>
-                        <p class="b-content-news__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perspiciatis!</p>
-                    </article>
+                <div class="map-info-list__wrapper">
+                    <ul class="map-info-list">
+                        <li><i class="marker meet"></i> Агенты</li>
+                        <li><i class="marker pred"></i> Запланированные события</li>
+                    </ul>
                 </div>
-                <ul class="pagination-widget">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#" class="active">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><span>...</span></li>
-                    <li><a href="#">48</a></li>
-                    <li><a href="#">49</a></li>
-                    <li><a href="#">50</a></li>
-                </ul>
+            </div>
+
+            <div class="b-content__text b-info-grey-dashed fw600 ">
+                <p>Услуги по доступу на мировые внебиржевые финансовые рынки (OTC - over the counter markets)
+                    обеспечиваются юридическим лицом
+                    <a href="#" class="blue-link">Larson&Holz IT Ltd</a>. Сервисы на внебиржевом рынке FOREX и CFD
+                    контрактов могут быть ограничены для некоторых категорий клиентов или территорий. </p>
             </div>
         </div>
     </div>
-
 
     <footer>
         <div class="b-information--footer clearfix">
@@ -547,7 +864,8 @@
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Борьба с отмыванием
                             средств</a></li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Авторские
-                            статьи</a></li>
+                            статьи</a>
+                        </li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Карта сайта</a>
                         </li>
                         <li class="b-footer_menu--item"><a href="#" class="b-footer_menu--link gray">Обратная связь</a>
@@ -559,11 +877,13 @@
                         задачи, предоставления качественного сервиса по доступу на внебиржевые рынки (OTC markets) – CFD
                         контракты и Бинарные опционы.</p>
                     <p>Компания не занимается управлением средствами и не гарантирует получения дохода. Более того,
-                        компания предупреждает о том, что торговля на финансовых рынках сопряжена с риском и подходит не
+                        компания
+                        предупреждает о том, что торговля на финансовых рынках сопряжена с риском и подходит не
                         всем. </p>
                     <p>Все сервисы компании поддерживаются в режиме он-лайн через единый официальный веб-сервер, который
                         находится под управлением следующего юридического лица, осуществляющего координирующую функцию
-                        для остальных подразделений группы компаний:</p>
+                        для
+                        остальных подразделений группы компаний:</p>
 
                     <ul class="b-footer--gray--color">
                         <li>LARSON AND HOLZ IT LTD</li>
@@ -579,14 +899,18 @@
                     </ul>
 
                     <p>Сайт доступен на различных языках, в том числе и на русском. Компания не является резидентом РФ,
-                        не имеет постоянного зарегистрированного представительства, не является проф. участником в
-                        соответствии с 460 ФЗ РФ и осуществляет свою деятельность в соответствии с законодательством
-                        своей страны регистрации.</p>
+                        не
+                        имеет постоянного зарегистрированного представительства, не является проф. участником в
+                        соответствии
+                        с 460 ФЗ РФ и осуществляет свою деятельность в соответствии с законодательством своей страны
+                        регистрации.</p>
 
                     <p>Необходимую информационную поддержку клиенты могут получить через форму обратной связи, либо
-                        через независимых агентов (франчайзи), уполномоченных компанией. Франчайзи осуществляют только
+                        через
+                        независимых агентов (франчайзи), уполномоченных компанией. Франчайзи осуществляют только
                         консультационную поддержку, являются самостоятельными юридическими лицами и действуют в
-                        собственных интересах и интересах своих клиентов.</p>
+                        собственных
+                        интересах и интересах своих клиентов.</p>
                 </aside>
             </div>
         </div>
@@ -619,12 +943,40 @@
 
 
 <script src="js/jquery.min.js"></script>
-
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/input.mask.js"></script>
+<script src="js/craftmap.js"></script>
 <!-- // <script src="js/retina.js"></script> -->
 <script src="js/countdown.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.easy-autocomplete.min.js"></script>
 <!-- // <script src="PP/PP.js"></script> -->
 <script src="js/custom.js"></script>
+<script>
+    var options = {
+
+        data: [
+            {"name": "Afghanistan", "code": "AF"},
+            {"name": "Aland Islands", "code": "AX"},
+            {"name": "Albania", "code": "AL"},
+            {"name": "Algeria", "code": "DZ"},
+            {"name": "American Samoa", "code": "AS"}
+        ],
+
+        getValue: "name",
+
+        list: {
+            match: {
+                enabled: true
+            }
+        },
+
+        theme: "square"
+    };
+
+    $("#city_autocomplete").easyAutocomplete(options);
+</script>
+
 </body>
 
 </html>

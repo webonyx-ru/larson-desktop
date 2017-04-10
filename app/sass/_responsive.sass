@@ -18,7 +18,6 @@
             z-index: 5
 
         &:before
-            +sprite(share_1024)
             content: ''
             display: inline-block
             vertical-align: middle
@@ -29,7 +28,17 @@
             .b-nav--socialmedia--units
                 display: block
 
+    .fl-row_pl215
+        flex-direction: column
+        .contact-form-line__select
+            &:first-child
+                margin-bottom: 15px
+
 @media screen and (max-width: 1155px)
+
+    .contact-form-line__captcha
+        flex-direction: column
+
     .b-content-honor-type-outer
         display: flex
         justify-content: center

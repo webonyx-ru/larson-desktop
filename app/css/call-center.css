@@ -1,12 +1,12 @@
 .first-screen-call-center {
-  background-image: url('../images/call-center-top-screen.jpg?1488537909');
+  background-image: url('../images/call-center-top-screen.jpg?1490779092');
   background-size: cover;
   padding-top: 0;
   display: block;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen-call-center {
-    background-image: url('../images/call-center-top-screen@2x.jpg?1488537909');
+    background-image: url('../images/call-center-top-screen@2x.jpg?1490779092');
     background-size: cover;
   }
 }
@@ -118,120 +118,6 @@
 
 .infographic-item_icon {
   margin-bottom: 10px;
-}
-.infographic-item_icon.icon-1 {
-  background-image: url('../images/icons-s0c787ff3fc.png');
-  background-position: 0 -377px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 55px;
-  width: 55px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .infographic-item_icon.icon-1 {
-    background-image: url('../images/icons-2x-seb6ec47f3e.png');
-    background-size: 191px auto;
-    background-position: 0 -377px;
-    height: 55px;
-    width: 55px;
-  }
-}
-.infographic-item_icon.icon-2 {
-  background-image: url('../images/icons-s0c787ff3fc.png');
-  background-position: 0 -437px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 55px;
-  width: 57px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .infographic-item_icon.icon-2 {
-    background-image: url('../images/icons-2x-seb6ec47f3e.png');
-    background-size: 191px auto;
-    background-position: 0 -437px;
-    height: 55px;
-    width: 57px;
-  }
-}
-.infographic-item_icon.icon-3 {
-  background-image: url('../images/icons-s0c787ff3fc.png');
-  background-position: 0 -497px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 55px;
-  width: 55px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .infographic-item_icon.icon-3 {
-    background-image: url('../images/icons-2x-seb6ec47f3e.png');
-    background-size: 191px auto;
-    background-position: 0 -497px;
-    height: 55px;
-    width: 55px;
-  }
-}
-.infographic-item_icon.icon-4 {
-  background-image: url('../images/icons-s0c787ff3fc.png');
-  background-position: 0 -557px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 53px;
-  width: 55px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .infographic-item_icon.icon-4 {
-    background-image: url('../images/icons-2x-seb6ec47f3e.png');
-    background-size: 191px auto;
-    background-position: 0 -557px;
-    height: 53px;
-    width: 55px;
-  }
-}
-.infographic-item_icon.icon-5 {
-  background-image: url('../images/icons-s0c787ff3fc.png');
-  background-position: 0 -615px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 49px;
-  width: 55px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .infographic-item_icon.icon-5 {
-    background-image: url('../images/icons-2x-seb6ec47f3e.png');
-    background-size: 191px auto;
-    background-position: 0 -615px;
-    height: 49px;
-    width: 55px;
-  }
-}
-.infographic-item_icon.icon-6 {
-  background-image: url('../images/icons-s0c787ff3fc.png');
-  background-position: 0 -669px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 47px;
-  width: 55px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .infographic-item_icon.icon-6 {
-    background-image: url('../images/icons-2x-seb6ec47f3e.png');
-    background-size: 191px auto;
-    background-position: 0 -669px;
-    height: 47px;
-    width: 55px;
-  }
 }
 
 /*# sourceMappingURL=call-center.css.map */

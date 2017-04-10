@@ -19,9 +19,15 @@
     color: #848484
 
 .b-content-news
+    &__title
+        font-size: 18px
+        font-weight: 600
+        margin-bottom: 10px
+        line-height: 1.3
+    
+    &__excerpt
+        color: #333
 
-    .blue-link
-        line-height: 1.57
 
 .b-content-page-right-side
     font-weight: normal
@@ -393,16 +399,12 @@
         .partners-form-list span
             color: #168de2
         .icon-partners-agent
-            +sprite(icon-partners-agent)
             display: inline-block
         .icon-partners-franhize
-            +sprite(icon-partners-franhize)
             display: inline-block
         .icon-partners-wb
-            +sprite(icon-partners-wb)
             display: inline-block
         .icon-partners-buss
-            +sprite(icon-partners-buss)
             display: inline-block
 
 .b-content__text-info-title-ps
@@ -416,7 +418,6 @@
     +trans
 
 .icon-partners-agent
-    +sprite(icon-partners-agent-grey)
     content: ""
     display: inline-block
     width: 32px
@@ -424,7 +425,6 @@
     margin-left: 20px
 
 .icon-partners-franhize
-    +sprite(icon-partners-franhize-grey)
     content: ""
     width: 43px
     height: 40px
@@ -432,7 +432,6 @@
     margin-left: 20px
 
 .icon-partners-wb
-    +sprite(icon-partners-wb-grey)
     content: ""
     width: 43px
     height: 40px
@@ -440,7 +439,6 @@
     margin-left: 20px
 
 .icon-partners-buss
-    +sprite(icon-partners-buss-grey)
     content: ""
     width: 74px
     height: 35px
@@ -448,12 +446,10 @@
     margin-left: 20px
 
 .icon-circles-extended
-    +sprite(circles-extended)
     display: inline-block
     margin-left: 20px
 
 .icon-bar-graph
-    +sprite(bar-graph)
     display: inline-block
     margin-left: 20px
 
@@ -599,20 +595,7 @@
     position: relative
     display: block
 
-.win-os
-    +sprite(icon-win)
 
-.x-os
-    +sprite(icon-xos)
-
-.nix-os
-    +sprite(icon-nixos)
-
-.apple-os
-    +sprite(icon-appleos)
-
-.andoid-os
-    +sprite(icon-androidos)
 
 .b-site-list__download-programm
     width: 245px
@@ -640,7 +623,6 @@
         content: ""
         vertical-align: bottom
         margin-right: 5px
-        +sprite(icon-apple-button)
         display: inline-block
 
 .google-button
@@ -663,7 +645,6 @@
         content: ""
         vertical-align: bottom
         margin-right: 5px
-        +sprite(icon-google-play)
         display: inline-block
 
 .description-exe
@@ -736,40 +717,13 @@
             color: #fff
         .cog-icon
             display: none
-        .icon-acctype-user
-            +sprite(icon-acctype-user-hover)
-        .icon-acctype-blocked
-            +sprite(icon-acctype-blocked-hover)
-        .icon-binary-money
-            +sprite(icon-binary-money-hover)
-        .icon-tumblr
-            +sprite(icon-tumblr-hover)
-        .line-chart-icon
-            +sprite(line-chart-icon-white)
-        .speedometer-icon
-            +sprite(speedometer-icon-white)
-        .sphere-icon
-            +sprite(sphere-icon-hover)
         .big-grey-cog
-            +sprite(big-blue-cog)
             display: inline-block
 
 .b-site__item-circle-inner
     margin: auto
     line-height: normal
     font-weight: 600
-
-.icon-acctype-user
-    +sprite(icon-acctype-user)
-
-.icon-acctype-blocked
-    +sprite(icon-acctype-blocked)
-
-.icon-binary-money
-    +sprite(icon-binary-money)
-
-.icon-tumblr
-    +sprite(icon-tumblr)
 
 .b-content-fb__link-nw-inner
     text-align: center
@@ -791,7 +745,6 @@
         height: 9px
         margin-left: 9px
         display: inline-block !important
-        +sprite(icon-small-link-out-blue)
 
 .has-icon__new-window
     &:after
@@ -800,7 +753,6 @@
         height: 9px
         margin-left: 9px
         display: inline-block !important
-        +sprite(icon-small-link-out-blue)
 
 .has-icon__new-window-silver
     &:after
@@ -809,7 +761,6 @@
         height: 9px
         margin-left: 9px
         display: inline-block !important
-        +sprite(icon-small-link-out-silver)
 
 .b-content-bottom__inner-text
     max-width: 955px
@@ -841,7 +792,7 @@
     line-height: 1.71
     letter-spacing: 0.3px
     color: #808080
-    padding-left: 40px
+    //padding-left: 40px
 
 .gnt
     font-size: 14px
@@ -870,7 +821,6 @@
         height: 9px
         display: inline-block !important
         margin-left: 5px
-        +sprite(icon-small-link-out-silver)
 
 .b-content-honor__full-text
     width: 555px
@@ -905,7 +855,6 @@
         right: 20px
         top: 50%
         margin-top: 0
-        +sprite(blue_arrow_up)
         -moz-transform: rotate(180deg)
         -ms-transform: rotate(180deg)
         -webkit-transform: rotate(180deg)
@@ -917,13 +866,12 @@
     position: relative
     &:before
         content: ""
-        width: 6px
+        width: 11px
         height: 10px
         position: absolute
         right: 20px
         top: 50%
         margin-top: 0
-        +sprite(blue_arrow_up)
         -moz-transform: rotate(0deg)
         -ms-transform: rotate(0deg)
         -webkit-transform: rotate(0deg)
@@ -966,13 +914,11 @@
     width: 25%
 
 .icon--rss
-    +sprite(rss)
     display: inline-block
     vertical-align: middle
     margin-right: 8px
 
 .icon--newspaper
-    +sprite(icon-newspaper)
     display: inline-block
     vertical-align: middle
     margin-right: 8px
@@ -989,52 +935,9 @@
 .max-width25
     max-width: 25%
 
-// lang small icon
-
-.flag-small-arabic
-    +sprite(flag-small-arabic)
-
-.flag-small-china
-    +sprite(flag-small-china)
-
-.flag-small-esp
-    +sprite(flag-small-esp)
-
-.flag-small-france
-    +sprite(flag-small-france)
-
-.flag-small-ger
-    +sprite(flag-small-ger)
-
-.flag-small-indonesia
-    +sprite(flag-small-indonesia)
-
-.flag-small-malaysia
-    +sprite(flag-small-malaysia)
-
-.flag-small-polska
-    +sprite(flag-small-polska)
-
-.flag-small-portugal
-    +sprite(flag-small-portugal)
-
-.flag-small-russia
-    +sprite(flag-small-russia)
-
-.flag-small-thailand
-    +sprite(flag-small-thailand)
-
-.flag-small-usa
-    +sprite(flag-small-usa)
-
-.flag-small-croatian
-    +sprite(flag-small-croatian)
-
-//______________________________________________________________________
 .b-site-content__inner
     &:not(.no-max-width)
         max-width: 870px
-
 
 .b-info-grey-dashed
     background-color: #fafafa
@@ -1211,19 +1114,51 @@
 
 .content-t-row:nth-of-type(2n)
     background-color: #fff
-    border-left: 2px solid #f4f4f4
     border-right: 2px solid #f4f4f4
+    border-left: 2px solid #f4f4f4
 
 .content-t-row:nth-of-type(2n+1)
     background-color: #f4f4f4
-    border-left: 2px solid #f4f4f4
     border-right: 2px solid #f4f4f4
+    border-left: 2px solid #f4f4f4
 
 .content-t-row:hover
     background-color: #a1cdfd
 
 .content-t-cell
     +trans()
-    padding: 19px 5px
     text-align: center
+    padding: 19px 5px
+
 //_________________________TABLE________________
+
+// contacts page
+
+.contact-page
+    .contact-page__map
+        padding-left: 295px
+
+.contact-form-line__label
+    flex: none
+    max-width: 150px
+    width: 100%
+
+.contact-form-line__input
+    flex-grow: 1
+    width: 100%
+
+.contact-form
+    .fl-row textarea
+        min-width: 0
+
+    .fl-grid
+        width: 100%
+        align-items: flex-start
+
+    .contact-form-line__captcha
+        display: flex
+        width: 100%
+        white-space: nowrap
+
+        .fill-form-inp.code
+            width: 100%
