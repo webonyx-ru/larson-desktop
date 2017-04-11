@@ -4816,16 +4816,6 @@ td.b-traiders--dividents
     position: relative
     overflow: hidden
 
-.up-button
-    cursor: pointer
-    opacity: 0
-    visibility: hidden
-    +trans()
-
-    &.visible
-        opacity: 1
-        visibility: visible
-
 .contact-form-select
     padding-left: 215px
     .b-fill-form
@@ -4879,3 +4869,19 @@ td.b-traiders--dividents
     background-color: rgba(246, 246, 246, 0.6)
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16)
     padding: 10px
+    
+.up-button
+    cursor: pointer
+    opacity: 0
+    visibility: hidden
+    +trans()
+    max-height: 0
+    box-sizing: border-box
+    
+    &:not(.visible)
+        padding: 0
+    
+    &.visible
+        max-height: 100px
+        opacity: 1
+        visibility: visible

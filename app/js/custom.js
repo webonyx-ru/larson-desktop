@@ -347,10 +347,10 @@ $(document).ready(function () {
         $('body, html').animate({scrollTop: 0}, 1000);
     });
 
-    $(".tree-menu").click(function () {
+    $(".tree-menu").click(function (e) {
         $(".sub-tree-menu").toggle(300);
         $(this).toggleClass('close-tree');
-        return false
+        e.preventDefault();
     });
 
     var loginBarBtn = $('.b-loginbar-btn'),

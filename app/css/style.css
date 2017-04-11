@@ -8144,21 +8144,6 @@ td.b-traiders--dividents {
   overflow: hidden;
 }
 
-.up-button {
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-}
-.up-button.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
 .contact-form-select {
   padding-left: 215px;
 }
@@ -8214,6 +8199,27 @@ td.b-traiders--dividents {
   background-color: rgba(246, 246, 246, 0.6);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
   padding: 10px;
+}
+
+.up-button {
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  max-height: 0;
+  box-sizing: border-box;
+}
+.up-button:not(.visible) {
+  padding: 0;
+}
+.up-button.visible {
+  max-height: 100px;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 1260px) {
