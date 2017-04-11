@@ -435,9 +435,9 @@ a
             background-color: #2192fd
             display: block
             content: ''
-
-        //.b-nav--menu--dropdown
-        //    display: block
+    &:hover
+        .b-nav--menu--dropdown
+            display: block
 
 .b-nav--menu--dropdown
     position: absolute
@@ -4817,12 +4817,6 @@ td.b-traiders--dividents
     overflow: hidden
 
 .up-button
-    display: inline-block
-    vertical-align: middle
-    position: fixed
-    bottom: 20px
-    right: 20px
-    z-index: 99
     cursor: pointer
     opacity: 0
     visibility: hidden
@@ -4874,3 +4868,14 @@ td.b-traiders--dividents
         .jq-selectbox__trigger
             top: 15px
 
+.fixed-buttons-wrapper
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 99
+    
+.fixed-button__wrapper
+    color: #000
+    background-color: rgba(246, 246, 246, 0.6)
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16)
+    padding: 10px

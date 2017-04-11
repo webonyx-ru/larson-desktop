@@ -3971,7 +3971,7 @@ input:checked + .icon-checkbox {
   }
 }
 
-.up-button {
+.icon-up-btn {
   background-image: url('../images/icons-s0cca59e078.png');
   background-position: 0 -5851px;
   background-repeat: no-repeat;
@@ -3982,7 +3982,7 @@ input:checked + .icon-checkbox {
   width: 44px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .up-button {
+  .icon-up-btn {
     background-image: url('../images/icons-2x-s46de1a7f82.png');
     background-size: 191px auto;
     background-position: 0 -5853px;
