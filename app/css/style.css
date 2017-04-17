@@ -1343,40 +1343,40 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .macbook {
-  background-image: url('../images/macbook.png?1475165179');
+  background-image: url('../images/macbook.png?1486034725');
   width: 365px;
   height: 197px;
   margin-top: -98px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .macbook {
-    background-image: url('../images/macbook@2x.png?1475165179');
+    background-image: url('../images/macbook@2x.png?1486034725');
     background-size: 364px 198px;
   }
 }
 
 .iphone {
-  background-image: url('../images/iphone.png?1475165179');
+  background-image: url('../images/iphone.png?1486034725');
   width: 263px;
   height: 161px;
   margin-top: -90px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .iphone {
-    background-image: url('../images/iphone@2x.png?1475165179');
+    background-image: url('../images/iphone@2x.png?1486034725');
     background-size: 265px 167px;
   }
 }
 
 .ipad {
-  background-image: url('../images/ipad.png?1475165179');
+  background-image: url('../images/ipad.png?1486034725');
   width: 260px;
   height: 225px;
   margin-top: -112px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .ipad {
-    background-image: url('../images/ipad@2x.png?1475165179');
+    background-image: url('../images/ipad@2x.png?1486034725');
     background-size: 228px 222px;
   }
 }
@@ -2245,14 +2245,14 @@ input:focus, textarea:focus, a:focus, button:focus {
   font: 14px Arial, sans-serif;
   color: #333;
   text-align: left;
-  /* ╨┤╨╗╤Å Opera Presto┬á */
+  /* ╨┤╨╗╤П Opera Presto┬а */
   -moz-appearance: textfield;
 }
 
 .jq-number__field input::-webkit-inner-spin-button,
 .jq-number__field input::-webkit-outer-spin-button {
   margin: 0;
-  /* ╨▓ ╨║╨░╨║╨╕╤à-╤é╨╛ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░╤à ╨┐╤Ç╨╕╤ü╤â╤é╤ü╤é╨▓╤â╨╡╤é ╨╛╤é╤ü╤é╤â╨┐ */
+  /* ╨▓ ╨║╨░╨║╨╕╤Е-╤В╨╛ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░╤Е ╨┐╤А╨╕╤Б╤Г╤В╤Б╤В╨▓╤Г╨╡╤В ╨╛╤В╤Б╤В╤Г╨┐ */
   -webkit-appearance: none;
 }
 
@@ -8198,7 +8198,51 @@ td.b-traiders--dividents {
   color: #000;
   background-color: rgba(246, 246, 246, 0.6);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
-  padding: 10px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-button__wrapper.book-wrapper {
+  background-color: #fe7d1b;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}
+.fixed-button__wrapper.book-wrapper:hover .fixed-button__text {
+  text-decoration: underline;
+}
+.fixed-button__wrapper.up-button {
+  background-color: rgba(176, 176, 176, 0.8);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}
+.fixed-button__wrapper.up-button .fixed-button__text {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+  -moz-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+}
+.fixed-button__wrapper.up-button:hover {
+  background: #168de2;
+}
+.fixed-button__wrapper.up-button:hover .fixed-button__text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
 .up-button {
@@ -8220,6 +8264,29 @@ td.b-traiders--dividents {
   max-height: 100px;
   opacity: 1;
   visibility: visible;
+}
+
+.fixed-button__text {
+  position: absolute;
+  right: 100%;
+  margin-right: 15px;
+  top: 50%;
+  line-height: 30px;
+  padding: 0 15px;
+  background: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  color: #fff;
+  margin-top: -15px;
+}
+.fixed-button__text:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -6px;
+  display: block;
+  border: 6px solid transparent;
+  border-left: 6px solid rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 1260px) {
@@ -8286,7 +8353,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) {
   .b-logo {
-    background-image: url('../images/logo_small.png?1475165179');
+    background-image: url('../images/logo_small.png?1486034725');
     background-repeat: no-repeat;
     width: 31px;
     height: 40px;
@@ -8295,7 +8362,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-logo {
-    background-image: url('../images/logo_small@2x.png?1475165179');
+    background-image: url('../images/logo_small@2x.png?1486034725');
     background-size: 31px 40px;
   }
 }
@@ -8334,7 +8401,7 @@ td.b-traiders--dividents {
   }
 
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k.jpg?1475165179');
+    background-image: url('../images/banner250k.jpg?1486034726');
     background-size: cover;
     background-size: cover;
     box-shadow: none;
@@ -8343,7 +8410,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k@2x.jpg?1475165179');
+    background-image: url('../images/banner250k@2x.jpg?1486034726');
     background-size: cover;
   }
 }
