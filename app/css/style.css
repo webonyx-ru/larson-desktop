@@ -8210,15 +8210,7 @@ td.b-traiders--dividents {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 100%;
 }
-.fixed-button__wrapper.book-wrapper:hover .fixed-button__text {
-  text-decoration: underline;
-}
-.fixed-button__wrapper.up-button {
-  background-color: rgba(176, 176, 176, 0.8);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 100%;
-}
-.fixed-button__wrapper.up-button .fixed-button__text {
+.fixed-button__wrapper.book-wrapper .fixed-button__text {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease 0s;
@@ -8232,10 +8224,7 @@ td.b-traiders--dividents {
   -moz-transform: translateX(-40px);
   -o-transform: translateX(-40px);
 }
-.fixed-button__wrapper.up-button:hover {
-  background: #168de2;
-}
-.fixed-button__wrapper.up-button:hover .fixed-button__text {
+.fixed-button__wrapper.book-wrapper:hover .fixed-button__text, .fixed-button__wrapper.book-wrapper.has-tooltip .fixed-button__text {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
@@ -8243,6 +8232,14 @@ td.b-traiders--dividents {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
+}
+.fixed-button__wrapper.up-button {
+  background-color: rgba(176, 176, 176, 0.8);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}
+.fixed-button__wrapper.up-button:hover {
+  background: #168de2;
 }
 
 .up-button {

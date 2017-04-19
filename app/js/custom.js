@@ -697,3 +697,17 @@ LH.menu = function (className) {
 };
 
 LH.menu('.b-nav--menu_units');
+
+
+// teach center animation
+$(document).ready(function () {
+
+    var teach_center = $('.fixed-button__wrapper.book-wrapper');
+    setTimeout(function () {
+        teach_center.addClass('has-tooltip');
+        new Audio('sound/teach-center.mp3').play();
+        setTimeout(function () {
+            teach_center.removeClass('has-tooltip');
+        }, 15000);
+    }, 3000);
+});
