@@ -19,6 +19,7 @@ gulp.task('build', ["clean"], function () {
         gulp.start('js');
         gulp.start('css');
         gulp.start('static');
+        gulp.start('sound');
     }, 500);
 });
 
@@ -34,6 +35,13 @@ gulp.task('css', function () {
         'app/css/**'
     ])
         .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('sound', function () {
+    gulp.src([
+        'app/sound/**'
+    ])
+        .pipe(gulp.dest('dist/sound'));
 });
 
 gulp.task('js', function () {
