@@ -336,6 +336,97 @@ a
     padding-top: 60px
     display: block
 
+    &.teach-center
+        background-position: center 0
+        background-size: auto
+        position: relative
+        box-sizing: border-box
+        height: 570px
+
+        &.type-1
+            +retina-bg('top-banners/teach-center-1.jpg', 'top-banners/teach-center-1@2x.jpg')
+
+        &.type-2
+            +retina-bg('top-banners/teach-center.jpg', 'top-banners/teach-center@2x.jpg')
+
+        &.type-3
+            +retina-bg('top-banners/teach-center-2.jpg', 'top-banners/teach-center-2@2x.jpg')
+
+        &.type-4
+            +retina-bg('top-banners/teach-center-3.jpg', 'top-banners/teach-center-3@2x.jpg')
+
+        &.type-5
+            +retina-bg('top-banners/teach-center-4.jpg', 'top-banners/teach-center-4@2x.jpg')
+
+        &.type-3, &.type-4, &.type-5
+            display: flex
+            flex-direction: column
+
+            .teach-center-button
+                position: static
+                margin: 0 20px
+                display: inline-flex
+                height: 40px
+                padding: 0 25px
+                font-size: 14px
+                font-weight: 500
+
+            .b-main--page--parallax--content
+                margin-top: auto
+                padding-bottom: 15px
+                text-align: center
+
+        .teach-center-button
+            position: absolute
+            right: 50%
+            bottom: 40px
+            margin-right: -405px
+            vertical-align: middle
+            background: #fe7d1b
+            color: #fff
+            line-height: 50px
+            padding: 0 40px
+            font-size: 18px
+            font-weight: 600
+            box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.26)
+            text-decoration: none
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 7px
+            +trans()
+
+            .icon-arrow-square-right
+                width: 8px
+                height: 8px
+                border-width: 2px
+            
+            &:hover
+                background-color: #fe7d1b*0.8
+
+            &.watch--video--link
+                background: #fff
+                color: #2192fd
+                padding: 0 20px
+
+                &:hover
+                    background-color: #fff*0.9
+
+                .icon-play-video-button
+                    border: none
+                    width: auto
+                    height: auto
+                    display: inline-block
+                    vertical-align: middle
+                    &:before
+                        border: 8px solid transparent
+                        border-left: 8px solid #2192fd
+                        position: static
+                        margin: 0
+                        +transform(none)
+
+
+
     &.semenovich-depojet
         background-position: center 0
         background-size: cover
@@ -580,15 +671,15 @@ a
     &:hover
         box-shadow: 0 0 0 500px rgba(#000, 0.2) inset
 
-    .icon-arrow-square-right
-        display: inline-block
-        vertical-align: middle
-        margin-left: 5px
-        border-top: 1px solid #fff
-        border-right: 1px solid #fff
-        width: 4px
-        height: 4px
-        +transform(rotate(45deg))
+.icon-arrow-square-right
+    display: inline-block
+    vertical-align: middle
+    margin-left: 5px
+    border-top: 1px solid #fff
+    border-right: 1px solid #fff
+    width: 4px
+    height: 4px
+    +transform(rotate(45deg))
 
 .red_btn
     @extend .orange_btn
@@ -4676,32 +4767,32 @@ td.b-traiders--dividents
         font-size: 18px
         font-weight: 600
 
-        .icon-play-video-button
-            height: 24px
-            position: relative
-            width: 24px
-            border-radius: 100%
-            border: 1px solid #fff
-            display: inline-block
-            margin-right: 5px
-            vertical-align: middle
-            top: -1px
+.icon-play-video-button
+    height: 24px
+    position: relative
+    width: 24px
+    border-radius: 100%
+    border: 1px solid #fff
+    display: inline-block
+    margin-right: 5px
+    vertical-align: middle
+    top: -1px
 
-            &:before
-                content: ''
-                display: inline-block
-                vertical-align: middle
-                border: 6px solid transparent
-                border-left: 7px solid #fff
-                top: 50%
-                left: 50%
-                margin-left: 4px
-                -webkit-transform: translate3d(-50%, -50%, 0)
-                -moz-transform: translate3d(-50%, -50%, 0)
-                -ms-transform: translate3d(-50%, -50%, 0)
-                -o-transform: translate3d(-50%, -50%, 0)
-                transform: translate3d(-50%, -50%, 0)
-                position: absolute
+    &:before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        border: 6px solid transparent
+        border-left: 7px solid #fff
+        top: 50%
+        left: 50%
+        margin-left: 4px
+        -webkit-transform: translate3d(-50%, -50%, 0)
+        -moz-transform: translate3d(-50%, -50%, 0)
+        -ms-transform: translate3d(-50%, -50%, 0)
+        -o-transform: translate3d(-50%, -50%, 0)
+        transform: translate3d(-50%, -50%, 0)
+        position: absolute
 
 .b-main--page--parallax.new-year-banner
     background-position: center top

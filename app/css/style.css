@@ -3028,6 +3028,134 @@ a {
   padding-top: 60px;
   display: block;
 }
+.b-main--page--parallax.teach-center {
+  background-position: center 0;
+  background-size: auto;
+  position: relative;
+  box-sizing: border-box;
+  height: 570px;
+}
+.b-main--page--parallax.teach-center.type-1 {
+  background-image: url('../images/top-banners/teach-center-1.jpg?1493168416');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.teach-center.type-1 {
+    background-image: url('../images/top-banners/teach-center-1@2x.jpg?1493168418');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.teach-center.type-2 {
+  background-image: url('../images/top-banners/teach-center.jpg?1493168412');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.teach-center.type-2 {
+    background-image: url('../images/top-banners/teach-center@2x.jpg?1493168414');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.teach-center.type-3 {
+  background-image: url('../images/top-banners/teach-center-2.jpg?1493168420');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.teach-center.type-3 {
+    background-image: url('../images/top-banners/teach-center-2@2x.jpg?1493168422');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.teach-center.type-4 {
+  background-image: url('../images/top-banners/teach-center-3.jpg?1493168424');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.teach-center.type-4 {
+    background-image: url('../images/top-banners/teach-center-3@2x.jpg?1493168426');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.teach-center.type-5 {
+  background-image: url('../images/top-banners/teach-center-4.jpg?1493168428');
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .b-main--page--parallax.teach-center.type-5 {
+    background-image: url('../images/top-banners/teach-center-4@2x.jpg?1493168410');
+    background-size: 1920px 570px;
+  }
+}
+.b-main--page--parallax.teach-center.type-3, .b-main--page--parallax.teach-center.type-4, .b-main--page--parallax.teach-center.type-5 {
+  display: flex;
+  flex-direction: column;
+}
+.b-main--page--parallax.teach-center.type-3 .teach-center-button, .b-main--page--parallax.teach-center.type-4 .teach-center-button, .b-main--page--parallax.teach-center.type-5 .teach-center-button {
+  position: static;
+  margin: 0 20px;
+  display: inline-flex;
+  height: 40px;
+  padding: 0 25px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.b-main--page--parallax.teach-center.type-3 .b-main--page--parallax--content, .b-main--page--parallax.teach-center.type-4 .b-main--page--parallax--content, .b-main--page--parallax.teach-center.type-5 .b-main--page--parallax--content {
+  margin-top: auto;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.b-main--page--parallax.teach-center .teach-center-button {
+  position: absolute;
+  right: 50%;
+  bottom: 40px;
+  margin-right: -405px;
+  vertical-align: middle;
+  background: #fe7d1b;
+  color: #fff;
+  line-height: 50px;
+  padding: 0 40px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.26);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+.b-main--page--parallax.teach-center .teach-center-button .icon-arrow-square-right {
+  width: 8px;
+  height: 8px;
+  border-width: 2px;
+}
+.b-main--page--parallax.teach-center .teach-center-button:hover {
+  background-color: #cb6416;
+}
+.b-main--page--parallax.teach-center .teach-center-button.watch--video--link {
+  background: #fff;
+  color: #2192fd;
+  padding: 0 20px;
+}
+.b-main--page--parallax.teach-center .teach-center-button.watch--video--link:hover {
+  background-color: #e6e6e6;
+}
+.b-main--page--parallax.teach-center .teach-center-button.watch--video--link .icon-play-video-button {
+  border: none;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.b-main--page--parallax.teach-center .teach-center-button.watch--video--link .icon-play-video-button:before {
+  border: 8px solid transparent;
+  border-left: 8px solid #2192fd;
+  position: static;
+  margin: 0;
+  transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+}
 .b-main--page--parallax.semenovich-depojet {
   background-position: center 0;
   background-size: cover;
@@ -3301,7 +3429,8 @@ a {
 .purple-btn:hover {
   box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.2) inset;
 }
-.purple-btn .icon-arrow-square-right {
+
+.icon-arrow-square-right {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
@@ -8000,7 +8129,8 @@ td.b-traiders--dividents {
   font-size: 18px;
   font-weight: 600;
 }
-.after-new-year-image .watch-video-parallax-button .icon-play-video-button {
+
+.icon-play-video-button {
   height: 24px;
   position: relative;
   width: 24px;
@@ -8011,7 +8141,7 @@ td.b-traiders--dividents {
   vertical-align: middle;
   top: -1px;
 }
-.after-new-year-image .watch-video-parallax-button .icon-play-video-button:before {
+.icon-play-video-button:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
