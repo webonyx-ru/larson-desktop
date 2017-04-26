@@ -3139,22 +3139,10 @@ a {
   background-color: #e6e6e6;
 }
 .b-main--page--parallax.teach-center .teach-center-button.watch--video--link .icon-play-video-button {
-  border: none;
-  width: auto;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
+  border-color: #2192fd;
 }
 .b-main--page--parallax.teach-center .teach-center-button.watch--video--link .icon-play-video-button:before {
-  border: 8px solid transparent;
   border-left: 8px solid #2192fd;
-  position: static;
-  margin: 0;
-  transform: none;
-  -ms-transform: none;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
 }
 .b-main--page--parallax.semenovich-depojet {
   background-position: center 0;
