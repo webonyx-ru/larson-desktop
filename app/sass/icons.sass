@@ -381,7 +381,18 @@ input:checked
 	+sprite(icon-book-btn)
 
 .icon-book-btn-small
-	+sprite(icon-book-btn-small)
+	position: relative
+	width: 26px
+	height: 26px
+	border: 1px solid #fff
+	display: inline-block
+	vertical-align: middle
+	border-radius: 100%
+	
+	&:after
+		content: ''
+		display: inline-block
+		+sprite(icon-book-btn-small, $pos: "abs_middle")
 
 .icon-menu-zero
 	+sprite(icon-menu-zero)
