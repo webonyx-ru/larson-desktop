@@ -662,6 +662,8 @@ input:checked
 
 .b-main--page--parallax
 	+retina-bg("parallax--top.jpg", "parallax--top@2x.jpg")
+	&.non-depojet
+		+retina-bg("top-banners/non-depojet.jpg", "top-banners/non-depojet@2x.jpg")
 	&.semenovich-depojet
 		+retina-bg('top-banners/semenovich-depojet.jpg', 'top-banners/semenovich-depojet@2x.jpg')
 		&.type2
@@ -741,3 +743,29 @@ input:checked
 			right: 0
 			margin-left: 0
 			left: auto
+
+
+.no-deposit__planet-1
+	+sprite(earth-1)
+
+.no-deposit__group-3
+	+sprite(group-3)
+
+.no-deposit__money-2
+	+sprite(money-2)
+
+.no-deposit__money
+	+sprite(money)
+
+.no-deposit__calendar
+	+sprite(no-deposite-calendar)
+
+.no-deposit__money-bag
+	+sprite(money-bag)
+
+.place-marker
+	+sprite(place-marker)
+
+.no-deposit-grid__item_arrow
+	&::after
+		+sprite(no-deposit-arrow)
