@@ -169,7 +169,7 @@ $(document).ready(function () {
         }
 
         pop.fadeIn(200)
-        $('.overlay').fadeIn(200);
+        $('.overlay').css('display', 'flex').fadeIn(200);
     })
 
     $(document).on('click', '.js--call-cabinet', function (e) {
