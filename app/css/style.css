@@ -3196,25 +3196,28 @@ a {
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
-.b-main--page--parallax.teach-center .teach-center-button .icon-arrow-square-right {
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner {
+  margin-right: -445px;
+}
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner .icon-arrow-square-right {
   width: 8px;
   height: 8px;
   border-width: 2px;
 }
-.b-main--page--parallax.teach-center .teach-center-button:hover {
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner:hover {
   background-color: #cb6416;
 }
-.b-main--page--parallax.teach-center .teach-center-button.watch--video--link {
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner.watch--video--link {
   background: #fff;
   color: #2192fd;
 }
-.b-main--page--parallax.teach-center .teach-center-button.watch--video--link:hover {
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner.watch--video--link:hover {
   background-color: #e6e6e6;
 }
-.b-main--page--parallax.teach-center .teach-center-button.watch--video--link .icon-play-video-button {
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner.watch--video--link .icon-play-video-button {
   border-color: #2192fd;
 }
-.b-main--page--parallax.teach-center .teach-center-button.watch--video--link .icon-play-video-button:before {
+.b-main--page--parallax.teach-center .teach-center-button_traing-banner.watch--video--link .icon-play-video-button:before {
   border-left: 8px solid #2192fd;
 }
 .b-main--page--parallax.semenovich-depojet {
