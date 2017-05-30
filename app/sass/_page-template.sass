@@ -1,1169 +1,1273 @@
 @import "mixins/mixins.sass"
 
 .blue-link-year
-    color: #168de2
-    background: #fff
-    padding: 2px
-    margin-right: 15px
-    text-decoration: none
-    display: inline-block
+	color: #168de2
+	background: #fff
+	padding: 2px
+	margin-right: 15px
+	text-decoration: none
+	display: inline-block
 
-    &.active
-        background: #168de2
-        color: #fff
+	&.active
+		background: #168de2
+		color: #fff
 
-    &:last-child
-        margin-right: 0
+	&:last-child
+		margin-right: 0
 
 .c-light-gray
-    color: #848484
+	color: #848484
 
 .b-content-news
-    &__title
-        font-size: 18px
-        font-weight: 600
-        margin-bottom: 10px
-        line-height: 1.3
-    
-    &__excerpt
-        color: #333
+	&__title
+		font-size: 18px
+		font-weight: 600
+		margin-bottom: 10px
+		line-height: 1.3
 
+	&__excerpt
+		color: #333
 
 .b-content-page-right-side
-    font-weight: normal
-    //padding-left: 30px
-    overflow: visible
-    width: calc(100% - 290px)
-    float: right
+	font-weight: normal
+	//padding-left: 30px
+	overflow: visible
+	width: calc(100% - 290px)
+	float: right
 
 .b-site-breadcrumb
-    padding-top: 30px
-    padding-bottom: 30px
+	padding-top: 30px
+	padding-bottom: 30px
 
 .b-site-breadcrumb__list-outer
-    display: inline-block
+	display: inline-block
 
 .b-site-breadcrumb__item-menu
-    font-size: 11px
-    text-decoration: none
-    font-weight: normal
-    color: #4d4d4d
-    display: block
-    position: relative
-    &:hover
-        text-decoration: underline
+	font-size: 11px
+	text-decoration: none
+	font-weight: normal
+	color: #4d4d4d
+	display: block
+	position: relative
+	&:hover
+		text-decoration: underline
 
 .b-site-breadcrumb__list-outer
-    font-size: 11px
-    text-decoration: none
-    font-weight: normal
-    color: #4d4d4d
-    position: relative
-    padding-right: 12px
-    &:last-child
-        & > .b-site-breadcrumb__item-menu
-            &:hover
-                text-decoration: none
-
+	font-size: 11px
+	text-decoration: none
+	font-weight: normal
+	color: #4d4d4d
+	position: relative
+	padding-right: 12px
+	&:last-child
+		& > .b-site-breadcrumb__item-menu
+			&:hover
+				text-decoration: none
 
 .b-site-breadcrumb__list-outer
-    &:before
-        content: "/"
-        height: 11px
-        width: 5px
-        position: absolute
-        right: 1px
-        top: 50%
-        margin-top: -6px
-    &:last-child
-        &:before
-            display: none
+	&:before
+		content: "/"
+		height: 11px
+		width: 5px
+		position: absolute
+		right: 1px
+		top: 50%
+		margin-top: -6px
+	&:last-child
+		&:before
+			display: none
 
 //faq page
 .b-content-page-left-side
-    width: 265px
-    margin-right: 25px
+	width: 265px
+	margin-right: 25px
 
 .title-faq-page h1
-    font-size: 30px
-    margin-bottom: 45px
-    color: #4d4d4d
-    font-weight: 600
+	font-size: 30px
+	margin-bottom: 45px
+	color: #4d4d4d
+	font-weight: 600
 
 .b-site-left__menu-outer
-    padding-left: 15px
-    padding-right: 15px
-    margin-top: 15px
-    margin-bottom: 15px
+	padding-left: 15px
+	padding-right: 15px
+	margin-top: 15px
+	margin-bottom: 15px
 
 .b-site-faq__item-menu
-    font-size: 15px
-    font-weight: normal
-    line-height: 1.47
-    color: #1a1a1a
+	font-size: 15px
+	font-weight: normal
+	line-height: 1.47
+	color: #1a1a1a
 
 .b-site-faq-content__vertical-taber
-    margin-top: 15px
-    margin-bottom: 15px
-    &:last-child
-        margin-bottom: 30px
+	margin-top: 15px
+	margin-bottom: 15px
+	&:last-child
+		margin-bottom: 30px
 
 .b-site-faq-content__inner
-    margin-bottom: 20px
+	margin-bottom: 20px
 
 .b-site-faq-content__item-taber
-    font-size: 18px
-    font-weight: normal
-    line-height: 1.56
-    width: 100%
-    display: inline-block
-    position: relative
-    padding: 10px 50px 10px 15px
-    background-color: #f7f7f7
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19)
-    text-decoration: none
-    color: #1a1a1a
-    box-sizing: border-box
-    &:before, &:after
-        content: ""
-        height: 2px
-        background: #2d2d2d
-        position: absolute
-        right: 23px
-        top: 50%
-        margin-top: -1px
-        width: 14px
-    &:after
-        width: 2px
-        height: 14px
-        right: 30px
-        margin-right: -1px
-        margin-top: -7px
-    &:hover
-        text-decoration: none
-        color: #168de2
+	font-size: 18px
+	font-weight: normal
+	line-height: 1.56
+	width: 100%
+	display: inline-block
+	position: relative
+	padding: 10px 50px 10px 15px
+	background-color: #f7f7f7
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19)
+	text-decoration: none
+	color: #1a1a1a
+	box-sizing: border-box
+	&:before, &:after
+		content: ""
+		height: 2px
+		background: #2d2d2d
+		position: absolute
+		right: 23px
+		top: 50%
+		margin-top: -1px
+		width: 14px
+	&:after
+		width: 2px
+		height: 14px
+		right: 30px
+		margin-right: -1px
+		margin-top: -7px
+	&:hover
+		text-decoration: none
+		color: #168de2
 
-        &:before, &:after
-            background: #168de2
+		&:before, &:after
+			background: #168de2
 
 .b-site-faq-content__hide-item-taber
-    padding: 15px 15px 0 15px
+	padding: 15px 15px 0 15px
 
 .active-taber
-    color: #168de2
-    &:before
-        content: ""
-        background: #168de2
+	color: #168de2
+	&:before
+		content: ""
+		background: #168de2
 
-    &:after
-        display: none
+	&:after
+		display: none
 
 .b-site-faq-content__hide-item-taber a
-    color: #168de2
+	color: #168de2
 
 .b-site-faq-content__hide-item-taber
 
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.57
-    color: #4d4d4d
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.57
+	color: #4d4d4d
 
 .b-site-left__inner-box
-    background-color: #f7f7f7
+	background-color: #f7f7f7
 
 .b-site-left__menu
-    border: solid 1px #e6e6e6
-    border-radius: 2px
+	border: solid 1px #e6e6e6
+	border-radius: 2px
 
 .b-site-faq__item-menu
-    text-decoration: none
-    font-size: 14px
-    color: #1a1a1a
+	text-decoration: none
+	font-size: 14px
+	color: #1a1a1a
 
 // liquid page
 .b-site-normal-content__pager h3
-    margin-top: 20px
-    color: #4d4d4d
+	margin-top: 20px
+	color: #4d4d4d
 
 .b-site-left__blue-menu
-    box-sizing: border-box
-    border: 1px solid #e6e6e6
-    -webkit-border-radius: 3px
-    border-radius: 3px
+	box-sizing: border-box
+	border: 1px solid #e6e6e6
+	-webkit-border-radius: 3px
+	border-radius: 3px
 
 .b-site__blue-menu-inner
-    border-bottom: 1px solid #e6e6e6
-    &:last-child
-        border: none
-
+	border-bottom: 1px solid #e6e6e6
+	&:last-child
+		border: none
 
 .b-site__blue-menu-item
-    display: block
-    color: #168de2
-    text-decoration: none
-    font-size: 15px
-    font-weight: normal
-    line-height: 45px
-    padding-left: 16px
-    padding-right: 16px
-    &.b-active
-        color: #1a1a1a
-        background: #f7f7f7
-    &:hover
-        color: #1a1a1a
-        background: #f7f7f7
+	display: block
+	color: #168de2
+	text-decoration: none
+	font-size: 15px
+	font-weight: normal
+	line-height: 45px
+	padding-left: 16px
+	padding-right: 16px
+	&.b-active
+		color: #1a1a1a
+		background: #f7f7f7
+	&:hover
+		color: #1a1a1a
+		background: #f7f7f7
 
 .liquid-list-box
-    margin-bottom: 30px
+	margin-bottom: 30px
 
 .liquid-list-box:last-child
-    margin: 0
+	margin: 0
 
 .liquid-list-box h3
-    margin: 0
-    font-size: 14px
-    line-height: 22px
+	margin: 0
+	font-size: 14px
+	line-height: 22px
 
 .liquid-list li
-    position: relative
-    font-weight: normal
-    color: #4d4d4d
-    margin-top: 5px
-    margin-bottom: 5px
-    padding-left: 30px
-    &:before
-        content: ""
-        position: absolute
-        left: 5px
-        top: 50%
-        margin-top: -1px
-        width: 2px
-        height: 2px
-        background: #4d4d4d
-        -webkit-border-radius: 50%
-        border-radius: 50%
+	position: relative
+	font-weight: normal
+	color: #4d4d4d
+	margin-top: 5px
+	margin-bottom: 5px
+	padding-left: 30px
+	&:before
+		content: ""
+		position: absolute
+		left: 5px
+		top: 50%
+		margin-top: -1px
+		width: 2px
+		height: 2px
+		background: #4d4d4d
+		-webkit-border-radius: 50%
+		border-radius: 50%
 
 .liquid-list li ul li
-    padding-left: 29px
+	padding-left: 29px
 
 .liquid-list li ul li:before
-    content: ""
-    display: block
-    width: 5px
-    border: 1px solid #000
-    height: 5px
-    border-radius: 50%
-    background: transparent
-    position: absolute
-    left: 0
-    top: 50%
-    margin-top: -3px
+	content: ""
+	display: block
+	width: 5px
+	border: 1px solid #000
+	height: 5px
+	border-radius: 50%
+	background: transparent
+	position: absolute
+	left: 0
+	top: 50%
+	margin-top: -3px
 
 .liquid-list-sub
-    position: relative
-    left: -28px
+	position: relative
+	left: -28px
 
 .liquid-list-sub li
-    &:before
-        display: none
+	&:before
+		display: none
 
 .sub-liquid-fx
-    &:before
-        top: 10px !important
+	&:before
+		top: 10px !important
 
 // userful resourses
 .b-site-res__title
-    font-size: 18px
-    font-weight: normal
-    line-height: 1.56
-    color: #1a1a1a
-    text-transform: uppercase
-    margin-bottom: 15px
+	font-size: 18px
+	font-weight: normal
+	line-height: 1.56
+	color: #1a1a1a
+	text-transform: uppercase
+	margin-bottom: 15px
 
 .b-site-res__link-title, .b-site-res__link-item
-    font-size: 14px
-    line-height: 22px
-    color: #168de2
-    font-weight: normal
+	font-size: 14px
+	line-height: 22px
+	color: #168de2
+	font-weight: normal
 
 .b-site-res__link-item
-    text-decoration: none
-    &:hover
-        text-decoration: underline
+	text-decoration: none
+	&:hover
+		text-decoration: underline
 
 .b-site-res-link-resourses
-    vertical-align: top
-    width: 360px
+	vertical-align: top
+	width: 360px
 
 .b-site-res__link-box
-    margin-bottom: 20px
+	margin-bottom: 20px
 
 //recomended reading
 .b-site-normal__list
-    margin-bottom: 35px
+	margin-bottom: 35px
 
 .b-site_normal_square-list
-    list-style-type: square !important
-    padding-left: 22px
-    color: #168de2
-    line-height: 22px
-    a
-        color: #168de2
-        text-decoration: none
-        &:hover
-            text-decoration: underline
+	list-style-type: square !important
+	padding-left: 22px
+	color: #168de2
+	line-height: 22px
+	a
+		color: #168de2
+		text-decoration: none
+		&:hover
+			text-decoration: underline
 
 .b-site-tech__table-grid
-    display: table
+	display: table
 
 .b-site-tech__table-item
-    margin-bottom: 30px
+	margin-bottom: 30px
 //display: table-row
 
 .b-site-tech__col-img
-    display: table-cell
-    width: 92px
-    height: 137px
-    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
-    img
-        width: 100%
-        height: 100%
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+	display: table-cell
+	width: 92px
+	height: 137px
+	//box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+	img
+		width: 100%
+		height: 100%
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
 
 .b-site-tech__table-cell, .b-site-tech__col-title
-    display: table-cell
-    vertical-align: top
-    padding-right: 60px
-    &:last-child
-        padding-right: 0
+	display: table-cell
+	vertical-align: top
+	padding-right: 60px
+	&:last-child
+		padding-right: 0
 
 .b-site-tech__col-title
-    width: 141px
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.57
-    color: #4d4d4d
-    padding-left: 15px
+	width: 141px
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.57
+	color: #4d4d4d
+	padding-left: 15px
 
 // key
 .b-site-tech__title
-    font-size: 22px
-    font-weight: normal
-    line-height: 1.82
-    color: #1a1a1a
-    margin-bottom: 15px
+	font-size: 22px
+	font-weight: normal
+	line-height: 1.82
+	color: #1a1a1a
+	margin-bottom: 15px
 
 //promo-page
 .b-site-promo__full-text
-    font-size: 14px
-    line-height: 22px
-    font-weight: normal
-    color: #4d4d4d
+	font-size: 14px
+	line-height: 22px
+	font-weight: normal
+	color: #4d4d4d
 
 .b-site-promo__refil-link
-    font-size: 18px
-    font-weight: normal
-    line-height: 1.56
-    color: #168de2
-    text-decoration: none
-    display: inline-block
-    position: relative
-    &.fz14
-        font-size: 14px
+	font-size: 18px
+	font-weight: normal
+	line-height: 1.56
+	color: #168de2
+	text-decoration: none
+	display: inline-block
+	position: relative
+	&.fz14
+		font-size: 14px
 
-    &:hover
-        text-decoration: underline
+	&:hover
+		text-decoration: underline
 
 .b-site-promo__refil-account
-    margin-top: 25px
+	margin-top: 25px
 
 .b-content__text-info-feedback-ps
-    padding-left: 50px
-    padding-right: 50px
-    padding-top: 30px
-    padding-bottom: 60px //eth
-    display: flex
-    flex: 1 1 300px
-    border-radius: 5px
-    min-height: 200px
-    border: 1px dashed #979797
-    text-decoration: none
-    +trans
-    &:hover
-        cursor: pointer
-        box-shadow: -17px 17px 20px 0 rgba(0, 0, 0, 0.2)
-        border-color: transparent
-        background: #f5f5f5
-        .b-content__text-info-title-ps
-            color: #4d4d4d
-        .partners-form-list span
-            color: #168de2
-        .icon-partners-agent
-            display: inline-block
-        .icon-partners-franhize
-            display: inline-block
-        .icon-partners-wb
-            display: inline-block
-        .icon-partners-buss
-            display: inline-block
+	padding-left: 50px
+	padding-right: 50px
+	padding-top: 30px
+	padding-bottom: 60px
+	//eth
+	display: flex
+	flex: 1 1 300px
+	border-radius: 5px
+	min-height: 200px
+	border: 1px dashed #979797
+	text-decoration: none
+	+trans
+	&:hover
+		cursor: pointer
+		box-shadow: -17px 17px 20px 0 rgba(0, 0, 0, 0.2)
+		border-color: transparent
+		background: #f5f5f5
+		.b-content__text-info-title-ps
+			color: #4d4d4d
+		.partners-form-list span
+			color: #168de2
+		.icon-partners-agent
+			display: inline-block
+		.icon-partners-franhize
+			display: inline-block
+		.icon-partners-wb
+			display: inline-block
+		.icon-partners-buss
+			display: inline-block
 
 .b-content__text-info-title-ps
-    position: relative
-    display: inline-block
-    font-size: 42px
-    font-weight: normal
-    color: #168de2
-    max-width: 515px
-    line-height: 55px
-    +trans
+	position: relative
+	display: inline-block
+	font-size: 42px
+	font-weight: normal
+	color: #168de2
+	max-width: 515px
+	line-height: 55px
+	+trans
 
 .icon-partners-agent
-    content: ""
-    display: inline-block
-    width: 32px
-    height: 40px
-    margin-left: 20px
+	content: ""
+	display: inline-block
+	width: 32px
+	height: 40px
+	margin-left: 20px
 
 .icon-partners-franhize
-    content: ""
-    width: 43px
-    height: 40px
-    display: inline-block
-    margin-left: 20px
+	content: ""
+	width: 43px
+	height: 40px
+	display: inline-block
+	margin-left: 20px
 
 .icon-partners-wb
-    content: ""
-    width: 43px
-    height: 40px
-    display: inline-block
-    margin-left: 20px
+	content: ""
+	width: 43px
+	height: 40px
+	display: inline-block
+	margin-left: 20px
 
 .icon-partners-buss
-    content: ""
-    width: 74px
-    height: 35px
-    display: inline-block
-    margin-left: 20px
+	content: ""
+	width: 74px
+	height: 35px
+	display: inline-block
+	margin-left: 20px
 
 .icon-circles-extended
-    display: inline-block
-    margin-left: 20px
+	display: inline-block
+	margin-left: 20px
 
 .icon-bar-graph
-    display: inline-block
-    margin-left: 20px
+	display: inline-block
+	margin-left: 20px
 
 .partners-form-list li
-    margin-bottom: 10px
-    padding-left: 4px
-    font-size: 18px
-    font-weight: normal
-    +trans
-    &:last-child
-        margin-bottom: 0
+	margin-bottom: 10px
+	padding-left: 4px
+	font-size: 18px
+	font-weight: normal
+	+trans
+	&:last-child
+		margin-bottom: 0
 
 .b-content-feedback-ps
-    display: flex
-    flex-direction: row
+	display: flex
+	flex-direction: row
 
 .b-content-button-feedback-partners
-    display: flex
-    flex-direction: column
-    flex: 0 1 200px
-    align-items: center
-    padding-left: 30px
-    padding-top: 8px
+	display: flex
+	flex-direction: column
+	flex: 0 1 200px
+	align-items: center
+	padding-left: 30px
+	padding-top: 8px
 
 .b-site-ps__usl-ps
-    border-radius: 4px
-    background-color: #ff7100
-    color: #fff
-    font-weight: 600
-    font-size: 14px
-    line-height: 36px
-    text-align: center
-    min-width: 190px
-    display: inline-block
-    text-decoration: none
-    +trans
-    &:hover
-        opacity: 0.8
-        cursor: pointer
+	border-radius: 4px
+	background-color: #ff7100
+	color: #fff
+	font-weight: 600
+	font-size: 14px
+	line-height: 36px
+	text-align: center
+	min-width: 190px
+	display: inline-block
+	text-decoration: none
+	+trans
+	&:hover
+		opacity: 0.8
+		cursor: pointer
 
 .b-site-ps__fbz-ps
-    border-radius: 4px
-    border: solid 1px rgba(255, 113, 0, 0.5)
-    color: #ff7100
-    font-weight: 600
-    font-size: 14px
-    line-height: 36px
-    text-align: center
-    min-width: 190px
-    background: #fff
-    display: inline-block
-    text-decoration: none
-    +trans
-    &:hover
-        opacity: 0.8
-        cursor: pointer
-        background: #f9f5f5
+	border-radius: 4px
+	border: solid 1px rgba(255, 113, 0, 0.5)
+	color: #ff7100
+	font-weight: 600
+	font-size: 14px
+	line-height: 36px
+	text-align: center
+	min-width: 190px
+	background: #fff
+	display: inline-block
+	text-decoration: none
+	+trans
+	&:hover
+		opacity: 0.8
+		cursor: pointer
+		background: #f9f5f5
 
 .b-content-bottom__other-link
-    font-size: 18px
-    font-weight: normal
-    line-height: 1.56
-    color: #1a1a1a
-    margin-top: 30px
+	font-size: 18px
+	font-weight: normal
+	line-height: 1.56
+	color: #1a1a1a
+	margin-top: 30px
 
 .b-content-bottom__other-link a
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.57
-    color: #168de2
-    text-decoration: none
-    margin-left: 11px
-    &:hover
-        text-decoration: underline
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.57
+	color: #168de2
+	text-decoration: none
+	margin-left: 11px
+	&:hover
+		text-decoration: underline
 
 //	camping for new partners
 
 .b-site-camping__full-text
-    font-size: 14px
-    line-height: 22px
-    color: #4d4d4d
-    font-weight: normal
+	font-size: 14px
+	line-height: 22px
+	color: #4d4d4d
+	font-weight: normal
 
 .mb43
-    margin-top: 40px
-    margin-bottom: 30px
+	margin-top: 40px
+	margin-bottom: 30px
 
 // programm for traders
 
 .b-site-list__item-inner
-    min-height: 271px //rger
-    padding-left: 57px
-    flex: 1 1 900px
-    padding-right: 57px
-    border-radius: 5px
-    border: 1px dashed #979797
-    position: relative
-    box-sizing: border-box
-    +trans
-    &:hover
-        box-shadow: -17px 17px 20px 0 rgba(0, 0, 0, 0.2)
-        border-color: transparent
-        background: #f5f5f5
-        cursor: pointer
+	min-height: 271px
+	//rger
+	padding-left: 57px
+	flex: 1 1 900px
+	padding-right: 57px
+	border-radius: 5px
+	border: 1px dashed #979797
+	position: relative
+	box-sizing: border-box
+	+trans
+	&:hover
+		box-shadow: -17px 17px 20px 0 rgba(0, 0, 0, 0.2)
+		border-color: transparent
+		background: #f5f5f5
+		cursor: pointer
 
 .b-site-list__item-photo
-    position: absolute
-    top: 50%
+	position: absolute
+	top: 50%
 
 .macbook
-    +retina-bg("macbook.png", "macbook@2x.png")
-    width: 365px
-    height: 197px
-    margin-top: -98px
+	+retina-bg("macbook.png", "macbook@2x.png")
+	width: 365px
+	height: 197px
+	margin-top: -98px
 
 .iphone
-    +retina-bg("iphone.png", "iphone@2x.png")
-    width: 263px
-    height: 161px
-    margin-top: -90px
+	+retina-bg("iphone.png", "iphone@2x.png")
+	width: 263px
+	height: 161px
+	margin-top: -90px
 
 .ipad
-    +retina-bg("ipad.png", "ipad@2x.png")
-    width: 260px
-    height: 225px
-    margin-top: -112px
+	+retina-bg("ipad.png", "ipad@2x.png")
+	width: 260px
+	height: 225px
+	margin-top: -112px
 
 .b-site-list-inner-rbox
-    width: 512px
+	width: 512px
 
 .b-site-list__item-title
-    font-size: 42px
-    font-weight: normal
-    line-height: 1.02
-    color: #168de2
-    text-align: right
-    margin-top: 78px
-    margin-bottom: 37px
+	font-size: 42px
+	font-weight: normal
+	line-height: 1.02
+	color: #168de2
+	text-align: right
+	margin-top: 78px
+	margin-bottom: 37px
 
 .b-site-list__item-link
-    width: 30px
-    height: 30px
-    position: relative
-    display: block
-
-
+	width: 30px
+	height: 30px
+	position: relative
+	display: block
 
 .b-site-list__download-programm
-    width: 245px
-    vertical-align: top
-    text-align: center
-    padding-top: 10px
+	width: 245px
+	vertical-align: top
+	text-align: center
+	padding-top: 10px
 
 .appstore-button
-    position: relative
-    width: 172px
-    height: 40px
-    border-radius: 7px
-    background-color: #ff7100
-    font-family: HelveticaNeue, serif
-    font-size: 20px
-    line-height: 40px
-    font-weight: normal
-    color: #ffffff
-    cursor: pointer
-    margin: 0 auto 15px auto
-    +trans
-    &:hover
-        opacity: 0.8
-    &:before
-        content: ""
-        vertical-align: bottom
-        margin-right: 5px
-        display: inline-block
+	position: relative
+	width: 172px
+	height: 40px
+	border-radius: 7px
+	background-color: #ff7100
+	font-family: HelveticaNeue, serif
+	font-size: 20px
+	line-height: 40px
+	font-weight: normal
+	color: #ffffff
+	cursor: pointer
+	margin: 0 auto 15px auto
+	+trans
+	&:hover
+		opacity: 0.8
+	&:before
+		content: ""
+		vertical-align: bottom
+		margin-right: 5px
+		display: inline-block
 
 .google-button
-    position: relative
-    width: 172px
-    height: 40px
-    border-radius: 7px
-    background-color: #ff7100
-    font-family: HelveticaNeue, serif
-    font-size: 20px
-    line-height: 40px
-    font-weight: normal
-    color: #ffffff
-    cursor: pointer
-    margin: 0 auto 15px auto
-    +trans
-    &:hover
-        opacity: 0.8
-    &:before
-        content: ""
-        vertical-align: bottom
-        margin-right: 5px
-        display: inline-block
+	position: relative
+	width: 172px
+	height: 40px
+	border-radius: 7px
+	background-color: #ff7100
+	font-family: HelveticaNeue, serif
+	font-size: 20px
+	line-height: 40px
+	font-weight: normal
+	color: #ffffff
+	cursor: pointer
+	margin: 0 auto 15px auto
+	+trans
+	&:hover
+		opacity: 0.8
+	&:before
+		content: ""
+		vertical-align: bottom
+		margin-right: 5px
+		display: inline-block
 
 .description-exe
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.5
-    color: #4d4d4d
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.5
+	color: #4d4d4d
 
 .b-site-list__item-os
-    float: left
-    margin-right: 22px
-    &:last-child
-        margin-right: 0
+	float: left
+	margin-right: 22px
+	&:last-child
+		margin-right: 0
 
 // type of accounts
 
 .normal-text
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.57
-    color: #4d4d4d
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.57
+	color: #4d4d4d
 
 .b-site__item-account-list
-    display: inline-block
-    width: 125px
-    vertical-align: top
-    margin: 7px
-    margin-right: 35px
-    &:last-child
-        margin-right: 0
+	display: inline-block
+	width: 125px
+	vertical-align: top
+	margin: 7px
+	margin-right: 35px
+	&:last-child
+		margin-right: 0
 
 .b-site__item-circle
-    text-align: center
-    display: flex
-    width: 59px
-    height: 59px
-    border: 1px solid #000
-    border-radius: 50%
-    margin-bottom: 7px
-    +trans
+	text-align: center
+	display: flex
+	width: 59px
+	height: 59px
+	border: 1px solid #000
+	border-radius: 50%
+	margin-bottom: 7px
+	+trans
 
 .b-site__item-circl-text
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.57
-    color: #1a1a1a
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.57
+	color: #1a1a1a
 
 .b-content__text-info-acctype
-    padding-left: 50px
-    padding-right: 50px
-    padding-bottom: 50px
-    padding-top: 30px
-    margin-bottom: 35px
-    display: flex
-    text-decoration: none
-    flex: 1 1 300px
-    border-radius: 5px
-    border: 1px dashed #979797
-    +trans
-    &:hover
-        cursor: pointer
-        box-shadow: -17px 17px 20px 0 rgba(0, 0, 0, 0.2)
-        border-color: transparent
-        background: #f5f5f5
-        .b-content__text-info-title-ps
-            color: #4d4d4d
-        .b-site__item-circle
-            border-color: #168de2
-            background: #168de2
-            color: #fff
-        .cog-icon
-            display: none
-        .big-grey-cog
-            display: inline-block
+	padding-left: 50px
+	padding-right: 50px
+	padding-bottom: 50px
+	padding-top: 30px
+	margin-bottom: 35px
+	display: flex
+	text-decoration: none
+	flex: 1 1 300px
+	border-radius: 5px
+	border: 1px dashed #979797
+	+trans
+	&:hover
+		cursor: pointer
+		box-shadow: -17px 17px 20px 0 rgba(0, 0, 0, 0.2)
+		border-color: transparent
+		background: #f5f5f5
+		.b-content__text-info-title-ps
+			color: #4d4d4d
+		.b-site__item-circle
+			border-color: #168de2
+			background: #168de2
+			color: #fff
+		.cog-icon
+			display: none
+		.big-grey-cog
+			display: inline-block
 
 .b-site__item-circle-inner
-    margin: auto
-    line-height: normal
-    font-weight: 600
+	margin: auto
+	line-height: normal
+	font-weight: 600
 
 .b-content-fb__link-nw-inner
-    text-align: center
-    margin-bottom: 7px
-    &:last-child
-        margin-bottom: 0
+	text-align: center
+	margin-bottom: 7px
+	&:last-child
+		margin-bottom: 0
 
 .open-new-window
-    font-size: 14px
-    font-weight: normal
-    line-height: 1.57
-    color: #168de2
-    text-decoration: none
-    &:hover
-        text-decoration: underline
-    &:after
-        content: ""
-        width: 9px
-        height: 9px
-        margin-left: 9px
-        display: inline-block !important
+	font-size: 14px
+	font-weight: normal
+	line-height: 1.57
+	color: #168de2
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+	&:after
+		content: ""
+		width: 9px
+		height: 9px
+		margin-left: 9px
+		display: inline-block !important
 
 .has-icon__new-window
-    &:after
-        content: ""
-        width: 9px
-        height: 9px
-        margin-left: 9px
-        display: inline-block !important
+	&:after
+		content: ""
+		width: 9px
+		height: 9px
+		margin-left: 9px
+		display: inline-block !important
 
 .has-icon__new-window-silver
-    &:after
-        content: ""
-        width: 9px
-        height: 9px
-        margin-left: 9px
-        display: inline-block !important
+	&:after
+		content: ""
+		width: 9px
+		height: 9px
+		margin-left: 9px
+		display: inline-block !important
 
 .b-content-bottom__inner-text
-    max-width: 955px
+	max-width: 955px
 
 .b-content-bottom__inner-title
-    font-size: 18px
-    font-weight: normal
-    line-height: 1.56
-    color: #1a1a1a
-    margin-bottom: 16px
+	font-size: 18px
+	font-weight: normal
+	line-height: 1.56
+	color: #1a1a1a
+	margin-bottom: 16px
 
 .b-content-bottom__inner-full-text
-    color: #4d4d4d
-    font-size: 14px
-    line-height: 22px
+	color: #4d4d4d
+	font-size: 14px
+	line-height: 22px
 
 .bsl-in-text
-    color: #4d4d4d
-    font-weight: 600
+	color: #4d4d4d
+	font-weight: 600
 
 .tcblue
-    color: #168de2
+	color: #168de2
 
 //honors page
 .quote-sub-text
-    font-size: 14px
-    font-weight: normal
-    font-style: italic
-    line-height: 1.71
-    letter-spacing: 0.3px
-    color: #808080
-    //padding-left: 40px
+	font-size: 14px
+	font-weight: normal
+	font-style: italic
+	line-height: 1.71
+	letter-spacing: 0.3px
+	color: #808080
+//padding-left: 40px
 
 .gnt
-    font-size: 14px
-    line-height: 22px
-    color: #4d4d4d
-    font-weight: normal
+	font-size: 14px
+	line-height: 22px
+	color: #4d4d4d
+	font-weight: normal
 
 .b-content-honor__inner-photo
-    padding-left: 45px
-    width: 134px
-    height: 350px
-    img
-        width: 100%
+	padding-left: 45px
+	width: 134px
+	height: 350px
+	img
+		width: 100%
 
 .b-content-honor__popup-photo
-    position: relative
-    text-decoration: none
-    font-size: 13px
-    color: #979797
-    line-height: 22px
-    &:hover
-        text-decoration: underline
-    &:after
-        content: ""
-        width: 9px
-        height: 9px
-        display: inline-block !important
-        margin-left: 5px
+	position: relative
+	text-decoration: none
+	font-size: 13px
+	color: #979797
+	line-height: 22px
+	&:hover
+		text-decoration: underline
+	&:after
+		content: ""
+		width: 9px
+		height: 9px
+		display: inline-block !important
+		margin-left: 5px
 
 .b-content-honor__full-text
-    width: 555px
+	width: 555px
 
 // sub left menu
 
 .sub-tree-menu
-    padding-left: 35px
-    margin-bottom: 10px
+	padding-left: 35px
+	margin-bottom: 10px
 
 .b-site__blue-sub-menu-item
-    display: block
-    color: #168de2
-    text-decoration: none
-    font-size: 15px
-    font-weight: normal
-    line-height: 30px
-    padding-right: 16px
-    &:hover
-        color: #1d1d1d
+	display: block
+	color: #168de2
+	text-decoration: none
+	font-size: 15px
+	font-weight: normal
+	line-height: 30px
+	padding-right: 16px
+	&:hover
+		color: #1d1d1d
 
 .sub-tree-menu
-    display: none
+	display: none
 
 .open-tree
-    position: relative
-    &:before
-        content: ""
-        width: 6px
-        height: 10px
-        position: absolute
-        right: 20px
-        top: 50%
-        margin-top: 0
-        -moz-transform: rotate(180deg)
-        -ms-transform: rotate(180deg)
-        -webkit-transform: rotate(180deg)
-        -o-transform: rotate(180deg)
-        transform: rotate(180deg)
-        +trans
+	position: relative
+	&:before
+		content: ""
+		width: 6px
+		height: 10px
+		position: absolute
+		right: 20px
+		top: 50%
+		margin-top: 0
+		-moz-transform: rotate(180deg)
+		-ms-transform: rotate(180deg)
+		-webkit-transform: rotate(180deg)
+		-o-transform: rotate(180deg)
+		transform: rotate(180deg)
+		+trans
 
 .close-tree
-    position: relative
-    &:before
-        content: ""
-        width: 11px
-        height: 10px
-        position: absolute
-        right: 20px
-        top: 50%
-        margin-top: 0
-        -moz-transform: rotate(0deg)
-        -ms-transform: rotate(0deg)
-        -webkit-transform: rotate(0deg)
-        -o-transform: rotate(0deg)
-        transform: rotate(0deg)
-        +trans
+	position: relative
+	&:before
+		content: ""
+		width: 11px
+		height: 10px
+		position: absolute
+		right: 20px
+		top: 50%
+		margin-top: 0
+		-moz-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		-webkit-transform: rotate(0deg)
+		-o-transform: rotate(0deg)
+		transform: rotate(0deg)
+		+trans
 
 .b-news-arrow
-    width: 250px
-    line-height: 1.57
-    position: relative
+	width: 250px
+	line-height: 1.57
+	position: relative
 
-    &.b-news-arrow__left
-        padding-left: 20px
+	&.b-news-arrow__left
+		padding-left: 20px
 
-        &::before
-            position: absolute
-            top: 0
-            left: 0
-            content: '\2190'
+		&::before
+			position: absolute
+			top: 0
+			left: 0
+			content: '\2190'
 
-    &.b-news-arrow__right
-        padding-right: 20px
+	&.b-news-arrow__right
+		padding-right: 20px
 
-        &::before
-            position: absolute
-            top: 0
-            right: 0
-            content: '\2192'
+		&::before
+			position: absolute
+			top: 0
+			right: 0
+			content: '\2192'
 
 .link-md
-    height: 22px
-    line-height: 1.67
-    display: inline-block
+	height: 22px
+	line-height: 1.67
+	display: inline-block
 
 .w73
-    width: 73%
+	width: 73%
 
 .w25
-    width: 25%
+	width: 25%
 
 .icon--rss
-    display: inline-block
-    vertical-align: middle
-    margin-right: 8px
+	display: inline-block
+	vertical-align: middle
+	margin-right: 8px
 
 .icon--newspaper
-    display: inline-block
-    vertical-align: middle
-    margin-right: 8px
+	display: inline-block
+	vertical-align: middle
+	margin-right: 8px
 
 .b-data
-    font-size: 14px
-    font-weight: 300
-    line-height: 1.5
-    color: #848484
+	font-size: 14px
+	font-weight: 300
+	line-height: 1.5
+	color: #848484
 
 .max-width50
-    max-width: 50%
+	max-width: 50%
 
 .max-width25
-    max-width: 25%
+	max-width: 25%
 
 .b-site-content__inner
-    &:not(.no-max-width)
-        max-width: 870px
+	&:not(.no-max-width)
+		max-width: 870px
 
 .b-info-grey-dashed
-    background-color: #fafafa
-    border: dashed 1px #c8c8c8
-    padding: 20px
+	background-color: #fafafa
+	border: dashed 1px #c8c8c8
+	padding: 20px
 
 .map-info-list__wrapper
-    padding: 20px 20px 0
+	padding: 20px 20px 0
 
 .grey-sep-top
-    border-top: 1px solid #f5f5f5
-    padding-top: 35px
+	border-top: 1px solid #f5f5f5
+	padding-top: 35px
 
 .b-info-grey
-    border-radius: 5px
-    padding: 20px
-    background-color: #fafafa ///6868/6
+	border-radius: 5px
+	padding: 20px
+	background-color: #fafafa
+///6868/6
 
 .b-lime
-    border-radius: 5px
-    padding: 20px
-    background-color: #e8f4fd
+	border-radius: 5px
+	padding: 20px
+	background-color: #e8f4fd
 
 .content-text, .b-content__text
-    font-size: 14px
-    line-height: 1.57
-    color: #4d4d4d
-    font-weight: 400
-    &.fw600
-        font-weight: 600
-
+	font-size: 14px
+	line-height: 1.57
+	color: #4d4d4d
+	font-weight: 400
+	&.fw600
+		font-weight: 600
 
 .blue-link
-    text-decoration: none
-    color: #168de2
-    &:hover
-        text-decoration: underline
+	text-decoration: none
+	color: #168de2
+	&:hover
+		text-decoration: underline
 
 .b-content__text
-    &.active
-        &:last-child
-            margin-top: -25px
-    p
-        margin-bottom: 0
-        +trans
-        &:last-child
-            margin-bottom: 0
+	&.active
+		&:last-child
+			margin-top: -25px
+	p
+		margin-bottom: 0
+		+trans
+		&:last-child
+			margin-bottom: 0
 
 .content-main-title
-    font-size: 30px
-    font-weight: 600
-    line-height: 1.33
-    letter-spacing: 1px
-    color: #4d4d4d
+	font-size: 30px
+	font-weight: 600
+	line-height: 1.33
+	letter-spacing: 1px
+	color: #4d4d4d
 
 .content-title
-    font-size: 22px
-    line-height: 1.82
-    color: #1a1a1a
-    &.black
-        color: #4d4d4d
+	font-size: 22px
+	line-height: 1.82
+	color: #1a1a1a
+	&.black
+		color: #4d4d4d
 
 .content-title2
-    font-size: 18px
-    line-height: 1.57
-    color: #1a1a1a
-    font-weight: 600
-    &.black
-        color: #4d4d4d
+	font-size: 18px
+	line-height: 1.57
+	color: #1a1a1a
+	font-weight: 600
+	&.black
+		color: #4d4d4d
 
 //_________________________TABLE_________________
 .t-grey-line
-    .content-t-cell
-        vertical-align: bottom
-        font-size: 12px
-        line-height: 1.5
-        letter-spacing: 0.3px
-        background-color: #fff
-        color: #808080
-        border-bottom: 1px solid #168de2
+	.content-t-cell
+		vertical-align: bottom
+		font-size: 12px
+		line-height: 1.5
+		letter-spacing: 0.3px
+		background-color: #fff
+		color: #808080
+		border-bottom: 1px solid #168de2
 
 .content-table
-    font-size: 14px
-    color: #1a1a1a
-    width: 100%
-    text-align: center
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.19)
+	font-size: 14px
+	color: #1a1a1a
+	width: 100%
+	text-align: center
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.19)
 
 .content-t-row:last-child
-    border-bottom: 2px solid #f4f4f4
+	border-bottom: 2px solid #f4f4f4
 
 .orange-border
-    &.content-t-cell
-        border-bottom: 1px solid #fe7d1b
+	&.content-t-cell
+		border-bottom: 1px solid #fe7d1b
 
 .dd-hat
-    @extend .hat
-    border-radius: 5px 5px 5px 5px
-    +trans()
-    &.active
-        border-radius: 5px 5px 0 0
+	@extend .hat
+	border-radius: 5px 5px 5px 5px
+	+trans()
+	&.active
+		border-radius: 5px 5px 0 0
 
 .hat
-    padding: 13px 5px
-    background-color: #003e6b
-    font-weight: 600
-    color: #ffffff
+	padding: 13px 5px
+	background-color: #003e6b
+	font-weight: 600
+	color: #ffffff
 
 .t-hat
-    &:hover
-        .content-t-cell
-            background-color: #003e6b !important
+	&:hover
+		.content-t-cell
+			background-color: #003e6b !important
 
-    .content-t-cell
-        @extend .hat
-        &:first-child
-            border-radius: 5px 0 0 0
-        &:last-child
-            border-radius: 0 5px 0 0
+	.content-t-cell
+		@extend .hat
+		&:first-child
+			border-radius: 5px 0 0 0
+		&:last-child
+			border-radius: 0 5px 0 0
 
 .fw800
-    font-weight: 800
+	font-weight: 800
 
 .bb-solid
-    border-bottom: 1px solid #cccccc
+	border-bottom: 1px solid #cccccc
 
 .content-t-row
-    .content-t-cell:first-child
-        padding-left: 30px
-    .content-t-cell:last-child
-        padding-right: 30px
-    &.fz14
-        font-size: 14px
-    .content-t-cell:first-child
-        padding-left: 30px
-    .content-t-cell:last-child
-        padding-right: 30px
-    &.fz14
-        font-size: 14px
-    &:hover
-        .content-t-cell
-            background-color: #a1cdfd
+	.content-t-cell:first-child
+		padding-left: 30px
+	.content-t-cell:last-child
+		padding-right: 30px
+	&.fz14
+		font-size: 14px
+	.content-t-cell:first-child
+		padding-left: 30px
+	.content-t-cell:last-child
+		padding-right: 30px
+	&.fz14
+		font-size: 14px
+	&:hover
+		.content-t-cell
+			background-color: #a1cdfd
 
-    &.light-rose
-        .content-t-cell
-            background-color: #ffcdd2
-    &.manilla
-        .content-t-cell
-            background-color: #ffff8d
-    &.bright-yellow
-        .content-t-cell
-            background-color: #ffff00
-    &.wheat
-        .content-t-cell
-            background-color: #ffd180
-    &.tangerine
-        .content-t-cell
-            background-color: #ff9100
-    &.powder-blue
-        .content-t-cell
-            background-color: #bbdefb
-    &.medium-pink
-        .content-t-cell
-            background-color: #f06292
-    &.washed-out-green
-        .content-t-cell
-            background-color: #b9f6ca //frgr
-    &.turquoise-green
-        .content-t-cell
-            background-color: #00e676
+	&.light-rose
+		.content-t-cell
+			background-color: #ffcdd2
+	&.manilla
+		.content-t-cell
+			background-color: #ffff8d
+	&.bright-yellow
+		.content-t-cell
+			background-color: #ffff00
+	&.wheat
+		.content-t-cell
+			background-color: #ffd180
+	&.tangerine
+		.content-t-cell
+			background-color: #ff9100
+	&.powder-blue
+		.content-t-cell
+			background-color: #bbdefb
+	&.medium-pink
+		.content-t-cell
+			background-color: #f06292
+	&.washed-out-green
+		.content-t-cell
+			background-color: #b9f6ca
+	//frgr
+	&.turquoise-green
+		.content-t-cell
+			background-color: #00e676
 
 .text-red
-    color: #e51c23
+	color: #e51c23
 
 .content-t-row:nth-of-type(2n)
-    background-color: #fff
-    border-right: 2px solid #f4f4f4
-    border-left: 2px solid #f4f4f4
+	background-color: #fff
+	border-right: 2px solid #f4f4f4
+	border-left: 2px solid #f4f4f4
 
 .content-t-row:nth-of-type(2n+1)
-    background-color: #f4f4f4
-    border-right: 2px solid #f4f4f4
-    border-left: 2px solid #f4f4f4
+	background-color: #f4f4f4
+	border-right: 2px solid #f4f4f4
+	border-left: 2px solid #f4f4f4
 
 .content-t-row:hover
-    background-color: #a1cdfd
+	background-color: #a1cdfd
 
 .content-t-cell
-    +trans()
-    text-align: center
-    padding: 19px 5px
+	+trans()
+	text-align: center
+	padding: 19px 5px
 
 //_________________________TABLE________________
 
 // contacts page
 
 .contact-page
-    .contact-page__map
-        padding-left: 295px
+	.contact-page__map
+		padding-left: 295px
 
 .contact-form-line__label
-    flex: none
-    max-width: 150px
-    width: 100%
+	flex: none
+	max-width: 150px
+	width: 100%
 
 .contact-form-line__input
-    flex-grow: 1
-    width: 100%
+	flex-grow: 1
+	width: 100%
 
 .contact-form
-    .fl-row textarea
-        min-width: 0
+	.fl-row textarea
+		min-width: 0
 
-    .fl-grid
-        width: 100%
-        align-items: flex-start
+	.fl-grid
+		width: 100%
+		align-items: flex-start
 
-    .contact-form-line__captcha
-        display: flex
-        width: 100%
-        white-space: nowrap
+	.contact-form-line__captcha
+		display: flex
+		width: 100%
+		white-space: nowrap
 
-        .fill-form-inp.code
-            width: 100%
+		.fill-form-inp.code
+			width: 100%
 
 // non deposite bonus page
 
 .no-deposit-section
-    padding: 60px 0
+	padding: 60px 0
+
+// shock forecasts page
+
+.shock-forecasts-title h1
+	font-size: 30px
+	margin-bottom: 30px
+	color: #4d4d4d
+	font-weight: 600
+
+.shock-forecast-detail-title h1
+	font-size: 30px
+	margin-bottom: 20px
+	color: #4d4d4d
+	font-weight: 600
+
+.b-shock-forecasts
+	background-color: #f7f7f7
+	padding: 20px
+	counter-reset: forecasts
+
+.b-shock-forecasts__news
+	position: relative
+	background-color: #ffffff
+	padding: 15px 20px 15px 15px
+	display: flex
+	text-decoration: none
+	color: #4d4d4d
+	margin-bottom: 20px
+	&:last-child
+		margin-bottom: 0
+	&.b-shock-forecasts__title
+		color: #168de2
+	&::after
+		position: absolute
+		bottom: 20px
+		right: 20px
+		counter-increment: forecasts
+		content: counter(forecasts)
+		width: 50px
+		height: 50px
+		background-color: #f7f7f7
+		border-radius: 50%
+		font-size: 18px
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: all 0.2s ease
+	&:hover
+		.b-shock-forecasts__title
+			color: #fd7f23
+		&::after
+			background-color: #fd7f23
+
+.b-shock-forecasts__image-wrapper
+	margin-right: 15px
+	width: 400px
+	height: 265px
+	flex-shrink: 0
+	overflow: hidden
+	position: relative
+
+.b-shock-forecasts__image
+	width: 100%
+	height: 265px
+	object-fit: cover
+	position: absolute
+
+.b-shock-forecasts__title
+	color: #168de2
+	text-decoration: none
+	margin-bottom: 12px
+	font-size: 14px
+	font-weight: 600
+	line-height: 1.57
+	transition: all 0.2s ease
+
+.b-shock-forecasts__text
+	font-size: 14px
+	line-height: 1.57
+	color: #4d4d4d
+
+.shock-forecast-detail
+	max-width: 850px
+	width: 100%
+	font-weight: normal
+	float: left
+
+.b-shock-forecast-detail__image-wrapper
+	position: relative
+	width: 600px
+	height: 350px
+	overflow: hidden
+	
+.b-shock-forecast-detail__image
+	height: 350px
+	width: 100%
+	position: absolute
+
+.b-shock-forecast-detail__text
+	font-size: 14px
+	line-height: 1.57
+	color: #4d4d4d
+	p
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
