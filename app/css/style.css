@@ -2179,6 +2179,7 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 .b-shock-forecasts__news:hover::after {
   background-color: #fd7f23;
+  color: #FFFFFF;
 }
 
 .b-shock-forecasts__image-wrapper {
@@ -3201,11 +3202,11 @@ a {
   box-sizing: border-box;
   height: 570px;
 }
-.b-main--page--parallax.teach-center.type-1 {
+.b-main--page--parallax.teach-center.type-1b-shock-forecasts__news {
   background-image: url('../images/top-banners/teach-center-1.jpg?1493959102');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.teach-center.type-1 {
+  .b-main--page--parallax.teach-center.type-1b-shock-forecasts__news {
     background-image: url('../images/top-banners/teach-center-1@2x.jpg?1493959102');
     background-size: 1920px 570px;
   }
@@ -3220,29 +3221,29 @@ a {
   }
 }
 .b-main--page--parallax.teach-center.type-3 {
-  background-image: url('../images/top-banners/teach-center-2.jpg?1493959102');
+  background-image: url('../images/top-banners/teach-center-2.jpg?1496219138');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-3 {
-    background-image: url('../images/top-banners/teach-center-2@2x.jpg?1493959102');
+    background-image: url('../images/top-banners/teach-center-2@2x.jpg?1496219833');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-4 {
-  background-image: url('../images/top-banners/teach-center-3.jpg?1493959102');
+  background-image: url('../images/top-banners/teach-center-3.jpg?1496213991');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-4 {
-    background-image: url('../images/top-banners/teach-center-3@2x.jpg?1493959102');
+    background-image: url('../images/top-banners/teach-center-3@2x.jpg?1496213991');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-5 {
-  background-image: url('../images/top-banners/teach-center-4.jpg?1493959102');
+  background-image: url('../images/top-banners/teach-center-4.jpg?1496213991');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-5 {
-    background-image: url('../images/top-banners/teach-center-4@2x.jpg?1493959102');
+    background-image: url('../images/top-banners/teach-center-4@2x.jpg?1496213991');
     background-size: 1920px 570px;
   }
 }
@@ -3304,6 +3305,9 @@ a {
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
+.b-main--page--parallax.teach-center .teach-center-book:hover {
+  box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.3);
+}
 .b-main--page--parallax.teach-center .teach-center-text {
   position: absolute;
   right: 50%;
@@ -3320,6 +3324,10 @@ a {
 .b-main--page--parallax.teach-center .teach-center-text .small-text {
   font-size: 25px;
   line-height: 1.08;
+}
+.b-main--page--parallax.teach-center .teach-center-text .small-text-count {
+  color: #0becff;
+  font-size: 30px;
 }
 .b-main--page--parallax.teach-center .teach-center-button {
   position: absolute;
@@ -9039,10 +9047,6 @@ td.b-traiders--dividents {
 
 .addon__image {
   max-width: 130px;
-}
-
-.blue-text {
-  color: #0becff;
 }
 
 @media screen and (max-width: 1260px) {
