@@ -3256,21 +3256,12 @@ a {
   }
 }
 .b-main--page--parallax.teach-center.type-7 {
-  background-image: url('../images/top-banners/teach-center-7.jpg?1495020874');
+  background-image: url('../images/top-banners/teach-center-7.jpg?1496211055');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-7 {
-    background-image: url('../images/top-banners/teach-center-7@2x.jpg?1495020888');
-    background-size: 1920px 570px;
-  }
-}
-.b-main--page--parallax.teach-center.type-8 {
-  background-image: url('../images/top-banners/teach-center-8.jpg?1495020894');
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .b-main--page--parallax.teach-center.type-8 {
-    background-image: url('../images/top-banners/teach-center-8@2x.jpg?1495020900');
-    background-size: 1920px 570px;
+    background-image: url('../images/top-banners/teach-center-7@2x.jpg?1496211079');
+    background-size: 1024px 304px;
   }
 }
 .b-main--page--parallax.teach-center.type-3, .b-main--page--parallax.teach-center.type-4, .b-main--page--parallax.teach-center.type-5 {
@@ -3293,6 +3284,42 @@ a {
   margin-top: auto;
   padding-bottom: 15px;
   text-align: center;
+}
+.b-main--page--parallax.teach-center .teach-center-book {
+  position: absolute;
+  right: 50%;
+  bottom: 330px;
+  margin-right: -375px;
+  background: #fe7d1b;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+.b-main--page--parallax.teach-center .teach-center-text {
+  position: absolute;
+  right: 50%;
+  bottom: 210px;
+  margin-right: -485px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.b-main--page--parallax.teach-center .teach-center-text .large-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.b-main--page--parallax.teach-center .teach-center-text .small-text {
+  font-size: 25px;
+  line-height: 1.08;
 }
 .b-main--page--parallax.teach-center .teach-center-button {
   position: absolute;
@@ -9012,6 +9039,10 @@ td.b-traiders--dividents {
 
 .addon__image {
   max-width: 130px;
+}
+
+.blue-text {
+  color: #0becff;
 }
 
 @media screen and (max-width: 1260px) {
