@@ -567,12 +567,18 @@ a
 			background-color: #2192fd
 			display: block
 			content: ''
-	&:hover
+	&.active
 		.b-nav--menu--dropdown
-			display: block
+			visibility: visible
+			opacity: 1
+			margin-top: 0
 
 .b-nav--menu--dropdown
+	visibility: hidden
+	opacity: 0
+	margin-top: 20px
 	position: absolute
+	display: block
 	top: 100%
 	left: 0
 	min-width: 100%
@@ -580,6 +586,7 @@ a
 	z-index: 10
 	white-space: nowrap
 	overflow: hidden
+	+trans()
 
 .b-nav--menu--dropdown--item
 	position: relative

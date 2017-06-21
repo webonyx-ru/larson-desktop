@@ -1383,40 +1383,40 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 
 .macbook {
-  background-image: url('../images/macbook.png?1490779093');
+  background-image: url('../images/macbook.png?1486034725');
   width: 365px;
   height: 197px;
   margin-top: -98px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .macbook {
-    background-image: url('../images/macbook@2x.png?1490779093');
+    background-image: url('../images/macbook@2x.png?1486034725');
     background-size: 364px 198px;
   }
 }
 
 .iphone {
-  background-image: url('../images/iphone.png?1490779093');
+  background-image: url('../images/iphone.png?1486034725');
   width: 263px;
   height: 161px;
   margin-top: -90px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .iphone {
-    background-image: url('../images/iphone@2x.png?1490779093');
+    background-image: url('../images/iphone@2x.png?1486034725');
     background-size: 265px 167px;
   }
 }
 
 .ipad {
-  background-image: url('../images/ipad.png?1490779093');
+  background-image: url('../images/ipad.png?1486034725');
   width: 260px;
   height: 225px;
   margin-top: -112px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .ipad {
-    background-image: url('../images/ipad@2x.png?1490779093');
+    background-image: url('../images/ipad@2x.png?1486034725');
     background-size: 228px 222px;
   }
 }
@@ -3203,65 +3203,65 @@ a {
   height: 570px;
 }
 .b-main--page--parallax.teach-center.type-1b-shock-forecasts__news {
-  background-image: url('../images/top-banners/teach-center-1.jpg?1493959102');
+  background-image: url('../images/top-banners/teach-center-1.jpg?1493168416');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-1b-shock-forecasts__news {
-    background-image: url('../images/top-banners/teach-center-1@2x.jpg?1493959102');
+    background-image: url('../images/top-banners/teach-center-1@2x.jpg?1493168418');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-2 {
-  background-image: url('../images/top-banners/teach-center.jpg?1493959102');
+  background-image: url('../images/top-banners/teach-center.jpg?1493168412');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-2 {
-    background-image: url('../images/top-banners/teach-center@2x.jpg?1493959102');
+    background-image: url('../images/top-banners/teach-center@2x.jpg?1493168414');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-3 {
-  background-image: url('../images/top-banners/teach-center-2.jpg?1496219138');
+  background-image: url('../images/top-banners/teach-center-2.jpg?1498016148');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-3 {
-    background-image: url('../images/top-banners/teach-center-2@2x.jpg?1496219833');
+    background-image: url('../images/top-banners/teach-center-2@2x.jpg?1498016148');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-4 {
-  background-image: url('../images/top-banners/teach-center-3.jpg?1496213991');
+  background-image: url('../images/top-banners/teach-center-3.jpg?1495522208');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-4 {
-    background-image: url('../images/top-banners/teach-center-3@2x.jpg?1496213991');
+    background-image: url('../images/top-banners/teach-center-3@2x.jpg?1495522208');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-5 {
-  background-image: url('../images/top-banners/teach-center-4.jpg?1496213991');
+  background-image: url('../images/top-banners/teach-center-4.jpg?1495522206');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-5 {
-    background-image: url('../images/top-banners/teach-center-4@2x.jpg?1496213991');
+    background-image: url('../images/top-banners/teach-center-4@2x.jpg?1495522208');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-6 {
-  background-image: url('../images/top-banners/teach-center-5.jpg?1494908058');
+  background-image: url('../images/top-banners/teach-center-5.jpg?1495184417');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-6 {
-    background-image: url('../images/top-banners/teach-center-5@2x.jpg?1494908058');
+    background-image: url('../images/top-banners/teach-center-5@2x.jpg?1495184417');
     background-size: 1920px 570px;
   }
 }
 .b-main--page--parallax.teach-center.type-7 {
-  background-image: url('../images/top-banners/teach-center-7.jpg?1496211055');
+  background-image: url('../images/top-banners/teach-center-7.jpg?1498016148');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .b-main--page--parallax.teach-center.type-7 {
-    background-image: url('../images/top-banners/teach-center-7@2x.jpg?1496211079');
+    background-image: url('../images/top-banners/teach-center-7@2x.jpg?1498016148');
     background-size: 1024px 304px;
   }
 }
@@ -3491,12 +3491,18 @@ a {
   display: block;
   content: "";
 }
-.b-nav--menu_item:hover .b-nav--menu--dropdown {
-  display: block;
+.b-nav--menu_item.active .b-nav--menu--dropdown {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
 }
 
 .b-nav--menu--dropdown {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 20px;
   position: absolute;
+  display: block;
   top: 100%;
   left: 0;
   min-width: 100%;
@@ -3504,6 +3510,11 @@ a {
   z-index: 10;
   white-space: nowrap;
   overflow: hidden;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
 }
 
 .b-nav--menu--dropdown--item {
@@ -9113,7 +9124,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) {
   .b-logo {
-    background-image: url('../images/logo_small.png?1490779093');
+    background-image: url('../images/logo_small.png?1486034725');
     background-repeat: no-repeat;
     width: 31px;
     height: 40px;
@@ -9122,7 +9133,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-logo {
-    background-image: url('../images/logo_small@2x.png?1490779093');
+    background-image: url('../images/logo_small@2x.png?1486034725');
     background-size: 31px 40px;
   }
 }
@@ -9161,7 +9172,7 @@ td.b-traiders--dividents {
   }
 
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k.jpg?1490779092');
+    background-image: url('../images/banner250k.jpg?1486034726');
     background-size: cover;
     background-size: cover;
     box-shadow: none;
@@ -9170,7 +9181,7 @@ td.b-traiders--dividents {
 }
 @media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1200px) and (min-resolution: 1.5dppx) {
   .b-analitics--best--traiders-number {
-    background-image: url('../images/banner250k@2x.jpg?1490779092');
+    background-image: url('../images/banner250k@2x.jpg?1486034726');
     background-size: cover;
   }
 }

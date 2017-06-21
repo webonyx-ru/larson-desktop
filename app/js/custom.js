@@ -659,9 +659,23 @@ LH.menu = function (className) {
     var menu = {};
 
     menu.el = $(className);
+    menu.firstLvl = menu.el.find('.b-nav--menu_item');
     menu.item = menu.el.find('.b-nav--menu--dropdown--item');
     menu.itemLink = menu.item.find('.b-nav--menu--dropdown--item--link.has-dropdown');
     menu.itemParent = menu.el.find('.b-nav--menu--dropdown');
+
+
+
+    menu.firstLvl.hover(function () {
+        clearTimeout(menu.timeOut);
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    }, function () {
+        $this = $(this);
+        menu.timeOut = setTimeout(function () {
+            $this.removeClass('active');
+        }, 700);
+    });
 
     menu.init = function () {
         menu.itemParent.each(function () {
