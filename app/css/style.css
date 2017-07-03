@@ -4095,7 +4095,7 @@ a {
   margin-right: 40px;
   position: relative;
 }
-.b-our--decisions--tab--video:after {
+.b-our--decisions--tab--video:not(.b-our--decisions--tab--video--not-play):after {
   display: block;
   content: "";
   position: absolute;
@@ -4112,7 +4112,7 @@ a {
   -moz-transform: translate3d(-50%, -50%, 0);
   -o-transform: translate3d(-50%, -50%, 0);
 }
-.b-our--decisions--tab--video:before {
+.b-our--decisions--tab--video:not(.b-our--decisions--tab--video--not-play):before {
   display: block;
   content: "";
   position: absolute;
