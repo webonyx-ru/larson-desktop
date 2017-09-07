@@ -1862,11 +1862,14 @@ input:focus, textarea:focus, a:focus, button:focus {
   max-width: 870px;
 }
 .b-site-content__inner ul {
-  margin-left: 15px;
+  margin: 10px 0 10px 15px;
 }
 .b-site-content__inner li {
   list-style: disc;
-  padding-left: 15px;
+  margin-left: 15px;
+}
+.b-site-content__inner li:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .b-info-grey-dashed {
