@@ -1855,8 +1855,18 @@ input:focus, textarea:focus, a:focus, button:focus {
   max-width: 25%;
 }
 
+.b-site-content__inner {
+  line-height: 1.4;
+}
 .b-site-content__inner:not(.no-max-width) {
   max-width: 870px;
+}
+.b-site-content__inner ul {
+  margin-left: 15px;
+}
+.b-site-content__inner li {
+  list-style: disc;
+  padding-left: 15px;
 }
 
 .b-info-grey-dashed {
